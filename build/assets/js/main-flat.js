@@ -1,0 +1,10 @@
+/* * WAVE - Sliding Coming Soon Template
+*
+* This is a premium product available exclusively at this address https://themeforest.net/user/madeon08/portfolio
+*
+* The demo files are minified/crypted for copyright reasons, you will find them, expanded, commented and coded accurately in your download pack.
+*
+* Thanks for your support!
+*
+* */
+$(window).load(function(){"use strict";setTimeout(function(){$("#loading").addClass("animated-middle fadeOut")},2e3),setTimeout(function(){setTimeout(function(){$(".text-intro").each(function(e){!function(n){setTimeout(function(){$(n).addClass("animated-middle fadeInUp").removeClass("opacity-0")},150*e+150)}(this)})},0)},2e3),setTimeout(function(){$(".bar-intro").addClass("animated-middle slideInDown").removeClass("opacity-0")},3e3),setTimeout(function(){$("#loading").remove()},3300),setTimeout(function(){$(".text-intro").removeClass("animated-middle fadeInUp")},4e3)}),$(document).ready(function(){"use strict";function e(){$(".content-slide").mCustomScrollbar({scrollInertia:150,axis:"y"})}$("#loading").removeClass("dark-back"),$(".loading-text").addClass("animated-middle fadeIn").removeClass("opacity-0"),e(),$("#notifyMe").notifyMe(),function(){var e=document.querySelector("[data-dialog]"),n=document.getElementById(e.getAttribute("data-dialog")),t=new DialogFx(n);e.addEventListener("click",t.toggle.bind(t))}(),$(function(){var e=function(){var e=$("#nav-arrows"),n=$("#nav-multi-square > span"),t=$("#slider").slitslider({onBeforeChange:function(e,t){n.removeClass("nav-square-current"),n.eq(t).addClass("nav-square-current")}}),i=function(){a()},a=function(){e.children(":last").on("click",function(){return t.next(),!1}),e.children(":first").on("click",function(){return t.previous(),!1}),n.each(function(e){$(this).on("click",function(i){var a=$(this);return t.isActive()||(n.removeClass("nav-square-current"),a.addClass("nav-square-current")),t.jump(e+1),!1})})};return{init:i}}();e.init()})});
