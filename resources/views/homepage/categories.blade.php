@@ -1,97 +1,85 @@
-<div>
-    <div class="pt-30 pb-10 md:py-60 px-10">
-        <div class="container-lg">
-            <h2
-                class="text-center mb-20 md:mb-50 font-handwriting leading-none break-words text-40 md:text-45 lg:text-55">
-                <span class="bg-gradient-90-primary-alt text-fill-transparent bg-clip-text">
-                    ~ Categories ~
-                </span>
-            </h2>
-
-            <div class="flex flex-wrap -mx-10">
-                <div class="px-10 w-full md:w-5/12 lg:w-5/12 lg:block">
-
-                    <div class="container">
-                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                        <link
-                            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
-                            rel="stylesheet">
-                        <link rel="stylesheet"
-                            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    
-                        <main>
-                            <div class = "card">
-                                <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
-                                    alt="">
-                                <div class="card-content">
-                                    <h2>
-                                        TOURS
-                                    </h2>
-                                    <p>
-                                        Get a chance to explore the world beautiful places through Chameleon safaris.
-                                    </p>
-                                    <a href="#" class="button">
-                                        Find out more
-                                        <span class="material-symbols-outlined">
-                                            arrow_right_alt
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </main>
-    
-                    </div>
-
-
-                    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-
-                    {{-- logic ends here --}}
+<div class="container container-custom margin_80_0" id="categories_section">
+    <div class="main_title_2">
+        <span><em></em></span>
+        <h2>Our Cartegories</h2>
+        <p>Check out the sections that exist in our website</p>
+    </div>
+    <div id="reccomended" class="owl-carousel owl-theme" data-cue="zoomIn">
+        <div class="item">
+            <div class="box_grid">
+                <figure>
+                    <a href="#0" class="wish_bt"></a>
+                    <a href="/all-tours"><img src="images/img1/tour_1.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <small>Experiences</small>
+                </figure>
+                <div class="wrapper">
+                    <h3><a href="/all-tours">Feedbacks</a></h3>
+                    <p>Have a chance to read the feedbacks from people like you who travelled with us</p>
                 </div>
-
-                <div class="px-10 w-full md:w-5/12 lg:w-5/12 lg:block">
-
-                    <div class="container">
-                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                        <link
-                            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
-                            rel="stylesheet">
-                        <link rel="stylesheet"
-                            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    
-                        <main>
-                            <div class = "card">
-                                <img src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
-                                    alt="">
-                                <div class="card-content">
-                                    <h2>
-                                        TOURS
-                                    </h2>
-                                    <p>
-                                        Get a chance to explore the world beautiful places through Chameleon safaris.
-                                    </p>
-                                    <a href="#" class="button">
-                                        Find out more
-                                        <span class="material-symbols-outlined">
-                                            arrow_right_alt
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </main>
-    
-                    </div>
-
-
-                    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-
-
-                    {{-- logic ends here --}}
-                </div>
+                <ul>
+                    <!-- HTML !-->
+                    <li><i class="icon_clock_alt"></i></li>
+                    <li><div class="score"><button class="button-3" role="button">Visit</button></div></li>
+                </ul>
             </div>
         </div>
+        <div class="item">
+            <div class="box_grid">
+                <figure>
+                    <a href="#0" class="wish_bt"></a>
+                    <a href="/all-tours"><img src="images/img1/tour_2.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <small>Tours</small>
+                </figure>
+                <div class="wrapper">
+                    <h3><a href="/all-tours">Our Trips</a></h3>
+                    <p>Get a chance to view and book current available trips arround the world</p>
+                </div>
+                <ul>
+                    <li><i class="icon_clock_alt"></i> </li>
+                    <li><div class="score"><button class="button-3" role="button">Visit</button></div></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /item -->
+        <div class="item">
+            <div class="box_grid">
+                <figure>
+                    <a href="#0" class="wish_bt"></a>
+                    <a href="/all-tours"><img src="images/img1/tour_2.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <small>Contact us</small>
+                </figure>
+                <div class="wrapper">
+                    <h3><a href="/all-tours">Reach out</a></h3>
+                    <p>Your voice is and feedback is very important to us, share with us anything valuable!</p>
+                </div>
+                <ul>
+                    <li><i class="icon_clock_alt"></i> </li>
+                    <li><div class="score"><button class="button-3" role="button">Visit</button></div></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /item -->
+        <div class="item">
+            <div class="box_grid">
+                <figure>
+                    <a href="#0" class="wish_bt"></a>
+                    <a href="/all-tours"><img src="images/img1/tour_2.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <small>Gallery</small>
+                </figure>
+                <div class="wrapper">
+                    <h3><a href="/all-tours">Collection</a></h3>
+                    <p>Explore the amazing moments that you might have missed before</p>
+                </div>
+                <ul>
+                    <li><i class="icon_clock_alt"></i> </li>
+                    <li><div class="score"><button class="button-3" role="button">Visit</button></div></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /item -->
+
     </div>
-    <!---->
+    <!-- /carousel -->
+
 </div>
+<!-- /container -->
