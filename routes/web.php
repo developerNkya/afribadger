@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\TourController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -26,3 +27,5 @@ Route::get('/', [HomeController::class, 'Index']);
 Route::get('/tour-page', [TourController::class, 'Index']);
 Route::get('/all-tours', [TourController::class, 'AllTours']);
 Route::get('/tour-detail', [TourController::class, 'TourDetail']);
+
+Route::get('/sign-in', [AdminController::class, 'SignIn']);

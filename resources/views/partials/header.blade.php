@@ -64,11 +64,12 @@
 		</a>
 		<nav id="menu" class="main-menu">
 			<ul>
-				<li><span><a href="/">Home</a></span>
-                    <li><span><a href="#0">Tours</a></span>
-                        <li><span><a href="#0">Experiences</a></span>
-                            <li><span><a href="#0">Gallery</a></span>
-                                <li><span><a href="#0">Contact Us</a></span>                  
+				<li><span><a href="/">Home</a></span></li>
+                    <li><span><a href="/all-tours">Tours</a></span></li>
+                        <li><span><a href="#0">Experiences</a></span></li>
+                            <li><span><a href="#0">Gallery</a></span></li>
+                                <li><span><a href="#0">Contact Us</a></span> </li>  
+                                    <li><span><a href="/sign-in">Admin</a></span> </li>                  
             <ul>
 			</ul>
 		</nav>
