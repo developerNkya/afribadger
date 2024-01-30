@@ -17,16 +17,8 @@ use App\Http\Controllers\HomeController;
 */
 
 
-// adding other routes::
-require __DIR__ . '/admin_routes.php';
 
-// Route::get('/', function () {
-//     return view('homepage.index');
-// });
 
-Route::get('/', [HomeController::class, 'Index']);
 
-Route::get('/tour-page', [TourController::class, 'Index']);
-Route::get('/all-tours', [TourController::class, 'AllTours']);
-Route::get('/tour-detail', [TourController::class, 'TourDetail']);
-
+Route::get('/sign-in', [AdminController::class, 'SignIn'])->name('sign-in');
+Route::post('/login', [AdminController::class, 'Login']);
