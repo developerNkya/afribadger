@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use Session;
 
 class AdminController extends Controller
 {
@@ -32,7 +33,11 @@ class AdminController extends Controller
                 ->withErrors(['loginError' => $error]);
             }
 
-            return 'proceed';
+            $active_user = $check_info->id;
+            //add user to session::
+            Session::put('active_user', $active_user);
+            //redirect to admin -home-page::
+            return view('admin.homepage');
 
     }
 
