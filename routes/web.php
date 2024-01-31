@@ -24,7 +24,7 @@ require __DIR__ . '/admin_routes.php';
 //     return view('homepage.index');
 // });
 
-Route::get('/', [HomeController::class, 'Index']);
+Route::get('/', [HomeController::class, 'Index'])->name('user.homepage');
 
 Route::get('/tour-page', [TourController::class, 'Index']);
 Route::get('/all-tours', [TourController::class, 'AllTours']);
