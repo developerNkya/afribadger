@@ -36,7 +36,7 @@
 					<div class="box_grid">
 						<figure>
 							<a href="#0" class="wish_bt"></a>
-							<a href="/all-tours"><img src="images/img1/tour_2.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+							<a href="/all-tours"><img src="images/tour-img5.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
 							<small>Churches</small>
 						</figure>
 						<div class="wrapper">

@@ -29,8 +29,10 @@
 		<div class="call_section">
 			<div class="container clearfix">
 				<div class="col-lg-5 col-md-6 float-end wow position-relative" data-wow-offset="250">
-					<div class="block-reveal">
-							<img src="images/img1/traveller2.png" alt="Travel Image">						
+					<div class="block-reveal" >
+						<img src="https://i.ibb.co/2cTj1qS/traveller2.png" alt="traveller2" style="background-repeat:no-repeat">	
+							{{-- <div id="traveller-img"></div>					 --}}
+
 					</div>
 				</div>
 

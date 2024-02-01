@@ -32,15 +32,16 @@
 
 
                         <div class="row">
+
+                            @foreach ($data as $key => $value)
                             <div class="col-lg-4">
                                 <div class="card">
                                     <div class="card-header">
-                                        <b>Header</b>
+                                        <b>{{ ucfirst($key) }}</b>
                                     </div>
                                     <div class="card-body">
                                         <blockquote class="card-blockquote mb-0">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-                                                erat a ante.</p>
+                                            <p>{{ $value }}</p>
                                             <footer class="blockquote-footer font-size-12 m-0">
                                                 Someone famous in <cite title="Source Title">Source Title</cite>
                                             </footer>
@@ -48,8 +49,10 @@
                                     </div>
                                 </div>
                             </div>
+                        @endforeach
+                        
                             
-                            <div class="col-lg-4">
+                            {{-- <div class="col-lg-4">
                                 <div class="card">
                                     <div class="card-header">
                                         <b>Subtitle</b>
@@ -81,7 +84,7 @@
                                         </blockquote>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <!-- end row -->
 

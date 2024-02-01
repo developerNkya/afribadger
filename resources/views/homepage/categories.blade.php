@@ -9,7 +9,7 @@
             <div class="box_grid">
                 <figure>
                     <a href="#0" class="wish_bt"></a>
-                    <a href="/all-tours"><img src="images/img1/tour_1.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <a href="/all-tours"><img id="tour-category" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
                     <small>Experiences</small>
                 </figure>
                 <div class="wrapper">
@@ -27,7 +27,7 @@
             <div class="box_grid">
                 <figure>
                     <a href="#0" class="wish_bt"></a>
-                    <a href="/all-tours"><img src="images/img1/tour_2.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <a href="/all-tours"><img id="tour-category" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
                     <small>Tours</small>
                 </figure>
                 <div class="wrapper">
@@ -45,7 +45,7 @@
             <div class="box_grid">
                 <figure>
                     <a href="#0" class="wish_bt"></a>
-                    <a href="/all-tours"><img src="images/img1/tour_2.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <a href="/all-tours"><img id="tour-category" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
                     <small>Contact us</small>
                 </figure>
                 <div class="wrapper">
@@ -63,7 +63,7 @@
             <div class="box_grid">
                 <figure>
                     <a href="#0" class="wish_bt"></a>
-                    <a href="/all-tours"><img src="images/img1/tour_2.jpg" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <a href="/all-tours"><img id="tour-category" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
                     <small>Gallery</small>
                 </figure>
                 <div class="wrapper">

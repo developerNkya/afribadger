@@ -33,7 +33,8 @@
     <link rel="stylesheet" type="text/css" href="css/revolution-slider/css/navigation.css">
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="css/css1/custom.css" rel="stylesheet">
+    {{-- <link href="css/css1/custom.css" rel="stylesheet"> --}}
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- ALTERNATIVE COLORS CSS -->
     <link href="#" id="colors" rel="stylesheet">

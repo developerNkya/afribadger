@@ -67,3 +67,18 @@
 .zoom-effect:hover img {
   transform: scale(1.1); /* Adjust the scale factor as needed */
 }
+
+
+/* tour images */
+#tour-category {
+  background-image: url("./img/tour-img5.jpg");
+}
+
+#contact-category {
+  background-image: url("./img/tour-img5.jpg");
+}
+
+#traveller-img{
+  background-image: url("./img/traveller2.png");
+}
+
