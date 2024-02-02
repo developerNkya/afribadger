@@ -41,7 +41,7 @@
                                     </div>
                                     <div class="card-body">
                                         <blockquote class="card-blockquote mb-0">
-                                            <p>{{ $value }}</p>
+                                            <p>{!! nl2br(e($value)) !!}</p>
                                             <footer class="blockquote-footer font-size-12 m-0">
                                                 Someone famous in <cite title="Source Title">Source Title</cite>
                                             </footer>

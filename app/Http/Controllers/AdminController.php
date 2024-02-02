@@ -49,12 +49,11 @@ class AdminController extends Controller
     Public function  UpdateIntroText(Request $request){
 
         // getting values::
-        $info = $request->info;
+        $info =   $request->info;
         $option = $request->option;
 
 
-            $update_info = Detail::where('name', $option)
-                            ->update(array('detail' => $info));
+         Detail::where('name', $option)->update(array('detail' => $info));
 
 
           return redirect()->back()->with('message', 'Data has been updated successfully!');

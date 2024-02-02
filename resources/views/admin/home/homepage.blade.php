@@ -39,7 +39,7 @@
                                     <img class="card-img-top img-fluid" src="images/images2/small/img-5.jpg" alt="Card image cap">
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title"><b>Intro Text</b></h4>
+                                        <h4 class="card-title"><b>Modify Homepage Text</b></h4>
                                         <p class="card-text">Easily edit the Intro text at the introduction of the website.Make sure that the text is catchy and can be understood by visitors</p>
                                          
                                         <p class="card-text">
@@ -48,47 +48,7 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="card">
-                                    <div class="zoom-effect">
-                                    <img class="card-img-top img-fluid" src="images/images2/small/img-5.jpg" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title"><b>Category Section</b></h4>
-                                        <p class="card-text">Easily edit the Category section of the homepage part of website.Make sure that the text is catchy and can be understood by visitors</p>
-                                         
-                                        <p class="card-text">
-                                            {{-- <small class="text-muted">Last updated 3 mins ago</small> --}}
-                                            <a href="#" class="btn btn-primary waves-effect waves-light" >Proceed</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="card">
-                                    <div class="zoom-effect">
-                                        <img class="card-img-top img-fluid" src="images/images2/small/img-5.jpg" alt="Card image cap">
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title"><b>Dialog Information</b></h4>
-                                        <p class="card-text">Easily edit the dialog box in the homepage part of the website. Make sure that the text is catchy and can be understood by visitors</p>
-                            
-                                        <p class="card-text">
-                                            <a href="#" class="btn btn-primary waves-effect waves-light">Proceed</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-        
-
-
-
-
-        
+                            </div>      
                         </div>
                         <!-- end row -->
 

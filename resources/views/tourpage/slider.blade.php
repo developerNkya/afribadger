@@ -33,7 +33,7 @@
                              data-paddingbottom="['15','8','8','8']"
                              data-paddingright="['0','0','0','0']"
                              data-paddingleft="['0','0','0','0']"
-                             style="text-shadow: 0 0 20px rgba(0,0,0,0.3); font-weight: 600;"> Welcome to  <br> Camel Leon Safaris</div>
+                             style="text-shadow: 0 0 20px rgba(0,0,0,0.3); font-weight: 600;">{{$data['header']}}</div>
 
                         <!-- small text layer -->
                         <div class="tp-caption tp-resizeme text-white text-center"
@@ -48,7 +48,7 @@
                              data-lineheight="['28','14','23','20']"
                              data-letterspacing="['0.5','0.5','0.5','0.5']"
                              data-responsive="off"
-                             data-responsive_offset="on">Top rated tour organizers in the globe.
+                             data-responsive_offset="on">{{$data['subtitle']}}
                         </div> 
 
                         <!-- btn layer -->

@@ -41,7 +41,7 @@
 						<div class="block-vertical"></div>
 						<div class="box_1">
 							<h3>We got you Covered!</h3>
-							<p>Embark on a Journey of Discovery with Camel Leon. Explore breathtaking destinations, experience local cultures, and create lasting memories.<br><br> Our curated tours offer a perfect blend of adventure and relaxation. Book your next adventure with us and let the exploration begin!</p>
+							<p>{{$data['dialog']}}</p>
 						</div>
 					</div>
 				</div>
