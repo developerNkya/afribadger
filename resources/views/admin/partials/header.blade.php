@@ -2,7 +2,7 @@
 <html lang="en">
 
     
-<!-- Mirrored from themesdesign.in/nazox-ajax/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Aug 2023 22:29:11 GMT -->
+<!-- Mirrored from themesdesign.in/Camel Leon-ajax/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Aug 2023 22:29:11 GMT -->
 <head>
         
         <meta charset="utf-8" />
@@ -14,22 +14,24 @@
         <link rel="shortcut icon" href="images/images2/favicon.ico">
 
         <!-- jquery.vectormap css -->
-        <link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <link href="js/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
 
         <!-- DataTables -->
-        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="js/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Responsive datatable examples -->
-        <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />  
+        <link href="js/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />  
 
         <!-- Bootstrap Css -->
-        <link href="css/css2/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        {{-- <link href="css/css2/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" /> --}}
         <!-- Icons Css -->
         <link href="css/css2/icons.min.css" rel="stylesheet" type="text/css" />
         <!-- App Css-->
-        <link href="css/css2/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        {{-- <link href="css/css2/app.min.css" id="app-style" rel="stylesheet" type="text/css" /> --}}
         
-        <link href="css/css1/custom.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.min.admin.css" id="app-style" rel="stylesheet" type="text/css" />
         
     </head>
 
@@ -46,21 +48,26 @@
                     <div class="d-flex">
                         <!-- LOGO -->
                         <div class="navbar-brand-box">
-                            <a href="index.html" class="logo logo-dark">
+                            <a href="#" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="images/images2/logo-sm-dark.png" alt="logo-sm-dark" height="22">
+                                    {{-- <img src="images/images2/logo-sm-dark.png" alt="logo-sm-dark" height="22"> --}}
+
+                                    <div class="admin-home-logo" onclick=""></div>
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="images/images2/logo-dark.png" alt="logo-dark" height="20">
+                                    {{-- <img src="images/images2/logo-dark.png" alt="logo-dark" height="20"> --}}
+                                    <div class="admin-home-logo2" ></div>
                                 </span>
                             </a>
 
-                            <a href="index.html" class="logo logo-light">
+                            <a href="#" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="images/images2/logo-sm-light.png" alt="logo-sm-light" height="22">
+                                    <div class="admin-home-logo3" ></div>
+                                    {{-- <img src="images/images2/logo-sm-light.png" alt="logo-sm-light" height="22"> --}}
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="images/images2/logo-light.png" alt="logo-light" height="20">
+                                    <div class="admin-home-logo4" ></div>
+                                    {{-- <img src="images/images2/logo-light.png" alt="logo-light" height="20"> --}}
                                 </span>
                             </a>
                         </div>
@@ -176,18 +183,22 @@
                         <div class="dropdown d-inline-block user-dropdown">
                             <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="rounded-circle header-profile-user" src="images/images2/users/avatar-2.jpg"
-                                    alt="Header Avatar">
+                                {{-- <img class="rounded-circle header-profile-user" src="images/images2/users/avatar-2.jpg"
+                                    alt="Header Avatar"> --}}
+                                    
+                                     <div class="admin-home-avatar rounded-circle header-profile-user" ></div>
+
                                 <span class="d-none d-xl-inline-block ms-1">Kevin</span>
                                 <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                             </button>
+
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
                                 <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
                                 <a class="dropdown-item d-block" href="#"><i class="ri-settings-2-line align-middle me-1"></i> Settings</a>
 
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-danger" href="#"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
+                                <a class="dropdown-item text-danger" href="/"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>
                             </div>
                         </div>
             

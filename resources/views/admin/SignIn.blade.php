@@ -2,11 +2,11 @@
 <html lang="en">
 
     
-<!-- Mirrored from themesdesign.in/nazox-ajax/layouts/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Aug 2023 22:30:58 GMT -->
+<!-- Mirrored from themesdesign.in/Camel Leon-ajax/layouts/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Aug 2023 22:30:58 GMT -->
 <head>
         
         <meta charset="utf-8" />
-        <title>Login | Nazox - Admin & Dashboard Template</title>
+        <title>Login | Camel Leon - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
@@ -38,14 +38,16 @@
                                         <div>
                                             <div class="text-center">
                                                 <div>
-                                                    <a href="index.html" class="">
-                                                        <img src="images/images2/logo-dark.png" alt="" height="20" class="auth-logo logo-dark mx-auto">
-                                                        <img src="images/images2/logo-light.png" alt="" height="20" class="auth-logo logo-light mx-auto">
+                                                    <a href="#" class="">
+                                                        <div class="admin-sign-in auth-logo logo-dark mx-auto"></div>
+                                                        <div lass=" admin-sign-in2-auth-logo logo-light mx-auto"></div>
+                                                        {{-- <img src="images/images2/logo-dark.png" alt="" height="20" class="auth-logo logo-dark mx-auto"> --}}
+                                                        {{-- <img src="images/images2/logo-light.png" alt="" height="20" class="auth-logo logo-light mx-auto"> --}}
                                                     </a>
                                                 </div>
     
                                                 <h4 class="font-size-18 mt-4">Welcome Back !</h4>
-                                                <p class="text-muted">Sign in to continue to Nazox.</p>
+                                                <p class="text-muted">Sign in to continue to Camel Leon.</p>
                                             </div>
 
 
@@ -107,15 +109,15 @@
         
 
         <!-- JAVASCRIPT -->
-        <script src="assets/libs/jquery/jquery.min.js"></script>
-        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-        <script src="assets/libs/simplebar/simplebar.min.js"></script>
-        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/libs/metismenu/metisMenu.min.js"></script>
+        <script src="js/libs/simplebar/simplebar.min.js"></script>
+        <script src="js/libs/node-waves/waves.min.js"></script>
 
         <script src="js/js2/app.js"></script>
 
     </body>
 
-<!-- Mirrored from themesdesign.in/nazox-ajax/layouts/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Aug 2023 22:30:58 GMT -->
+<!-- Mirrored from themesdesign.in/Camel Leon-ajax/layouts/auth-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 19 Aug 2023 22:30:58 GMT -->
 </html>

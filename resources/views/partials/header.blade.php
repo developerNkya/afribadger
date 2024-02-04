@@ -48,9 +48,12 @@
 	<header class="header menu_fixed">
 		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Page Preload -->
 		<div id="logo">
-			<a href="index.html">
-				<img src="images/img1/logo.svg" width="150" height="36" alt="" class="logo_normal">
-				<img src="images/img1/logo_sticky.svg" width="150" height="36" alt="" class="logo_sticky">
+			<a href="#">
+                <div class="logo_normal1 logo_normal"></div>
+                <div class="header_img2 logo_sticky"></div>
+
+				{{-- <img src="images/img1/logo.svg" width="150" height="36" alt="" class="logo_normal">
+				<img src="images/img1/logo_sticky.svg" width="150" height="36" alt="" class="logo_sticky"> --}}
 			</a>
 		</div>
 		<ul id="top_menu">

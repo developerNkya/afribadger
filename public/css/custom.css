@@ -70,8 +70,15 @@
 
 
 /* tour images */
+#hiking-sample {
+  background-image: url("./img/kili3.jpg");
+}
+
 #tour-category {
   background-image: url("./img/tour-img5.jpg");
+}
+#tour-category1 {
+  background-image: url("https://i.ibb.co/7gNdpbC/cat-img1.jpg");
 }
 
 #contact-category {
@@ -82,3 +89,78 @@
   background-image: url("./img/traveller2.png");
 }
 
+
+/* header logo */
+.logo_normal1 {
+  width: 150px;
+  height: 36px;
+  background-image: url('./img/logo.svg');
+  background-size: cover; /* Adjust this based on your design needs */
+  /* If you want to hide the text inside the div, you can use the following line */
+  /* text-indent: -9999px; */
+}
+
+.header_img2 {
+  width: 150px;
+  height: 36px;
+  background-image: url('./img/logo_sticky.svg');
+  background-size: cover; /* Adjust this based on your design needs */
+  /* If you want to hide the text inside the div, you can use the following line */
+  /* text-indent: -9999px; */
+}
+
+
+/* admin sign in  */
+
+.admin-sign-in{
+  height: 20;
+  background-image: url('./img/logo-dark.png');
+  background-size: cover; /* Adjust this based on your design needs */
+
+}
+.admin-sign-in2{
+  height: 20;
+  background-image: url('./img/logo-light.png');
+  background-size: cover; /* Adjust this based on your design needs */
+
+}
+
+
+/* admin pages */
+.admin-home-logo{
+  height: 22;
+  background-image: url('./img/logo-sm-dark.png');
+  background-size: cover;
+}
+
+.admin-home-logo2{
+  height: 22;
+  background-image: url('./img/logo-dark.png');
+  background-size: cover;
+}
+
+.admin-home-logo3{
+  height: 22;
+  background-image: url('./img/logo-sm-light.png');
+  background-size: cover;
+}
+
+.admin-home-logo4{
+  height: 20;
+  background-image: url('./img/logo-light.png');
+  
+}
+
+.admin-home-avatar{
+  background-image: url('./img/avatar-2.jpg');
+  background-size: cover;
+
+}
+
+/* homepage-body */
+.homepage-cat1{
+  background-image: url('./img/img-5.jpg');
+
+
+
+}

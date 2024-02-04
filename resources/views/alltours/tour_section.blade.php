@@ -36,20 +36,21 @@
                 <div class="box_grid" data-cue="slideInUp">
                     <figure>
                         <a href="#0" class="wish_bt"></a>
-                        <a href="/tour-detail"><img src="images/img1/tour_1.jpg" class="img-fluid"
+                        <a href="#">
+                            
+                            <img id="hiking-sample" class="img-fluid"
                                 alt="" width="800" height="533">
                             <div class="read_more"><span>Read more</span></div>
                         </a>
                         <small>Historic</small>
                     </figure>
                     <div class="wrapper">
-                        <h3><a href="/tour-detail">Arc Triomphe</a></h3>
-                        <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti
-                            cu.</p>
+                        <h3><a href="#">Kilimanjaro hiking</a></h3>
+                        <p>Get a chance to visit and witness the beauty of kilimajaro in Tanzania!</p>
                         <span class="price">From <strong>$54</strong> /per person</span>
                     </div>
                     <ul>
-                        <li><i class="icon_clock_alt"></i> 1h 30min</li>
+                        <li><i class="icon_clock_alt"></i> 4 days</li>
                         <li>
                             <div class="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong>
                             </div>

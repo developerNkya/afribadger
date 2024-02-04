@@ -4,7 +4,7 @@
     <div class="container margin_60_35">
         <div class="row">
             <div class="col-lg-5 col-md-12 pe-5">
-                <p><img src="images/img1/logo.svg" width="150" height="36" alt=""></p>
+                <p class="logo_normal"></p>
                 <p>Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea. Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu. Nihil facilisi indoctum an vix, ut delectus expetendis vis.</p>
                 <div class="follow_us">
                     <ul>

@@ -17,7 +17,7 @@
 
                 
                 <li>
-                    <a href="index.html" class="waves-effect">
+                    <a href="#" class="waves-effect">
                         <i class="fas fa-suitcase-rolling"></i>
                         <span>All Tours</span>
                     </a>
@@ -25,7 +25,7 @@
 
                 
                 <li>
-                    <a href="index.html" class="waves-effect">
+                    <a href="#" class="waves-effect">
                         <i class="fas fa-info-circle"></i>
                         <span>Tour Details</span>
                     </a>
@@ -33,7 +33,7 @@
 
                 
                 {{-- <li>
-                    <a href="index.html" class="waves-effect">
+                    <a href="#" class="waves-effect">
                         <i class="ri-dashboard-line"></i>
                         <span>Home Page</span>
                     </a>

@@ -41,7 +41,7 @@
                         <div class="col-md-4">
                             <a href="#0" class="boxed_list">
                                 <i class="pe-7s-note2"></i>
-                                <h4>Cancel Policy</h4>
+                                <h4>Our Policy</h4>
                                 <p>Hinc vituperata sed ut, pro laudem nonumes ex.</p>
                             </a>
                         </div>
