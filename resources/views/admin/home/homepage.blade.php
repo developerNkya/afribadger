@@ -43,12 +43,13 @@
                                     <div class="homepage-cat1 card-img-top img-fluid " ></div>
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title"><b>Modify Homepage Text</b></h4>
-                                        <p class="card-text">Easily edit the Intro text at the introduction of the website.Make sure that the text is catchy and can be understood by visitors</p>
+
+                                        <h4 class="card-title"><b>{{$data['title']}}</b></h4>
+                                        <p class="card-text">{{$data['text']}}</p>
                                          
                                         <p class="card-text">
                                             {{-- <small class="text-muted">Last updated 3 mins ago</small> --}}
-                                            <a href="/edit-intro-text" class="btn btn-primary waves-effect waves-light">Proceed</a>
+                                            <a href="{{$data['url']}}" class="btn btn-primary waves-effect waves-light">Proceed</a>
                                         </p>
                                     </div>
                                 </div>

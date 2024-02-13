@@ -29,7 +29,12 @@ Route::post('/login', [AdminController::class, 'Login']);
 //these routes can only be accessed when user is logged in as admin::
 Route::middleware(['isAdmin'])->group(function () {
     Route::get('/admin-home', [AdminController::class, 'AdminHomePage'])->name('admin-home');
+    Route::get('/admin-add-tour', [AdminController::class, 'AdminTourPage'])->name('admin-add-tour');
     Route::get('/edit-intro-text', [AdminController::class, 'EditIntroText'])->name('edit-intro-text');
+
+    Route::get('/new-tour', [AdminController::class, 'newTour'])->name('new-tour');
+    Route::post('/save_tour', [AdminController::class, 'saveTour'])->name('save_tour');
+
     Route::post('/update-intro-text', [AdminController::class, 'UpdateIntroText'])->name('Update-intro-text');
 });
 

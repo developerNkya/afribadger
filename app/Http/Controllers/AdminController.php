@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Detail;
+use App\Models\Tour;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -65,9 +66,79 @@ class AdminController extends Controller
 
         // check active_user session::
         $active_user = Session::get('active_user');
-        return view('admin.home.homepage');
+        $title = 'Modify Homepage Text';
+        
+
+        $data =[
+            "title" => 'Modify Homepage Text',
+            "text" => 'Easily edit the Intro text at the introduction of the website.Make sure that the text is catchy and can be understood by visitors',
+             "url" => '/edit-intro-text',
+        ];
+
+        return view('admin.home.homepage', ['data' => $data]);
          
     }
+
+
+    Public function  AdminTourPage(){
+
+        // check active_user session::
+        // $active_user = Session::get('active_user');
+
+        $data =[
+            "title" => 'Easily Add New Tours',
+            "text" => 'you can now add new tours and trips through this section, click proceed to continue',
+             "url" => '/new-tour',
+        ];
+
+        return view('admin.home.homepage', ['data' => $data]);
+         
+    }
+
+    Public function  newTour(){
+
+        return view('admin.Tours.newTrip');
+         
+    }
+
+    public function saveTour(Request $request){
+
+        // Validate the form data
+        $validatedData = $request->validate([
+            'tour_name' => 'required|string|max:255',
+            'description' => 'required|string',
+            'subtitle' => 'nullable|string|max:255',
+            'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // assuming images are uploaded
+        ]);
+    
+        // Get the input values
+        $tourName = $request->input('tour_name');
+        $description = $request->input('description');
+        $subtitle = $request->input('subtitle');
+    
+        // Process and store the images
+        $imagePaths = [];
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $image) {
+                $imagePath = $image->store('public/images');
+                $imagePaths[] = $imagePath;
+            }
+        }
+    
+        // Save the tour details and image paths to the database
+        $tour = new Tour();
+        $tour->name = $tourName;
+        $tour->description = nl2br($description); // Convert newlines to <br> tags to maintain paragraphs
+        $tour->subtitle = $subtitle;
+        $tour->image_paths = json_encode($imagePaths); // Save image paths as JSON array
+        $tour->save();
+    
+        // Return the view or redirect
+        // return view('admin.Tours.newTrip')->with('message', 'Tour saved successfully.');
+        return redirect()->back()->with('message', 'Tour saved successfully.');
+
+    }
+    
 
     Public function EditIntroText(){
 
