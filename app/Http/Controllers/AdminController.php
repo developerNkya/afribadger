@@ -69,13 +69,15 @@ class AdminController extends Controller
         $title = 'Modify Homepage Text';
         
 
-        $data =[
+        $datas =[
+            [
             "title" => 'Modify Homepage Text',
             "text" => 'Easily edit the Intro text at the introduction of the website.Make sure that the text is catchy and can be understood by visitors',
              "url" => '/edit-intro-text',
+            ]
         ];
 
-        return view('admin.home.homepage', ['data' => $data]);
+        return view('admin.home.homepage', ['datas' => $datas]);
          
     }
 
@@ -85,13 +87,30 @@ class AdminController extends Controller
         // check active_user session::
         // $active_user = Session::get('active_user');
 
-        $data =[
-            "title" => 'Easily Add New Tours',
-            "text" => 'you can now add new tours and trips through this section, click proceed to continue',
-             "url" => '/new-tour',
+        $datas = [
+            [
+                "title" => 'Easily Add New Tours',
+                "text" => 'you can now add new tours and trips through this section, click proceed to continue',
+                "url" => '/new-tour',
+            ],
+            [
+                "title" => 'View Tours',
+                "text" => 'you can now view all tours and trips through this section, click proceed to continue',
+                "url" => '/view_all_tours',
+            ],
+            // Add more data objects as needed
         ];
+        
 
-        return view('admin.home.homepage', ['data' => $data]);
+        return view('admin.home.homepage', ['datas' => $datas]);
+         
+    }
+
+   
+
+    Public function viewTours(){
+
+        return view('admin.Tours.view_tours');
          
     }
 
@@ -116,6 +135,9 @@ class AdminController extends Controller
         $description = $request->input('description');
         $subtitle = $request->input('subtitle');
     
+        //query the db to check if similar tour exist 
+        //if yes return Tour already exists!
+        //Tour saved successfully.
         // Process and store the images
         $imagePaths = [];
         if ($request->hasFile('images')) {
