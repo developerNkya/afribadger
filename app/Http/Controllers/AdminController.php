@@ -110,7 +110,24 @@ class AdminController extends Controller
 
     Public function viewTours(){
 
-        return view('admin.Tours.view_tours');
+           // Fetch total number of tours
+           $totalTours = Tour::count();
+
+           // Fetch all rows from the tours table
+           $tours = Tour::all();
+
+          
+       // Decode image paths for each tour
+       foreach ($tours as $tour) {
+        $tour->image_paths = json_decode($tour->image_paths, true);
+    }
+
+    // return $tours;
+    // Pass the data to the view
+    return view('admin.Tours.view_tours', [
+        'totalTours' => $totalTours,
+        'tours' => $tours,
+    ]);
          
     }
 

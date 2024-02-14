@@ -17,7 +17,7 @@
 
                 
                 <li>
-                    <a href="#" class="waves-effect">
+                    <a href="/admin-add-tour" class="waves-effect">
                         <i class="fas fa-suitcase-rolling"></i>
                         <span>All Tours</span>
                     </a>

@@ -27,6 +27,8 @@
 
                                 </div>
                             </div>
+
+                            
                         </div>
                         <!-- end page title -->
                         </div>
@@ -40,7 +42,6 @@
                                 </div>
                             </div>
                         </div> --}}
-
                         <div class="row">
                             <div class="col-xl-12">
                                 @if(session()->has('message'))
@@ -49,6 +50,8 @@
                                 </div>
                                @endif
                                 <div class="card">
+                                   
+
                                     <div class="card-body">
                                         <p class="card-title-desc">Fill in the information below to add a new Tour</p>
                                         <form class="needs-validation" method="post" action="{{url('/save_tour')}}" enctype="multipart/form-data">
