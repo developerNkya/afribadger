@@ -133,7 +133,7 @@ class AdminController extends Controller
 
     Public function  newTour(){
 
-        return view('admin.Tours.newTrip');
+        return view('admin.Tours.newtrip');
          
     }
 
