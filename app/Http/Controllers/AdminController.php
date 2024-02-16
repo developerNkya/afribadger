@@ -144,7 +144,7 @@ class AdminController extends Controller
             'tour_name' => 'required|string|max:255',
             'description' => 'required|string',
             'subtitle' => 'nullable|string|max:255',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // assuming images are uploaded
+            'images.*' => 'image|mimes:jpeg,png,jpg,gif', // assuming images are uploaded
         ]);
     
         // Get the input values
