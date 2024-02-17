@@ -34,6 +34,9 @@ Route::middleware(['isAdmin'])->group(function () {
 
     Route::get('/new-tour', [AdminController::class, 'newTour'])->name('new-tour');
     Route::get('/view_all_tours', [AdminController::class, 'viewTours'])->name('view-all_tours');
+
+    Route::get('/admin-tour-detail/{id}', [AdminController::class, 'singleTour'])->name('single-tour');
+
     Route::post('/save_tour', [AdminController::class, 'saveTour'])->name('save_tour');
 
     Route::post('/update-intro-text', [AdminController::class, 'UpdateIntroText'])->name('Update-intro-text');

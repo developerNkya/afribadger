@@ -11,30 +11,30 @@
     <title>Camel Leon | Tour site</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="images/img1/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="images/img1/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="images/img1/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="images/img1/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="images/img1/apple-touch-icon-144x144-precomposed.png">
+    <link rel="shortcut icon" href="/images/img1/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="/images/img1/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="/images/img1/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="/images/img1/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="/images/img1/apple-touch-icon-144x144-precomposed.png">
 
     <!-- GOOGLE WEB FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href="css/css1/bootstrap.min.css" rel="stylesheet">
-    <link href="css/css1/style.css" rel="stylesheet">
-	<link href="css/css1/vendors.css" rel="stylesheet">
+    <link href="/css/css1/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/css1/style.css" rel="stylesheet">
+	<link href="/css/css1/vendors.css" rel="stylesheet">
 
 	<!-- REVOLUTION SLIDER CSS -->
-	<link rel="stylesheet" type="text/css" href="css/revolution-slider/fonts/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/revolution-slider/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="css/revolution-slider/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="css/revolution-slider/css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="/css/revolution-slider/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="/css/revolution-slider/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="/css/revolution-slider/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="/css/revolution-slider/css/navigation.css">
 
     <!-- YOUR CUSTOM CSS -->
-    {{-- <link href="css/css1/custom.css" rel="stylesheet"> --}}
-    <link href="css/custom.css" rel="stylesheet">
+    {{-- <link href="/css/css1/custom.css" rel="stylesheet"> --}}
+    <link href="/css/custom.css" rel="stylesheet">
 
     <!-- ALTERNATIVE COLORS CSS -->
     <link href="#" id="colors" rel="stylesheet">

@@ -14,24 +14,24 @@
         <link rel="shortcut icon" href="images/images2/favicon.ico">
 
         <!-- jquery.vectormap css -->
-        <link href="js/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <link href="/js/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
 
         <!-- DataTables -->
-        <link href="js/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="/js/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Responsive datatable examples -->
-        <link href="js/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />  
+        <link href="/js/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />  
 
         <!-- Bootstrap Css -->
         {{-- <link href="css/css2/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" /> --}}
         <!-- Icons Css -->
-        <link href="css/css2/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/css/css2/icons.min.css" rel="stylesheet" type="text/css" />
         <!-- App Css-->
         {{-- <link href="css/css2/app.min.css" id="app-style" rel="stylesheet" type="text/css" /> --}}
         
-        <link href="css/custom.css" rel="stylesheet">
-        <link href="css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-        <link href="css/bootstrap.min.admin.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="/css/custom.css" rel="stylesheet">
+        <link href="/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <link href="/css/bootstrap.min.admin.css" id="app-style" rel="stylesheet" type="text/css" />
         
     </head>
 

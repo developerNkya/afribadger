@@ -157,10 +157,29 @@
 
 }
 
+
 /* homepage-body */
 .homepage-cat1{
   background-image: url('./img/img-5.jpg');
+}
 
 
+/* view icon */
+/* .view-icon{
+  background-image: url('./img/eye.png');
+} */
+
+.icon-img{
+  background: url('./img/eye.png');
+  height: 20px;
+  width: 20px;
+  display: block;
+  /* Other styles here */
+}
+
+/* view tour page */
+.image123{
+  background-image: url('./img/authentication-bg.jpg');
+  background-size: cover;
 
 }

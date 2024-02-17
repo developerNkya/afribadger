@@ -16,19 +16,24 @@
                 <div class="col-12">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                         <h4 class="mb-sm-0">ADD TOUR</h4>
-
+            
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
                                 <li class="breadcrumb-item active">Add Tours</li>
                             </ol>
+                            <!-- Add an icon here -->
+                            {{-- <i class="fa fa-eye" aria-hidden="true" style="font-size: 24px;"></i> --}}
+                    
                         </div>
-
                     </div>
+                    <a href="/view_all_tours">
+                        <img src="https://i.ibb.co/Km6d7Zn/eye-removebg-preview.png" alt="eye-removebg-preview" style="height:50px; float:right; padding-bottom:10px">
+                    </a>
+                    
                 </div>
-
-
             </div>
+            
             <!-- end page title -->
         </div>
         <!-- end row -->

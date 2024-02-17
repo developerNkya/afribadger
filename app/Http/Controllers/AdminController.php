@@ -17,6 +17,19 @@ class AdminController extends Controller
         return view('admin.SignIn');
     }
 
+    public function singleTour(Request $request, $id){
+        // Pull data of the particular tour based on the $id parameter
+        
+        $tours = Tour::where('id',$id)->get();
+       
+        //decoding the imagepaths::
+        foreach ($tours as $tour) {
+            $tour->image_paths = json_decode($tour->image_paths, true);
+        }
+
+
+        return view('admin.Tours.single_tour', ['tours' => $tours]);
+    }
     
     Public function Login(Request $request){
         // getting values::
