@@ -1,6 +1,9 @@
 @include('admin.partials.header')
 <!-- ========== Left Sidebar Start ========== -->
 @include('admin.partials.sidebar')
+
+
+
 <div class="main-content">
 
     <div class="page-content">
@@ -30,37 +33,41 @@
                         <div class="card-body">
                             <div class="row">
                                 @foreach ($tours as $tour)
-                                    <div class="col-xl-5">
-                                        <div id="carouselExampleControls{{$tour->id}}" class="carousel slide" data-bs-ride="carousel">
-                                           
-                                            <div class="carousel-inner" role="listbox">
-                                                @foreach($tour->image_paths as $index => $imagePath)
-                                                <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
-                                                    <img class="d-block img-fluid" src="{{ asset('storage/images/' . basename($imagePath)) }}" alt="Slide {{ $index + 1 }}">
+                                <div class="col-xl-5" onclick="move_to_tour('{{$tour->id}}')">
+                                    <a  class="card-link">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div id="carouselExampleControls{{$tour->id}}" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner" role="listbox">
+                                                        @foreach($tour->image_paths as $index => $imagePath)
+                                                        <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
+                                                            <img class="d-block img-fluid" src="{{ asset('storage/images/' . basename($imagePath)) }}" alt="Slide {{ $index + 1 }}">
+                                                        </div>
+                                                        @endforeach
+                                                    </div>
+                                                    <!-- Previous control -->
+                                                    <a class="carousel-control-prev {{ count($tour->image_paths) <= 1 ? 'd-none' : '' }}" href="#carouselExampleControls{{$tour->id}}" role="button" data-bs-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Previous</span>
+                                                    </a>
+                                                    <!-- Next control -->
+                                                    <a class="carousel-control-next {{ count($tour->image_paths) <= 1 ? 'd-none' : '' }}" href="#carouselExampleControls{{$tour->id}}" role="button" data-bs-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="visually-hidden">Next</span>
+                                                    </a>
                                                 </div>
-                                                @endforeach
-                                              
                                             </div>
-                                            <!-- Previous control -->
-                                            <a class="carousel-control-prev {{ count($tour->image_paths) <= 1 ? 'd-none' : '' }}" href="#carouselExampleControls{{$tour->id}}" role="button" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </a>
-                                            <!-- Next control -->
-                                            <a class="carousel-control-next {{ count($tour->image_paths) <= 1 ? 'd-none' : '' }}" href="#carouselExampleControls{{$tour->id}}" role="button" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </a>
-                                           
                                         </div>
-                                    </div>
-                                    @endforeach
-
-
+                                    </a>
+                                </div>
+                                @endforeach
+                            </div>
+                            <div class="row">
+                                @foreach ($tours as $tour)
                                 <div class="col-xl-7">
                                     <div class="mt-4 mt-xl-3">
-                                        <a href="#" class="text-primary">T-shirt</a>
-                                        <h5 class="mt-1 mb-3">Full sleeve Blue color t-shirt</h5>
+                                        <a href="#" class="text-primary">{{$tour->name}}</a>
+                                        <h5 class="mt-1 mb-3">{{$tour->subtitle}}</h5>
 
                                         <div class="d-inline-flex">
                                             <div class="text-muted me-3">
@@ -73,129 +80,16 @@
                                             <div class="text-muted">( 132 )</div>
                                         </div>
 
-                                        <h5 class="mt-2"><del class="text-muted me-2">$252</del>$240 <span
-                                                class="text-danger font-size-12 ms-2">25 % Off</span></h5>
-                                        <p class="mt-3">To achieve this, it would be necessary to have uniform
-                                            pronunciation</p>
+                                        <h5 class="mt-2">$240 </h5>
                                         <hr class="my-4">
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div>
-                                                    <h5 class="font-size-14"><i class="mdi mdi-location"></i> Delivery
-                                                        location</h5>
-                                                    <div class="d-flex flex-wrap">
-
-                                                        <div class="input-group mb-3 w-auto">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Enter Delivery pincode">
-                                                            <button class="btn btn-light" type="button">Check</button>
-                                                        </div>
-                                                    </div>
-
-                                                    <h5 class="font-size-14">Specification :</h5>
-                                                    <ul class="list-unstyled product-desc-list">
-                                                        <li><i class="mdi mdi-circle-medium me-1 align-middle"></i> Full
-                                                            Sleeve</li>
-                                                        <li><i class="mdi mdi-circle-medium me-1 align-middle"></i>
-                                                            Cotton</li>
-                                                        <li><i class="mdi mdi-circle-medium me-1 align-middle"></i> All
-                                                            Sizes available</li>
-                                                        <li><i class="mdi mdi-circle-medium me-1 align-middle"></i> 4
-                                                            Different Color</li>
-                                                    </ul>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <h5 class="font-size-14">Services :</h5>
-                                                <ul class="list-unstyled product-desc-list">
-                                                    <li><i
-                                                            class="mdi mdi-sync text-primary me-1 align-middle font-size-16"></i>
-                                                        10 Days Replacement</li>
-                                                    <li><i
-                                                            class="mdi mdi-currency-usd-circle text-primary me-1 align-middle font-size-16"></i>
-                                                        Cash on Delivery available</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="product-color mt-3">
-                                                    <h5 class="font-size-14">Color :</h5>
-                                                    <a href="#" class="active">
-                                                        <div class="product-color-item">
-                                                            <img src="images/image2/product/img-1.png" alt="img-1"
-                                                                class="avatar-md">
-                                                        </div>
-                                                        <p>Blue</p>
-                                                    </a>
-                                                    <a href="#">
-                                                        <div class="product-color-item">
-                                                            <img src="images/image2/product/img-5.png" alt="img-5"
-                                                                class="avatar-md">
-                                                        </div>
-                                                        <p>Cyan</p>
-                                                    </a>
-                                                    <a href="#">
-                                                        <div class="product-color-item">
-                                                            <img src="images/image2/product/img-3.png" alt="img-3"
-                                                                class="avatar-md">
-                                                        </div>
-                                                        <p>Green</p>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <div class="product-color mt-3">
-                                                    <h5 class="font-size-14">Size :</h5>
-                                                    <a href="#" class="active">
-                                                        <div class="product-color-item">
-                                                            <div class="avatar-xs">
-                                                                <span
-                                                                    class="avatar-title bg-transparent text-body">S</span>
-                                                            </div>
-                                                        </div>
-
-                                                    </a>
-                                                    <a href="#">
-                                                        <div class="product-color-item">
-                                                            <div class="avatar-xs">
-                                                                <span
-                                                                    class="avatar-title bg-transparent text-body">M</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="#">
-                                                        <div class="product-color-item">
-                                                            <div class="avatar-xs">
-                                                                <span
-                                                                    class="avatar-title bg-transparent text-body">L</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                    <a href="#">
-                                                        <div class="product-color-item">
-                                                            <div class="avatar-xs">
-                                                                <span
-                                                                    class="avatar-title bg-transparent text-body">XL</span>
-                                                            </div>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                             <!-- end row -->
 
                             <div class="mt-4">
-                                <h5 class="font-size-14 mb-3">Product description: </h5>
+                                <h5 class="font-size-14 mb-3">Tour description: </h5>
                                 <div class="product-desc">
                                     <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
                                         <li class="nav-item">
@@ -204,7 +98,7 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link active" id="specifi-tab" data-bs-toggle="tab"
-                                                href="#specifi" role="tab">Specifications</a>
+                                                href="#specifi" role="tab">Summary</a>
                                         </li>
                                     </ul>
                                     <div class="tab-content border border-top-0 p-4">
@@ -235,24 +129,20 @@
                                                 <table class="table table-nowrap mb-0">
                                                     <tbody>
                                                         <tr>
-                                                            <th scope="row" style="width: 400px;">Category</th>
+                                                            <th scope="row" style="width: 400px;">No. Bookings</th>
                                                             <td>T-Shirt</td>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="row">Brand</th>
+                                                            <th scope="row">Ratings</th>
                                                             <td>Jack & Jones</td>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="row">Color</th>
+                                                            <th scope="row">Price</th>
                                                             <td>Blue</td>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="row">Material</th>
+                                                            <th scope="row">Images</th>
                                                             <td>Cotton</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Weight</th>
-                                                            <td>140 Gm</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -295,46 +185,9 @@
                                         </div>
                                         <p class="float-sm-end font-size-12">11 Feb, 2020</p>
                                     </div>
-                                    <div class="d-flex border-bottom py-3">
-                                        <div class="flex-1">
-                                            <p class="text-muted mb-2">Everyone realizes why a new common language
-                                                would be desirable</p>
-                                            <h5 class="font-size-15 mb-3">David</h5>
+                                    
 
-                                            <ul class="list-inline product-review-link mb-0">
-                                                <li class="list-inline-item">
-                                                    <a href="#"><i
-                                                            class="mdi mdi-thumb-up align-middle me-1"></i> Like</a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="#"><i
-                                                            class="mdi mdi-message-text align-middle me-1"></i>
-                                                        Comment</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p class="float-sm-end font-size-12">22 Jan, 2020</p>
-                                    </div>
-                                    <div class="d-flex py-3">
-                                        <div class="flex-1">
-                                            <p class="text-muted mb-2">If several languages coalesce, the grammar of
-                                                the resulting </p>
-                                            <h5 class="font-size-15 mb-3">Scott</h5>
 
-                                            <ul class="list-inline product-review-link mb-0">
-                                                <li class="list-inline-item">
-                                                    <a href="#"><i
-                                                            class="mdi mdi-thumb-up align-middle me-1"></i> Like</a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a href="#"><i
-                                                            class="mdi mdi-message-text align-middle me-1"></i>
-                                                        Comment</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p class="float-sm-end font-size-12">04 Jan, 2020</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -344,59 +197,6 @@
             </div>
             <!-- end row -->
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="d-flex">
-                                        <div class="avatar-sm me-3">
-                                            <span
-                                                class="avatar-title bg-light rounded-circle text-primary font-size-24">
-                                                <i class="ri-checkbox-circle-line"></i>
-                                            </span>
-                                        </div>
-                                        <div class="flex-1 align-self-center overflow-hidden">
-                                            <h5>Free Shipping</h5>
-                                            <p class="text-muted mb-0">Sed ut perspiciatis unde</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="d-flex mt-4 mt-md-0">
-                                        <div class="avatar-sm me-3">
-                                            <span
-                                                class="avatar-title bg-light rounded-circle text-primary font-size-24">
-                                                <i class="ri-exchange-line"></i>
-                                            </span>
-                                        </div>
-                                        <div class="flex-1 align-self-center overflow-hidden">
-                                            <h5>Easy Return</h5>
-                                            <p class="text-muted mb-0">Neque porro quisquam est</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="d-flex mt-4 mt-md-0">
-                                        <div class="avatar-sm me-3">
-                                            <span
-                                                class="avatar-title bg-light rounded-circle text-primary font-size-24">
-                                                <i class="ri-money-dollar-circle-line"></i>
-                                            </span>
-                                        </div>
-                                        <div class="flex-1 align-self-center overflow-hidden">
-                                            <h5>Cash on Delivery</h5>
-                                            <p class="text-muted mb-0">Ut enim ad minima quis</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end row -->
 
         </div> <!-- container-fluid -->
     </div>

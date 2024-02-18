@@ -111,14 +111,14 @@
                                             @csrf
                                             <div class="row">
                                                 <div class="mb-3">
-                                                    <label>Textarea</label>
+                                                    <label>Description</label>
                                                     <div>
                                                         <textarea required class="form-control" rows="5" cols="30" name="info"></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <div class="mb-6">
-                                                        <label for="validationCustom03" class="form-label">State</label>
+                                                        <label for="validationCustom03" class="form-label">Option</label>
                                                         <select class="form-select" id="validationCustom03" name="option" required>
                                                             <option selected value="Home-Header" name="Home-Header">Header</option>
                                                             <option value="Home-Subtitle" name="Home-Subtitle">Subtitle</option>
