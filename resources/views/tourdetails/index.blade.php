@@ -7,9 +7,9 @@
 					<h1 class="fadeInUp"><span></span>Tour detail page</h1>
 				</div>
 				<span class="magnific-gallery">
-					<a href="images/img1/gallery/tour_list_1.jpg" class="btn_photos" title="Photo title" data-effect="mfp-zoom-in">View photos</a>
-					<a href="images/img1/gallery/tour_list_2.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
-					<a href="images/img1/gallery/tour_list_3.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
+					<a href="/images/img1/gallery/tour_list_1.jpg" class="btn_photos" title="Photo title" data-effect="mfp-zoom-in">View photos</a>
+					<a href="/images/img1/gallery/tour_list_2.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
+					<a href="/images/img1/gallery/tour_list_3.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
 				</span>
 			</div>
 		</section>
@@ -35,11 +35,11 @@
 
 							<h3>Pictures from our users</h3>
 							<div class="pictures_grid magnific-gallery clearfix">
-							    <figure><a href="images/img1/detail_gallery/detail_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="images/img1/detail_gallery/detail_1.jpg" alt=""></a></figure>
-							    <figure><a href="images/img1/detail_gallery/detail_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="images/img1/detail_gallery/detail_2.jpg" alt=""></a></figure>
-							    <figure><a href="images/img1/detail_gallery/detail_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="images/img1/detail_gallery/detail_3.jpg" alt=""></a></figure>
-							    <figure><a href="images/img1/detail_gallery/detail_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="images/img1/detail_gallery/detail_4.jpg" alt=""></a></figure>
-							    <figure><a href="images/img1/detail_gallery/detail_5.jpg" title="Photo title" data-effect="mfp-zoom-in"><span class="d-flex align-items-center justify-content-center">+10</span><img src="images/img1/detail_gallery/detail_5.jpg" alt=""></a></figure>
+							    <figure><a href="/images/img1/detail_gallery/detail_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="images/img1/detail_gallery/detail_1.jpg" alt=""></a></figure>
+							    <figure><a href="/images/img1/detail_gallery/detail_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="images/img1/detail_gallery/detail_2.jpg" alt=""></a></figure>
+							    <figure><a href="/images/img1/detail_gallery/detail_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="images/img1/detail_gallery/detail_3.jpg" alt=""></a></figure>
+							    <figure><a href="/images/img1/detail_gallery/detail_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="images/img1/detail_gallery/detail_4.jpg" alt=""></a></figure>
+							    <figure><a href="/images/img1/detail_gallery/detail_5.jpg" title="Photo title" data-effect="mfp-zoom-in"><span class="d-flex align-items-center justify-content-center">+10</span><img src="images/img1/detail_gallery/detail_5.jpg" alt=""></a></figure>
 							</div>
 							<!-- /pictures -->
 							
