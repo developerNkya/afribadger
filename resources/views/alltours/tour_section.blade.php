@@ -48,7 +48,7 @@
                         <small>TOUR</small>
                     </figure>
                     <div class="wrapper">
-                        <h3><a href="/tour-detail">{{$tour->name}}</a></h3>
+                        <h3><a href="/tour-detail/{{$tour->id}}">{{$tour->name}}</a></h3>
                         <p>{{$tour->subtitle}}</p>
                         <span class="price">From <strong>$54</strong> /per person</span>
                     </div>
