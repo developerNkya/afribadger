@@ -38,68 +38,53 @@
 							
 							<hr>
 
-							<h3>Program <small>(60 minutes)</small></h3>
+							<h3>Points></h3>
 							<p>
-								Iudico omnesque vis at, ius an laboramus adversarium. An eirmod doctus admodum est, vero numquam et mel, an duo modo error. No affert timeam mea, legimus ceteros his in. Aperiri honestatis sit at. Eos aeque fuisset ei, case denique eam ne. Augue invidunt has ad, ullum debitis mea ei, ne aliquip dignissim nec.
+								Below are some of the various exciting places that we will visit during this tour! Get ready to embark on an adventure filled with unforgettable moments and lifelong memories!
 							</p>
 							<ul class="cbp_tmtimeline">
-								<li>
-									<time class="cbp_tmtime" datetime="09:30"><span>30 min.</span><span>09:30</span>
-									</time>
-									<div class="cbp_tmicon">
-										1
-									</div>
-									<div class="cbp_tmlabel">
-										<div class="hidden-xs">
-											<img src="images/img1/tour_plan_1.jpg" alt="" class="rounded-circle thumb_visit">
-										</div>
-										<h4>Interior of the cathedral</h4>
-										<p>
-											Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.
-										</p>
-									</div>
-								</li>
-								<li>
-									<time class="cbp_tmtime" datetime="09:30"><span>30 min.</span><span>09:30</span>
-									</time>
-									<div class="cbp_tmicon">
-										1
-									</div>
-									<div class="cbp_tmlabel">
-										<div class="hidden-xs">
-											<img src="images/img1/tour_plan_1.jpg" alt="" class="rounded-circle thumb_visit">
-										</div>
-										<h4>Interior of the cathedral</h4>
-										<p>
-											Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.
-										</p>
-									</div>
-								</li>
-								<li>
-									<time class="cbp_tmtime" datetime="09:30"><span>30 min.</span><span>09:30</span>
-									</time>
-									<div class="cbp_tmicon">
-										1
-									</div>
-									<div class="cbp_tmlabel">
-										<div class="hidden-xs">
-											<img src="images/img1/tour_plan_1.jpg" alt="" class="rounded-circle thumb_visit">
-										</div>
-										<h4>Interior of the cathedral</h4>
-										<p>
-											Vero consequat cotidieque ad eam. Ea duis errem qui, impedit blandit sed eu. Ius diam vivendo ne.
-										</p>
-									</div>
-								</li>
-
+								@foreach ($tours as $tour)
+									@php
+										$packages = json_decode($tour->packages);
+										$packageIndex = 1; // Initialize package index
+									@endphp
+									@foreach ($packages as $package)
+										@foreach ($package as $point => $description)
+											<li>
+												<time class="cbp_tmtime" datetime="09:30"><span>30 min.</span><span>09:30</span></time>
+												<div class="cbp_tmicon">
+													{{ $packageIndex }}
+												</div>
+												<div class="cbp_tmlabel">
+													<div class="hidden-xs">
+														<img src="images/img1/tour_plan_{{ $packageIndex }}.jpg" alt="" class="rounded-circle thumb_visit">
+													</div>
+													<ul>
+														<li>
+															<h4>{{ $point }}</h4>
+															<p>{{ $description }}</p>
+														</li>
+													</ul>
+												</div>
+											</li>
+											@php
+												$packageIndex++; // Increment package index for the next point
+											@endphp
+										@endforeach
+									@endforeach
+								@endforeach
 							</ul>
+							
+							
 							<hr>
 
 
 							
 							<hr>
 							<h3>Location</h3>
-							<div id="map" class="map map_single add_bottom_30"></div>
+							<div id="map" class="map map_single add_bottom_30">
+								<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20arusha+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.easybooking.eu/'>Hotelsoftware Kleinbetriebe</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=ecf99973f46647f22b33e36df6e9746643bb7030'></script>
+							</div>
 							<!-- End Map -->
 						</section>
 						<!-- /section -->

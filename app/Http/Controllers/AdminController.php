@@ -155,6 +155,7 @@ class AdminController extends Controller
         // Validate the form data
         $validatedData = $request->validate([
             'tour_name' => 'required|string|max:255',
+            'price' =>'required',
             'description' => 'required|string',
             'subtitle' => 'nullable|string|max:255',
             'images.*' => 'image|mimes:jpeg,png,jpg,gif', // assuming images are uploaded
@@ -164,7 +165,25 @@ class AdminController extends Controller
         $tourName = $request->input('tour_name');
         $description = $request->input('description');
         $subtitle = $request->input('subtitle');
+        $price = $request->input('price');
+
+        $points = $request->input('categories');
+        $descriptions = $request->input('category_descriptions');
+
+
+        //adding points to a single array::
+        $pointsWithDescriptions = [];
+
+        // Assuming both arrays have the same length
+        foreach ($points as $key => $point) {
+            // Only add to the array if both point and description are present
+            if (!empty($point) && !empty($descriptions[$key])) {
+                $pointsWithDescriptions[$point] = $descriptions[$key];
+            }
+        }
     
+        $pointsWithDescriptions = [$pointsWithDescriptions];
+        
         //query the db to check if similar tour exist 
         //if yes return Tour already exists!
         //Tour saved successfully.
@@ -182,6 +201,8 @@ class AdminController extends Controller
         $tour->name = $tourName;
         $tour->description = nl2br($description); // Convert newlines to <br> tags to maintain paragraphs
         $tour->subtitle = $subtitle;
+        $tour->price = $price;
+        $tour->packages = json_encode($pointsWithDescriptions);
         $tour->image_paths = json_encode($imagePaths); // Save image paths as JSON array
         $tour->save();
     

@@ -16,7 +16,7 @@
                 <div class="col-12">
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                         <h4 class="mb-sm-0">ADD TOUR</h4>
-            
+
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
@@ -24,16 +24,17 @@
                             </ol>
                             <!-- Add an icon here -->
                             {{-- <i class="fa fa-eye" aria-hidden="true" style="font-size: 24px;"></i> --}}
-                    
+
                         </div>
                     </div>
                     <a href="/view_all_tours">
-                        <img src="https://i.ibb.co/Km6d7Zn/eye-removebg-preview.png" alt="eye-removebg-preview" style="height:50px; float:right; padding-bottom:10px">
+                        <img src="https://i.ibb.co/Km6d7Zn/eye-removebg-preview.png" alt="eye-removebg-preview"
+                            style="height:50px; float:right; padding-bottom:10px">
                     </a>
-                    
+
                 </div>
             </div>
-            
+
             <!-- end page title -->
         </div>
         <!-- end row -->
@@ -94,17 +95,66 @@
                                     <input type="text" class="form-control" id="subtitle" name="subtitle">
                                 </div>
                                 <div class="col-md-6 mb-3">
+                                    <label for="subtitle" class="form-label">Price</label>
+                                    <input type="text" class="form-control" id="price" name="price">
+                                </div>
+                                <div class="col-md-6 mb-3">
                                     <label for="images" class="form-label">Images</label>
                                     <input type="file" class="form-control" id="images" name="images[]" multiple>
                                 </div>
+
+                                <!-- Category section -->
+                                <p class="card-title-desc" style="padding-top: 3%">Fill in the points that will be
+                                    visited within the tour (optional)</p>
+                                <div class="col-md-6 mb-3">
+                                    <label for="category" class="form-label">Point</label>
+                                    <div id="categoryContainer">
+                                        <div class="category-item mb-3">
+                                            <input type="text" class="form-control" name="categories[]"
+                                                placeholder="Point"><br>
+                                            <textarea class="form-control" rows="2" name="category_descriptions[]" placeholder="Description"
+                                                style="padding-top: 3%"></textarea>
+                                            <button type="button"
+                                                class="btn btn-secondary mt-2 remove-category">Remove</button>
+                                        </div>
+                                        <button type="button" class="btn btn-primary mt-2 add-category">+</button>
+                                    </div>
+                                </div>
+                                <!-- End Category section -->
+
                             </div>
 
                             <div style="padding-top:2%">
-                                <button class="btn btn-primary" type="submit">Submit form</button>
+                                <button class="btn btn-primary" type="submit">Save</button>
                             </div>
                         </form>
-
                     </div>
+
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const categoryContainer = document.getElementById('categoryContainer');
+
+                            categoryContainer.addEventListener('click', function(e) {
+                                if (e.target.classList.contains('remove-category')) {
+                                    e.target.closest('.category-item').remove();
+                                }
+                            });
+
+                            categoryContainer.addEventListener('click', function(e) {
+                                if (e.target.classList.contains('add-category')) {
+                                    const categoryItem = document.createElement('div');
+                                    categoryItem.classList.add('category-item', 'mb-3');
+                                    categoryItem.innerHTML = `
+                                        <input type="text" class="form-control" name="categories[]" placeholder="Point"><br>
+                                        <textarea class="form-control" rows="2" name="category_descriptions[]" placeholder="Description" style="padding-top: 3%"></textarea>
+                                        <button type="button" class="btn btn-secondary mt-2 remove-category">Remove</button>
+                                    `;
+                                    categoryContainer.insertBefore(categoryItem, e.target);
+                                }
+                            });
+                        });
+                    </script>
+
                 </div>
                 <!-- end card -->
             </div> <!-- end col -->
