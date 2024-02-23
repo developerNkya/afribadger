@@ -1,21 +1,7 @@
-@include('partials.mixedheader')
+@include('admin.partials.header')
 <!-- ========== Left Sidebar Start ========== -->
 @include('admin.partials.sidebar')
 
-@foreach ($tours as $tour)
-<section class="hero_in tours_detail" style="background: url('{{ asset('storage/images/' . basename($tour->image_paths[0])) }}') center center/cover no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
-    <div class="wrapper">
-        <div class="container">
-            <h1 class="fadeInUp"><span></span>{{$tour->name}}</h1>
-        </div>
-        <span class="magnific-gallery">
-            @foreach($tour->image_paths as $index => $imagePath)
-            <a href="{{ asset('storage/images/' . basename($imagePath)) }}" class="btn_photos" title="Photo title" data-effect="mfp-zoom-in">View photos</a>
-            @endforeach
-        </span>         
-    </div>
-</section>
-@endforeach
 
 <div class="main-content">
 
@@ -44,7 +30,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            {{-- <div class="row">
+                            <div class="row">
                                 @foreach ($tours as $tour)
                                 <div class="col-xl-12">
                                     <a  class="card-link">
@@ -74,7 +60,7 @@
                                     </a>
                                 </div>
                                 @endforeach
-                            </div> --}}
+                            </div>
 
 
                             <div class="row">
