@@ -28,5 +28,5 @@ Route::get('/', [HomeController::class, 'Index'])->name('user.homepage');
 
 Route::get('/tour-page', [TourController::class, 'Index']);
 Route::get('/all-tours', [TourController::class, 'AllTours']);
-Route::get('/tour-detail', [TourController::class, 'TourDetail']);
-
+Route::get('/tour-detail/{id}', [TourController::class, 'TourDetail']);
+Route::get('/tour-detail1', [TourController::class, 'TourDetail1'])->name('tours.singleTour');;

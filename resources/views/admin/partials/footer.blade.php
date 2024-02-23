@@ -37,7 +37,7 @@
 
 <div class="p-4">
     <div class="mb-2">
-        <img src="images/images2/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="layout-1">
+        <img src="/images/images2/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="layout-1">
     </div>
 
     <div class="form-check form-switch mb-3">
@@ -46,7 +46,7 @@
     </div>
 
     <div class="mb-2">
-        <img src="images/images2/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
+        <img src="/images/images2/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
     </div>
     <div class="form-check form-switch mb-3">
         <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="css/css2/bootstrap-dark.min.css" data-appStyle="css/css2/app-dark.min.css">
@@ -54,7 +54,7 @@
     </div>
 
     <div class="mb-2">
-        <img src="images/images2/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="layout-3">
+        <img src="/images/images2/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="layout-3">
     </div>
     <div class="form-check form-switch mb-5">
         <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" data-appStyle="css/css2/app-rtl.min.css">
@@ -72,32 +72,32 @@
 <div class="rightbar-overlay"></div>
 
 <!-- JAVASCRIPT -->
-<script src="js/libs/jquery/jquery.min.js"></script>
-<script src="js/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="js/libs/metismenu/metisMenu.min.js"></script>
-<script src="js/libs/simplebar/simplebar.min.js"></script>
-<script src="js/libs/node-waves/waves.min.js"></script>
+<script src="/js/libs/jquery/jquery.min.js"></script>
+<script src="/js/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/js/libs/metismenu/metisMenu.min.js"></script>
+<script src="/js/libs/simplebar/simplebar.min.js"></script>
+<script src="/js/libs/node-waves/waves.min.js"></script>
 
 
 {{-- <!-- apexcharts -->
-<script src="js/libs/apexcharts/apexcharts.min.js"></script> --}}
+<script src="/js/libs/apexcharts/apexcharts.min.js"></script> --}}
 
 <!-- jquery.vectormap map -->
-{{-- <script src="js/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="js/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js"></script> --}}
+{{-- <script src="/js/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="/js/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js"></script> --}}
 
 <!-- Required datatable js -->
-<script src="js/libs/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="js/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/js/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/js/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
 
 <!-- Responsive examples -->
-<script src="js/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="js/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<script src="/js/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/js/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
 
-<script src="js/pages/dashboard.init.js"></script>
+<script src="/js/pages/dashboard.init.js"></script>
 
 <!-- App js -->
-<script src="js/app.js"></script>
+<script src="/js/app.js"></script>
 
 
 </body>

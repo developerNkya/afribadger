@@ -32,22 +32,26 @@
 
     <div class="isotope-wrapper">
         <div class="row">
+
+
+            @foreach ($tours as $tour)
+            @php
+                $firstImagePath = asset('storage/images/' . basename($tour->image_paths[0]));
+            @endphp
             <div class="col-xl-4 col-lg-6 col-md-6 isotope-item popular">
                 <div class="box_grid" data-cue="slideInUp">
                     <figure>
-                        <a href="#0" class="wish_bt"></a>
-                        <a href="#">
-                            
-                            <img id="hiking-sample" class="img-fluid"
-                                alt="" width="800" height="533">
+                        <a href="/tour-detail/{{$tour->id}}" class="wish_bt"></a>
+                        <a href="/tour-detail/{{$tour->id}}">
+                            <img src="{{ $firstImagePath }}" class="img-fluid" alt="{{ $tour->name }}" width="800" height="533">
                             <div class="read_more"><span>Read more</span></div>
                         </a>
-                        <small>Historic</small>
+                        <small>TOUR</small>
                     </figure>
                     <div class="wrapper">
-                        <h3><a href="#">Kilimanjaro hiking</a></h3>
-                        <p>Get a chance to visit and witness the beauty of kilimajaro in Tanzania!</p>
-                        <span class="price">From <strong>$54</strong> /per person</span>
+                        <h3><a href="/tour-detail/{{$tour->id}}">{{$tour->name}}</a></h3>
+                        <p>{{$tour->subtitle}}</p>
+                        <span class="price">From <strong>${{$tour->price}}</strong> /per person</span>
                     </div>
                     <ul>
                         <li><i class="icon_clock_alt"></i> 4 days</li>
@@ -59,9 +63,7 @@
                 </div>
             </div>
             <!-- /box_grid -->
-
-
-
+            @endforeach
         </div>
         <!-- /row -->
     </div>

@@ -17,6 +17,19 @@ class AdminController extends Controller
         return view('admin.SignIn');
     }
 
+    public function singleTour(Request $request, $id){
+        // Pull data of the particular tour based on the $id parameter
+        
+        $tours = Tour::where('id',$id)->get();
+       
+        //decoding the imagepaths::
+        foreach ($tours as $tour) {
+            $tour->image_paths = json_decode($tour->image_paths, true);
+        }
+
+
+        return view('admin.Tours.single_tour', ['tours' => $tours]);
+    }
     
     Public function Login(Request $request){
         // getting values::
@@ -69,13 +82,15 @@ class AdminController extends Controller
         $title = 'Modify Homepage Text';
         
 
-        $data =[
+        $datas =[
+            [
             "title" => 'Modify Homepage Text',
             "text" => 'Easily edit the Intro text at the introduction of the website.Make sure that the text is catchy and can be understood by visitors',
              "url" => '/edit-intro-text',
+            ]
         ];
 
-        return view('admin.home.homepage', ['data' => $data]);
+        return view('admin.home.homepage', ['datas' => $datas]);
          
     }
 
@@ -85,19 +100,53 @@ class AdminController extends Controller
         // check active_user session::
         // $active_user = Session::get('active_user');
 
-        $data =[
-            "title" => 'Easily Add New Tours',
-            "text" => 'you can now add new tours and trips through this section, click proceed to continue',
-             "url" => '/new-tour',
+        $datas = [
+            [
+                "title" => 'Easily Add New Tours',
+                "text" => 'you can now add new tours and trips through this section, click proceed to continue',
+                "url" => '/new-tour',
+            ],
+            [
+                "title" => 'View Tours',
+                "text" => 'you can now view all tours and trips through this section, click proceed to continue',
+                "url" => '/view_all_tours',
+            ],
+            // Add more data objects as needed
         ];
+        
 
-        return view('admin.home.homepage', ['data' => $data]);
+        return view('admin.home.homepage', ['datas' => $datas]);
+         
+    }
+
+   
+
+    Public function viewTours(){
+
+           // Fetch total number of tours
+           $totalTours = Tour::count();
+
+           // Fetch all rows from the tours table
+           $tours = Tour::all();
+
+          
+       // Decode image paths for each tour
+       foreach ($tours as $tour) {
+        $tour->image_paths = json_decode($tour->image_paths, true);
+    }
+
+    // return $tours;
+    // Pass the data to the view
+    return view('admin.Tours.view_tours', [
+        'totalTours' => $totalTours,
+        'tours' => $tours,
+    ]);
          
     }
 
     Public function  newTour(){
 
-        return view('admin.Tours.newTrip');
+        return view('admin.Tours.newtrip');
          
     }
 
@@ -106,16 +155,39 @@ class AdminController extends Controller
         // Validate the form data
         $validatedData = $request->validate([
             'tour_name' => 'required|string|max:255',
+            'price' =>'required',
+             'location' => 'required',
             'description' => 'required|string',
             'subtitle' => 'nullable|string|max:255',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // assuming images are uploaded
+            'images.*' => 'image|mimes:jpeg,png,jpg,gif', // assuming images are uploaded
         ]);
     
         // Get the input values
         $tourName = $request->input('tour_name');
         $description = $request->input('description');
         $subtitle = $request->input('subtitle');
+        $price = $request->input('price');
+
+        $points = $request->input('categories');
+        $descriptions = $request->input('category_descriptions');
+        $location = $request->input('location');
+
+        //adding points to a single array::
+        $pointsWithDescriptions = [];
+
+        // Assuming both arrays have the same length
+        foreach ($points as $key => $point) {
+            // Only add to the array if both point and description are present
+            if (!empty($point) && !empty($descriptions[$key])) {
+                $pointsWithDescriptions[$point] = $descriptions[$key];
+            }
+        }
     
+        $pointsWithDescriptions = [$pointsWithDescriptions];
+        
+        //query the db to check if similar tour exist 
+        //if yes return Tour already exists!
+        //Tour saved successfully.
         // Process and store the images
         $imagePaths = [];
         if ($request->hasFile('images')) {
@@ -130,6 +202,9 @@ class AdminController extends Controller
         $tour->name = $tourName;
         $tour->description = nl2br($description); // Convert newlines to <br> tags to maintain paragraphs
         $tour->subtitle = $subtitle;
+        $tour->price = $price;
+        $tour->location = $location;
+        $tour->packages = json_encode($pointsWithDescriptions);
         $tour->image_paths = json_encode($imagePaths); // Save image paths as JSON array
         $tour->save();
     
