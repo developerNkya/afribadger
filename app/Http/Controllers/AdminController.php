@@ -156,6 +156,7 @@ class AdminController extends Controller
         $validatedData = $request->validate([
             'tour_name' => 'required|string|max:255',
             'price' =>'required',
+             'location' => 'required',
             'description' => 'required|string',
             'subtitle' => 'nullable|string|max:255',
             'images.*' => 'image|mimes:jpeg,png,jpg,gif', // assuming images are uploaded
@@ -169,7 +170,7 @@ class AdminController extends Controller
 
         $points = $request->input('categories');
         $descriptions = $request->input('category_descriptions');
-
+        $location = $request->input('location');
 
         //adding points to a single array::
         $pointsWithDescriptions = [];
@@ -202,6 +203,7 @@ class AdminController extends Controller
         $tour->description = nl2br($description); // Convert newlines to <br> tags to maintain paragraphs
         $tour->subtitle = $subtitle;
         $tour->price = $price;
+        $tour->location = $location;
         $tour->packages = json_encode($pointsWithDescriptions);
         $tour->image_paths = json_encode($imagePaths); // Save image paths as JSON array
         $tour->save();

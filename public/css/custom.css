@@ -89,6 +89,20 @@
   background-image: url("./img/traveller2.png");
 }
 
+.user_profile{
+  background-image: url("./img/user.png");
+}
+
+.review-image {
+    /* Your styling for the image */
+    width: 80px; /* Example width */
+    height: 80px; /* Example height */
+    border-radius: 50%; /* Example border radius for a circular image */
+    background-image: url('./img/user.png'); /* Path to your image */
+    background-size: cover; /* Adjust as needed */
+    /* Add any other styling you want */
+}
+
 
 /* header logo */
 .logo_normal1 {

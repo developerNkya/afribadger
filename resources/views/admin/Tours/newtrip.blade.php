@@ -99,6 +99,10 @@
                                     <input type="text" class="form-control" id="price" name="price">
                                 </div>
                                 <div class="col-md-6 mb-3">
+                                    <label for="subtitle" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="price" name="location" placeholder="Enter Region in words eg.Dar es salaam">
+                                </div>
+                                <div class="col-md-6 mb-3">
                                     <label for="images" class="form-label">Images</label>
                                     <input type="file" class="form-control" id="images" name="images[]" multiple>
                                 </div>

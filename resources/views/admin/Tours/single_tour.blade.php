@@ -1,8 +1,21 @@
-@include('admin.partials.header')
+@include('partials.mixedheader')
 <!-- ========== Left Sidebar Start ========== -->
 @include('admin.partials.sidebar')
 
-
+@foreach ($tours as $tour)
+<section class="hero_in tours_detail" style="background: url('{{ asset('storage/images/' . basename($tour->image_paths[0])) }}') center center/cover no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="fadeInUp"><span></span>{{$tour->name}}</h1>
+        </div>
+        <span class="magnific-gallery">
+            @foreach($tour->image_paths as $index => $imagePath)
+            <a href="{{ asset('storage/images/' . basename($imagePath)) }}" class="btn_photos" title="Photo title" data-effect="mfp-zoom-in">View photos</a>
+            @endforeach
+        </span>         
+    </div>
+</section>
+@endforeach
 
 <div class="main-content">
 
@@ -31,9 +44,9 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="row">
+                            {{-- <div class="row">
                                 @foreach ($tours as $tour)
-                                <div class="col-xl-5" onclick="move_to_tour('{{$tour->id}}')">
+                                <div class="col-xl-12">
                                     <a  class="card-link">
                                         <div class="card">
                                             <div class="card-body">
@@ -61,7 +74,9 @@
                                     </a>
                                 </div>
                                 @endforeach
-                            </div>
+                            </div> --}}
+
+
                             <div class="row">
                                 @foreach ($tours as $tour)
                                 <div class="col-xl-7">
@@ -89,6 +104,7 @@
                             <!-- end row -->
 
                             <div class="mt-4">
+                                @foreach ($tours as $tour)
                                 <h5 class="font-size-14 mb-3">Tour description: </h5>
                                 <div class="product-desc">
                                     <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
@@ -104,25 +120,11 @@
                                     <div class="tab-content border border-top-0 p-4">
                                         <div class="tab-pane fade" id="desc" role="tabpanel">
                                             <div>
-                                                <p>If several languages coalesce, the grammar of the resulting language
-                                                    is more simple and regular than that of the individual </p>
-                                                <p>To achieve this, it would be necessary to have uniform grammar,
-                                                    pronunciation and more common several languages coalesce, the
-                                                    grammar of the resulting.</p>
-                                                <p>It will be as simple as occidental in fact.</p>
-
-                                                <div>
-                                                    <p class="mb-2"><i
-                                                            class="mdi mdi-circle-medium me-1 align-middle"></i> If
-                                                        several languages coalesce</p>
-                                                    <p class="mb-2"><i
-                                                            class="mdi mdi-circle-medium me-1 align-middle"></i> To an
-                                                        English person, it will seem like simplified</p>
-                                                    <p class="mb-0"><i
-                                                            class="mdi mdi-circle-medium me-1 align-middle"></i> These
-                                                        cases are perfectly simple.</p>
-                                                </div>
+                                                <p>{!! $tour->description !!}</p>
                                             </div>
+                                            
+                                            
+                                                                                   
                                         </div>
                                         <div class="tab-pane fade show active" id="specifi" role="tabpanel">
                                             <div class="table-responsive">
@@ -150,10 +152,64 @@
                                         </div>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
 
+
+                            <div class="mt-4">
+                                @foreach ($tours as $tour)
+                                <h5 class="font-size-14 mb-3">Tour description: </h5>
+                                <div class="product-desc">
+                                    <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="desc-tab" data-bs-toggle="tab" href="#desc"
+                                                role="tab">Description</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="specifi-tab" data-bs-toggle="tab"
+                                                href="#specifi" role="tab">Summary</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content border border-top-0 p-4">
+                                        <div class="tab-pane fade" id="desc" role="tabpanel">
+                                            <div>
+                                                <p>{!! $tour->description !!}</p>
+                                            </div>
+                                            
+                                            
+                                                                                   
+                                        </div>
+                                        <div class="tab-pane fade show active" id="specifi" role="tabpanel">
+                                            <div class="table-responsive">
+                                                <table class="table table-nowrap mb-0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row" style="width: 400px;">No. Bookings</th>
+                                                            <td>T-Shirt</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Ratings</th>
+                                                            <td>Jack & Jones</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Price</th>
+                                                            <td>Blue</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Images</th>
+                                                            <td>Cotton</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
                             <div class="mt-4">
                                 <h5 class="font-size-14">Reviews : </h5>
+
                                 <div class="d-inline-flex mb-3">
                                     <div class="text-muted me-3">
                                         <span class="mdi mdi-star text-warning"></span>
