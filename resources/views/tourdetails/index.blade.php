@@ -3,14 +3,14 @@
 
 @foreach ($tours as $tour)
 	<main>
-		<section class="hero_in tours_detail" style="background: url('{{ asset('storage/images/' . basename($tour->image_paths[0])) }}') center center/cover no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
+		<section class="hero_in tours_detail" style="background: url('{{ $tour->image_paths[0] }}') center center/cover no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
 			<div class="wrapper">
 				<div class="container">
 					<h1 class="fadeInUp"><span></span>{{$tour->name}}</h1>
 				</div>
 				<span class="magnific-gallery">
 					@foreach($tour->image_paths as $index => $imagePath)
-					<a href="{{ asset('storage/images/' . basename($imagePath)) }}" class="btn_photos" title="Photo title" data-effect="mfp-zoom-in">View photos</a>
+					<a href="{{$imagePath}}" class="btn_photos" title="Photo title" data-effect="mfp-zoom-in">View photos</a>
 					@endforeach
 				</span>         
 			</div>

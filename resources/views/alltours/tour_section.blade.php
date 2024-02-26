@@ -35,15 +35,12 @@
 
 
             @foreach ($tours as $tour)
-            @php
-                $firstImagePath = asset('storage/images/' . basename($tour->image_paths[0]));
-            @endphp
             <div class="col-xl-4 col-lg-6 col-md-6 isotope-item popular">
                 <div class="box_grid" data-cue="slideInUp">
                     <figure>
                         <a href="/tour-detail/{{$tour->id}}" class="wish_bt"></a>
                         <a href="/tour-detail/{{$tour->id}}">
-                            <img src="{{ $firstImagePath }}" class="img-fluid" alt="{{ $tour->name }}" width="800" height="533">
+                            <img src="{{ $tour->image_paths[0] }}" class="img-fluid" alt="{{ $tour->name }}" width="800" height="533">
                             <div class="read_more"><span>Read more</span></div>
                         </a>
                         <small>TOUR</small>

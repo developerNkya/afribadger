@@ -20,7 +20,10 @@ class TourController extends Controller
             $tour->image_paths = json_decode($tour->image_paths, true);
         }
 
-
+        //    return response()->json([
+        //     'success' => false,
+        //     'message' => $tours
+        // ]);
 
         return view('alltours.index', ['tours' => $tours]);
     }

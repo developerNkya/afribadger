@@ -54,25 +54,28 @@
                         {{ session()->get('message') }}
                     </div>
                 @endif
-
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-
-
                 <div class="card">
 
 
                     <div class="card-body">
+                        <!-- Display validation errors -->
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        @if ($error == 'The image paths field must be an array.')
+                                            <li>Please upload at least one image.</li>
+                                        @else
+                                            <li>{{ $error }}</li>
+                                        @endif
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
                         <p class="card-title-desc">Fill in the information below to add a new Tour</p>
                         <form class="needs-validation" method="post" action="{{ url('/save_tour') }}"
-                            enctype="multipart/form-data">
+                            enctype="multipart/form-data" id="tourForm">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -100,11 +103,19 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="subtitle" class="form-label">Location</label>
-                                    <input type="text" class="form-control" id="price" name="location" placeholder="Enter Region in words eg.Dar es salaam">
+                                    <input type="text" class="form-control" id="price" name="location"
+                                        placeholder="Enter Region in words eg.Dar es salaam">
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="images" class="form-label">Images</label>
-                                    <input type="file" class="form-control" id="images" name="images[]" multiple>
+                                    <label for="images" class="form-label">Images:</label>
+                                    {{-- <input type="file" class="form-control" id="images" name="images[]" multiple> --}}
+                                    <button id="upload_widget"
+                                        class="cloudinary-button btn btn-secondary mt-2 remove-category"
+                                        onclick="event.preventDefault();">Upload files</button>
+
+
+                                    <!-- Hidden input field to store imagePaths array -->
+                                    <input type="hidden" name="imagePaths" id="imagePathsInput">
                                 </div>
 
                                 <!-- Category section -->
@@ -129,10 +140,11 @@
                             </div>
 
                             <div style="padding-top:2%">
-                                <button class="btn btn-primary" type="submit">Save</button>
+                                <button class="btn btn-primary" type="button" id="submitBtn">Save</button>
                             </div>
                         </form>
                     </div>
+                    {{-- <button id="upload_widget" class="cloudinary-button">Upload files</button> --}}
 
                     <script>
                         document.addEventListener("DOMContentLoaded", function() {
@@ -156,6 +168,53 @@
                                     categoryContainer.insertBefore(categoryItem, e.target);
                                 }
                             });
+                        });
+                    </script>
+
+                    {{-- script for claudinary function --}}
+                    <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+
+
+                    <script type="text/javascript">
+                        // Define imagePaths array to store secure URLs
+                        let imagePaths = [];
+
+                        // Function to update imagePaths array
+                        function updateImagePaths(url) {
+                            imagePaths.push(url);
+                        }
+
+                        // Function to handle form submission
+                        function submitForm() {
+                            // Set the imagePaths array as the value of the hidden input field
+                            document.getElementById('imagePathsInput').value = JSON.stringify(imagePaths);
+
+                            // Submit the form
+                            document.getElementById('tourForm').submit();
+                        }
+
+
+
+                        var myWidget = cloudinary.createUploadWidget({
+                            cloudName: 'dvl5pb8hs',
+                            uploadPreset: 'my_present'
+                        }, (error, result) => {
+                            if (!error && result && result.event === "success") {
+                                console.log('Done! Here is the image info: ', result.info);
+                                const secureUrl = result.info.secure_url;
+                                updateImagePaths(secureUrl);
+                            }
+                        })
+
+                        document.getElementById("upload_widget").addEventListener("click", function() {
+                            myWidget.open();
+                        }, false);
+
+
+                        // Event listener for the submit button
+                        document.getElementById('submitBtn').addEventListener('click', function() {
+                            // Call submitForm() when the button is clicked
+                            submitForm();
                         });
                     </script>
 

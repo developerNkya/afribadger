@@ -5,23 +5,39 @@ namespace App\Http\Controllers;
 use App\Models\Detail;
 use App\Models\Tour;
 use App\Models\User;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
 use Session;
 
+use Cloudinary\Api\Upload\UploadApi;
+
+
+
+// Configure Cloudinary credentials (replace with your actual values)
+// Configuration::instance([
+//     'cloud_name' => env('CLOUDINARY_CLOUD_NAME'),
+//     'api_key' => env('CLOUDINARY_API_KEY'),
+//     'api_secret' => env('CLOUDINARY_API_SECRET')
+// ]);
+
+// Configuration::instance('cloudinary://922157771218568:Gf09s88DpokEJbpXXZdsamlZZdU@dvl5pb8hs?secure=true');
+
 class AdminController extends Controller
 {
 
-    Public function SignIn(){
+    public function SignIn()
+    {
         return view('admin.SignIn');
     }
 
-    public function singleTour(Request $request, $id){
+    public function singleTour(Request $request, $id)
+    {
         // Pull data of the particular tour based on the $id parameter
-        
-        $tours = Tour::where('id',$id)->get();
-       
+
+        $tours = Tour::where('id', $id)->get();
+
         //decoding the imagepaths::
         foreach ($tours as $tour) {
             $tour->image_paths = json_decode($tour->image_paths, true);
@@ -30,72 +46,76 @@ class AdminController extends Controller
 
         return view('admin.Tours.single_tour', ['tours' => $tours]);
     }
-    
-    Public function Login(Request $request){
+
+    public function Login(Request $request)
+    {
         // getting values::
         $username = $request->username;
         $password = $request->password;
 
 
         // cheking if credidentials exist in database::
-            $check_info = User::where('username',$username)
-                                ->where('password',$password)
-                                ->first();
+        $check_info = User::where('username', $username)
+            ->where('password', $password)
+            ->first();
 
-            if (!$check_info) {
-                $error = 'Incorrect Credidentials ....Try again!';
+        if (!$check_info) {
+            $error = 'Incorrect Credidentials ....Try again!';
 
-                return Redirect::to('sign-in')
+            return Redirect::to('sign-in')
                 ->withErrors(['loginError' => $error]);
-            }
+        }
 
-            $active_user = $check_info->id;
-            //add user to session::
-            Session::put('active_user', $active_user);
-            //redirect to admin -home-page::
-            // return view('admin.home.homepage');
-            return redirect('admin-home');
+        $active_user = $check_info->id;
+        //add user to session::
+        Session::put('active_user', $active_user);
+        //redirect to admin -home-page::
+        // return view('admin.home.homepage');
+        return redirect('admin-home');
 
     }
 
 
-   
-    Public function  UpdateIntroText(Request $request){
+
+    public function UpdateIntroText(Request $request)
+    {
 
         // getting values::
-        $info =   $request->info;
+        $info = $request->info;
         $option = $request->option;
 
 
-         Detail::where('name', $option)->update(array('detail' => $info));
+        Detail::where('name', $option)->update(array('detail' => $info));
 
 
-          return redirect()->back()->with('message', 'Data has been updated successfully!');
+        return redirect()->back()->with('message', 'Data has been updated successfully!');
 
     }
 
 
-    Public function AdminHomePage(){
+    public function AdminHomePage()
+    {
 
         // check active_user session::
         $active_user = Session::get('active_user');
         $title = 'Modify Homepage Text';
-        
 
-        $datas =[
+
+        $datas = [
             [
-            "title" => 'Modify Homepage Text',
-            "text" => 'Easily edit the Intro text at the introduction of the website.Make sure that the text is catchy and can be understood by visitors',
-             "url" => '/edit-intro-text',
+                "title" => 'Modify Homepage Text',
+                "text" => 'Easily edit the Intro text at the introduction of the website.Make sure that the text is catchy and can be understood by visitors',
+                "url" => '/edit-intro-text',
             ]
         ];
 
         return view('admin.home.homepage', ['datas' => $datas]);
-         
+
     }
 
 
-    Public function  AdminTourPage(){
+    public function AdminTourPage()
+    {
 
         // check active_user session::
         // $active_user = Session::get('active_user');
@@ -113,55 +133,72 @@ class AdminController extends Controller
             ],
             // Add more data objects as needed
         ];
-        
+
 
         return view('admin.home.homepage', ['datas' => $datas]);
-         
+
     }
 
-   
 
-    Public function viewTours(){
 
-           // Fetch total number of tours
-           $totalTours = Tour::count();
+    public function viewTours()
+    {
 
-           // Fetch all rows from the tours table
-           $tours = Tour::all();
+        // Fetch total number of tours
+        $totalTours = Tour::count();
 
-          
-       // Decode image paths for each tour
-       foreach ($tours as $tour) {
-        $tour->image_paths = json_decode($tour->image_paths, true);
+        // Fetch all rows from the tours table
+        $tours = Tour::all();
+
+
+        // Decode image paths for each tour
+        foreach ($tours as $tour) {
+            $tour->image_paths = json_decode($tour->image_paths, true);
+        }
+
+        // return $tours;
+        // Pass the data to the view
+        return view('admin.Tours.view_tours', [
+            'totalTours' => $totalTours,
+            'tours' => $tours,
+        ]);
+
     }
 
-    // return $tours;
-    // Pass the data to the view
-    return view('admin.Tours.view_tours', [
-        'totalTours' => $totalTours,
-        'tours' => $tours,
-    ]);
-         
-    }
-
-    Public function  newTour(){
+    public function newTour()
+    {
 
         return view('admin.Tours.newtrip');
-         
+
     }
 
-    public function saveTour(Request $request){
+    public function saveTour(Request $request)
+    {
 
         // Validate the form data
-        $validatedData = $request->validate([
+        $rules = $request->validate([
             'tour_name' => 'required|string|max:255',
-            'price' =>'required',
-             'location' => 'required',
+            'price' => 'required',
+            'location' => 'required',
             'description' => 'required|string',
             'subtitle' => 'nullable|string|max:255',
-            'images.*' => 'image|mimes:jpeg,png,jpg,gif', // assuming images are uploaded
+            'imagePaths' => 'required'
         ]);
-    
+
+        // // Define custom error messages
+        // $messages = [
+        //     'imagePaths.required' => 'Please upload at least one image.',
+        // ];
+
+        // // Create a validator instance
+        // $validator = \Validator::make($request->all(), $rules, $messages);
+
+        // // Check if validation fails
+        // if ($validator->fails()) {
+        //     // Return validation errors
+        //     return redirect()->back()->withErrors($validator)->withInput();
+        // }
+
         // Get the input values
         $tourName = $request->input('tour_name');
         $description = $request->input('description');
@@ -172,7 +209,7 @@ class AdminController extends Controller
         $descriptions = $request->input('category_descriptions');
         $location = $request->input('location');
 
-        //adding points to a single array::
+        // adding points to a single array::
         $pointsWithDescriptions = [];
 
         // Assuming both arrays have the same length
@@ -182,22 +219,32 @@ class AdminController extends Controller
                 $pointsWithDescriptions[$point] = $descriptions[$key];
             }
         }
-    
+
         $pointsWithDescriptions = [$pointsWithDescriptions];
-        
-        //query the db to check if similar tour exist 
-        //if yes return Tour already exists!
-        //Tour saved successfully.
-        // Process and store the images
-        $imagePaths = [];
-        if ($request->hasFile('images')) {
-            foreach ($request->file('images') as $image) {
-                $imagePath = $image->store('public/images');
-                $imagePaths[] = $imagePath;
-            }
-        }
-    
-        // Save the tour details and image paths to the database
+
+
+        // $imagePaths = [];
+
+        //old implementation::
+        // if ($request->hasFile('images')) {
+        //     foreach ($request->file('images') as $image) {
+        //         $imagePath = $image->store('public/images');
+        //         $imagePaths[] = $imagePath;
+        //     }
+        // }
+
+
+        //new save implementation
+        // $imagePaths = $request->imagePaths;
+        $imagePaths = json_decode($request->input('imagePaths'), true);
+
+
+        // return response()->json([
+        //     'success' => false,
+        //     'message' => $decoded
+        // ]);
+
+        // // Save the tour details and image paths to the database
         $tour = new Tour();
         $tour->name = $tourName;
         $tour->description = nl2br($description); // Convert newlines to <br> tags to maintain paragraphs
@@ -207,29 +254,30 @@ class AdminController extends Controller
         $tour->packages = json_encode($pointsWithDescriptions);
         $tour->image_paths = json_encode($imagePaths); // Save image paths as JSON array
         $tour->save();
-    
+
         // Return the view or redirect
         // return view('admin.Tours.newTrip')->with('message', 'Tour saved successfully.');
         return redirect()->back()->with('message', 'Tour saved successfully.');
 
     }
-    
 
-    Public function EditIntroText(){
+
+    public function EditIntroText()
+    {
 
         //Fetch the values from db:
-    $header = Detail::where('name','Home-Header')->first();
-    $subtitle = Detail::where('name','Home-Subtitle')->first();    
-    $dialog = Detail::where('name','Home-Dialog')->first();
+        $header = Detail::where('name', 'Home-Header')->first();
+        $subtitle = Detail::where('name', 'Home-Subtitle')->first();
+        $dialog = Detail::where('name', 'Home-Dialog')->first();
 
-    //grouping them into a single array:
-    $data =[
-        "header" => $header->detail,
-        "subtitle" =>$subtitle->detail,
-         "dialog" => $dialog->detail
-    ];
-    
-    return View('admin.home.introtext', ['data' => $data]);
+        //grouping them into a single array:
+        $data = [
+            "header" => $header->detail,
+            "subtitle" => $subtitle->detail,
+            "dialog" => $dialog->detail
+        ];
+
+        return View('admin.home.introtext', ['data' => $data]);
 
         // return view('admin.home.introtext');
     }
