@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class TourController extends Controller
 {
+
+    
     Public function Index(){
         return view('tourpage.index');
     }
@@ -38,20 +40,21 @@ class TourController extends Controller
             $tour->image_paths = json_decode($tour->image_paths, true);
         }
     
+        
+        // return response()->json([
+        //     'success' => false,
+        //     'value'=> 0,
+        //     'message' => $tours
+        // ]);
+
         // Storing data in session
-        $request->session()->put('tours', $tours);
+        //    $request->session()->put('tours', $tours);
     
         // Redirecting to another route
-        return redirect('tour-detail1');
-    }
-    
-    public function TourDetail1(Request $request)
-    {
-        // Retrieving data from session
-        $tours = $request->session()->get('tours');
-    
+        // return redirect('tour-detail1');
         return view('tourdetails.index', ['tours' => $tours]);
     }
+    
     
 
 

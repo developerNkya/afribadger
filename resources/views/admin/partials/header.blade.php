@@ -188,7 +188,7 @@
                                     
                                      <div class="admin-home-avatar rounded-circle header-profile-user" ></div>
 
-                                <span class="d-none d-xl-inline-block ms-1">Kevin</span>
+                                <span class="d-none d-xl-inline-block ms-1">Admin</span>
                                 <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                             </button>
 

@@ -110,7 +110,7 @@
                                     <label for="images" class="form-label">Images:</label>
                                     {{-- <input type="file" class="form-control" id="images" name="images[]" multiple> --}}
                                     <button id="upload_widget"
-                                        class="cloudinary-button btn btn-secondary mt-2 remove-category"
+                                        class="btn btn-success waves-effect waves-light"
                                         onclick="event.preventDefault();">Upload files</button>
 
 
@@ -132,7 +132,7 @@
                                             <button type="button"
                                                 class="btn btn-secondary mt-2 remove-category">Remove</button>
                                         </div>
-                                        <button type="button" class="btn btn-primary mt-2 add-category">+</button>
+                                        <button type="button" class="btn btn-success mt-2 add-category">+</button>
                                     </div>
                                 </div>
                                 <!-- End Category section -->
@@ -140,7 +140,7 @@
                             </div>
 
                             <div style="padding-top:2%">
-                                <button class="btn btn-primary" type="button" id="submitBtn">Save</button>
+                                <button class="btn btn-success" type="button" id="submitBtn">Save</button>
                             </div>
                         </form>
                     </div>

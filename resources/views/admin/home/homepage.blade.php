@@ -46,7 +46,7 @@
                                         <p class="card-text">{{ $data['text'] }}</p>
                                         <p class="card-text">
                                             {{-- <small class="text-muted">Last updated 3 mins ago</small> --}}
-                                            <a href="{{ $data['url'] }}" class="btn btn-primary waves-effect waves-light">Proceed</a>
+                                            <a href="{{ $data['url'] }}" class="btn btn-success waves-effect waves-light">Proceed</a>
                                         </p>
                                     </div>
                                 </div>

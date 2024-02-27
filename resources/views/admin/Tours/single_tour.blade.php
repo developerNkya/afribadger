@@ -40,7 +40,7 @@
                                                     <div class="carousel-inner" role="listbox">
                                                         @foreach($tour->image_paths as $index => $imagePath)
                                                         <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
-                                                            <img class="d-block img-fluid" src="{{ asset('storage/images/' . basename($imagePath)) }}" alt="Slide {{ $index + 1 }}">
+                                                            <img class="d-block img-fluid" src="{{ $imagePath }}" alt="Slide {{ $index + 1 }}">
                                                         </div>
                                                         @endforeach
                                                     </div>
@@ -118,15 +118,15 @@
                                                     <tbody>
                                                         <tr>
                                                             <th scope="row" style="width: 400px;">No. Bookings</th>
-                                                            <td>T-Shirt</td>
+                                                            <td><b>0</b></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Ratings</th>
-                                                            <td>Jack & Jones</td>
+                                                            <td>0</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Price</th>
-                                                            <td>Blue</td>
+                                                            <td>{{$tour->price}}</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Images</th>
@@ -141,58 +141,6 @@
                                 @endforeach
                             </div>
 
-
-                            <div class="mt-4">
-                                @foreach ($tours as $tour)
-                                <h5 class="font-size-14 mb-3">Tour description: </h5>
-                                <div class="product-desc">
-                                    <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="desc-tab" data-bs-toggle="tab" href="#desc"
-                                                role="tab">Description</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="specifi-tab" data-bs-toggle="tab"
-                                                href="#specifi" role="tab">Summary</a>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content border border-top-0 p-4">
-                                        <div class="tab-pane fade" id="desc" role="tabpanel">
-                                            <div>
-                                                <p>{!! $tour->description !!}</p>
-                                            </div>
-                                            
-                                            
-                                                                                   
-                                        </div>
-                                        <div class="tab-pane fade show active" id="specifi" role="tabpanel">
-                                            <div class="table-responsive">
-                                                <table class="table table-nowrap mb-0">
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row" style="width: 400px;">No. Bookings</th>
-                                                            <td>T-Shirt</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Ratings</th>
-                                                            <td>Jack & Jones</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Price</th>
-                                                            <td>Blue</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Images</th>
-                                                            <td>Cotton</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                @endforeach
-                            </div>
                             <div class="mt-4">
                                 <h5 class="font-size-14">Reviews : </h5>
 

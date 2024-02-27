@@ -41,7 +41,7 @@
                                                     <div class="carousel-inner" role="listbox">
                                                         @foreach($tour->image_paths as $index => $imagePath)
                                                         <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
-                                                            <img class="d-block img-fluid" src="{{ asset('storage/images/' . basename($imagePath)) }}" alt="Slide {{ $index + 1 }}">
+                                                            <img class="d-block img-fluid" src="{{ $imagePath }}" alt="Slide {{ $index + 1 }}">
                                                         </div>
                                                         @endforeach
                                                     </div>
