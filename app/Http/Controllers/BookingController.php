@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Booking;
+use App\Models\Tour;
 use Illuminate\Http\Request;
 
 class BookingController extends Controller
@@ -10,8 +11,10 @@ class BookingController extends Controller
 
     public function bookingPage(Request $request, $id)
     {
+        //get the price
+        $price = Tour::where('id',$id)->value('price');
 
-        return view('bookingUser.infoSection', ['tour_id' => $id]);
+        return view('bookingUser.infoSection', ['tour_id' => $id,'price'=>$price]);
 
     }
 

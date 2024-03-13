@@ -63,7 +63,7 @@
                             <div class="form_title">
                                 <h3><strong>1</strong>Your Details</h3>
                                 <p>
-                                    Mussum ipsum cacilds, vidis litro abertis.
+                                    Proceed with filling your personal information
                                 </p>
                             </div>
                             <div class="step">
@@ -124,7 +124,7 @@
                             <!--End step -->
                             <div id="policy">
                                 <h5>Cancellation policy</h5>
-                                <p class="nomargin">Lorem ipsum dolor sit amet, vix <a href="#0">cu justo blandit deleniti</a>, discere omittantur consectetuer per eu. Percipit repudiare similique ad sed, vix ad decore nullam ornatus.</p>
+                                <p class="nomargin">Our commitment to providing a seamless experience extends to our flexible rescheduling assurance. We understand that plans can change unexpectedly, which is why we offer a comprehensive cancellation policy designed to accommodate your needs. </p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                     <aside class="col-lg-4" id="sidebar">
                         <div class="box_detail">
                             <div id="total_cart">
-                                Tour Price <span class="float-end">69.00$</span>
+                                Tour Price <span class="float-end">{{$price}}</span>
                             </div>
                             <ul class="cart_details">
                                 <p>Entered information will be used by our team to reach out to you for further arrangements and scheduling of the tour</p>

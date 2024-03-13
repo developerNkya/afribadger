@@ -71,8 +71,6 @@
 			<ul>
 				<li><span><a href="/">Home</a></span></li>
                     <li><span><a href="/all-tours">Tours</a></span></li>
-                        <li><span><a href="#0">Experiences</a></span></li>
-                            <li><span><a href="#0">Gallery</a></span></li>
                                 <li><span><a href="/contact_us">Contact Us</a></span> </li>  
                                     <li><span><a href="/sign-in">Admin</a></span> </li>                  
             <ul>

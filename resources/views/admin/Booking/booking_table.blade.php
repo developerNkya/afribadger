@@ -6,9 +6,9 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Total Reviews</th>
-                            <th>Pending Reviews</th>
-                            <th>Approved Reviews</th>
+                            <th>Total Bookings</th>
+                            <th>Pending Bookings</th>
+                            <th>Approved Bookings</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -39,7 +39,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Reviews</h4>
+                <h4 class="card-title">Bookings</h4>
                 <div class="table-responsive">
                     <div class="row mb-3 col-lg-6">
                         <label for="example-search-input" class="col-sm-2 col-form-label">Search</label>

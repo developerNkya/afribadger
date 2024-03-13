@@ -1,5 +1,5 @@
 <div class="container margin_60_35">
-    <div class="col-lg-12">
+    {{-- <div class="col-lg-12">
         <div class="row g-0 custom-search-input-2 inner">
             <div class="col-lg-4">
                 <div class="form-group">
@@ -28,7 +28,7 @@
         </div>
         <!-- /row -->
     </div>
-    <!-- /custom-search-input-2 -->
+    <!-- /custom-search-input-2 --> --}}
 
     <div class="isotope-wrapper">
         <div class="row">
@@ -51,7 +51,7 @@
                         <span class="price">From <strong>${{$tour->price}}</strong> /per person</span>
                     </div>
                     <ul>
-                        <li><i class="icon_clock_alt"></i> 4 days</li>
+                        <li><i class="icon_clock_alt"></i></li>
                         <li>
                             <div class="score"><span>Superb<em>350 Reviews</em></span><strong>8.9</strong>
                             </div>
