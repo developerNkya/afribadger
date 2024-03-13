@@ -180,7 +180,7 @@
 						<li><a href="login.html">Login</a></li>
 						<li><a href="register.html">Register</a></li>
 						<li><a href="blog.html">News &amp; Events</a></li>
-						<li><a href="contacts.html">Contacts</a></li>
+						<li><a href="/contact_us">Contacts</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-6">

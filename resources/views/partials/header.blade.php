@@ -39,6 +39,7 @@
     <!-- ALTERNATIVE COLORS CSS -->
     <link href="#" id="colors" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -72,7 +73,7 @@
                     <li><span><a href="/all-tours">Tours</a></span></li>
                         <li><span><a href="#0">Experiences</a></span></li>
                             <li><span><a href="#0">Gallery</a></span></li>
-                                <li><span><a href="#0">Contact Us</a></span> </li>  
+                                <li><span><a href="/contact_us">Contact Us</a></span> </li>  
                                     <li><span><a href="/sign-in">Admin</a></span> </li>                  
             <ul>
 			</ul>

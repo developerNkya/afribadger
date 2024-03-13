@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
+use App\Models\Contact;
 use App\Models\Detail;
+use App\Models\Rating;
 use App\Models\Tour;
 use App\Models\User;
+use App\Models\UserInfo;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -38,15 +42,273 @@ class AdminController extends Controller
 
         $tours = Tour::where('id', $id)->get();
 
+        $ratings = Rating::with('tour')->where('tour_id', $id)
+            ->where('status', 'approved')
+            ->get();
+
+
+            $total_bookings = Booking::where('tour_id', $id)->count();
+
         //decoding the imagepaths::
         foreach ($tours as $tour) {
             $tour->image_paths = json_decode($tour->image_paths, true);
         }
 
-
-        return view('admin.Tours.single_tour', ['tours' => $tours]);
+        return view('admin.Tours.single_tour', ['tours' => $tours, 'ratings' => $ratings, 'total_bookings'=>$total_bookings]);
     }
 
+
+
+
+    public function fetchSimilarReviews($input)
+    {
+        // Get the IDs of tours with names similar to the input
+        $tourIds = Tour::where('name', 'like', '%' . $input . '%')->pluck('id')->take(5);
+
+        // Get 5 similar ratings for tours with similar names
+        $ratings = Rating::with('tour')
+            ->whereIn('tour_id', $tourIds)
+            ->limit(5)
+            ->get();
+
+        //all ratings
+        $allRatings = Rating::with('tour')->get();
+        $totalRatings = $allRatings->count();
+        $pendingRatings = $allRatings->filter(function ($rating) {
+            return $rating->status === null || $rating->status === 'pending';
+        })->count();
+
+        $approvedRatings = $allRatings->where('status', 'approved')->count();
+
+        return response()->json([
+            'success' => true,
+            'ratings' => $ratings,
+            'totalRatings' => $totalRatings,
+            'pendingRatings' => $pendingRatings,
+            'approvedRatings' => $approvedRatings
+        ]);
+
+    }
+
+    public function fetchSimilarBookings($input)
+    {
+        // Get the IDs of tours with names similar to the input
+        $tourIds = Tour::where('name', 'like', '%' . $input . '%')->pluck('id')->take(5);
+
+        // Get 5 similar ratings for tours with similar names
+        $bookings = Booking::with('tour')
+            ->whereIn('tour_id', $tourIds)
+            ->limit(5)
+            ->get();
+
+        //all ratings
+        $allBookings = Booking::with('tour')->get();
+        $totalBookings = $allBookings->count();
+        $pendingBookings = $allBookings->filter(function ($rating) {
+            return $rating->status === null || $rating->status === 'pending';
+        })->count();
+
+        $approvedBookings = $allBookings->where('status', 'approved')->count();
+
+        return response()->json([
+            'success' => true,
+            'bookings' => $bookings,
+            'totalRatings' => $totalBookings,
+            'pendingRatings' => $pendingBookings,
+            'approvedRatings' => $approvedBookings
+        ]);
+
+    }
+
+    public function RatingCategory($category)
+    {
+
+        $ratings = [];
+        if ($category == 'total') {
+            $ratings = Rating::with('tour')->get();
+        } elseif ($category == 'pending') {
+            $ratings = Rating::with('tour')->where('status', '!=', 'approved')->get();
+        } elseif ($category == 'approved') {
+            $ratings = Rating::with('tour')->where('status', 'approved')->get();
+
+        }
+
+        $allRatings = Rating::with('tour')->get();
+        $totalRatings = $allRatings->count();
+        $pendingRatings = $allRatings->filter(function ($rating) {
+            return $rating->status === null || $rating->status === 'pending';
+        })->count();
+
+        $approvedRatings = $allRatings->where('status', 'approved')->count();
+
+        return view(
+            'admin.Ratings.ratings_home',
+            [
+                'ratings' => $ratings,
+                'totalRatings' => $totalRatings,
+                'pendingRatings' => $pendingRatings,
+                'approvedRatings' => $approvedRatings
+            ]
+        );
+    }
+
+
+
+    public function AdminBookingsPage()
+    {
+
+        $bookings = Booking::with('tour')->get();
+        $totalBookings = $bookings->count();
+        $pendingBookings = $bookings->filter(function ($rating) {
+            return $rating->status === null || $rating->status === 'pending';
+        })->count();
+        $approvedBookings = $bookings->where('status', 'approved')->count();
+
+ 
+        return view(
+            'admin.Booking.booking_home',
+            [
+                'bookings' => $bookings,
+                'totalBookings' => $totalBookings,
+                'pendingBookings' => $pendingBookings,
+                'approvedBookings' => $approvedBookings
+            ]
+
+        );
+
+    }
+   
+
+
+    public function UpdateProfile(Request $request)
+    {
+        // Validate the incoming request data
+        $validatedData = $request->validate([
+            'username' => 'required|string|max:255',
+            'password' => 'required|string|max:255',
+            'address' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:255',
+        ]);
+    
+        // Retrieve the first row of UserInfo
+        $userInfo = UserInfo::first();
+    
+        if ($userInfo) {
+            // Update the user's profile using the validated data
+            // $userInfo->update($validatedData);
+            UserInfo::where('id', 1)->update([
+                'username' => $validatedData['username'],
+                'password' => $validatedData['password'],
+                'address' => $validatedData['address'],
+                'email' => $validatedData['email'],
+                'phone_no' => $validatedData['phone'],
+            ]);
+    
+            // Return a response indicating success
+            return response()->json(['message' => 'Profile updated successfully'], 200);
+        } else {
+            // If no UserInfo found, return an error response
+            return response()->json(['error' => 'No UserInfo found'], 404);
+        }
+    }
+    
+   
+    public function  AdminProfile(){
+        $user_info = UserInfo::get();
+
+        return view(
+            'admin.Profile',
+            [
+                'infos' => $user_info,
+            ]
+
+        );
+
+    }
+    public function AdminFeedbackPage()
+    {
+
+        $feedbacks = Contact::get();
+        return view(
+            'admin.Feedback.feedback_home',
+            [
+                'feedbacks' => $feedbacks,
+            ]
+
+        );
+
+    }
+
+
+    public function deleteFeedback(Request $request, $id)
+    {
+        $feedback = Contact::findOrFail($id);
+        $feedback->delete();
+
+        return redirect()->back()->with('success', 'Feedback is Deleted Successfully!');
+
+    }
+
+    public function UpdateRating(Request $request, $id)
+    {
+        // Pull data of the particular tour based on the $id parameter
+        $current_status = Rating::where('id', $id)->pluck('status')->first();
+
+        $updated_status = '';
+        if ($current_status != 'approved') {
+
+            $updated_status = 'approved';
+        } else {
+            $updated_status = 'pending';
+        }
+
+        Rating::where('id', $id)->update(['status' => $updated_status]);
+
+        $ratings = Rating::with('tour')->get();
+        $totalRatings = $ratings->count();
+        $pendingRatings = $ratings->filter(function ($rating) {
+            return $rating->status === null || $rating->status === 'pending';
+        })->count();
+
+        $approvedRatings = $ratings->where('status', 'approved')->count();
+
+
+        return view(
+            'admin.Ratings.ratings_home',
+            [
+                'ratings' => $ratings,
+                'totalRatings' => $totalRatings,
+                'pendingRatings' => $pendingRatings,
+                'approvedRatings' => $approvedRatings
+            ]
+        );
+
+    }
+
+    public function AdminRatingsPage()
+    {
+        // // Pull data of the particular tour based on the $id parameter
+
+        $ratings = Rating::with('tour')->get();
+
+        $totalRatings = $ratings->count();
+        $pendingRatings = $ratings->filter(function ($rating) {
+            return $rating->status === null || $rating->status === 'pending';
+        })->count();
+
+        $approvedRatings = $ratings->where('status', 'approved')->count();
+
+        return view(
+            'admin.Ratings.ratings_home',
+            [
+                'ratings' => $ratings,
+                'totalRatings' => $totalRatings,
+                'pendingRatings' => $pendingRatings,
+                'approvedRatings' => $approvedRatings
+            ]
+        );
+    }
     public function Login(Request $request)
     {
         // getting values::
@@ -55,7 +317,7 @@ class AdminController extends Controller
 
 
         // cheking if credidentials exist in database::
-        $check_info = User::where('username', $username)
+        $check_info = UserInfo::where('username', $username)
             ->where('password', $password)
             ->first();
 
@@ -72,6 +334,7 @@ class AdminController extends Controller
         //redirect to admin -home-page::
         // return view('admin.home.homepage');
         return redirect('admin-home');
+
 
     }
 
@@ -95,10 +358,10 @@ class AdminController extends Controller
 
     public function AdminHomePage()
     {
-
         // check active_user session::
         $active_user = Session::get('active_user');
         $title = 'Modify Homepage Text';
+
 
 
         $datas = [
@@ -108,8 +371,8 @@ class AdminController extends Controller
                 "url" => '/edit-intro-text',
             ]
         ];
-
         return view('admin.home.homepage', ['datas' => $datas]);
+
 
     }
 

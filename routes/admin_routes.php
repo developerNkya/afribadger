@@ -40,6 +40,29 @@ Route::middleware(['isAdmin'])->group(function () {
     Route::post('/save_tour', [AdminController::class, 'saveTour'])->name('save_tour');
 
     Route::post('/update-intro-text', [AdminController::class, 'UpdateIntroText'])->name('Update-intro-text');
+
+    Route::get('/admin-view-ratings', [AdminController::class, 'AdminRatingsPage'])->name('admin-view-ratings');
+    Route::get('/update_rating/{id}', [AdminController::class, 'UpdateRating'])->name('admin-update-rating');
+    Route::get('/ratings_category/{category}',  [AdminController::class, 'RatingCategory'])->name('admin-rating-category');
+
+    Route::get('/fetchSimilarReviews/{input}',  [AdminController::class, 'fetchSimilarReviews'])->name('admin-similar-reviews');
+
+    Route::get('/fetchSimilarBookings/{input}',  [AdminController::class, 'fetchSimilarBookings'])->name('admin-similar-bookings');
+
+
+    Route::get('/admin-view-bookings', [AdminController::class, 'AdminBookingsPage'])->name('admin-view-bookings');
+
+    Route::get('/admin-view-feedback', [AdminController::class, 'AdminFeedbackPage'])->name('admin-view-feedback');
+
+
+    Route::get('/deleteFeedback/{id}', [AdminController::class, 'deleteFeedback'])->name('admin-delete-Feedback');
+
+  
+    Route::get('/admin_profile', [AdminController::class, 'AdminProfile'])->name('admin-view-profile');
+    
+    Route::post('/update/user_info', [AdminController::class, 'UpdateProfile'])->name('admin-update-profile');
+
+
 });
 
 

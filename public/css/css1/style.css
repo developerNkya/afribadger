@@ -4075,7 +4075,18 @@ span.infobox_rate {
 }
 #error_page,
 .cart_section {
-    background: url(../img/pattern_1.svg) center bottom repeat-x #967411;
+    background: url("https://i.ibb.co/HnLT423/happy-woman-waving-while-standing-her-luggage.jpg") center bottom repeat-x #967411;
+}
+.cart_modified {
+    background-image: url('https://i.ibb.co/HnLT423/happy-woman-waving-while-standing-her-luggage.jpg');
+    background-size: cover;
+}
+.card-opacity {
+    opacity: 0.5; /* Adjust the opacity value as needed */
+}
+
+.text-green {
+    color: #2D4A24;
 }
 #cookie-bar p,
 .contact_info ul {

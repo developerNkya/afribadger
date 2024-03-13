@@ -17,28 +17,29 @@
                     <h3><a href="/all-tours">Our Trips</a></h3>
                     <p>Get a chance to view and book current available trips arround the world</p>
                 </div>
-                <ul>
+                {{-- <ul>
                     <li><i class="icon_clock_alt"></i> </li>
-                    <li><div class="score"><button class="button-3" role="button">Visit</button></div></li>
-                </ul>
+                    <li><div class="score"><button class="button-3" id="visitButton" role="button">Visit</button></div></li>
+                    
+                </ul> --}}
             </div>
         </div>
 
         <div class="item">
-            <div class="box_grid">
+            <div class="box_grid ">
                 <figure>
                     <a href="#0" class="wish_bt"></a>
-                    <a href="/all-tours"><img id="tour-category" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
-                    <small>Gallery</small>
+                    <a href="/all-tours"><img id="contact-category" class="img-fluid" alt="" width="800" height="533"><div class="read_more"><span>Read more</span></div></a>
+                    <small>Contacts</small>
                 </figure>
                 <div class="wrapper">
-                    <h3><a href="/all-tours">Collection</a></h3>
+                    <h3><a href="/all-tours">Contact Us</a></h3>
                     <p>Explore the amazing moments that you might have missed before</p>
                 </div>
-                <ul>
+                {{-- <ul>
                     <li><i class="icon_clock_alt"></i> </li>
                     <li><div class="score"><button class="button-3" role="button">Visit</button></div></li>
-                </ul>
+                </ul> --}}
             </div>
         </div>
         <!-- /item -->
@@ -48,3 +49,19 @@
 
 </div>
 <!-- /container -->
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var visitButton = document.getElementById("visitButton");
+    console.log('pressed');
+    if (visitButton) {
+        visitButton.addEventListener("click", function() {
+            window.location.href = "/all-tours";
+        });
+    }
+});
+
+
+ 
+</script>

@@ -5,11 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tour extends Model
+class UserInfo extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'name', 'description', 'subtitle', 'image_paths'
-    ];
+    protected $table = 'user_info';
 
+    protected $fillable = [
+        'username',
+        'password',
+        'address',
+        'email',
+        'phone_no'
+    ];
 }

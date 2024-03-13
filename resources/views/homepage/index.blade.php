@@ -5,12 +5,7 @@
         @include('tourpage.slider')
 
         @include('homepage.categories')
-
-
-	
 		
-
-
 		{{-- <div class="call_section">
 			<div class="container clearfix">
 				<div class="col-lg-5 col-md-6 float-end wow position-relative" data-wow-offset="250">

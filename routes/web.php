@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\TourController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -31,6 +32,15 @@ Route::get('/all-tours', [TourController::class, 'AllTours']);
 Route::get('/tour-detail/{id}', [TourController::class, 'TourDetail']);
 
 
-// Route::get('/foo', function () {
-//     Artisan::call('storage:link');
-// });
+Route::post('/user_rating', [TourController::class, 'UserRating']);
+
+Route::get('/bookingPage/{id}', [BookingController::class, 'bookingPage']);
+
+Route::post('/saveBooking', [BookingController::class, 'saveBooking']);
+
+
+Route::get('/contact_us', [HomeController::class, 'contactPage']);
+
+
+Route::post('/save_contact', [HomeController::class, 'saveContact']);
+

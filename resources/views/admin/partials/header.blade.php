@@ -14,13 +14,13 @@
         <link rel="shortcut icon" href="images/images2/favicon.ico">
 
         <!-- jquery.vectormap css -->
-        <link href="/js/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <link href="js/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
 
         <!-- DataTables -->
-        <link href="/js/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="js/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
         <!-- Responsive datatable examples -->
-        <link href="/js/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />  
+        <link href="js/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />  
 
         <!-- Bootstrap Css -->
         {{-- <link href="css/css2/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" /> --}}
@@ -194,8 +194,7 @@
 
                             <div class="dropdown-menu dropdown-menu-end">
                                 <!-- item-->
-                                <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
-                                <a class="dropdown-item d-block" href="#"><i class="ri-settings-2-line align-middle me-1"></i> Settings</a>
+                                <a class="dropdown-item" href="/admin_profile"><i class="ri-user-line align-middle me-1"></i> Profile</a>
 
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item text-danger" href="/"><i class="ri-shut-down-line align-middle me-1 text-danger"></i> Logout</a>

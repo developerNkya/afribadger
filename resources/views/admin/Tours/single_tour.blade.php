@@ -118,11 +118,12 @@
                                                     <tbody>
                                                         <tr>
                                                             <th scope="row" style="width: 400px;">No. Bookings</th>
-                                                            <td><b>0</b></td>
+                                                            <td><a href="/ratings_category/approved"><b>{{$total_bookings}}</b></a>
+                                                    </td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Ratings</th>
-                                                            <td>0</td>
+                                                            <td>{{ count($ratings) }}</td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Price</th>
@@ -130,7 +131,9 @@
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Images</th>
-                                                            <td>Cotton</td>
+                                                            @foreach ($tours as $tour)                                                           
+                                                            <td>{{ count($tour['image_paths']) }}</td>
+                                                            @endforeach
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -152,33 +155,36 @@
                                         <span class="mdi mdi-star text-warning"></span>
                                         <span class="mdi mdi-star"></span>
                                     </div>
-                                    <div class="text-muted">( 132 customer Review)</div>
+                                    <div class="text-muted">({{ count($ratings) }} customer Review)</div>
                                 </div>
+
+
+        
+                                @foreach ($ratings as $rating)  
                                 <div class="border p-4 rounded">
                                     <div class="d-flex border-bottom pb-3">
                                         <div class="flex-1">
-                                            <p class="text-muted mb-2">To an English person, it will seem like
-                                                simplified English, as a skeptical Cambridge</p>
-                                            <h5 class="font-size-15 mb-3">James</h5>
+                                            <p class="text-muted mb-2">{{ $rating->review }}</p>
+                                            <h5 class="font-size-15 mb-3">{{ $rating->name }}</h5>
 
                                             <ul class="list-inline product-review-link mb-0">
                                                 <li class="list-inline-item">
                                                     <a href="#"><i
-                                                            class="mdi mdi-thumb-up align-middle me-1"></i> Like</a>
+                                                            class="mdi mdi-thumb-up align-middle me-1"></i> </a>
                                                 </li>
                                                 <li class="list-inline-item">
                                                     <a href="#"><i
                                                             class="mdi mdi-message-text align-middle me-1"></i>
-                                                        Comment</a>
+                                                        </a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <p class="float-sm-end font-size-12">11 Feb, 2020</p>
-                                    </div>
-                                    
-
-
+                                        <p class="float-sm-end font-size-12">{{ $rating->created_at->format('Y-m-d') }}
+                                        </p>
+                                    </div>                                  
                                 </div>
+                                @endforeach
+
                             </div>
                         </div>
                     </div>
