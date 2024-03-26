@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AboutUs;
 use App\Models\Booking;
 use App\Models\Contact;
 use App\Models\Detail;
+use App\Models\Founder;
 use App\Models\Rating;
 use App\Models\Tour;
 use App\Models\User;
@@ -13,9 +15,12 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\View;
+
 use Session;
 
 use Cloudinary\Api\Upload\UploadApi;
+use Illuminate\Support\Facades\Validator;
+
 
 
 
@@ -36,6 +41,208 @@ class AdminController extends Controller
         return view('admin.SignIn');
     }
 
+    public function AdminAboutPage()
+    {
+        return view('admin.edit_about');
+    }
+
+
+
+
+    // public function AdminEditPage(Request $request)
+    // {
+    //     // Validation rules
+    //     $rules = [
+    //         'header' => 'required|string|max:255',
+    //         'history' => 'required|string',
+    //         'founder_names.*' => 'required|string|max:255',
+    //         'founder_titles.*' => 'required|string|max:255',
+    //         'founder_images.*' => 'required|image|max:2048', 
+    //     ];
+
+    //     // Custom validation messages
+    //     $messages = [
+    //         'founder_images.*.image' => 'The file must be an image.',
+    //         'founder_images.*.max' => 'The image size should not exceed 2MB.',
+    //     ];
+
+    //     // Validate the request
+    //     $validator = Validator::make($request->all(), $rules, $messages);
+
+    //     // Check if validation fails
+    //     if ($validator->fails()) {
+    //         return redirect()->back()->withErrors($validator)->withInput();
+
+
+    //     }
+
+    //     // Retrieve validated values from the request
+    //     $header = $request->input('header');
+    //     $history = $request->input('history');
+    //     $founderNames = $request->input('founder_names');
+    //     $founderTitles = $request->input('founder_titles');
+    //     $founderImages = $request->file('founder_images');
+    //     $moreReasons = $request->input('more_reasons');
+    //     $imagePaths = $request->input('imagePaths');
+
+
+
+
+    //     $response = [
+    //         'header' => $request->input('header'),
+    //         'history' => $request->input('history'),
+    //         'founderNames' => $request->input('founder_names'),
+    //         'founderTitles' => $request->input('founder_titles'),
+    //         'moreReasons' => $request->input('more_reasons'),
+    //         'imagePaths' => $request->input('imagePaths')
+    //     ];
+
+    //     // Handling founder images
+    //     $founderImages = $request->file('founder_images');
+    //     if ($founderImages) {
+    //         // Assuming $founderImages is an array of uploaded files
+    //         // You may need to process them to get paths or other necessary data
+    //         // For example, you could store them in a directory and then return paths
+    //         $imagePaths = [];
+    //         foreach ($founderImages as $image) {
+    //             $path = $image->store('founder_images', 'public');
+    //             $imagePaths[] = $path;
+    //         }
+    //         $response['founderImages'] = $imagePaths;
+    //     }
+
+    //     $aboutUs = AboutUs::create([
+    //         'header' => $validatedData['header'],
+    //         'history' => $validatedData['history'],
+    //         'reasons' => $validatedData['reasons'], // Serialize reasons
+    //         'founders' => $validatedData['founders'], // Serialize founders
+    //     ]);
+
+
+    //     // Returning JSON response
+    //     return response()->json($response);
+
+    //     // // Start a database transaction
+    //     // \DB::beginTransaction();
+
+    //     // try {
+    //     //     // Save header and history directly
+    //     //     $aboutUs = new AboutUs();
+    //     //     $aboutUs->header = $header;
+    //     //     $aboutUs->history = $history;
+    //     //     $aboutUs->save();
+
+    //     //     // Process and save founders
+    //     //     $foundersData = [];
+    //     //     if ($founderNames && $founderTitles && $founderImages) {
+    //     //         foreach ($founderNames as $key => $founderName) {
+    //     //             $founder = new Founder();
+    //     //             $founder->name = $founderName;
+    //     //             $founder->title = $founderTitles[$key];
+
+    //     //             // Save the image to storage
+    //     //             $imagePath = $founderImages[$key]->store('founder_images');
+    //     //             $founder->image_path = $imagePath;
+
+    //     //             $founder->save();
+
+    //     //             $foundersData[] = [
+    //     //                 'name' => $founderName,
+    //     //                 'title' => $founderTitles[$key],
+    //     //                 'image_path' => $imagePath,
+    //     //             ];
+    //     //         }
+    //     //     }
+
+    //     //     // Process and save reasons (assuming reasons are static and not dynamically added)
+    //     //     $reasonsData = [];
+    //     //     if ($moreReasons) {
+    //     //         foreach ($moreReasons as $reason) {
+    //     //             $reasonsData[] = [
+    //     //                 'reason' => $reason,
+    //     //             ];
+    //     //         }
+    //     //     }
+
+    //     //     // Assuming you have a model for the AboutUs entity
+    //     //     // Here, you can attach founders and reasons to the AboutUs entity if needed
+    //     //     $aboutUs->founders()->createMany($foundersData);
+    //     //     $aboutUs->reasons()->createMany($reasonsData);
+
+    //     //     // Commit the transaction
+    //     //     \DB::commit();
+
+    //     //     // Return a response
+    //     //     return redirect()->back()->with('success', 'About Us updated successfully!');
+    //     // } catch (Exception $e) {
+    //     //     // Rollback the transaction in case of an error
+    //     //     \DB::rollback();
+
+    //     //     // Log the error or handle it as needed
+    //     //     return redirect()->back()->with('error', 'An error occurred while updating About Us. Please try again.');
+    //     // }
+    // }
+
+    public function AdminEditPage(Request $request)
+    {
+        $validatedData = $request->validate([
+            'header' => 'required|string',
+            'history' => 'required|string',
+            'reasons' => 'required|array',
+            'reasons.*' => 'required|string',
+            'founder_names' => 'required|array',
+            'founder_names.*' => 'required|string',
+            'founder_titles' => 'required|array',
+            'founder_titles.*' => 'required|string',
+            'founder_images.*' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+    
+        // Check if a row exists in the database
+        $aboutUs = AboutUs::firstOrNew();
+    
+        // Update the attributes
+        $aboutUs->header = $validatedData['header'];
+        $aboutUs->history = $validatedData['history'];
+    
+        // Handle reasons
+        if (is_array($validatedData['reasons'])) {
+            $aboutUs->setAttribute('reasons', json_encode($validatedData['reasons']));
+        }
+    
+        // Handle founders
+        if (isset($validatedData['founder_names']) && isset($validatedData['founder_titles']) && isset($validatedData['founder_images'])) {
+            $founders = [];
+    
+            foreach ($validatedData['founder_names'] as $key => $founderName) {
+                $founderImage = $validatedData['founder_images'][$key] ?? null;
+                $imagePath = null;
+    
+                // Save image to public directory and get its path
+                if ($founderImage) {
+                    $imagePath = $founderImage->store('founder_images', 'public');
+                }
+    
+                $founder = [
+                    'name' => $founderName,
+                    'title' => $validatedData['founder_titles'][$key],
+                    'image_path' => $imagePath,
+                ];
+    
+                $founders[] = $founder;
+            }
+    
+            $aboutUs->setAttribute('founders', json_encode($founders));
+        }
+    
+        // Save the changes
+        $aboutUs->save();
+    
+        return redirect()->back()->with('message', 'Data has been saved successfully.');
+    }
+
+
+
+
     public function singleTour(Request $request, $id)
     {
         // Pull data of the particular tour based on the $id parameter
@@ -47,14 +254,14 @@ class AdminController extends Controller
             ->get();
 
 
-            $total_bookings = Booking::where('tour_id', $id)->count();
+        $total_bookings = Booking::where('tour_id', $id)->count();
 
         //decoding the imagepaths::
         foreach ($tours as $tour) {
             $tour->image_paths = json_decode($tour->image_paths, true);
         }
 
-        return view('admin.Tours.single_tour', ['tours' => $tours, 'ratings' => $ratings, 'total_bookings'=>$total_bookings]);
+        return view('admin.Tours.single_tour', ['tours' => $tours, 'ratings' => $ratings, 'total_bookings' => $total_bookings]);
     }
 
 
@@ -164,7 +371,7 @@ class AdminController extends Controller
         })->count();
         $approvedBookings = $bookings->where('status', 'approved')->count();
 
- 
+
         return view(
             'admin.Booking.booking_home',
             [
@@ -177,7 +384,7 @@ class AdminController extends Controller
         );
 
     }
-   
+
 
 
     public function UpdateProfile(Request $request)
@@ -190,10 +397,10 @@ class AdminController extends Controller
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:255',
         ]);
-    
+
         // Retrieve the first row of UserInfo
         $userInfo = UserInfo::first();
-    
+
         if ($userInfo) {
             // Update the user's profile using the validated data
             // $userInfo->update($validatedData);
@@ -204,7 +411,7 @@ class AdminController extends Controller
                 'email' => $validatedData['email'],
                 'phone_no' => $validatedData['phone'],
             ]);
-    
+
             // Return a response indicating success
             return response()->json(['message' => 'Profile updated successfully'], 200);
         } else {
@@ -212,9 +419,10 @@ class AdminController extends Controller
             return response()->json(['error' => 'No UserInfo found'], 404);
         }
     }
-    
-   
-    public function  AdminProfile(){
+
+
+    public function AdminProfile()
+    {
         $user_info = UserInfo::get();
 
         return view(
@@ -478,7 +686,7 @@ class AdminController extends Controller
         // Assuming both arrays have the same length
         foreach ($points as $key => $point) {
             // Only add to the array if both point and description are present
-            if (!empty($point) && !empty($descriptions[$key])) {
+            if (!empty ($point) && !empty ($descriptions[$key])) {
                 $pointsWithDescriptions[$point] = $descriptions[$key];
             }
         }

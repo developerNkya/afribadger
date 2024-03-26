@@ -120,7 +120,7 @@
 <!-- COMMON SCRIPTS -->
 <script src="/js/js1/common_scripts.js"></script>
 <script src="/js/js1/main.js"></script>
-<script src="phpmailer/validate.js"></script>
+{{-- <script src="phpmailer/validate.js"></script> --}}
 
 <!-- SLIDER REVOLUTION SCRIPTS  -->
 <script src="/css/revolution-slider/js/jquery.themepunch.tools.min.js"></script>

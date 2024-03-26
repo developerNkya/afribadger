@@ -58,9 +58,13 @@ Route::middleware(['isAdmin'])->group(function () {
     Route::get('/deleteFeedback/{id}', [AdminController::class, 'deleteFeedback'])->name('admin-delete-Feedback');
 
   
-    Route::get('/admin_profile', [AdminController::class, 'AdminProfile'])->name('admin-view-profile');
-    
+    Route::get('/admin_profile', [AdminController::class, 'AdminProfile'])->name('admin-view-profile');    
     Route::post('/update/user_info', [AdminController::class, 'UpdateProfile'])->name('admin-update-profile');
+
+    Route::get('/admin-about', [AdminController::class, 'AdminAboutPage'])->name('admin-about');
+
+    Route::post('/edit_about', [AdminController::class, 'AdminEditPage'])->name('edit-about');
+
 
 
 });

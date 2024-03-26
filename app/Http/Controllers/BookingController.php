@@ -53,7 +53,7 @@ class BookingController extends Controller
         $booking->lastname = $validatedData['lastname_booking'];
         $booking->email = $validatedData['email_booking'];
         $booking->trip_date = $validatedData['expected_trip_date'];
-        $booking->no_of_travellers = $validatedData['number_of_travelers'];
+        $booking->no_of_travellers = is_array($validatedData['number_of_travelers']) ? $validatedData['number_of_travelers'] : 1;
         $booking->phone_no = $validatedData['telephone_booking'];
         $booking->tour_id = $request->tour_id;
 

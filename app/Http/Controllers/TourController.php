@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AboutUs;
 use App\Models\Booking;
+use App\Models\Detail;
 use App\Models\Rating;
 use App\Models\Tour;
 use Illuminate\Http\Request;
@@ -35,7 +37,18 @@ class TourController extends Controller
         return view('alltours.index', ['tours' => $tours]);
     }
 
-
+  
+    public function AboutUs()
+    {
+        $details = AboutUs::get();
+        foreach ($details as $detail) {
+            $detail->founders = json_decode($detail->founders, true);
+            $detail->reasons = json_decode($detail->reasons, true);
+        }
+        
+        return view('homepage.about_us', ['details' => $details]);
+            
+    }
 
     public function UserRating(Request $request)
     {

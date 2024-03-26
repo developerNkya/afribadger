@@ -17,11 +17,20 @@
 
                 
                 <li>
+                    <a href="/admin-about" class="waves-effect">
+                        <i class="fas fa-home"></i>
+                        <span>About Us</span>
+                    </a>
+                </li>
+
+                
+                <li>
                     <a href="/admin-add-tour" class="waves-effect">
                         <i class="fas fa-suitcase-rolling"></i>
                         <span>All Tours</span>
                     </a>
                 </li>
+                
 
                 
                 <li>
