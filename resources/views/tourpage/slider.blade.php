@@ -1,6 +1,6 @@
         
 		<!-- START SLIDER -->
-		<div id="rev_slider_44_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="mask-showcase" data-source="gallery">
+		{{-- <div id="rev_slider_44_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="mask-showcase" data-source="gallery">
             <!-- Start revolution slider 5.4.8 fullscreen mode -->
             <div id="rev_slider_44" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8">
                 <ul> 
@@ -68,6 +68,40 @@
                 </ul>
             </div>
         </div>
+        --}}
+
+        <section class="hero_single jarallax radio_cat" data-jarallax>
+		    <img class="jarallax-img" src="{{asset('images/categories/hero-home-3.jpg')}}"  alt="">
+		    <div class="wrapper opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.6)">
+		        <div class="container">
+		            <div class="row justify-content-center">
+		                <div class="col-xl-10">
+                            <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+
+
+		                    <h3 style="font-size: 64px" >{{$data['header']}}</h3>
+		                    <p style="font-size: 24px">{{$data['subtitle']}}</p>
+		                    <div class="switch-field">
+								<input type="radio" id="Tours" name="listing_filter" value="tours" checked>
+								<label for="Tours"><img src="{{asset('images/categories/tours_icon_cat.svg')}}">Explore</label>
+								<input type="radio" id="Hotels" name="listing_filter" value="hotels">
+                                <label for="Tours"><img src="{{asset('images/categories/hotel.svg')}}" >Visit</label>
+								<input type="radio" id="Restaurants" name="listing_filter" value="restaurants">
+                                <label for="Tours"><img src="{{asset('images/categories/meals.svg')}}">Enjoy Meals</label>
+								<input type="radio" id="Adventure" name="listing_filter" value="adventure">
+                                <label for="Tours"><img src="{{asset('images/categories/adventure_icon.svg')}}">Adventures</label>
+							</div>
+
+		                </div>
+		            </div>
+		            <!-- /row -->
+		        </div>
+		        <!-- /container -->
+		    </div>
+		</section>
+
+
 <!-- END REVOLUTION SLIDER -->
 
 
