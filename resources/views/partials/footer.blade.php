@@ -60,8 +60,7 @@
             </div>
             <div class="col-lg-6">
                 <ul id="additional_links">
-                    <li><a href="#0">Terms and conditions</a></li>
-                    <li><a href="#0">Privacy</a></li>
+                    <li><a href="/faqs">FAQS</a></li>
                     <li><span>© Camel Leon</span></li>
                 </ul>
             </div>

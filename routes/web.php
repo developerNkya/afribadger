@@ -31,6 +31,7 @@ Route::get('/tour-page', [TourController::class, 'Index']);
 Route::get('/all-tours', [TourController::class, 'AllTours']);
 
 Route::get('/about-us', [TourController::class, 'AboutUs']);
+Route::get('/faqs', [HomeController::class, 'faqs']);
 
 Route::get('/tour-detail/{id}', [TourController::class, 'TourDetail']);
 
