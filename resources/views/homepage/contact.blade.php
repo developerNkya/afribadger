@@ -28,7 +28,10 @@
                 <li>
                     <i class="pe-7s-phone"></i>
                     <h4>Contacts info</h4>
-                    <span>{{$info->phone_no}}</span>
+                    <span>
+                     <img src="{{asset('images/payments/whatsapp.png')}}" alt="PayPal Icon" style="width: 20px; height: 20px;"> {{$info->phone_no}}
+                    </span>
+
                 </li>
             </ul>
         </div>

@@ -12,8 +12,8 @@ return new class extends Migration
     public function up()
     {
         Schema::table('about_us', function (Blueprint $table) {
-            $table->json('founders')->nullable(); // Store founders as JSON
-            $table->json('reasons')->nullable(); // Store reasons as JSON
+            $table->json('founders')->nullable();
+            $table->json('reasons')->nullable();
         });
     }
 

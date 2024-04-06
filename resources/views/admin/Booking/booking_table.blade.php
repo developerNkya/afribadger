@@ -7,8 +7,8 @@
                     <thead>
                         <tr>
                             <th>Total Bookings</th>
-                            <th>Pending Bookings</th>
-                            <th>Approved Bookings</th>
+                            {{-- <th>Pending Bookings</th>
+                            <th>Approved Bookings</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -16,12 +16,12 @@
                             <td><a href="/ratings_category/total"><span
                                         class="btn btn-success waves-effect waves-light">{{ $totalBookings }}</span></a>
                             </td>
-                            <td><a href="/ratings_category/pending"><span
+                            {{-- <td><a href="/ratings_category/pending"><span
                                         class="btn btn-danger waves-effect waves-light">{{ $pendingBookings }}</span></a>
                             </td>
                             <td><a href="/ratings_category/approved"><span
                                         class="btn btn-success waves-effect waves-light">{{ $approvedBookings }}</span></a>
-                            </td>
+                            </td> --}}
                         </tr>
                     </tbody>
                 </table>

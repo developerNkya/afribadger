@@ -2,11 +2,11 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.ansonika.com/panagea/index-11.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jan 2024 15:00:57 GMT -->
+<!-- Mirrored from www.ansonika.com/Camel Leon/index-11.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jan 2024 15:00:57 GMT -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Panagea - Premium site template for travel agencies, hotels and restaurant listing.">
+    <meta name="description" content="Camel Leon - Premium site template for travel agencies, hotels and restaurant listing.">
     <meta name="author" content="Ansonika">
     <title>Camel Leon | Tour site</title>
 

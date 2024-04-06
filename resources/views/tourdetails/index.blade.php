@@ -314,10 +314,9 @@
                                 Now!</a>
 
                         </div>
-                        <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 5px;">
-                            <li><a href="#0"><img src="https://i.ibb.co/sjbBVd5/paypal.png" alt="PayPal Icon" style="width: 60px; height: 60px;"></a></li>
-                            <li><a href="#0"><img src="https://i.ibb.co/brMTWkP/logo.png" alt="PayPal Icon" style="width: 50px; height: 50px;"></a></li>
-                            <li><a href="#0"><img src="https://i.ibb.co/4JWZ4Y7/google-pay.png" alt="PayPal Icon" style="width: 50px; height: 50px;"></a></li>
+                        <ul style="display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 5px;padding-left:3%">
+                            <li><a href="#0"><img src="{{asset('images/payments/western-union.png')}}" alt="PayPal Icon" style="width: 50px; height: 50px;"></a></li>
+                            <li><a href="#0"><img src="{{asset('images/payments/wallet.png')}}" alt="PayPal Icon" style="width: 50px; height: 50px;"></a></li>
                             <li><a href="#0"><img src="https://i.ibb.co/ssYWkGD/atm-card.png" alt="PayPal Icon" style="width: 50px; height: 50px;"></a></li>
                         </ul>
                         

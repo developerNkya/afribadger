@@ -59,7 +59,7 @@
                                 @endforeach
                             </ul>
                         </div>
-                    @endif
+                        @endif
                             <div class="form_title">
                                 <h3><strong>1</strong>Your Details</h3>
                                 <p>
@@ -108,6 +108,14 @@
                                             <input type="number" id="number_of_travelers" name="number_of_travelers" class="form-control" style="margin-top: 10px;" placeholder="Enter number of travelers" disabled>
                                         </div>
                                     </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Number Of Children</label><br>
+                                            <label style="color: grey">(Can be left blank if there are no children)</label><br>
+                                            <input type="text" id="no_of_children" name="no_of_children" class="form-control" style="margin-top: 3%">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
@@ -118,11 +126,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr>
                             <!--End step -->
-                            <hr>
-                            <!--End step -->
-                            <div id="policy">
+                            <div id="policy" style="margin-top: 10%">
                                 <h5>Cancellation policy</h5>
                                 <p class="nomargin">Our commitment to providing a seamless experience extends to our flexible rescheduling assurance. We understand that plans can change unexpectedly, which is why we offer a comprehensive cancellation policy designed to accommodate your needs. </p>
                             </div>

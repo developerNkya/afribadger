@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Booking;
 use App\Models\Tour;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class BookingController extends Controller
 {
@@ -12,9 +13,9 @@ class BookingController extends Controller
     public function bookingPage(Request $request, $id)
     {
         //get the price
-        $price = Tour::where('id',$id)->value('price');
+        $price = Tour::where('id', $id)->value('price');
 
-        return view('bookingUser.infoSection', ['tour_id' => $id,'price'=>$price]);
+        return view('bookingUser.infoSection', ['tour_id' => $id, 'price' => $price]);
 
     }
 
@@ -42,29 +43,27 @@ class BookingController extends Controller
 
         if ($existingBooking) {
             // Similar booking exists
-            return redirect()->back()->with('error', 'A similar booking already exists.');
+            return Redirect::back()->withErrors(['error' => 'Sorry!...A similar booking already exists.']);           
         }
 
         // Create a new Booking instance
         $booking = new Booking();
-
         // Set the properties of the booking instance
         $booking->firstname = $validatedData['firstname_booking'];
         $booking->lastname = $validatedData['lastname_booking'];
         $booking->email = $validatedData['email_booking'];
         $booking->trip_date = $validatedData['expected_trip_date'];
-        $booking->no_of_travellers = is_array($validatedData['number_of_travelers']) ? $validatedData['number_of_travelers'] : 1;
+        $booking->no_of_travellers = $validatedData['num_travelers'] === 'multiple' ? $validatedData['number_of_travelers'] : 1;
         $booking->phone_no = $validatedData['telephone_booking'];
         $booking->tour_id = $request->tour_id;
+        $booking->no_of_children = $request->no_of_children;
 
         if ($booking->save()) {
-            // Booking successfully saved
-            // return redirect()->back()->with('success', 'Booking saved successfully!');
             return view('bookingUser.completeBooking');
         } else {
             // Booking failed to save
             return redirect()->back()->with('error', 'Failed to save booking. Please try again.');
-        
+
         }
     }
 

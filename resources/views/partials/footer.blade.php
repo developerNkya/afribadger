@@ -15,6 +15,11 @@
                         <li><a href="#0"><i class="ti-pinterest"></i></a></li>
                         <li><a href="#0"><i class="ti-instagram"></i></a></li>
                     </ul>
+                    <ul>
+                        <li>Contacts</li><br>
+                        <li style="font-size:15px"><a href="#0"><img src="{{asset('images/payments/whatsapp.png')}}" alt="PayPal Icon" style="width: 20px; height: 20px;"></a> +44 7831 808 250(United-Kingdom)</li>
+
+                    </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 ms-lg-auto">
@@ -50,14 +55,14 @@
                             </select>
                         </div>
                     </li>
-                    <li><img src="images/img1/cards_all.svg" alt=""></li>
+                    {{-- <li><img src="images/img1/cards_all.svg" alt=""></li> --}}
                 </ul>
             </div>
             <div class="col-lg-6">
                 <ul id="additional_links">
                     <li><a href="#0">Terms and conditions</a></li>
                     <li><a href="#0">Privacy</a></li>
-                    <li><span>© Panagea</span></li>
+                    <li><span>© Camel Leon</span></li>
                 </ul>
             </div>
         </div>
@@ -268,5 +273,5 @@ document.addEventListener('DOMContentLoaded', function() {
 };
 });
 </script>
-<!-- Mirrored from www.ansonika.com/panagea/index-11.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jan 2024 15:01:43 GMT -->
+<!-- Mirrored from www.ansonika.com/Camel Leon/index-11.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jan 2024 15:01:43 GMT -->
 </html>

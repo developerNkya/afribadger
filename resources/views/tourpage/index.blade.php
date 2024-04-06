@@ -187,12 +187,12 @@
 					<h5>Contact with Us</h5>
 					<ul class="contacts">
 						<li><a href="tel://61280932400"><i class="ti-mobile"></i> + 61 23 8093 3400</a></li>
-						<li><a href="mailto:info@Panagea.com"><i class="ti-email"></i> info@Panagea.com</a></li>
+						<li><a href="mailto:info@Camel Leon.com"><i class="ti-email"></i> info@Camel Leon.com</a></li>
 					</ul>
 					<div id="newsletter">
 					<h6>Newsletter</h6>
 					<div id="message-newsletter"></div>
-					<form method="post" action="https://www.ansonika.com/panagea/phpmailer/newsletter_template_email.php" name="newsletter_form" id="newsletter_form">
+					<form method="post" action="https://www.ansonika.com/Camel Leon/phpmailer/newsletter_template_email.php" name="newsletter_form" id="newsletter_form">
 						<div class="form-group">
 							<input type="email" name="email_newsletter" id="email_newsletter" class="form-control" placeholder="Your email">
 							<input type="submit" value="Submit" id="submit-newsletter">
@@ -231,7 +231,7 @@
 					<ul id="additional_links">
 						<li><a href="#0">Terms and conditions</a></li>
 						<li><a href="#0">Privacy</a></li>
-						<li><span>© Panagea</span></li>
+						<li><span>© Camel Leon</span></li>
 					</ul>
 				</div>
 			</div>
@@ -419,5 +419,5 @@
 	
 </body>
 
-<!-- Mirrored from www.ansonika.com/panagea/index-11.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jan 2024 15:01:43 GMT -->
+<!-- Mirrored from www.ansonika.com/Camel Leon/index-11.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Jan 2024 15:01:43 GMT -->
 </html>
