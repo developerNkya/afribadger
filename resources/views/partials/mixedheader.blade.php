@@ -21,7 +21,7 @@
 
     {{-- The admin part added --}}
             <!-- App favicon -->
-            <link rel="shortcut icon" href="images/images2/favicon.ico">
+            <link rel="shortcut icon" href="/images/fav/favicon2.png">
 
             <!-- jquery.vectormap css -->
             <link href="/js/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
