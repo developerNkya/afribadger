@@ -67,7 +67,7 @@
 				</div>
 			</div>
 		</a>
-		<nav id="menu" class="main-menu">
+		<nav id="menu" class="main-menu" style="margin-top:13px">
 			<ul>
 				<li><span><a href="/">Home</a></span></li>
                     <li><span><a href="/all-tours">Tours</a></span></li>

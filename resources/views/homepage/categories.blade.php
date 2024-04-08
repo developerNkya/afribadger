@@ -1,4 +1,4 @@
-<div class="container container-custom margin_80_0" id="categories_section">
+<div class="container container-custom margin_80_0 categories_card" id="categories_section">
     <div class="main_title_2">
         <span><em></em></span>
         <h2>Our Cartegories</h2>
@@ -69,7 +69,7 @@
 <!-- /container -->
 
 
-<script>
+{{-- <script>
 document.addEventListener("DOMContentLoaded", function() {
     var visitButton = document.getElementById("visitButton");
     console.log('pressed');
@@ -82,4 +82,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
  
-</script>
+</script> --}}

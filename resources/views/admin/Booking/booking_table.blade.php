@@ -55,6 +55,8 @@
                                 <th>Name</th>
                                 <th>Phone No</th>
                                 <th>Email</th>
+                                <th>Total</th>
+                                <th>Children</th>
                                 <th>Tour</th>
                             </tr>
                         </thead>
@@ -65,6 +67,8 @@
                                     <td>{{$booking->firstname}} {{$booking->lastname}}</td>
                                     <td>{{ $booking->phone_no }}</td>
                                     <td>{{ $booking->email }}</td>
+                                    <td>{{ $booking->no_of_travellers }}</td>
+                                    <td>{{ $booking->no_of_children }}</td>
                                     <td>
                                         <a href="/admin-tour-detail/{{$booking->tour->id}}">{{ $booking->tour->name }}</a>
                                     </td>                                    
