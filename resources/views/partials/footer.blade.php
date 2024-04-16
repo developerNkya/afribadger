@@ -18,6 +18,8 @@
                     <ul>
                         <li>Contacts</li><br>
                         <li style="font-size:15px"><a href="#0"><img src="{{asset('images/payments/whatsapp.png')}}" alt="PayPal Icon" style="width: 20px; height: 20px;"></a> +44 7831 808 250(United-Kingdom)</li>
+                        <li style="font-size:15px"><a href="#0"><img src="{{asset('images/payments/whatsapp.png')}}" alt="PayPal Icon" style="width: 20px; height: 20px;"></a> +49 1573 041 6621(Germany)</li>
+
 
                     </ul>
                 </div>

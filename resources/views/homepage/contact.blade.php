@@ -17,12 +17,14 @@
                 <li>
                     <i class="pe-7s-map-marker"></i>
                     <h4>Address</h4>
-                    <span>{{$info->address}}</span>
+                    <span>{{$info->address}}</span><br>
+                    <span>Germany</span>
                 </li>
                 <li>
                     <i class="pe-7s-mail-open-file"></i>
                     <h4>Email</h4>
                     <span>{{$info->email}}</span>
+                    <span>Cecilia@camelleonsafaris.com</span><br>
 
                 </li>
                 <li>
@@ -30,10 +32,13 @@
                     <h4>Contacts info</h4>
                     <span>
                      <img src="{{asset('images/payments/whatsapp.png')}}" alt="PayPal Icon" style="width: 20px; height: 20px;"> {{$info->phone_no}}
+                    </span><br>
+                    <span>
+                    <img src="{{asset('images/payments/whatsapp.png')}}" alt="PayPal Icon" style="width: 20px; height: 20px;"> +49 1573 041 6621(Germany)
                     </span>
-
                 </li>
             </ul>
+            
         </div>
     </div>
     @endforeach
