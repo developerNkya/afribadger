@@ -21,6 +21,11 @@
   .large-screen {
     display: none; /* Hide large-screen image on small screens */
   }
+
+  .hero_single.jarallax {
+    height: 450px;
+    margin-top:10%;
+}
 }
 
 /* Media query for screen width larger than 512px */
@@ -28,4 +33,9 @@
   .small-screen {
     display: none; /* Hide small-screen image on large screens */
   }
+
+  .hero_single.jarallax {
+    height: 650px;
+}
+
 }

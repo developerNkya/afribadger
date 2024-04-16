@@ -5800,9 +5800,8 @@ a.social_bt {
     line-height: 18px;
     text-align: center;
 }
-.hero_single.jarallax {
-    height: 650px;
-}
+
+
 .hero_single.jarallax .wrapper p {
     font-weight: 400;
     margin: 5px 0 0;
@@ -5969,7 +5968,7 @@ a.btn_explore:hover {
     filter: grayscale(0);
 }
 .hero_single.radio_cat {
-    height: 720px;
+   
 }
 .hero_single.radio_cat .switch-field {
     padding: 45px 0 15px;

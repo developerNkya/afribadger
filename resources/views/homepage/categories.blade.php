@@ -1,4 +1,4 @@
-<div class="container container-custom margin_80_0 categories_card" id="categories_section">
+<div class="container container-custom  categories_card" id="categories_section" style="margin-bottom:100px">
     <div class="main_title_2">
         <span><em></em></span>
         <h2>Our Cartegories</h2>
@@ -66,20 +66,3 @@
     <!-- /carousel -->
 
 </div>
-<!-- /container -->
-
-
-{{-- <script>
-document.addEventListener("DOMContentLoaded", function() {
-    var visitButton = document.getElementById("visitButton");
-    console.log('pressed');
-    if (visitButton) {
-        visitButton.addEventListener("click", function() {
-            window.location.href = "/all-tours";
-        });
-    }
-});
-
-
- 
-</script> --}}
