@@ -43,20 +43,10 @@
                         <div class="styled-select" id="lang-selector">
                             <select>
                                 <option value="English" selected>English</option>
-                                <option value="French">French</option>
-                                <option value="Spanish">Spanish</option>
-                                <option value="Russian">Russian</option>
                             </select>
                         </div>
                     </li>
-                    <li>
-                        <div class="styled-select" id="currency-selector">
-                            <select>
-                                <option value="US Dollars" selected>US Dollars</option>
-                                <option value="Euro">Euro</option>
-                            </select>
-                        </div>
-                    </li>
+
                     {{-- <li><img src="images/img1/cards_all.svg" alt=""></li> --}}
                 </ul>
             </div>
@@ -64,6 +54,7 @@
                 <ul id="additional_links">
                     <li><a href="/faqs">FAQS</a></li>
                     <li><span>© Camel Leon</span></li>
+                    <li><a href="/sign-in"><span>Admins</span></a></li>
                 </ul>
             </div>
         </div>

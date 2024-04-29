@@ -72,7 +72,7 @@
                     <li><span><a href="/about-us">About Us</a></span></li>
                     <li><span><a href="/faqs">FAQ</a></span> </li>  
                                 <li><span><a href="/contact_us">Contact Us</a></span> </li>  
-                                    <li><span><a href="/sign-in">Admin</a></span> </li>                  
+                                    {{-- <li><span><a href="/sign-in">Admin</a></span> </li>                   --}}
             <ul>
 			</ul>
 		</nav>

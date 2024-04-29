@@ -210,17 +210,6 @@
 							<div class="styled-select" id="lang-selector">
 								<select>
 									<option value="English" selected>English</option>
-									<option value="French">French</option>
-									<option value="Spanish">Spanish</option>
-									<option value="Russian">Russian</option>
-								</select>
-							</div>
-						</li>
-						<li>
-							<div class="styled-select" id="currency-selector">
-								<select>
-									<option value="US Dollars" selected>US Dollars</option>
-									<option value="Euro">Euro</option>
 								</select>
 							</div>
 						</li>
