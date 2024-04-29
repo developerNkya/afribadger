@@ -115,14 +115,15 @@
 /* header logo */
 .logo_normal1 {
   width: 100px;
-  height: 56px;
+  height: 52px;
   background-image: url('../images/categories/camel_logo3.png');
   background-size: cover; 
+
 }
 
 .header_img2 {
-  width: 230px;
-  height: 85px;
+  width: 190px;
+  height: 75px;
   background-image: url('../images/categories/camel_logo2.png');
   background-size: cover; /* Adjust this based on your design needs */
 }
