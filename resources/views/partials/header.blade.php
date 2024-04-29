@@ -42,10 +42,8 @@
 
 </head>
 
-<body>
-		
-	<div id="page">
-		
+<body>		
+	<div id="page">	
 	<header class="header menu_fixed">
 		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Page Preload -->
 		<div id="logo">
