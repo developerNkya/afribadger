@@ -25,26 +25,27 @@ require __DIR__ . '/admin_routes.php';
 //     return view('homepage.index');
 // });
 
+
+
 Route::get('/', [HomeController::class, 'Index'])->name('user.homepage');
 
 Route::get('/tour-page', [TourController::class, 'Index']);
 Route::get('/all-tours', [TourController::class, 'AllTours']);
-
 Route::get('/about-us', [TourController::class, 'AboutUs']);
 Route::get('/faqs', [HomeController::class, 'faqs']);
-
 Route::get('/tour-detail/{id}', [TourController::class, 'TourDetail']);
-
-
 Route::post('/user_rating', [TourController::class, 'UserRating']);
-
 Route::get('/bookingPage/{id}', [BookingController::class, 'bookingPage']);
-
 Route::post('/saveBooking', [BookingController::class, 'saveBooking']);
-
-
 Route::get('/contact_us', [HomeController::class, 'contactPage']);
-
-
 Route::post('/save_contact', [HomeController::class, 'saveContact']);
+
+
+
+// maintainace routes
+Route::get('/maintenance', [HomeController::class, 'maintenance'])->name('fix');
+
+Route::any('{query}', function() {
+    return redirect('/maintenance');
+})->where('query', '.*');
 
