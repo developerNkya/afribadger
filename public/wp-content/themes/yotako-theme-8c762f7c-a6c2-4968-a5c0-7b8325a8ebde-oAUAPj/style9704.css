@@ -275,8 +275,6 @@ body .yt_fill_size {
     height: 462px;
     z-index: 1;
     position: absolute !important;
-    left: -4px;
-    top: 4445px;
 }
 
 .container_2d078b63e8c6 {
@@ -1254,6 +1252,12 @@ body .yt_fill_size {
     z-index: 1;
     left: 160px;
     top: 2884px;
+}
+
+.container_home_banner {
+    position: absolute !important;
+    z-index: 1;
+    top: 2950px;
 }
 
 .container_d6101022d584 {

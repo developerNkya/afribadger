@@ -1421,11 +1421,6 @@
                             Discover the Difference with <br />Camelleon Safaris
                         </h2>
 
-                        <figure class="imageview_0971821a99a6 wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/207:940.webp" />
-                        </figure>
-
                         <div
                             class="wp-block-group container_2d078b63e8c6 is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
