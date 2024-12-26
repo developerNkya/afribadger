@@ -1736,12 +1736,12 @@ body .yt_fill_size {
 }
 
 .container_7d73630aa6b1 {
-    width: 19px;
-    height: 19px;
+    width: 29px;
+    height: 29px;
     z-index: 1;
     position: absolute !important;
-    left: 560px;
-    top: 4379px;
+    left: 554px;
+    top: 5px;
     background: #ebb300;
     border-radius: 50% 50% 50% 50%;
 }
@@ -1752,7 +1752,6 @@ body .yt_fill_size {
     z-index: 2;
     position: absolute !important;
     left: 560px;
-    top: 4370px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 37.5px;
@@ -1766,7 +1765,6 @@ body .yt_fill_size {
     z-index: 1;
     position: absolute !important;
     left: 604px;
-    top: 4370px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 37.5px;
@@ -1780,7 +1778,6 @@ body .yt_fill_size {
     z-index: 1;
     position: absolute !important;
     left: 649px;
-    top: 4370px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 37.5px;
@@ -1794,7 +1791,6 @@ body .yt_fill_size {
     z-index: 1;
     position: absolute !important;
     left: 691px;
-    top: 4370px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 37.5px;

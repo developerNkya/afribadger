@@ -88,3 +88,66 @@
     @endforeach
 </div>
 
+
+
+<div class="container_01e53a8cca8a">
+{{-- pagination --}}
+<div
+class="wp-block-group container_7d73630aa6b1  is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
+</div>
+
+
+<h2 class="text_0ddc120d05cf has-text-color has-background has-text-align-left wp-block-heading"
+style="
+text-transform: none;
+font-style: normal;
+font-size: 31.5px;
+font-weight: 400;
+letter-spacing: -0.5px;
+color: #000000;
+background-color: transparent;
+">
+1
+</h2>
+
+<h2 class="text_f4756b5b15ef has-text-color has-background has-text-align-left wp-block-heading"
+style="
+text-transform: none;
+font-style: normal;
+font-size: 31.5px;
+font-weight: 400;
+letter-spacing: -0.5px;
+color: #000000;
+background-color: transparent;
+">
+2
+</h2>
+
+<h2 class="text_f75046a812ae has-text-color has-background has-text-align-left wp-block-heading"
+style="
+text-transform: none;
+font-style: normal;
+font-size: 31.5px;
+font-weight: 400;
+letter-spacing: -0.5px;
+color: #000000;
+background-color: transparent;
+">
+3
+</h2>
+
+<h2 class="text_70a9c6a95357 has-text-color has-background has-text-align-left wp-block-heading"
+style="
+text-transform: none;
+font-style: normal;
+font-size: 31.5px;
+font-weight: 400;
+letter-spacing: -0.5px;
+color: #000000;
+background-color: transparent;
+">
+4
+</h2>
+
+</div>
