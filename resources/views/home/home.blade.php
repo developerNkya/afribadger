@@ -10,7 +10,7 @@
     <meta name="robots" content="max-image-preview:large" />
     <style>
         img:is([sizes="auto" i],
-        [sizes^="auto," i]) {
+            [sizes^="auto," i]) {
             contain-intrinsic-size: 3000px 1500px;
         }
     </style>
@@ -300,7 +300,7 @@
             border-radius: 9999px;
         }
 
-      
+
 
         :root :where(.wp-block-image.is-style-rounded img,
             .wp-block-image .is-style-rounded img) {
@@ -1322,18 +1322,19 @@
             z-index: 100000;
         }
     </style>
+    <style>
+        /* *{
+            height:10px;
+        } */
+    </style>
     <link rel="stylesheet" id="style-css"
         href="{{ asset('wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/style9704.css?ver=6.7.1') }}"
         media="all" />
     <link rel="stylesheet" id="Roboto-css"
-        href="{{ asset('storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1') }}"
-        media="all" />
-        <link rel="stylesheet"
-        href="{{ asset('css/home.css') }}"
-        media="all" />
+        href="{{ asset('storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1') }}" media="all" />
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}" media="all" />
     <link rel="stylesheet" id="Bobaland-css"
-        href="{{ asset('storage.googleapis.com/yotako-fonts/CdnFonts/css/Bobaland9704.css?ver=6.7.1') }}"
-        media="all" />
+        href="{{ asset('storage.googleapis.com/yotako-fonts/CdnFonts/css/Bobaland9704.css?ver=6.7.1') }}" media="all" />
     <script
         src="{{ asset('wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/script9704.js?ver=6.7.1') }}"
         id="custom-script-js"></script>
@@ -1372,8 +1373,7 @@
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/414:3123.webp" />
                         </figure>
 
-                        <div
-                            class="wp-block-group container_567b824f6977 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_567b824f6977 is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
@@ -1403,10 +1403,7 @@
                             Safari Tours in Tanzania
                         </h2>
 
-                        <figure class="imageview_c73086d3db09 wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/97:1670.svg" />
-                        </figure>
+
 
                         <h2 class="text_651201c51c76 has-text-color has-background has-text-align-center wp-block-heading"
                             style="
@@ -1420,275 +1417,6 @@
                 ">
                             Discover the Difference with <br />Camelleon Safaris
                         </h2>
-
-                        <div
-                            class="wp-block-group container_2d078b63e8c6 is-layout-flow wp-block-group-is-layout-flow">
-                            <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
-                        </div>
-
-                        <p class="text_ba05be332dc5 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #000000;
-                  background-color: transparent;
-                ">
-                            Camel Leon Safaris Ltd. was born out of a love for the idea of
-                            adapting to various environments, mirroring the chameleon&apos;s
-                            ability. Our founders wanted to share this experience with
-                            people in the wilds of Africa, highlighting the beauty of nature
-                            when one immerses and adapts to it.
-                        </p>
-
-                        <p class="text_8d0d8f83f4fe has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 900;
-                  letter-spacing: -0.5px;
-                  color: #000000;
-                  background-color: transparent;
-                ">
-                            United Republic of Tanzania, Kilimanjaro Region Nshara,Aishi
-                            Road, Plot 173A | P.O Box 938
-                        </p>
-
-                        <p class="text_a04e4035e2b8 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 900;
-                  letter-spacing: -0.5px;
-                  color: #000000;
-                  background-color: transparent;
-                ">
-                            Travel Tips
-                        </p>
-
-                        <p class="text_2c381a27ca80 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 900;
-                  letter-spacing: -0.5px;
-                  color: #000000;
-                  background-color: transparent;
-                ">
-                            Camelleon Safaris
-                        </p>
-
-                        <p class="text_622932141916 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 900;
-                  letter-spacing: -0.5px;
-                  color: #000000;
-                  background-color: transparent;
-                ">
-                            Contact Information
-                        </p>
-
-                        <div class="wp-block-yotako-block-anchor">
-                            <a href="https://serengeticlarity.com/tanzania-entry-requirements/" class=""
-                                target="_self" rel="noopener">
-                                <p class="text_cd3f57e0ec96 has-text-color has-background has-text-align-left"
-                                    style="
-                      text-transform: none;
-                      font-style: normal;
-                      font-size: 15.5px;
-                      font-weight: 500;
-                      text-decoration: underline;
-                      letter-spacing: -0.5px;
-                      color: #808080;
-                      background-color: transparent;
-                    ">
-                                    Entry Requirements
-                                </p>
-                            </a>
-                        </div>
-                        <p class="text_38c52906d0f9 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #808080;
-                  background-color: transparent;
-                ">
-                            About US
-                        </p>
-
-                        <p class="text_a7e37cadc556 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #808080;
-                  background-color: transparent;
-                ">
-                            Sales &#038; Safari Expert
-                        </p>
-
-                        <div class="wp-block-yotako-block-anchor">
-                            <a href="https://serengeticlarity.com/tanzania-safari-planning-guide-2/" class=""
-                                target="_self" rel="noopener">
-                                <p class="text_ffbc86a524ee has-text-color has-background has-text-align-left"
-                                    style="
-                      text-transform: none;
-                      font-style: normal;
-                      font-size: 15.5px;
-                      font-weight: 500;
-                      text-decoration: underline;
-                      letter-spacing: -0.5px;
-                      color: #808080;
-                      background-color: transparent;
-                    ">
-                                    Tanzania Safari Planning Guide
-                                </p>
-                            </a>
-                        </div>
-                        <p class="text_932eae8b3192 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #808080;
-                  background-color: transparent;
-                ">
-                            Terms And Cionditions
-                        </p>
-
-                        <p class="text_76660ae6989b has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 17.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #808080;
-                  background-color: transparent;
-                ">
-                            +25568 655 5755
-                        </p>
-
-                        <div class="wp-block-yotako-block-anchor">
-                            <a href="https://serengeticlarity.com/best-time-to-visit-tanzania/" class=""
-                                target="_self" rel="noopener">
-                                <p class="text_4c41c790afca has-text-color has-background has-text-align-left"
-                                    style="
-                      text-transform: none;
-                      font-style: normal;
-                      font-size: 15.5px;
-                      font-weight: 500;
-                      text-decoration: underline;
-                      letter-spacing: -0.5px;
-                      color: #808080;
-                      background-color: transparent;
-                    ">
-                                    Best time to visit Tanzania
-                                </p>
-                            </a>
-                        </div>
-                        <p class="text_3e9c3d2258df has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #808080;
-                  background-color: transparent;
-                ">
-                            Booking Process
-                        </p>
-
-                        <div class="wp-block-yotako-block-anchor">
-                            <a href="https://serengeticlarity.com/kilimanjaro-climbing-guide/" class=""
-                                target="_self" rel="noopener">
-                                <p class="text_eef45d0c362b has-text-color has-background has-text-align-left"
-                                    style="
-                      text-transform: none;
-                      font-style: normal;
-                      font-size: 15.5px;
-                      font-weight: 500;
-                      text-decoration: underline;
-                      letter-spacing: -0.5px;
-                      color: #808080;
-                      background-color: transparent;
-                    ">
-                                    Kilimanjaro Planning Guide
-                                </p>
-                            </a>
-                        </div>
-                        <p class="text_6388ed16c6aa has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #808080;
-                  background-color: transparent;
-                ">
-                            Payment Details
-                        </p>
-
-                        <p class="text_d0ebb9f207a8 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #808080;
-                  background-color: transparent;
-                ">
-                            info@camelleonsafaris.com
-                        </p>
-
-                        <div class="wp-block-yotako-block-anchor">
-                            <a href="https://serengeticlarity.com/drones-photography-guidelines/" class=""
-                                target="_self" rel="noopener">
-                                <p class="text_54dbe0fbe867 has-text-color has-background has-text-align-left"
-                                    style="
-                      text-transform: none;
-                      font-style: normal;
-                      font-size: 15.5px;
-                      font-weight: 500;
-                      text-decoration: underline;
-                      letter-spacing: -0.5px;
-                      color: #808080;
-                      background-color: transparent;
-                    ">
-                                    Drones &#038; Photography Guide
-                                </p>
-                            </a>
-                        </div>
-                        <p class="text_e2f387b1da31 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 500;
-                  letter-spacing: -0.5px;
-                  color: #808080;
-                  background-color: transparent;
-                ">
-                            Privacy Policy
-                        </p>
 
                         <h3 class="text_0117f92be670 has-text-color has-background has-text-align-left wp-block-heading"
                             style="
@@ -1717,24 +1445,13 @@
                         </h2>
 
 
-                          @include('home.home_tours');
-                         
+                        @include('home.home_tours');
 
-                        <p class="text_45c5efce2a2c has-text-color has-background has-text-align-left"
-                            style="
-                            text-transform: none;
-                            font-style: normal;
-                            font-size: 15.5px;
-                            font-weight: 500;
-                            letter-spacing: -0.5px;
-                            color: #808080;
-                            background-color: transparent;
-                          ">
-                            Tipping Guide
-                        </p>
 
-                        <p class="text_0d7e86c7c1b7 has-text-color has-background has-text-align-left"
-                            style="
+
+
+
+                        <p class="text_0d7e86c7c1b7 has-text-color has-background has-text-align-left" style="
                             text-transform: none;
                             font-style: normal;
                             font-size: 17.5px;
@@ -1743,8 +1460,7 @@
                             color: #26461d;
                             background-color: transparent;
                           ">
-                            <span class="text-2de067a4bb81_0d7e86c7c1b7 has-text-color has-background"
-                                style="
+                            <span class="text-2de067a4bb81_0d7e86c7c1b7 has-text-color has-background" style="
                               text-transform: none;
                               font-style: normal;
                               font-size: 17.5px;
@@ -1757,8 +1473,7 @@
                                 Africa. Private safari packages in Tanzania from the leading
                                 wildlife experts.<br />Few places in the world rival Tanzania
                                 as a wildlife destination. Ranked #1 country for an </span><span
-                                class="text-83ad0b6cab38_0d7e86c7c1b7 has-text-color has-background"
-                                style="
+                                class="text-83ad0b6cab38_0d7e86c7c1b7 has-text-color has-background" style="
                                 text-transform: none;
                                 font-style: normal;
                                 font-size: 18px;
@@ -1767,12 +1482,9 @@
                                 letter-spacing: -0.5px;
                                 color: #26461d;
                                 background-color: transparent;
-                              "><a
-                                    href="https://altezza.travel/en" target="_blank"
-                                    rel="noreferrer noopener">African
+                              "><a href="https://altezza.travel/en" target="_blank" rel="noreferrer noopener">African
                                     safari</a></span><span
-                                class="text-cbde5014e3bb_0d7e86c7c1b7 has-text-color has-background"
-                                style="
+                                class="text-cbde5014e3bb_0d7e86c7c1b7 has-text-color has-background" style="
                     text-transform: none;
                     font-style: normal;
                     font-size: 17.5px;
@@ -1791,8 +1503,7 @@
                                 your trip to Tanzania a lifetime adventure.</span>
                         </p>
 
-                        <div
-                            class="wp-block-group container_a8f119c87dec is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_a8f119c87dec is-layout-flow wp-block-group-is-layout-flow">
                             <div
                                 class="wp-block-group container_51c3b570696f is-layout-flow wp-block-group-is-layout-flow">
                                 <figure class="imageview_c49d939a41ef wp-block-image">
@@ -1881,8 +1592,7 @@
                                     </div>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="Contact_Us/index.html" class="" target="_self"
-                                            rel="noopener">
+                                        <a href="Contact_Us/index.html" class="" target="_self" rel="noopener">
                                             <div
                                                 class="wp-block-group container_df80c98a91b3 is-layout-flow wp-block-group-is-layout-flow">
                                                 <p class="text_f9e4cb89395c has-text-color has-background has-text-align-left"
@@ -1948,13 +1658,12 @@
                             Discover the Magical World of <br />Wildlife in Tanzania
                         </h2>
 
-                
+
 
 
                         <div class="wp-block-yotako-block-anchor button_92e7c2e8a7ab">
                             <a href="index.html" class="button_link_92e7c2e8a7ab" target="_self" rel="noopener">
-                                <p class="text_63d5778232d1 has-text-color has-background has-text-align-left"
-                                    style="
+                                <p class="text_63d5778232d1 has-text-color has-background has-text-align-left" style="
                       text-transform: none;
                       font-style: normal;
                       font-size: 15.5px;
@@ -1967,8 +1676,7 @@
                                 </p>
                             </a>
                         </div>
-                        <p class="text_20610c18bd72 has-text-color has-background has-text-align-left"
-                            style="
+                        <p class="text_20610c18bd72 has-text-color has-background has-text-align-left" style="
                   text-transform: none;
                   font-style: normal;
                   font-size: 15.5px;
@@ -1980,8 +1688,7 @@
                             Beaches And Resorts
                         </p>
 
-                        <p class="text_6ea2966bc63a has-text-color has-background has-text-align-left"
-                            style="
+                        <p class="text_6ea2966bc63a has-text-color has-background has-text-align-left" style="
                   text-transform: none;
                   font-style: normal;
                   font-size: 15.5px;
@@ -1996,8 +1703,7 @@
 
                     <div
                         class="vp_1007 size_834 viewport_9b5d192c8f42 wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow">
-                        <div
-                            class="wp-block-group container_4bf5e645a196 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_4bf5e645a196 is-layout-flow wp-block-group-is-layout-flow">
                             <h3 class="text_e2e6afc137cf has-text-color has-background has-text-align-left wp-block-heading"
                                 style="
                     text-transform: none;
@@ -2027,8 +1733,7 @@
 
                         <div class="wp-block-yotako-block-anchor button_2eb9caa90fe4">
                             <a href="index.html" class="button_link_2eb9caa90fe4" target="_self" rel="noopener">
-                                <p class="text_5aefe5c37124 has-text-color has-background has-text-align-left"
-                                    style="
+                                <p class="text_5aefe5c37124 has-text-color has-background has-text-align-left" style="
                       text-transform: none;
                       font-style: normal;
                       font-size: 15.5px;
@@ -2057,8 +1762,7 @@
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/414:3128.webp" />
                         </figure>
 
-                        <div
-                            class="wp-block-group container_df4069c657bc is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_df4069c657bc is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
@@ -2101,8 +1805,7 @@
                             Discover the Difference with <br />Camelleon Safaris
                         </h2>
 
-                        <p class="text_45afeb73ae26 has-text-color has-background has-text-align-left"
-                            style="
+                        <p class="text_45afeb73ae26 has-text-color has-background has-text-align-left" style="
                   text-transform: none;
                   font-style: normal;
                   font-size: 17.5px;
@@ -2111,8 +1814,7 @@
                   color: #26461d;
                   background-color: transparent;
                 ">
-                            <span class="text-b62705cc3632_45afeb73ae26 has-text-color has-background"
-                                style="
+                            <span class="text-b62705cc3632_45afeb73ae26 has-text-color has-background" style="
                     text-transform: none;
                     font-style: normal;
                     font-size: 17.5px;
@@ -2125,8 +1827,7 @@
                                 Africa. Private safari packages in Tanzania from the leading
                                 wildlife experts. Few places in the world rival Tanzania as a
                                 wildlife destination. Ranked #1 country for an </span><span
-                                class="text-2c1f53ef203d_45afeb73ae26 has-text-color has-background"
-                                style="
+                                class="text-2c1f53ef203d_45afeb73ae26 has-text-color has-background" style="
                     text-transform: none;
                     font-style: normal;
                     font-size: 18px;
@@ -2135,9 +1836,7 @@
                     letter-spacing: -0.5px;
                     color: #26461d;
                     background-color: transparent;
-                  "><a
-                                    href="https://altezza.travel/en" target="_blank"
-                                    rel="noreferrer noopener">African
+                  "><a href="https://altezza.travel/en" target="_blank" rel="noreferrer noopener">African
                                     safari</a></span><span
                                 class="text-e169c06c894b_45afeb73ae26 has-text-color has-background"
                                 style="
@@ -2156,8 +1855,7 @@
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/414:3137.webp" />
                         </figure>
 
-                        <div
-                            class="wp-block-group container_39550c757905 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_39550c757905 is-layout-flow wp-block-group-is-layout-flow">
                             <div
                                 class="wp-block-group container_c8a11a7e03ed is-layout-flow wp-block-group-is-layout-flow">
                                 <div
@@ -2205,8 +1903,8 @@
                                     </p>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="https://serengeticlarity.com/tanzania-entry-requirements/"
-                                            class="" target="_self" rel="noopener">
+                                        <a href="https://serengeticlarity.com/tanzania-entry-requirements/" class=""
+                                            target="_self" rel="noopener">
                                             <p class="text_e5f7a231efb7 has-text-color has-background has-text-align-left"
                                                 style="
                             text-transform: none;
@@ -2243,8 +1941,8 @@
                                     </div>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="https://serengeticlarity.com/best-time-to-visit-tanzania/"
-                                            class="" target="_self" rel="noopener">
+                                        <a href="https://serengeticlarity.com/best-time-to-visit-tanzania/" class=""
+                                            target="_self" rel="noopener">
                                             <p class="text_c30c094f1744 has-text-color has-background has-text-align-left"
                                                 style="
                             text-transform: none;
@@ -2262,8 +1960,8 @@
                                     </div>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="https://serengeticlarity.com/kilimanjaro-climbing-guide/"
-                                            class="" target="_self" rel="noopener">
+                                        <a href="https://serengeticlarity.com/kilimanjaro-climbing-guide/" class=""
+                                            target="_self" rel="noopener">
                                             <p class="text_882bec1a183c has-text-color has-background has-text-align-left"
                                                 style="
                             text-transform: none;
@@ -2281,8 +1979,8 @@
                                     </div>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="https://serengeticlarity.com/drones-photography-guidelines/"
-                                            class="" target="_self" rel="noopener">
+                                        <a href="https://serengeticlarity.com/drones-photography-guidelines/" class=""
+                                            target="_self" rel="noopener">
                                             <p class="text_25c147501593 has-text-color has-background has-text-align-left"
                                                 style="
                             text-transform: none;
@@ -2450,8 +2148,7 @@
                             </div>
                         </div>
 
-                        <div
-                            class="wp-block-group container_f5381a2b60c6 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_f5381a2b60c6 is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
@@ -2460,8 +2157,7 @@
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:1993.svg" />
                         </figure>
 
-                        <div
-                            class="wp-block-group container_651e584e5062 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_651e584e5062 is-layout-flow wp-block-group-is-layout-flow">
                             <div
                                 class="wp-block-group container_61d422b37207 is-layout-flow wp-block-group-is-layout-flow">
                                 <div
@@ -2540,8 +2236,8 @@
 
                                                 <div
                                                     class="wp-block-group container_433d8127d2a2 is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -2655,8 +2351,8 @@
 
                                                 <div
                                                     class="wp-block-group container_ac8eb1555726 is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -2770,8 +2466,8 @@
 
                                                 <div
                                                     class="wp-block-group container_68435d743978 is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -2885,8 +2581,8 @@
 
                                                 <div
                                                     class="wp-block-group container_d7701364e37a is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -3000,8 +2696,8 @@
 
                                                 <div
                                                     class="wp-block-group container_11282321f83a is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -3157,8 +2853,7 @@
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/414:3199.webp" />
                         </figure>
 
-                        <div
-                            class="wp-block-group container_538db218ab77 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_538db218ab77 is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
@@ -3175,8 +2870,7 @@
                             Safari Tours in Tanzania
                         </h2>
 
-                        <p class="text_191bdeae5c9b has-text-color has-background has-text-align-center"
-                            style="
+                        <p class="text_191bdeae5c9b has-text-color has-background has-text-align-center" style="
                   text-transform: none;
                   font-style: normal;
                   font-size: 15.5px;
@@ -3201,8 +2895,7 @@
                             Discover&nbsp;the&nbsp;Difference&nbsp;with&nbsp;&nbsp;Camelleon&nbsp;Safaris
                         </h3>
 
-                        <p class="text_3ab83d39ccf7 has-text-color has-background has-text-align-left"
-                            style="
+                        <p class="text_3ab83d39ccf7 has-text-color has-background has-text-align-left" style="
                   text-transform: none;
                   font-style: normal;
                   font-size: 15.5px;
@@ -3211,8 +2904,7 @@
                   color: #26461d;
                   background-color: transparent;
                 ">
-                            <span class="text-a614e4a7aa28_3ab83d39ccf7 has-text-color has-background"
-                                style="
+                            <span class="text-a614e4a7aa28_3ab83d39ccf7 has-text-color has-background" style="
                     text-transform: none;
                     font-style: normal;
                     font-size: 16px;
@@ -3225,8 +2917,7 @@
                                 Africa. Private safari packages in Tanzania from the leading
                                 wildlife experts. Few places in the world rival Tanzania as a
                                 wildlife destination. Ranked #1 country for an </span><span
-                                class="text-bc9b7043f347_3ab83d39ccf7 has-text-color has-background"
-                                style="
+                                class="text-bc9b7043f347_3ab83d39ccf7 has-text-color has-background" style="
                     text-transform: none;
                     font-style: normal;
                     font-size: 16px;
@@ -3234,9 +2925,7 @@
                     letter-spacing: 0px;
                     color: #26461d;
                     background-color: transparent;
-                  "><a
-                                    href="https://altezza.travel/en" target="_blank"
-                                    rel="noreferrer noopener">African
+                  "><a href="https://altezza.travel/en" target="_blank" rel="noreferrer noopener">African
                                     safari</a></span><span
                                 class="text-f51cfa414465_3ab83d39ccf7 has-text-color has-background"
                                 style="
@@ -3250,8 +2939,7 @@
                   ">,&nbsp;Tanzania&nbsp;hypnotizes&nbsp;with&nbsp;its&nbsp;pristine,&nbsp;wildest&nbsp;beauty.&nbsp;The&nbsp;last&nbsp;sanctuary&nbsp;of&nbsp;the&nbsp;wildlife&nbsp;of&nbsp;such&nbsp;magnitude&nbsp;in&nbsp;the&nbsp;world,&nbsp;Tanzania&nbsp;is&nbsp;a&nbsp;perfect&nbsp;spot&nbsp;for&nbsp;your&nbsp;vacation.<br />Camelleon&nbsp;&nbsp;Travel&nbsp;is&nbsp;a&nbsp;leading&nbsp;safari&nbsp;outfitter&nbsp;in&nbsp;Tanzania.&nbsp;Our&nbsp;professional&nbsp;safari&nbsp;guiding&nbsp;experts,&nbsp;large&nbsp;safari&nbsp;fleet&nbsp;of&nbsp;the&nbsp;newest&nbsp;comfortable&nbsp;Land&nbsp;Cruisers,&nbsp;modified&nbsp;for&nbsp;the&nbsp;expeditions&nbsp;in&nbsp;the&nbsp;wilderness,&nbsp;and&nbsp;passionate&nbsp;travel&nbsp;consultants&nbsp;will&nbsp;make&nbsp;your&nbsp;trip&nbsp;to&nbsp;Tanzania&nbsp;a&nbsp;lifetime&nbsp;adventure.</span>
                         </p>
 
-                        <div
-                            class="wp-block-group container_ac7b3dad5316 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_ac7b3dad5316 is-layout-flow wp-block-group-is-layout-flow">
                             <h3 class="text_1ae4f740adef has-text-color has-background has-text-align-left wp-block-heading"
                                 style="
                     text-transform: none;
@@ -3279,10 +2967,8 @@
                             East African Safaris Best <br />Holiday Packages
                         </h2>
 
-                        <div
-                            class="wp-block-group container_de73eda37d3c is-layout-flow wp-block-group-is-layout-flow">
-                            <p class="text_7a81fd980c72 has-text-color has-background has-text-align-left"
-                                style="
+                        <div class="wp-block-group container_de73eda37d3c is-layout-flow wp-block-group-is-layout-flow">
+                            <p class="text_7a81fd980c72 has-text-color has-background has-text-align-left" style="
                     text-transform: none;
                     font-style: normal;
                     font-size: 15.5px;
@@ -3305,8 +2991,7 @@
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/414:3400.webp" />
                         </figure>
 
-                        <div
-                            class="wp-block-group container_8386b6be2e26 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_8386b6be2e26 is-layout-flow wp-block-group-is-layout-flow">
                             <div
                                 class="wp-block-group container_2b3ee51a52a9 is-layout-flow wp-block-group-is-layout-flow">
                                 <div
@@ -3354,8 +3039,8 @@
                                     </p>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="https://serengeticlarity.com/tanzania-entry-requirements/"
-                                            class="" target="_self" rel="noopener">
+                                        <a href="https://serengeticlarity.com/tanzania-entry-requirements/" class=""
+                                            target="_self" rel="noopener">
                                             <p class="text_5ee0d52ddf09 has-text-color has-background has-text-align-left"
                                                 style="
                             text-transform: none;
@@ -3392,8 +3077,8 @@
                                     </div>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="https://serengeticlarity.com/best-time-to-visit-tanzania/"
-                                            class="" target="_self" rel="noopener">
+                                        <a href="https://serengeticlarity.com/best-time-to-visit-tanzania/" class=""
+                                            target="_self" rel="noopener">
                                             <p class="text_dbe539d25c06 has-text-color has-background has-text-align-left"
                                                 style="
                             text-transform: none;
@@ -3411,8 +3096,8 @@
                                     </div>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="https://serengeticlarity.com/kilimanjaro-climbing-guide/"
-                                            class="" target="_self" rel="noopener">
+                                        <a href="https://serengeticlarity.com/kilimanjaro-climbing-guide/" class=""
+                                            target="_self" rel="noopener">
                                             <p class="text_8ed14bbd5896 has-text-color has-background has-text-align-left"
                                                 style="
                             text-transform: none;
@@ -3430,8 +3115,8 @@
                                     </div>
 
                                     <div class="wp-block-yotako-block-anchor">
-                                        <a href="https://serengeticlarity.com/drones-photography-guidelines/"
-                                            class="" target="_self" rel="noopener">
+                                        <a href="https://serengeticlarity.com/drones-photography-guidelines/" class=""
+                                            target="_self" rel="noopener">
                                             <p class="text_15561e5f10cb has-text-color has-background has-text-align-left"
                                                 style="
                             text-transform: none;
@@ -3599,8 +3284,7 @@
                             </div>
                         </div>
 
-                        <div
-                            class="wp-block-group container_007e9be61514 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_007e9be61514 is-layout-flow wp-block-group-is-layout-flow">
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
@@ -3609,8 +3293,7 @@
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:2031.svg" />
                         </figure>
 
-                        <div
-                            class="wp-block-group container_b6d8498ddcd9 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_b6d8498ddcd9 is-layout-flow wp-block-group-is-layout-flow">
                             <div
                                 class="wp-block-group container_bafccdbda1d7 is-layout-flow wp-block-group-is-layout-flow">
                                 <div
@@ -3689,8 +3372,8 @@
 
                                                 <div
                                                     class="wp-block-group container_12dfb1da3b34 is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -3804,8 +3487,8 @@
 
                                                 <div
                                                     class="wp-block-group container_c64333f28d42 is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -3919,8 +3602,8 @@
 
                                                 <div
                                                     class="wp-block-group container_b1f4e330f753 is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -4034,8 +3717,8 @@
 
                                                 <div
                                                     class="wp-block-group container_907f319ca17a is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -4149,8 +3832,8 @@
 
                                                 <div
                                                     class="wp-block-group container_9fb09c1d4a99 is-layout-flow wp-block-group-is-layout-flow">
-                                                    <div class="wp-block-spacer" style="height: 0px"
-                                                        aria-hidden="true"></div>
+                                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true">
+                                                    </div>
                                                 </div>
                                             </div>
 

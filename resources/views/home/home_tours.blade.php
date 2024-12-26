@@ -158,4 +158,7 @@ background-color: transparent;
             src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/207:940.webp" />
 </figure>
 
+
+
+@include('shared.footer');
 </div>
