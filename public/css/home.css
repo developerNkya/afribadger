@@ -1,0 +1,50 @@
+.container_ac5676396f39 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tour-item {
+    flex: 1 1 calc(33.333% - 10px);
+}
+
+.text_4a7faa3c87ab.offset-0,
+.text_70f0facd0c87.offset-0,
+.text_f9636a23dbf6.offset-0 {
+    margin-left: 0;
+}
+
+.text_4a7faa3c87ab.offset-1,
+.text_70f0facd0c87.offset-1,
+.text_f9636a23dbf6.offset-1 {
+    margin-left: 400px;
+}
+
+.text_4a7faa3c87ab.offset-2,
+.text_70f0facd0c87.offset-2,
+.text_f9636a23dbf6.offset-2 {
+    margin-left: 800px;
+}
+
+.offset-0 {
+    margin-left: 0;
+}
+
+.offset-1 {
+    margin-left: 400px;
+}
+
+.offset-2 {
+    margin-left: 800px;
+}
+
+.container_5014426d40fe {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.text_7b9fe75ec2d5 {
+    font-weight: bold;
+}
