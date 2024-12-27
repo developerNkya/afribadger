@@ -34,7 +34,7 @@
               background-color: transparent;
             "
           >
-            10 Days
+          {{ $tour->days }} Days
           </p>
 
           <h3
@@ -49,7 +49,7 @@
               background-color: transparent;
             "
           >
-            Comfort&nbsp;&nbsp;Safari&nbsp;and&nbsp;Beach&nbsp;Vacation
+          {{ $tour->title }}
           </h3>
         </div>
 
@@ -96,7 +96,7 @@
                 background-color: transparent;
               "
             >
-              $3300
+            ${{ $tour->amount }}
             </h2>
 
             <div
