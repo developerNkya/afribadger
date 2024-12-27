@@ -5,6 +5,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="max-image-preview:large" />
@@ -1352,6 +1353,7 @@
     <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
         href="wp-json/oembed/1.0/embed2703?url=https%3A%2F%2Fbda1aad9-cb58-401a-8a47-526b318e3266.yotako.com%2F&amp;format=xml" />
     <link rel="stylesheet" href="{{ asset('css/home.css') }}" media="all" />
+   
 </head>
 
 <body class="home page-template-default page page-id-9 wp-embed-responsive">

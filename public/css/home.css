@@ -72,3 +72,9 @@
     padding: 20px 0;
     font-size: 30px;
 }
+
+.tour-links {
+    top: 150px;
+    bottom: 0;
+    position: relative;
+}
