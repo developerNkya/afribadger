@@ -18,7 +18,7 @@ letter-spacing: -0.5px;
 color: #1a1a1a99;
 background-color: transparent;
 ">
-                        10 Days
+                         {{ $tour->days }} Days
                     </p>
 
                     <h3 class="text_be58751723d6 has-text-color has-background has-text-align-left wp-block-heading"
@@ -31,7 +31,7 @@ letter-spacing: -0.5px;
 color: #26461d;
 background-color: transparent;
 ">
-                        Comfort&nbsp;&nbsp;Safari&nbsp;and&nbsp;Beach&nbsp;Vacation
+                        {{ $tour->title }}
                     </h3>
                 </div>
 
@@ -64,7 +64,7 @@ background-color: transparent;
   color: #26461d;
   background-color: transparent;
 ">
-                            $3300
+                            ${{ $tour->amount }}
                         </h2>
 
                         <div class="wp-block-group container_c64333f28d42 is-layout-flow wp-block-group-is-layout-flow">
@@ -114,7 +114,7 @@ letter-spacing: -0.5px;
 color: #ffffff;
 background-color: transparent;
 ">
-            Button Text
+            Next
         </p>
 
         <figure class="imageview_4fe3ac4135f3 wp-block-image">
