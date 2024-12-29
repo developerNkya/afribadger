@@ -1263,9 +1263,9 @@ body .yt_fill_size {
 }
 
 .container_home_banner {
-    position: absolute !important;
+    left: -160px;
+    position: relative !important;
     z-index: 1;
-    top: 2950px;
 }
 
 .container_d6101022d584 {

@@ -95,19 +95,18 @@
         </ul>
     </div>
 
-
+    <div class="container_home_banner">
+        <figure class="imageview_0971821a99a6 wp-block-image">
+            <img decoding="async"
+                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/207:940.webp" />
+    </figure>
+    
+    
+    
+    @include('shared.footer');
+    </div>
     
 </div>
 
 
 
-<div class="container_home_banner">
-    <figure class="imageview_0971821a99a6 wp-block-image">
-        <img decoding="async"
-            src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/207:940.webp" />
-</figure>
-
-
-
-@include('shared.footer');
-</div>
