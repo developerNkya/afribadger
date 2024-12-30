@@ -103,19 +103,60 @@ background-color: transparent;
     </div>
     @endforeach
 
+    
 
     <div class="wp-block-group container_de73eda37d3c is-layout-flow wp-block-group-is-layout-flow">
-        <p class="text_7a81fd980c72 has-text-color has-background has-text-align-left" style="
-text-transform: none;
-font-style: normal;
-font-size: 15.5px;
-font-weight: 600;
-letter-spacing: -0.5px;
-color: #ffffff;
-background-color: transparent;
-">
-            Next
-        </p>
+
+        <div class="tour-links" style="margin-top: 20px; margin-bottom: 20px;">
+            <ul class="pagination justify-content-center">
+                {{-- Previous Page Link --}}
+                @if ($national_parks->onFirstPage())
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                @else
+                <li class="page-item">
+                    <a class="page-link" href="{{ $national_parks->previousPageUrl() }}">Previous</a>
+                </li>
+                @endif
+    
+                {{-- Pagination Elements --}}
+                @foreach ($national_parks->links()->elements as $element)
+                {{-- "Three Dots" Separator --}}
+                @if (is_string($element))
+                <li class="page-item disabled">
+                    <a class="page-link" href="#">{{ $element }}</a>
+                </li>
+                @endif
+    
+                {{-- Array Of Links --}}
+                @if (is_array($element))
+                @foreach ($element as $page => $url)
+                @if ($page == $national_parks->currentPage())
+                <li class="page-item active">
+                    <a class="page-link" href="#">{{ $page }}</a>
+                </li>
+                @else
+                <li class="page-item">
+                    <a class="page-link" href="{{ $url }}">{{ $page }}</a>
+                </li>
+                @endif
+                @endforeach
+                @endif
+                @endforeach
+    
+                {{-- Next Page Link --}}
+                @if ($national_parks->hasMorePages())
+                <li class="page-item">
+                    <a class="page-link" href="{{ $national_parks->nextPageUrl() }}">Next</a>
+                </li>
+                @else
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Next</a>
+                </li>
+                @endif
+            </ul>
+        </div>
 
         <figure class="imageview_4fe3ac4135f3 wp-block-image">
             <img decoding="async"
