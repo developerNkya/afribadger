@@ -12,5 +12,7 @@ class AboutController extends Controller
        // $national_parks = Tour::where('tour_type_id', 1)->paginate(6);
         return view('about.about');
     }
+
+
     
 }

@@ -1,0 +1,83 @@
+.form-text-field {
+    width: 246px;
+    text-transform: none;
+    /* font-style: normal; */
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #808080;
+    background-color: transparent;
+    outline: none;
+    border: 0!important;
+    font-family: "Roboto";
+    left: 20px;
+    position: relative;
+    top: 17px;
+}
+
+.form-text-area {
+    height: 150px;
+    width: 470px;
+    text-transform: none;
+    /* font-style: normal; */
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #808080;
+    background-color: transparent;
+    outline: none;
+    border: 0!important;
+    font-family: "Roboto";
+    left: 20px;
+    position: relative;
+    top: 29px;
+}
+
+.form-radio-btn {
+    left: -42.2px;
+    position: relative;
+    bottom: 0.9px;
+    color: #808080;
+}
+
+.form-text-field-small {
+    width: 356px;
+    text-transform: none;
+    /* font-style: normal; */
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #808080;
+    background-color: transparent;
+    outline: none;
+    border: 0!important;
+    font-family: "Roboto";
+    left: 20px;
+    position: relative;
+    top: 17px;
+}
+
+.form-text-area-small {
+    height: 150px;
+    width: 360px;
+    text-transform: none;
+    /* font-style: normal; */
+    font-size: 13.5px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: #808080;
+    background-color: transparent;
+    outline: none;
+    border: 0!important;
+    font-family: "Roboto";
+    left: 20px;
+    position: relative;
+    top: 29px;
+}
+
+.form-radio-btn-small {
+    left: -42.2px;
+    position: relative;
+    bottom: 0.9px;
+    color: #808080;
+}

@@ -90,7 +90,7 @@ background-color: transparent;
         </div>
 
         <div class="wp-block-yotako-block-anchor">
-            <a href="Contact_Us/index.html" class="" target="_self"
+            <a href="/contact-us" class="" target="_self"
                 rel="noopener">
                 <div
                     class="wp-block-group container_df80c98a91b3 is-layout-flow wp-block-group-is-layout-flow">
@@ -104,7 +104,7 @@ background-color: transparent;
   color: #26461d;
   background-color: transparent;
 ">
-                        Contant Us
+                        Contact Us
                     </p>
                 </div>
             </a>
