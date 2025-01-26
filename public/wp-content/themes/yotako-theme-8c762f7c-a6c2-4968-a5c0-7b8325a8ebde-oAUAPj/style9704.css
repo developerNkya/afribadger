@@ -2029,9 +2029,9 @@ body .yt_fill_size {
 .imageview_5072149b035e {
     width: 834px;
     height: 462px;
-    position: absolute !important;
+    position: relative;
     left: 0px;
-    top: 3734px;
+    top: 110px;
 }
 
 .imageview_2f1a36e1593e {
@@ -2237,22 +2237,21 @@ body .yt_fill_size {
 .container_39550c757905 {
     width: 834px;
     height: 557px;
-    position: absolute !important;
+    position: relative;
     left: 0px;
-    top: 4299px;
+    top: 100px;
     align-items: center;
     justify-content: center;
     gap: 11px normal;
     flex-direction: column;
     background: #ffffff;
 }
-
 .container_f5381a2b60c6 {
     width: 834px;
     height: 109px;
-    position: absolute !important;
+    position: relative;
     left: 0px;
-    top: 4892px;
+    top: 120px;
     background: #f4e7c9;
 }
 
@@ -3239,7 +3238,7 @@ body .yt_fill_size {
 
 .viewport_9b5d192c8f42 {
     width: 834px;
-    height: 5001px;
+    height: fit-content;
     overflow-x: hidden;
     overflow-y: hidden;
     background: #ffffff;
