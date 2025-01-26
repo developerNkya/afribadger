@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Tour extends Model
 {
@@ -20,4 +21,13 @@ class Tour extends Model
     // {
     //     return $this->belongsTo(TourType::class, 'tour_type_id');
     // }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($tour) {
+            $tour->slug = Str::slug($tour->title);
+        });
+    }
 }

@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact-us', [ContactController::class, 'contactPage']);
-Route::get('/view-tour', [TourController::class, 'viewTour']);
+Route::get('view-tour/{slug}', [TourController::class, 'viewTour'])->name('view-tour');
+
 Route::get('/about-us', [AboutController::class, 'aboutPage']);
 Route::post('/posted-request', [ContactController::class, 'postedRequest']);
