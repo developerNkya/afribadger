@@ -74,7 +74,7 @@ background-color: transparent;
                     </div>
 
                     <div class="wp-block-yotako-block-anchor button_e67aaf6cd090">
-                        <a href="View_Tour/index.html" class="button_link_e67aaf6cd090" target="_self" rel="noopener">
+                        <a href="{{ route('view-tour', ['slug' => $tour->slug]) }}" class="button_link_e67aaf6cd090" target="_self" rel="noopener">
                             <p class="text_c78a14357f84 has-text-color has-background has-text-align-left" style="
     text-transform: none;
     font-style: normal;
