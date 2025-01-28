@@ -92,6 +92,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 			z-index: 100000;
 		}
 </style>
+<link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/globals.css">
+<link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/style.css">
+<link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/styleguide.css">
+
+
 <link rel='stylesheet' id='style-css' href='../../backup/wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-m9TFsY/style9704.css?ver=6.7.1' media='all' />
 <link rel='stylesheet' id='Roboto-css' href='../../backup/storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1' media='all' />
 <link rel='stylesheet' id='Bobaland-css' href='../../backup/storage.googleapis.com/yotako-fonts/CdnFonts/css/Bobaland9704.css?ver=6.7.1' media='all' />
@@ -341,158 +346,12 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     </div>
 
 
-<div class="wp-block-group container_5c96ff3f7e4c is-layout-flow wp-block-group-is-layout-flow" >
-                  
-<div class="wp-block-group container_d6d76588eb46 is-layout-flow wp-block-group-is-layout-flow" >
-                  
-<div class="wp-block-group container_64a33a905df3 is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_b171f5b6250a has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Safari Cost Includes</h2>
-       
-
-<div class="wp-block-group container_17f1829185f8 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_7a911d4c3df3 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:17.5px;font-weight:400;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Full board accommodation as specified on safari.<br/>4WD Land Cruiser vehicle with pop-up roof.<br/>Well-trained driver-guide.<br/>Full board meals whilst on safari.<br/>All the national park fees as per itinerary.<br/>All meals whilst on safari.<br/>Mineral water.</p>
-     
-
-<div class="wp-block-group container_eb1a50f1e90a is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
 
 
-<div class="wp-block-group container_7b8526fdf8b3 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
 
 
-<div class="wp-block-group container_fe43248742d9 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_c7aa1110aab8 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_2d16fd524b66 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_411c4b63aed9 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_d54ede9e2c82 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-        </div>
-        </div>
-
-
-<div class="wp-block-group container_daeaede98937 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_a34348f70af5 is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_d9893833c44c has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Safari Cost Excludes</h2>
-       
-
-<div class="wp-block-group container_4233655f53fc is-layout-flow wp-block-group-is-layout-flow" >
-                  
-<div class="wp-block-group container_a55ecc337ed8 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_f9c8e6976781 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_8fe379eeb7d2 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_9d12dd1d7849 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_9e5868a9b18f is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_5177cdb52cd1 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_2997ebdcef38 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_8ad7819fc94b is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-      <p class="text_93ccf382f99e has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:17.5px;font-weight:400;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Airfares airport taxes and fees.<br/>Laundry.<br/>Entry visas and vaccinations.<br/>Personal items.<br/>Tips and gratuities.<br/>Travel Insurance.<br/>Optional tour.<br/>Guide tips and any items of personal nature.</p>
-             </div>
-        </div>
-        </div>
-        </div>
+<!-- safari costs -->
+@include('view_tour.large_view_tour');
 
 
 <div class="wp-block-group container_348e1e739115 is-layout-flow wp-block-group-is-layout-flow" >

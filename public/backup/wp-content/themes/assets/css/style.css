@@ -1,0 +1,427 @@
+.state-yes {
+  display: flex;
+  flex-direction: column;
+  width: 1120px;
+  height: 791px;
+  align-items: center;
+  gap: 29px;
+  padding: 0px 0px 35px;
+  position: relative;
+  background-color: #f4e7c9;
+  border-radius: 8px;
+}
+
+.state-yes .collapsible-button {
+  display: flex;
+  height: 113px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 56px 0px 86px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.state-yes .frame {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.state-yes .day-count {
+  display: flex;
+  flex-direction: column;
+  width: 76px;
+  height: 63px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0px 16px 7px 14px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.state-yes .div {
+  display: flex;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 7px 4px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  margin-top: -3.00px;
+}
+
+.state-yes .rectangle {
+  position: absolute;
+  width: 79px;
+  height: 31px;
+  top: 3px;
+  left: -16px;
+  background-color: #26461d;
+}
+
+.state-yes .day {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 700;
+  color: #f4e7c9;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.state-yes .text-wrapper {
+  position: relative;
+  align-self: stretch;
+  margin-bottom: -2.00px;
+  font-family: var(--h4-font-family);
+  font-weight: var(--h4-font-weight);
+  color: #26461d;
+  font-size: var(--h4-font-size);
+  text-align: center;
+  letter-spacing: var(--h4-letter-spacing);
+  line-height: var(--h4-line-height);
+  font-style: var(--h4-font-style);
+}
+
+.state-yes .div-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.state-yes .p {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #26461d;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.state-yes .button-expandable {
+  position: relative;
+  width: 41px;
+  height: 41px;
+}
+
+.state-yes .rectangle-2 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 4px;
+  background-color: #26461d5e;
+}
+
+.state-yes .frame-2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+  padding: 0px 50px 0px 105px;
+  position: relative;
+  flex: 1;
+  align-self: stretch;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.state-yes .group {
+  position: relative;
+  width: 44px;
+  height: 37px;
+}
+
+.state-yes .frame-3 {
+  display: flex;
+  flex-direction: column;
+  width: 814px;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+}
+
+.state-yes .text-wrapper-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  color: #26461d;
+  font-size: var(--h3-font-size);
+  letter-spacing: var(--h3-letter-spacing);
+  line-height: var(--h3-line-height);
+  font-style: var(--h3-font-style);
+}
+
+.state-yes .the-group-arrives-at {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--paragraph-font-family);
+  font-weight: var(--paragraph-font-weight);
+  color: #26461d;
+  font-size: var(--paragraph-font-size);
+  letter-spacing: var(--paragraph-letter-spacing);
+  line-height: var(--paragraph-line-height);
+  font-style: var(--paragraph-font-style);
+}
+
+.state-yes .frame-4 {
+  display: flex;
+  align-items: flex-start;
+  gap: 29px;
+  padding: 0px 110px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.state-yes .group-wrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+}
+
+.state-yes .overlap-wrapper {
+  position: relative;
+  width: 25px;
+  height: 17px;
+  top: 13px;
+  left: 10px;
+}
+
+.state-yes .overlap {
+  position: relative;
+  height: 17px;
+}
+
+.state-yes .overlap-group {
+  position: absolute;
+  width: 25px;
+  height: 17px;
+  top: 0;
+  left: 0;
+}
+
+.state-yes .rectangle-3 {
+  position: absolute;
+  width: 21px;
+  height: 7px;
+  top: 8px;
+  left: 1px;
+  background-color: #26461d;
+}
+
+.state-yes .rectangle-4 {
+  position: absolute;
+  width: 3px;
+  height: 17px;
+  top: 0;
+  left: 0;
+  background-color: #26461d;
+  border-radius: 17px;
+}
+
+.state-yes .rectangle-5 {
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  top: 4px;
+  left: 22px;
+  background-color: #26461d;
+  border-radius: 13px;
+}
+
+.state-yes .rectangle-6 {
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  top: 3px;
+  left: 3px;
+  background-color: #26461d;
+  border-radius: 0px 20px 0px 0px;
+}
+
+.state-yes .frame-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 25px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.state-yes .frame-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.state-yes .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--h4-font-family);
+  font-weight: var(--h4-font-weight);
+  color: #818181;
+  font-size: var(--h4-font-size);
+  letter-spacing: var(--h4-letter-spacing);
+  line-height: var(--h4-line-height);
+  font-style: var(--h4-font-style);
+}
+
+.state-yes .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  color: #26461d;
+  font-size: var(--h3-font-size);
+  letter-spacing: var(--h3-letter-spacing);
+  line-height: var(--h3-line-height);
+  font-style: var(--h3-font-style);
+}
+
+.state-yes .frame-7 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.state-yes .img {
+  position: relative;
+  width: 386.71px;
+  height: 243px;
+  object-fit: cover;
+}
+
+.state-yes .frame-8 {
+  display: flex;
+  align-items: flex-start;
+  gap: 1px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.state-yes .frame-9 {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.state-yes .vector {
+  position: relative;
+  width: 18.08px;
+  height: 12px;
+}
+
+.state-yes .text-wrapper-5 {
+  position: relative;
+  width: 67.3px;
+  margin-top: -1.00px;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #4b4a4a;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.state-yes .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Roboto-Light", Helvetica;
+  font-weight: 300;
+  color: #4b4a4a;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.state-yes .frame-10 {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.state-yes .frame-11 {
+  display: flex;
+  width: 132.59px;
+  height: 23px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px 16px;
+  position: relative;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.state-yes .vector-2 {
+  position: relative;
+  width: 12px;
+  height: 8px;
+}
+
+.state-yes .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto-Light", Helvetica;
+  font-weight: 300;
+  color: #4b4a4a;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+
+/*itenary*/
+.opened-itenary {
+  display: none; /* Hidden by default */
+}
+
+.opened-itenary.show {
+  display: block; /* Show when the 'show' class is added */
+}
