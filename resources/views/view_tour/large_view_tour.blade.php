@@ -315,6 +315,37 @@
         </div>
         </div>
 </div>
+
+<div class="faq-section">
+  <div class="wp-block-group container_a4a629c28842 is-layout-flow wp-block-group-is-layout-flow" >
+                          <h2 class="text_769751442867 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">FAQ’s</h2>
+       
+
+<div class="wp-block-group container_02b5b2cfe07b is-layout-flow wp-block-group-is-layout-flow" >
+   
+      
+        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
+        
+    </div>
+
+
+
+
+
+
+        <h2 class="text_b3cfa3233881 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">What safety measures should I be aware of during a safari in Tanzania?</h2>
+       
+
+       
+
+
+<figure class="imageview_9b77e4d14912 wp-block-image" >
+<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/196:500.svg" />
+</figure>
+
+
+        </div>
+</div>
         </div>
 
 

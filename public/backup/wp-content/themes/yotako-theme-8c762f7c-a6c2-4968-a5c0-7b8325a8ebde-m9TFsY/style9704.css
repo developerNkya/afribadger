@@ -5700,13 +5700,13 @@
              }
 
              .container_a4a629c28842 {
-                 position: absolute !important;
-                 width: 1121px;
-                 height: 724px;
-                 z-index: 1;
-                 left: 159px;
-                 top: 2664px;
-             }
+                position: relative;
+                width: 1121px;
+                height: 724px;
+                z-index: 1;
+                /* left: 159px; */
+                /* top: 2664px; */
+            }
 
              .text_624928f4a329 {
                  width: max-content;
