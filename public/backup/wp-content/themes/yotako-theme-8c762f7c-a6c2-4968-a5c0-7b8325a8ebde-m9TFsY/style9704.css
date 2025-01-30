@@ -5005,6 +5005,15 @@
                  font-family: 'Roboto';
              }
 
+            .text_ce43d4354680-faq {
+                position: relative;
+                width: max-content;
+                z-index: 1;
+                left: 529px;
+                line-height: 56.25px;
+                font-family: 'Roboto';
+            }
+
              .container_e4dee4f70f36 {
                  width: 79px;
                  height: 31px;
@@ -16585,3 +16594,22 @@
                      display: flex !important;
                  }
              }
+
+
+
+.opened-itenary-faq {
+    /* height: 1111px; */
+    position: relative;
+    /* margin-top: 50px; */
+    /* background-color: white; */
+    padding-top: 20px;
+}
+
+.opened-itenary-faq {
+  display: none; /* Initially hide the FAQ answers */
+  transition: max-height 0.5s ease-out; /* Smooth transition for expanding/collapsing */
+}
+
+.opened-itenary-faq.show {
+  display: block; /* Show the FAQ answer when the 'show' class is added */
+}
