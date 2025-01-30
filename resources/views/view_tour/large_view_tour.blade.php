@@ -357,15 +357,8 @@ document.addEventListener("DOMContentLoaded", function () {
   <div class="state-yes">
     <div class="collapsible-button">
       <div class="frame">
-        <div class="day-count">
-          <div class="div">
-            <div class="rectangle"></div>
-            <div class="day">DAY</div>
-          </div>
-          <div class="text-wrapper">1</div>
-        </div>
         <div class="div-wrapper">
-          <p class="p">Arrival at the Airport and transfer to Hotel</p>
+          <p class="p">Answer</p>
         </div>
       </div>
       <img class="button-expandable-faq" src="../../assets/images/button-expandable.png" />
@@ -374,58 +367,9 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="frame-2">
       <img class="group" src="../../assets/images/group-22.png" />
       <div class="frame-3">
-        <div class="text-wrapper-2">Arrival</div>
         <p class="the-group-arrives-at">
           The group arrives at Kilimanjaro Airport (JRO). Participants are met by a representative of Altezza Travel and transferred to a hotel in Arusha.<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;Note: The hotel cost only includes breakfast. Check-in starts at 2:00 PM.
         </p>
-      </div>
-    </div>
-    <div class="frame-4">
-      <div class="group-wrapper">
-        <div class="overlap-wrapper">
-          <div class="overlap">
-            <div class="overlap-group">
-              <div class="rectangle-3"></div>
-              <div class="rectangle-4"></div>
-              <div class="rectangle-5"></div>
-            </div>
-            <div class="rectangle-6"></div>
-          </div>
-        </div>
-      </div>
-      <div class="frame-5">
-        <div class="frame-6">
-          <div class="text-wrapper-3">Accommodation</div>
-          <div class="text-wrapper-4">GRAND MELIA ARUSHA</div>
-        </div>
-        <div class="frame-7">
-          <img class="img" src="../../assets/images/rectangle-71.png" /> <img class="img" src="../../assets/images/rectangle-72.png" />
-        </div>
-        <div class="frame-8">
-          <div class="frame-9">
-            <img class="vector" src="img/vector-2.svg" />
-            <div class="text-wrapper-5">Meal Plan:</div>
-          </div>
-          <div class="text-wrapper-6">Breakfast included</div>
-        </div>
-        <div class="frame-10">
-          <div class="frame-11">
-            <img class="vector-2" src="img/image.svg" />
-            <div class="text-wrapper-7">Swimming Pool</div>
-          </div>
-          <div class="frame-11">
-            <img class="vector-2" src="img/vector.svg" />
-            <div class="text-wrapper-7">Wifi</div>
-          </div>
-          <div class="frame-11">
-            <img class="vector-2" src="img/vector-3.svg" />
-            <div class="text-wrapper-7">Restaurant</div>
-          </div>
-          <div class="frame-11">
-            <img class="vector-2" src="img/vector-4.svg" />
-            <div class="text-wrapper-7">Spa</div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
