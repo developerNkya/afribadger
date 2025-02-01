@@ -607,6 +607,11 @@ faqView.forEach((imageView, index) => {
 </div>
 </div>
 
+
+
+<div class="view-tour-large-footer" style="position: relative;top:-5000px;left:-170px;">
+   @include('shared.footer');
+</div>
         </div>
 
 

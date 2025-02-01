@@ -149,66 +149,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
        
 
 
-<figure class="imageview_4e8589dc3eab wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/99:168.svg" />
-</figure>
+
+     
 
 
 
-<div class="wp-block-group container_026dff620495 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-      <p class="text_d122e66cd881 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">Camel Leon Safaris Ltd. was born out of a love for the idea of adapting to various environments, mirroring the chameleon&apos;s ability. Our founders wanted to share this experience with people in the wilds of Africa, highlighting the beauty of nature when one immerses and adapts to it.</p>
-     
-      <p class="text_785a72fc598d has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:900;letter-spacing:-0.5px;color:#000000;background-color:transparent;">United Republic of Tanzania, Kilimanjaro Region Nshara,Aishi Road, Plot 173A | P.O Box 938</p>
-     
-      <p class="text_4ca982764b61 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:900;letter-spacing:-0.5px;color:#000000;background-color:transparent;">Travel Tips</p>
-     
-      <p class="text_d57549f77bc3 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:900;letter-spacing:-0.5px;color:#000000;background-color:transparent;">Camelleon Safaris</p>
-     
-      <p class="text_702648da789c has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:900;letter-spacing:-0.5px;color:#000000;background-color:transparent;">Contact Information</p>
-     
-
-<div class="wp-block-yotako-block-anchor "><a href="https://serengeticlarity.com/tanzania-entry-requirements/" class="" target="_self" rel="noopener">
-                  <p class="text_0fcd3317c638 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;text-decoration:underline;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Entry Requirements</p>
-         </a></div>
-      <p class="text_19ccb619c41e has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">About US</p>
-     
-      <p class="text_2ac86a17d82d has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Sales &#038; Safari Expert</p>
-     
-
-<div class="wp-block-yotako-block-anchor "><a href="https://serengeticlarity.com/tanzania-safari-planning-guide-2/" class="" target="_self" rel="noopener">
-                  <p class="text_015fd59baa98 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;text-decoration:underline;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Tanzania Safari Planning Guide</p>
-         </a></div>
-      <p class="text_7e0ff131bc03 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Terms And Cionditions</p>
-     
-      <p class="text_c56023b6b7e4 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:17.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">+25568 655 5755</p>
-     
-
-<div class="wp-block-yotako-block-anchor "><a href="https://serengeticlarity.com/best-time-to-visit-tanzania/" class="" target="_self" rel="noopener">
-                  <p class="text_02a577015313 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;text-decoration:underline;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Best time to visit Tanzania</p>
-         </a></div>
-      <p class="text_3db0d307008d has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Booking Process</p>
-     
-
-<div class="wp-block-yotako-block-anchor "><a href="https://serengeticlarity.com/kilimanjaro-climbing-guide/" class="" target="_self" rel="noopener">
-                  <p class="text_1e49f8533ddc has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;text-decoration:underline;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Kilimanjaro Planning Guide</p>
-         </a></div>
-      <p class="text_8ac653a9f081 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Payment Details</p>
-     
-      <p class="text_ac7cdcac3b61 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">info@camelleonsafaris.com</p>
-     
-
-<div class="wp-block-yotako-block-anchor "><a href="https://serengeticlarity.com/drones-photography-guidelines/" class="" target="_self" rel="noopener">
-                  <p class="text_6ffc5831fe14 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;text-decoration:underline;letter-spacing:-0.5px;color:#808080;background-color:transparent;"> Drones &#038; Photography Guide</p>
-         </a></div>
-      <p class="text_a838ae4c7b3d has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Privacy Policy</p>
-     
-      <p class="text_7f63b5b80cc3 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#808080;background-color:transparent;">Tipping Guide</p>
      
 
 <div class="wp-block-group container_c38156265193 is-layout-flow wp-block-group-is-layout-flow" >

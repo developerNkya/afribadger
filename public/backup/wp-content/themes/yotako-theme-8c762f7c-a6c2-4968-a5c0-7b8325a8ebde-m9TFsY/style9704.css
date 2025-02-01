@@ -4704,7 +4704,7 @@
 
              .container_7113b747f86b {
                  width: 1440px;
-                 height: 5741px;
+/*                 height: 5741px;*/
                  position: absolute !important;
                  left: 0px;
                  top: -391px;
@@ -6939,7 +6939,7 @@
 
              .viewport_4886eb1bf436 {
                  width: 1440px;
-                 height: 4960px;
+/*                 height: 4960px;*/
                  overflow-x: hidden;
                  overflow-y: hidden;
                  background: #ffffff;
@@ -16647,3 +16647,9 @@
 }
 
 //
+
+.view-tour-large-footer {
+    position: relative;
+    top: -5000px;
+    left: -170px;
+}
