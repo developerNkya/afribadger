@@ -3,6 +3,7 @@
 <div class="wp-block-group container_c9f1b11a1b51 is-layout-flow wp-block-group-is-layout-flow" >
                   
 
+<div class="view-tour-body-large">
 <div class="wp-block-group container_ee0a20b79ef9 is-layout-flow wp-block-group-is-layout-flow">
   <!-- Inside structure -->
   <div class="wp-block-group container_e9c12360b1d4 is-layout-flow wp-block-group-is-layout-flow">
@@ -148,34 +149,38 @@ document.addEventListener("DOMContentLoaded", function () {
     const faqView = document.querySelectorAll('.imageview_d207cb065864-faq');
   const faqButtons = document.querySelectorAll('.button-expandable-faq');
 
-  faqView.forEach((imageView, index) => {
-    const parentContainer = imageView.closest('.wp-block-group.container_c9f1b11a1b51');
-    const itinerary = parentContainer ? parentContainer.querySelector('.opened-itenary-faq') : null;
+faqView.forEach((imageView, index) => {
+  const parentContainer = imageView.closest('.wp-block-group.container_c9f1b11a1b51');
+  const itinerary = parentContainer ? parentContainer.querySelector('.opened-itenary-faq') : null;
 
-    if (!itinerary) {
-      console.error('Itinerary not found for the current image view.');
-      return;
-    }
+  if (!itinerary) {
+    console.error('Itinerary not found for the current image view.');
+    return;
+  }
 
-    const faqButton = faqButtons[index];
+  const faqButton = faqButtons[index];
 
-    imageView.addEventListener('click', function () {
-      itinerary.classList.add('show'); 
-      faqButton.src = '../../assets/images/button-expandable.png'; 
-    });
-
-    faqButton.addEventListener('click', function () {
-      itinerary.classList.remove('show'); 
-    faqButton.src = '../../assets/images/button-expandable.png'; 
-    });
+  imageView.addEventListener('click', function () {
+    itinerary.classList.add('show');
+    itinerary.style.display = 'inline'; // Set display to inline after opening
+    faqButton.src = '../../assets/images/button-expandable.png';
   });
+
+  faqButton.addEventListener('click', function () {
+    itinerary.classList.remove('show');
+    itinerary.style.display = 'none'; // Hide the FAQ when clicked again
+    faqButton.src = '../../assets/images/button-expandable.png';
+  });
+});
+
 });
 </script>
 
 
   <!-- safari costs -->
 <div class="safari-costs-large">
-      
+  
+
 <div class="wp-block-group container_5c96ff3f7e4c is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_d6d76588eb46 is-layout-flow wp-block-group-is-layout-flow" >
@@ -334,7 +339,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- faq section -->
     <h2 class=" faq-title text_ce43d4354680-faq has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">FAQ</h2>
 <div class="faq-section">
-  <div class="wp-block-group container_ee0a20b79ef9 is-layout-flow wp-block-group-is-layout-flow">
+  <div class="hider" style="background:white">
+  <div class="wp-block-group container_ee0a20b79ef9-faq is-layout-flow wp-block-group-is-layout-flow">
   <!-- Inside structure -->
   <div class="wp-block-group container_e9c12360b1d4 is-layout-flow wp-block-group-is-layout-flow" style="width:1117px">
     <div class="wp-block-group container_7c1bd3296b50 is-layout-flow wp-block-group-is-layout-flow">
@@ -376,12 +382,21 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 
 
+
 </div>
 </div>
 
+
+</div>
+
+
+<div class="other-tours " >
+  <div style="margin-left:900px;height:500px;width:300px;background-color:yellow;position:relative">
+  </div>
+</div>
+</div>
 
         </div>
-
 
 
 
