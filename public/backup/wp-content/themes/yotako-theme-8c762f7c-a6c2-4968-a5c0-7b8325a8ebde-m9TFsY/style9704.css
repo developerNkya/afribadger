@@ -5449,7 +5449,7 @@
              }
 
              .container_ee0a20b79ef9 {
-                width: 92.5%;
+                width: 90%;
                 height: fit-content;
                 z-index: 1;
                 align-items: flex-start;
@@ -5475,7 +5475,7 @@
 
            .container_c9f1b11a1b51 {
                 background: white;
-                width: 1207px;
+                width: 1239px;
                 /* height: 560px; */
                 z-index: 1;
                 position: absolute !important;
@@ -6614,14 +6614,18 @@
                  font-family: 'Bobaland';
              }
 
-             .container_348e1e739115 {
-                 position: absolute !important;
-                 width: 1233px;
-                 height: 762px;
-                 z-index: 1;
-                 left: 121px;
-                 top: 3481px;
-             }
+           
+           .container_348e1e739115 {
+                zoom: 0.9;
+                -moz-transform: scale(0.5);
+                /* transform: scale(0.8); */
+                position: relative;
+                width: 1233px;
+                height: 762px;
+                z-index: 1;
+                /* left: 121px; */
+                /* top: 3481px; */
+            }
 
              .imageview_a30fae88b9b5 {
                  width: 179px;
