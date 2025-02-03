@@ -1,7 +1,7 @@
 .state-yes {
   display: flex;
   flex-direction: column;
-  width: 1120px;
+/*  width: 1120px;*/
   height: 791px;
   align-items: center;
   gap: 29px;

@@ -36,7 +36,7 @@
  <!-- Itinerary (Initially Hidden) -->
 <!-- Itinerary (Initially Hidden) -->
 <div class="opened-itenary" style="margin-top: 50px; background-color: white; padding-top: 20px;">
-  <div class="state-yes">
+  <div class="state-yes" style="width:1120px">
     <div class="collapsible-button">
       <div class="frame">
         <div class="day-count">
@@ -360,7 +360,7 @@ faqView.forEach((imageView, index) => {
  <!-- Itinerary (Initially Hidden) -->
 <!-- Itinerary (Initially Hidden) -->
 <div class="opened-itenary-faq" style="margin-top: 50px; background-color: white; padding-top: 20px;">
-  <div class="state-yes">
+  <div class="state-yes" style="width:1120px">
     <div class="collapsible-button">
       <div class="frame">
         <div class="div-wrapper">
