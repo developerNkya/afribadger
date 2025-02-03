@@ -7181,27 +7181,26 @@
              }
 
              .container_a236557e1927 {
-                 width: 834px;
-                 height: 557px;
-                 position: absolute !important;
-                 left: 0px;
-                 top: 5106px;
-                 align-items: center;
-                 justify-content: center;
-                 gap: 11px normal;
-                 flex-direction: column;
-                 background: #ffffff;
-             }
+                width: 834px;
+                height: 557px;
+                position: relative;
+                left: 50px;
+                top: 500px;
+                align-items: center;
+                justify-content: center;
+                gap: 11px normal;
+                flex-direction: column;
+                background: #ffffff;
+            }
 
              .container_d6bccd3b0a27 {
-                 width: 834px;
-                 height: 109px;
-                 position: absolute !important;
-                 left: -1px;
-                 top: 5663px;
-                 background: #f4e7c9;
-             }
-
+                    width: 834px;
+                    height: 109px;
+                    position: relative;
+                    left: -1px;
+                    top: 663px;
+                    background: #f4e7c9;
+                }
              .imageview_be33a3213e9f {
                  width: 834px;
                  height: 631px;
@@ -8283,16 +8282,16 @@
                 font-family: 'Roboto';
             }
 
-             .text_dba374c3e302 {
-                 width: max-content;
-                 position: absolute !important;
-                 left: 221px;
-                 top: 3426px;
-                 line-height: 56.25px;
-                 font-family: 'Roboto';
-             }
-
-             .container_5595676d0099 {
+            .text_dba374c3e302 {
+                width: max-content;
+                position: relative;
+                left: 211px;
+                top: 200px;
+                line-height: 56.25px;
+                font-family: 'Roboto';
+            }
+                       
+              .container_5595676d0099 {
                  width: 100%;
                  flex-grow: 1;
                  flex-basis: 0px;
@@ -8964,17 +8963,17 @@
              }
 
              .container_c25f9cd854f7 {
-                 width: 814px;
-                 height: 1383px;
-                 position: absolute !important;
-                 left: 10px;
-                 top: 3561px;
-                 justify-content: flex-start;
-                 align-items: flex-start;
-                 flex-wrap: wrap;
-                 gap: 36px 16px;
-                 flex-direction: row;
-             }
+                /* width: 200px; */
+                height: 1383px;
+                position: relative;
+                 left: -24px; 
+                top: 261px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 36px 16px;
+                flex-direction: row;
+            }
 
              .imageview_1345a6459238 {
                  width: 834px;
@@ -8986,19 +8985,20 @@
                  top: 0px;
              }
 
+             
              .container_59b6c4c28146 {
-                 width: 799px;
-                 height: 1px;
-                 transform-origin: unset;
-                 transform: rotate(-0.000005008956538086318deg);
-                 border-top: #7a7a7a8c solid 3px;
-                 border-right: #7a7a7a8c solid 3px;
-                 border-bottom: #7a7a7a8c solid 3px;
-                 border-left: #7a7a7a8c solid 3px;
-                 position: absolute !important;
-                 left: 10px;
-                 top: 4979px;
-             }
+/*                    width: 799px;*/
+                    height: 1px;
+                    transform-origin: unset;
+                    transform: rotate(-0.000005008956538086318deg);
+                    border-top: #7a7a7a8c solid 3px;
+                    border-right: #7a7a7a8c solid 3px;
+                    border-bottom: #7a7a7a8c solid 3px;
+                    border-left: #7a7a7a8c solid 3px;
+                    position: relative;
+                    /* left: 10px; */
+                    top: 400px;
+                }
 
              .viewport_b618d13430bd {
                  width: 834px;
