@@ -4,7 +4,9 @@
 
 
 
+  <!-- itenaries section -->
 <div class="wp-block-group container_05a35a35cbc2 is-layout-flow wp-block-group-is-layout-flow" >
+
                   
 <div class="wp-block-group container_2608d335926e is-layout-flow wp-block-group-is-layout-flow" >
                   
@@ -155,11 +157,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // FAQ toggle logic (new functionality)
-    const faqView = document.querySelectorAll('.imageview_d207cb065864-faq');
-  const faqButtons = document.querySelectorAll('.button-expandable-faq');
+    const faqView = document.querySelectorAll('.imageview_d810f0f30684-faq');
+  const faqButtons = document.querySelectorAll('.button-expandable-faq-m');
 
 faqView.forEach((imageView, index) => {
-  const parentContainer = imageView.closest('.wp-block-group.container_c9f1b11a1b51');
+  const parentContainer = imageView.closest('.wp-block-group.container_da6f6efcc8ce');
   const itinerary = parentContainer ? parentContainer.querySelector('.opened-itenary-faq') : null;
 
   if (!itinerary) {
@@ -186,6 +188,7 @@ faqView.forEach((imageView, index) => {
 </script>
 
 
+<!-- safari includes -->
 <div class="safari-includes">
   <div class="wp-block-group container_371d7de6ab8d is-layout-flow wp-block-group-is-layout-flow" >
                   
@@ -330,6 +333,63 @@ faqView.forEach((imageView, index) => {
              </div>
         </div>
         </div>
+        </div>
+
+</div>
+
+
+<!-- faq -section -->
+<div class="faq-medium-section">
+   <h2 class="text_a6705c924ab0 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">FAQ’s</h2>
+<div class="wp-block-group container_05a35a35cbc2 is-layout-flow wp-block-group-is-layout-flow"  style="background:white">
+
+                  
+<div class="wp-block-group container_2608d335926e is-layout-flow wp-block-group-is-layout-flow" >
+                  
+<div class="wp-block-group container_94ba8e6dae40 is-layout-flow wp-block-group-is-layout-flow" >
+                  
+
+
+
+<div class="wp-block-group container_d6f91a95ee8e is-layout-flow wp-block-group-is-layout-flow" >
+                          <h2 class="text_fa55cf660874 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Arrival at the Airport and transfer to Hotel</h2>
+               </div>
+        </div>
+
+
+
+<figure class="imageview_d810f0f30684-faq wp-block-image" >
+<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I419:4155;280:381.svg" />
+</figure>
+
+<!-- Itinerary (Initially Hidden) -->
+
+</div>
+   <div class="opened-itenary-faq medium-faq-details" style=" background-color: white; padding-top: 20px;">
+  <div class="state-yes">
+    <div class="collapsible-button">
+      <div class="frame">
+        <div class="div-wrapper">
+          <p class="p">Arrival at the Airport and transfer to Hotel</p>
+        </div>
+      </div>
+      <img class="button-expandable-faq-m" src="../../assets/images/button-expandable.png" />
+    </div>
+    <div class="rectangle-2"></div>
+    <div class="frame-2">
+      <img class="group" src="../../assets/images/group-22.png" />
+      <div class="frame-3">
+        <div class="text-wrapper-2">Arrival</div>
+        <p class="the-group-arrives-at">
+          The group arrives at Kilimanjaro Airport (JRO). Participants are met by a representative of Altezza Travel and transferred to a hotel in Arusha.<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;Note: The hotel cost only includes breakfast. Check-in starts at 2:00 PM.
+        </p>
+      </div>
+    </div>
+</div> 
+</div>
+
+
+
         </div>
 
 </div>

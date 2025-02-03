@@ -7692,16 +7692,16 @@
                  border-radius: 8px 8px 8px 8px;
              }
 
-             .container_05a35a35cbc2 {
-                 width: 100%;
-                 height: fit-content;
-                 align-items: flex-start;
-                 justify-content: flex-start;
-/*                 gap: 29px normal;*/
-                 flex-direction: column;
-                 background: #f4e7c9;
-                 border-radius: 8px 8px 8px 8px;
-             }
+            .container_05a35a35cbc2 {
+                width: 770px;
+                height: fit-content;
+                align-items: flex-start;
+                justify-content: flex-start;
+                /* gap: 29px normal; */
+                flex-direction: column;
+                background: #f4e7c9;
+                border-radius: 8px 8px 8px 8px;
+            }
 
              .container_da6f6efcc8ce {
                  width: 769px;
@@ -8273,14 +8273,15 @@
                  border-radius: 8px 8px 8px 8px;
              }
 
-             .text_a6705c924ab0 {
-                 width: max-content;
-                 position: absolute !important;
-                 left: 358px;
-                 top: 2793px;
-                 line-height: 56.25px;
-                 font-family: 'Roboto';
-             }
+            .text_a6705c924ab0 {
+                margin-bottom: 90px;
+                width: max-content;
+                position: relative;
+                left: 318px;
+                top: 60px;
+                line-height: 56.25px;
+                font-family: 'Roboto';
+            }
 
              .text_dba374c3e302 {
                  width: max-content;
@@ -16669,16 +16670,17 @@
     left: -170px;
 }
 
+
 .medium-tour-details {
-    bottom: 130px;
+    top: -110px;
+    /* bottom: 130px; */
     position: relative;
     left: -165px;
     transform: scale(0.7);
     /* margin-top: 50px; */
     background-color: white;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
-
 
 
 .button-expandable-medium {
@@ -16686,4 +16688,16 @@
     left: -19px;
     width: 61px;
     height: 61px;
+}
+
+.medium-faq-details {
+    width: 100%;
+    /* top: -110px; */
+    /* bottom: 130px; */
+    /* position: relative; */
+    /* left: -155px; */
+    /* transform: scale(0.7); */
+    margin-top: 50px;
+    background-color: white;
+    padding-top: 20px;
 }
