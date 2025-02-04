@@ -9438,7 +9438,7 @@
 
              .container_4e3d9e39666e {
                  width: 405px;
-                 height: 1086px;
+                 height: fit-content;
                  position: absolute !important;
                  left: 12px;
                  top: 853px;
@@ -9448,26 +9448,26 @@
                  flex-direction: column;
              }
 
-             .container_38788649a70b {
-                 width: 405px;
-                 height: 1px;
-                 border-top: #7a7a7a8c solid 3px;
-                 border-right: #7a7a7a8c solid 3px;
-                 border-bottom: #7a7a7a8c solid 3px;
-                 border-left: #7a7a7a8c solid 3px;
-                 position: absolute !important;
-                 left: 12px;
-                 top: 1975px;
-             }
+            .container_38788649a70b {
+                width: 405px;
+                height: 1px;
+                border-top: #7a7a7a8c solid 3px;
+                border-right: #7a7a7a8c solid 3px;
+                border-bottom: #7a7a7a8c solid 3px;
+                border-left: #7a7a7a8c solid 3px;
+                position: relative;
+                /* left: 12px; */
+                top: 10px;
+            }
 
-             .text_da06bcbaabd7 {
-                 width: max-content;
-                 position: absolute !important;
-                 left: 133px;
-                 top: 1999px;
-                 line-height: 56.25px;
-                 font-family: 'Roboto';
-             }
+          .text_da06bcbaabd7 {
+                width: max-content;
+                position: relative;
+                left: 120px;
+                top: 30px;
+                line-height: 56.25px;
+                font-family: 'Roboto';
+            }
 
              .container_9325242a4eaa {
                  width: 79px;
@@ -9537,20 +9537,20 @@
                  height: 41px;
              }
 
-             .button_918fe2cd01a0 {
-                 padding: 0 32px 0 32px;
-                 width: 407px;
-                 height: 79px;
-                 position: absolute !important;
-                 left: 12px;
-                 top: 2091px;
-                 justify-content: flex-start;
-                 align-items: center;
-                 gap: normal 16px;
-                 flex-direction: row;
-                 background: #f4e7c9;
-                 border-radius: 8px 8px 8px 8px;
-             }
+         .button_918fe2cd01a0 {
+            padding: 0 32px 0 32px;
+            width: 407px;
+            height: 79px;
+            position: relative;
+            /* left: 12px; */
+            top: 70px;
+            justify-content: flex-start;
+            align-items: center;
+            gap: normal 16px;
+            flex-direction: row;
+            background: #f4e7c9;
+            border-radius: 8px 8px 8px 8px;
+        }
 
              .button_link_918fe2cd01a0 {
                  display: flex;
@@ -16682,6 +16682,20 @@
 }
 
 
+.small-tour-details {
+    margin-left: -100px;
+    width: 600px;
+    top: -90px;
+    /* bottom: 130px; */
+    position: relative;
+    /* left: -165px; */
+    transform: scale(0.7);
+    /* margin-top: 50px; */
+    background-color: white;
+    /* padding-top: 20px; */
+}
+
+
 .button-expandable-medium {
     position: relative;
     left: -19px;
@@ -16699,4 +16713,43 @@
     margin-top: 50px;
     background-color: white;
     padding-top: 20px;
+}
+
+/*for small*/
+@media (max-width: 640px) {
+    /* Stack images vertically inside .frame-7 */
+    .frame-7 {
+        display: flex;
+        flex-direction: column; /* Stack the images vertically */
+        gap: 10px; /* Optional: adds space between images */
+    }
+
+    /* Ensure images inside .frame-7 are vertically aligned */
+    .frame-7 img {
+        max-width: 100%; /* Make sure images take full container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* .frame-11 container should allow horizontal alignment with wrapping */
+    .frame-10 {
+        display: flex;
+        flex-wrap: wrap; /* Allow wrapping when items reach the container's edge */
+        gap: 10px; /* Optional: space between items */
+        max-width: 100%; /* Ensure it doesn't overflow */
+    }
+
+    /* Ensure .frame-11 elements are horizontally aligned and wrapping */
+    .frame-11 {
+        width: calc(50% - 10px); /* 2 items per row on smaller screens */
+        box-sizing: border-box; /* Ensure padding and border don't affect width */
+        display: flex;
+        justify-content: flex-start; /* Align items to the start */
+        align-items: center; /* Align content vertically in case of mixed content */
+    }
+
+    /* Optional: Image inside .frame-11 should be a specific size */
+    .frame-11 img {
+        max-width: 50px; /* Limit image size */
+        max-height: 50px; /* Limit image size */
+    }
 }
