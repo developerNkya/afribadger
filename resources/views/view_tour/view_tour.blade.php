@@ -580,76 +580,13 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 
-<div class="wp-block-yotako-block-anchor button_f2cc7060bd55"><a href="../index.html" class="button_link_f2cc7060bd55" target="_self" rel="noopener">
-            
-<div class="wp-block-group container_ee8f009170e9 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_43ec37b3b7c5 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">What safety measures should I be aware of during a safari in Tanzania?</p>
-             </div>
 
 
 
-<figure class="imageview_9791feb38a08 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/424:4906.svg" />
-</figure>
-
-    </a></div>
-
-<div class="wp-block-yotako-block-anchor button_5fa2c1de141f"><a href="../index.html" class="button_link_5fa2c1de141f" target="_self" rel="noopener">
-            
-<div class="wp-block-group container_21d8ac04084a is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_251c00acfd45 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">What accommodation options are available during a safari in Tanzania?</p>
-             </div>
 
 
 
-<figure class="imageview_764437f60062 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/424:4910.svg" />
-</figure>
-
-    </a></div>
-
-<div class="wp-block-yotako-block-anchor button_31edbfaf5db9"><a href="../index.html" class="button_link_31edbfaf5db9" target="_self" rel="noopener">
-            
-<div class="wp-block-group container_e402808ec3fe is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_881854e5139b has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">What wildlife can I expect to see during a Tanzanian safari?</p>
-             </div>
-
-
-
-<figure class="imageview_79418388b2f2 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/424:4914.svg" />
-</figure>
-
-    </a></div>
-
-<div class="wp-block-yotako-block-anchor button_7265c3d50928"><a href="../index.html" class="button_link_7265c3d50928" target="_self" rel="noopener">
-            
-<div class="wp-block-group container_6344c019727d is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_3ae56e6f90fd has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Are safaris in Tanzania suitable for all ages?</p>
-             </div>
-
-
-
-<figure class="imageview_43cd78499988 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/424:4918.svg" />
-</figure>
-
-    </a></div>
-
-<div class="wp-block-yotako-block-anchor button_137487e1d3c4"><a href="../index.html" class="button_link_137487e1d3c4" target="_self" rel="noopener">
-            
-<div class="wp-block-group container_611979021a38 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_0af70c31d400 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">What modes of transportation are used during a safari in Tanzania?</p>
-             </div>
-
-
-
-<figure class="imageview_85d39c496cc8 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/424:4922.svg" />
-</figure>
-
-    </a></div>
-        <h2 class="text_c8ec3714c2a1 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">FAQ’s</h2>
+       
        
         <h3 class="text_9767805c127d has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Other Safari Tours</h3>
        

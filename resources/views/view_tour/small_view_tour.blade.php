@@ -339,4 +339,132 @@
         </div>
 </div>
 
-               </div>
+
+<!-- faq section -->
+<div class="small-faq-section">
+     
+  <div class="itenary-small">
+    <h2 class="text_da06bcbaabd7-faq has-text-color has-background has-text-align-left wp-block-heading" 
+        style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+        FAQ's
+    </h2>
+
+    <div class="wp-block-yotako-block-anchor button_918fe2cd01a0-faq">
+      <div class="wp-block-group container_7e3530d3246e is-layout-flow wp-block-group-is-layout-flow">
+        <div class="wp-block-group container_f3bfadad181a is-layout-flow wp-block-group-is-layout-flow">
+          <div class="wp-block-group container_9325242a4eaa is-layout-flow wp-block-group-is-layout-flow">
+            <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
+          </div>
+
+          <p class="text_760c0f94c923 has-text-color has-background has-text-align-left" 
+             style="text-transform:uppercase;font-style:normal;font-size:13.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">
+             Day
+          </p>
+        </div>
+
+        <h3 class="text_5a947dcac893 has-text-color has-background has-text-align-center wp-block-heading" 
+            style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+            1
+        </h3>
+      </div>
+
+      <div class="wp-block-group container_5f66b41bcc64 is-layout-flow wp-block-group-is-layout-flow">
+        <p class="text_c273670e1c70 has-text-color has-background has-text-align-left" 
+           style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+           Arrival at the Airport and transfer to Hotel
+        </p>
+      </div>
+
+      <figure class="imageview_7690f9900705 wp-block-image">
+        <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/423:4760.svg" />
+      </figure>
+    </div>
+
+    <!-- when opened:: -->
+    <div class="small-tour-details">
+      <div class="opened-itenary" style="background-color: white; padding-top: 20px;">
+        <div class="state-yes" style="height:fit-content">
+          <div class="collapsible-button">
+            <div class="frame">
+              <div class="day-count">
+                <div class="div">
+                  <div class="rectangle"></div>
+                  <div class="day">DAY</div>
+                </div>
+                <div class="text-wrapper">1</div>
+              </div>
+              <div class="div-wrapper">
+                <p class="p">Arrival at the Airport and transfer to Hotel</p>
+              </div>
+            </div>
+            <img class="button-expandable-small" src="../../assets/images/button-expandable.png" />
+          </div>
+
+          <div class="rectangle-2"></div>
+          <div class="frame-2">
+            <img class="group" src="../../assets/images/group-22.png" />
+            <div class="frame-3">
+              <div class="text-wrapper-2">Arrival</div>
+              <p class="the-group-arrives-at">
+                The group arrives at Kilimanjaro Airport (JRO). Participants are met by a representative of Altezza Travel and transferred to a hotel in Arusha.<br />
+                Note: The hotel cost only includes breakfast. Check-in starts at 2:00 PM.
+              </p>
+            </div>
+          </div>
+          <div class="frame-4">
+            <div class="group-wrapper">
+              <div class="overlap-wrapper">
+                <div class="overlap">
+                  <div class="overlap-group">
+                    <div class="rectangle-3"></div>
+                    <div class="rectangle-4"></div>
+                    <div class="rectangle-5"></div>
+                  </div>
+                  <div class="rectangle-6"></div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-5">
+              <div class="frame-6">
+                <div class="text-wrapper-3">Accommodation</div>
+                <div class="text-wrapper-4">GRAND MELIA ARUSHA</div>
+              </div>
+              <div class="frame-7">
+                <img class="img" src="../../assets/images/rectangle-71.png" />
+                <img class="img" src="../../assets/images/rectangle-71.png" />
+              </div>
+              <div class="frame-8">
+                <div class="frame-9">
+                  <img class="vector" src="img/vector-2.svg" />
+                  <div class="text-wrapper-5">Meal Plan:</div>
+                </div>
+                <div class="text-wrapper-6">Breakfast included</div>
+              </div>
+              <div class="frame-10">
+                <div class="frame-11">
+                  <img class="vector-2" src="img/image.svg" />
+                  <div class="text-wrapper-7">Swimming Pool</div>
+                </div>
+                <div class="frame-11">
+                  <img class="vector-2" src="img/vector.svg" />
+                  <div class="text-wrapper-7">Wifi</div>
+                </div>
+                <div class="frame-11">
+                  <img class="vector-2" src="img/vector-3.svg" />
+                  <div class="text-wrapper-7">Restaurant</div>
+                </div>
+                <div class="frame-11">
+                  <img class="vector-2" src="img/vector-4.svg" />
+                  <div class="text-wrapper-7">Spa</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+               
+</div>

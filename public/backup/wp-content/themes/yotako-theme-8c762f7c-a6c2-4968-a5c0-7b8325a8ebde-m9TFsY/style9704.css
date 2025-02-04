@@ -9469,6 +9469,17 @@
                 font-family: 'Roboto';
             }
 
+            .text_da06bcbaabd7-faq {
+                width: max-content;
+                position: relative;
+                left: 120px;
+                top: 70px;
+                line-height: 56.25px;
+                font-family: 'Roboto';
+            }
+
+
+
              .container_9325242a4eaa {
                  width: 79px;
                  height: 31px;
@@ -9551,6 +9562,22 @@
             background: #f4e7c9;
             border-radius: 8px 8px 8px 8px;
         }
+
+                 .button_918fe2cd01a0-faq {
+            padding: 0 32px 0 32px;
+            width: 407px;
+            height: 79px;
+            position: relative;
+            /* left: 12px; */
+            top: 100px;
+            justify-content: flex-start;
+            align-items: center;
+            gap: normal 16px;
+            flex-direction: row;
+            background: #f4e7c9;
+            border-radius: 8px 8px 8px 8px;
+        }
+
 
              .button_link_918fe2cd01a0 {
                  display: flex;
@@ -10026,20 +10053,21 @@
                  flex-direction: row;
              }
 
-             .container_c3d225d0f727 {
-                 padding: 16px 0 16px 0;
-                 width: 407px;
-                 height: 670px;
-                 position: absolute !important;
-                 left: 12px;
-                 top: 2525px;
-                 align-items: center;
-                 justify-content: flex-start;
-                 gap: 10px normal;
-                 flex-direction: column;
-                 background: #f4e7c9;
-                 border-radius: 11px 11px 11px 11px;
-             }
+            
+            .container_c3d225d0f727 {
+                padding: 16px 0 16px 0;
+                width: 370px;
+                height: 670px;
+                position: relative;
+                left: -29px;
+                 top: 70px; 
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px normal;
+                flex-direction: column;
+                background: #f4e7c9;
+                border-radius: 11px 11px 11px 11px;
+            }
 
              .text_43ec37b3b7c5 {
                  width: 100%;
@@ -10262,13 +10290,13 @@
              }
 
              .text_c8ec3714c2a1 {
-                 width: max-content;
-                 position: absolute !important;
-                 left: 176px;
-                 top: 3255px;
-                 line-height: 37.5px;
-                 font-family: 'Roboto';
-             }
+                width: max-content;
+                position: relative;
+                left: -30px;
+                top: 100px;
+                line-height: 37.5px;
+                font-family: 'Roboto';
+            }
 
              .text_9767805c127d {
                  width: max-content;

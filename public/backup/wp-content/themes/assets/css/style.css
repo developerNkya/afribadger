@@ -423,5 +423,6 @@
 }
 
 .opened-itenary.show {
+  margin-bottom:  -300px;
   display: block; /* Show when the 'show' class is added */
 }
