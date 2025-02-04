@@ -9405,21 +9405,20 @@
              }
 
              .container_57908918ebc9 {
-                 padding: 32px 32px 32px 32px;
-                 width: 405px;
-                 height: 233px;
-                 z-index: 4;
-                 position: absolute !important;
-                 left: 12px;
-                 top: 570px;
-                 align-items: center;
-                 justify-content: center;
-                 gap: 10px normal;
-                 flex-direction: column;
-                 background: #f4e7c9;
-                 border-radius: 16px 16px 16px 16px;
-             }
-
+                padding: 32px 32px 32px 32px;
+                width: 405px;
+                /* height: 433px; */
+                z-index: 4;
+                position: absolute !important;
+                left: 12px;
+                top: 500px;
+                align-items: center;
+                justify-content: center;
+                gap: 10px normal;
+                flex-direction: column;
+                background: #f4e7c9;
+                border-radius: 16px 16px 16px 16px;
+            }
              .text_ff42df684304 {
                  width: 100%;
                  line-height: 56.25px;
