@@ -53,6 +53,54 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 		background: none !important;
 		padding: 0 !important;
 	}
+	    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Background blur effect */
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        overflow: auto;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fff;
+      
+        border-radius: 8px;
+        width: 80%;
+        max-width: 600px;
+        position: relative;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Close Button */
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #000;
+    }
+
+    /* Backdrop (Background Blur) */
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Darkens the background */
+        display: none;
+        z-index: 9998;
+    }
 </style>
 <style id='wp-block-library-inline-css'>
 :root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
@@ -95,6 +143,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/globals.css">
 <link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/style.css">
 <link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/styleguide.css">
+<link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/booking_form.css">
 
 
 <link rel='stylesheet' id='style-css' href='../../backup/wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-m9TFsY/style9704.css?ver=6.7.1' media='all' />
@@ -289,16 +338,61 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         </div>
 
 
-<div class="wp-block-yotako-block-anchor button_af56c63f62ed"><a href="../index.html" class="button_link_af56c63f62ed" target="_self" rel="noopener">
-                  <p class="text_75221008a7fc has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">Book Now</p>
-     
+<!-- booking form large screen -->
+<!-- Hidden Booking Form Modal -->
+<div id="bookingFormModal" class="modal" style="display: none;" onclick="closeModal(event)">
+    <!-- Modal Content: Booking Form -->
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeModal(event)">×</button>
+        <div id="bookingFormContainer">
+            @include('view_tour.booking_form')
+        </div>
+    </div>
+</div>
+
+<!-- Background Blur Effect -->
+<div id="modalBackdrop" class="backdrop" style="display: none;"></div>
+
+<!-- Button to Show Modal -->
+<div class="wp-block-yotako-block-anchor button_af56c63f62ed" onclick="showBookingForm()">
+    <a href="javascript:void(0);" class="button_link_af56c63f62ed" target="_self" rel="noopener">
+        <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
+            Book Now
+        </p>
+        <figure class="imageview_6f8f09ff716d wp-block-image">
+            <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
+        </figure>
+    </a>
+</div>
+
+<!-- JavaScript to handle the modal functionality -->
+<script>
+    function showBookingForm() {
+        // Show the modal and backdrop
+        document.getElementById('bookingFormModal').style.display = 'flex';
+        document.getElementById('modalBackdrop').style.display = 'block';
+    }
+
+    function closeModal(event) {
+        // Close the modal when clicking on the backdrop or close button
+        if (event.target === document.getElementById('bookingFormModal') || event.target.classList.contains('close-btn')) {
+            document.getElementById('bookingFormModal').style.display = 'none';
+            document.getElementById('modalBackdrop').style.display = 'none';
+        }
+    }
+</script>
+
+<!-- Modal Styles (CSS) -->
+<style>
+    /* Modal Overlay */
+
+</style>
 
 
-<figure class="imageview_6f8f09ff716d wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
-</figure>
+	<!-- JavaScript to handle the click event -->
 
-    </a></div>        </div>
+
+       </div>
         </div>
            </div>
 
@@ -530,6 +624,14 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 </div>
+
+<!-- <script>
+    function showBookingForm() {
+        // Show the booking form by changing display to block
+        document.getElementById('bookingFormContainer').style.display = 'block';
+    }
+</script>
+ -->
 <script id="wp-block-template-skip-link-js-after">
 	( function() {
 		var skipLinkTarget = document.querySelector( 'main' ),
