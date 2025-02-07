@@ -69,7 +69,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
     /* Modal Content */
     .modal-content {
-        background-color: #fff;
+/*        background-color: #fff;*/
       
         border-radius: 8px;
         width: 80%;
@@ -343,8 +343,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <div id="bookingFormModal" class="modal" style="display: none;" onclick="closeModal(event)">
     <!-- Modal Content: Booking Form -->
     <div class="modal-content">
-        <button class="close-btn" onclick="closeModal(event)">×</button>
+       
         <div id="bookingFormContainer">
+             
             @include('view_tour.booking_form')
         </div>
     </div>

@@ -1,29 +1,52 @@
-   <div class="v653_3174"><span class="v653_3175">Book your Tour</span>
+   <div class="v653_3174">
+<button class="close-btn" onclick="closeModal(event)">×</button>
+    <span class="v653_3175">Book your Tour</span>
         <div class="v653_3176">
-            <div class="v653_3177">
+           <!--  <div class="v653_3177">
             <label for="name"><span class="v653_3178">Your name*</span></label>
-            <input type="text" id="name" class="v653_3179" placeholder="Name" required>
-        </div>
+            <input type="text" id="name" class="v653_3179" placeholder="Name" required> 
+            </div> -->
+            <div class="v653_3177"><span class="v653_3178">Your name*</span>
+                <div class="v653_3179"></div>
+                 <input type="text" id="name" class="v653_3180" placeholder="Name" required>
+            </div>
             <div class="v653_3181"><span class="v653_3182">Your E-Mail*</span>
-                <div class="v653_3183"></div><span class="v653_3184">E-mail</span>
+                <div class="v653_3183"></div>
+                 <input type="text" id="name" class="v653_3180" placeholder="Email" required>
             </div>
             <div class="v653_3185"><span class="v653_3186">Your phone*</span>
-                <div class="v653_3187"></div><span class="v653_3188">Phone (International version)</span>
+                <div class="v653_3187"></div>
+                  <input type="text" id="name" class="v653_3188" placeholder="Phone (International version)" required>
+                <!-- <span class="v653_3188">Phone (International version)</span> -->
             </div>
             <div class="v653_3189"><span class="v653_3190">Your request*</span>
-                <div class="v653_3191"></div><span class="v653_3192">Please let us know if you have any question</span>
+                <div class="v653_3191"></div>
+
+                <textarea name="request" class="v653_3192" id="output" type="output" placeholder="Please&nbsp;let&nbsp;us&nbsp;know&nbsp;&nbsp;if&nbsp;&nbsp;you&nbsp;have&nbsp;any&nbsp;question"></textarea> 
+                <!-- <span class="v653_3192">Please let us know if you have any question</span> -->
             </div>
-            <div class="v653_3193">
-                <div class="v653_3194"></div><span class="v653_3195">I prefer email</span>
-                <div class="v653_3196"></div><span class="v653_3197">I prefer WhatsApp</span>
-                <div class="v653_3198"></div><span class="v653_3199">I prefer calls</span>
-            </div>
+          <div class="v653_3193">
+    <label class="v653_3194">
+        <input type="radio" name="preference" value="email">
+        <span class="v653_3195">I prefer email</span>
+    </label>
+    <label class="v653_3196">
+        <input type="radio" name="preference" value="whatsapp">
+        <span class="v653_3197">I prefer WhatsApp</span>
+    </label>
+    <label class="v653_3198">
+        <input type="radio" name="preference" value="calls">
+        <span class="v653_3199">I prefer calls</span>
+    </label>
+</div>
+
             <div class="name"></div>
         </div>
     </div>
 
 <!--  -->
  <!--     <div class="v653_3174">
+    rgba(128,128,128,1)
     <span class="v653_3175">Book your Tour</span>
     <div class="v653_3176">
         <div class="v653_3177">
