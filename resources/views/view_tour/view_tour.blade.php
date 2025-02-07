@@ -570,8 +570,23 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         </div>
         </div>
 
+<!-- Hidden Booking Form Modal -->
+<div id="bookingFormModal-s" class="modal" style="display: none;left: -50px;" onclick="closeModal(event)">
+    <!-- Modal Content: Booking Form -->
+    <div class="modal-content">
+       
+        <div id="bookingFormContainer">
 
-<div class="wp-block-yotako-block-anchor button_bcc73cb4a27e"><a href="../index.html" class="button_link_bcc73cb4a27e" target="_self" rel="noopener">
+            @include('view_tour.booking_form_small')
+        </div>
+    </div>
+</div>
+
+<!-- Background Blur Effect -->
+<div id="modalBackdrop-s" class="backdrop" style="display: none;"></div>
+
+
+<div class="wp-block-yotako-block-anchor button_bcc73cb4a27e" onclick="showBookingForm(3)"><a href="javascript:void(0);" class="button_link_bcc73cb4a27e" target="_self" rel="noopener">
                   <p class="text_ec08ee4bbd06 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:11.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">Book Now</p>
          </a></div>        </div>
         </div>
@@ -696,6 +711,18 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
             document.getElementById('bookingFormModal').style.display = 'none';
             document.getElementById('modalBackdrop').style.display = 'none';
         }
+
+         if (event.target === document.getElementById('bookingFormModal-m') || event.target.classList.contains('close-btn')) {
+            document.getElementById('bookingFormModal-m').style.display = 'none';
+            document.getElementById('modalBackdrop-m').style.display = 'none';
+        }
+
+         if (event.target === document.getElementById('bookingFormModal-s') || event.target.classList.contains('close-btn')) {
+            document.getElementById('bookingFormModal-s').style.display = 'none';
+            document.getElementById('modalBackdrop-s').style.display = 'none';
+        }
+
+
     }
 </script>
 
