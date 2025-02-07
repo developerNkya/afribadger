@@ -59,7 +59,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Background blur effect */
+         /* Background blur effect */
         display: none;
         justify-content: center;
         align-items: center;
@@ -75,8 +75,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         width: 80%;
         max-width: 600px;
         position: relative;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
+          }
 
     /* Close Button */
     .close-btn {
@@ -345,7 +344,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     <div class="modal-content">
        
         <div id="bookingFormContainer">
-             
+
             @include('view_tour.booking_form')
         </div>
     </div>
@@ -355,7 +354,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <div id="modalBackdrop" class="backdrop" style="display: none;"></div>
 
 <!-- Button to Show Modal -->
-<div class="wp-block-yotako-block-anchor button_af56c63f62ed" onclick="showBookingForm()">
+<div class="wp-block-yotako-block-anchor button_af56c63f62ed" onclick="showBookingForm(1)">
     <a href="javascript:void(0);" class="button_link_af56c63f62ed" target="_self" rel="noopener">
         <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
             Book Now
@@ -367,27 +366,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 </div>
 
 <!-- JavaScript to handle the modal functionality -->
-<script>
-    function showBookingForm() {
-        // Show the modal and backdrop
-        document.getElementById('bookingFormModal').style.display = 'flex';
-        document.getElementById('modalBackdrop').style.display = 'block';
-    }
 
-    function closeModal(event) {
-        // Close the modal when clicking on the backdrop or close button
-        if (event.target === document.getElementById('bookingFormModal') || event.target.classList.contains('close-btn')) {
-            document.getElementById('bookingFormModal').style.display = 'none';
-            document.getElementById('modalBackdrop').style.display = 'none';
-        }
-    }
-</script>
-
-<!-- Modal Styles (CSS) -->
-<style>
-    /* Modal Overlay */
-
-</style>
 
 
 	<!-- JavaScript to handle the click event -->
@@ -453,7 +432,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 <!-- medium view tour -->
 @include('view_tour.medium_view_tour');
-
+<!-- Hidden Booking Form Modal -->
 
 
 <div class="wp-block-group container_412218382bda is-layout-flow wp-block-group-is-layout-flow" >
@@ -482,7 +461,23 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         </div>
 
 
-<div class="wp-block-yotako-block-anchor button_eadc5835a67d"><a href="../index.html" class="button_link_eadc5835a67d" target="_self" rel="noopener">
+<!-- book tour-medium -->
+<!-- Hidden Booking Form Modal -->
+<div id="bookingFormModal-m" class="modal" style="display: none;left: -50px;" onclick="closeModal(event)">
+    <!-- Modal Content: Booking Form -->
+    <div class="modal-content">
+       
+        <div id="bookingFormContainer">
+
+            @include('view_tour.booking_form')
+        </div>
+    </div>
+</div>
+
+<!-- Background Blur Effect -->
+<div id="modalBackdrop-m" class="backdrop" style="display: none;"></div>
+
+<div class="wp-block-yotako-block-anchor button_eadc5835a67d" onclick="showBookingForm(2)"><a href="javascript:void(0);" class="button_link_eadc5835a67d" target="_self" rel="noopener">
                   <p class="text_1e5daa29c5ee has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">Book Now</p>
      
 
@@ -674,6 +669,36 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 	}() );
 	
 </script>
+<script>
+    function showBookingForm(size) {
+        switch(size){
+        case 1:
+         console.log("pressed");
+        // Show the modal and backdrop
+        document.getElementById('bookingFormModal').style.display = 'flex';
+        document.getElementById('modalBackdrop').style.display = 'block';
+
+        case 2:
+        document.getElementById('bookingFormModal-m').style.display = 'flex';
+        document.getElementById('modalBackdrop-m').style.display = 'block';
+
+        case 3:
+        document.getElementById('bookingFormModal-s').style.display = 'flex';
+        document.getElementById('modalBackdrop-s').style.display = 'block';
+
+        }
+
+    }
+
+    function closeModal(event) {
+        // Close the modal when clicking on the backdrop or close button
+        if (event.target === document.getElementById('bookingFormModal') || event.target.classList.contains('close-btn')) {
+            document.getElementById('bookingFormModal').style.display = 'none';
+            document.getElementById('modalBackdrop').style.display = 'none';
+        }
+    }
+</script>
+
 </body>
 
 <!-- Mirrored from bda1aad9-cb58-401a-8a47-526b318e3266.yotako.com/View_Tour/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jan 2025 15:52:15 GMT -->
