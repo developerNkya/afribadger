@@ -571,7 +571,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         </div>
 
 <!-- Hidden Booking Form Modal -->
-<div id="bookingFormModal-s" class="modal" style="display: none;left: -50px;" onclick="closeModal(event)">
+<div id="bookingFormModal-s" class="modal" style="display: none;left: -50px;top:100px" onclick="closeModal(event)">
     <!-- Modal Content: Booking Form -->
     <div class="modal-content">
        
