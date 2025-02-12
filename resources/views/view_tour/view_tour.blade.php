@@ -116,6 +116,13 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         position: relative;
           }
 
+              /* Modal Content */
+    .modal-content-m{   
+        border-radius: 8px;
+        position: relative;
+          }
+
+
     /* Close Button */
     .close-btn {
         position: absolute;
@@ -617,19 +624,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         </div>
 
 <!-- Hidden Booking Form Modal -->
-<div id="bookingFormModal-s" class="modal" style="display: none;left: -50px;top:100px" onclick="closeModal(event)">
-    <!-- Modal Content: Booking Form -->
-    <div class="modal-content">
-       
-        <div id="bookingFormContainer">
-
-            @include('view_tour.booking_form_small')
-        </div>
-    </div>
-</div>
-
-<!-- Background Blur Effect -->
-<div id="modalBackdrop-s" class="backdrop" style="display: none;"></div>
 
 
 <div class="wp-block-yotako-block-anchor button_bcc73cb4a27e" onclick="showBookingForm(3)"><a href="javascript:void(0);" class="button_link_bcc73cb4a27e" target="_self" rel="noopener">
@@ -642,6 +636,19 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <!-- overview -->
 @include('view_tour.small_view_tour')
 
+<div id="bookingFormModal-s" class="modal" style="display: none;left: -50px;top:100px" onclick="closeModal(event)">
+    <!-- Modal Content: Booking Form -->
+    <div class="modal-content-s">
+       
+        <div id="bookingFormContainer">
+
+            @include('view_tour.booking_form_small')
+        </div>
+    </div>
+</div>
+
+<!-- Background Blur Effect -->
+<div id="modalBackdrop-s" class="backdrop" style="display: none;"></div>
 
 
       
@@ -750,8 +757,14 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 document.getElementById('modalBackdrop-m').style.display = 'block';
 
         case 3:
-        document.getElementById('bookingFormModal-s').style.display = 'flex';
-        document.getElementById('modalBackdrop-s').style.display = 'block';
+    const modal_small = document.getElementById('bookingFormModal-s');
+
+    // Show the modal
+    modal_small.style.display = 'flex';
+
+    // Scroll the modal into view
+    modal_small.scrollIntoView({ behavior: 'smooth', block: 'center' });
+document.getElementById('modalBackdrop-s').style.display = 'block';
 
         }
 
