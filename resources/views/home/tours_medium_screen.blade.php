@@ -1,4 +1,20 @@
 <div class="grid-container">
+
+<div id="bookingFormModal-m" class="modal-m" style="display: none;left: -50px;" onclick="closeModal(event)">
+    <!-- Modal Content: Booking Form -->
+    <div class="modal-content-m">
+       
+        <div id="bookingFormContainer">
+
+            @include('view_tour.booking_form')
+        </div>
+    </div>
+</div>
+
+<!-- Background Blur Effect -->
+<div id="modalBackdrop-m" class="backdrop" style="display: none;"></div>
+
+
 @foreach ($national_parks as $index => $tour)
 <div class="wp-block-group container_78f648086c0a is-layout-flow wp-block-group-is-layout-flow">
     

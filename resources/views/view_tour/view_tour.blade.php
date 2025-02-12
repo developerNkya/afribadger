@@ -54,6 +54,45 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 		padding: 0 !important;
 	}
 	    .modal {
+/*        position: fixed;*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+         /* Background blur effect */
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        overflow: auto;
+    }
+
+    .modal-m {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: auto;
+}
+
+.modal-content-m {
+  
+    border-radius: 8px;
+    width: 100%;
+    
+    max-height: 90vh; /* Limit height to 90% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    padding: 20px; /* Add padding for better spacing */
+    position: relative;
+    margin: 20px; /* Add margin to prevent touching the edges */
+}
+
+    .modal-l {
         position: fixed;
         top: 0;
         left: 0;
@@ -349,7 +388,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 <!-- booking form large screen -->
 <!-- Hidden Booking Form Modal -->
-<div id="bookingFormModal" class="modal" style="display: none;" onclick="closeModal(event)">
+<div id="bookingFormModal" class="modal-l" style="display: none;" onclick="closeModal(event)">
     <!-- Modal Content: Booking Form -->
     <div class="modal-content">
        
@@ -388,16 +427,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 <div class="vp_1007 size_834 viewport_b618d13430bd wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow" >
+
                       <h2 class="text_356aad94e703 has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:63.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">Safari Tours in Tanzania</h2>
        
         <h2 class="text_15f15ad938dd has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">Discover the Magical World of <br/>Wildlife in Tanzania</h2>
        
-
-
-
-
-
-
 
 
 
@@ -438,11 +472,22 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
        
 
 
-
-
 <!-- medium view tour -->
 @include('view_tour.medium_view_tour');
 <!-- Hidden Booking Form Modal -->
+<!-- Modal -->
+<!-- Modal -->
+<div id="bookingFormModal-m" class="modal-m" style="display: none;" onclick="closeModal(event)">
+    <!-- Modal Content: Booking Form -->
+    <div class="modal-content-m">
+        <div id="bookingFormContainer">
+            @include('view_tour.booking_form')
+        </div>
+    </div>
+</div>
+
+<!-- Background Blur Effect -->
+<div id="modalBackdrop-m" class="backdrop" style="display: none;"></div>
 
 
 <div class="wp-block-group container_412218382bda is-layout-flow wp-block-group-is-layout-flow" >
@@ -472,31 +517,22 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 <!-- book tour-medium -->
-<!-- Hidden Booking Form Modal -->
-<div id="bookingFormModal-m" class="modal" style="display: none;left: -50px;" onclick="closeModal(event)">
-    <!-- Modal Content: Booking Form -->
-    <div class="modal-content">
-       
-        <div id="bookingFormContainer">
+<!-- Hidden Booking Form Modal Medium-->
 
-            @include('view_tour.booking_form')
-        </div>
-    </div>
+
+<div class="wp-block-yotako-block-anchor button_eadc5835a67d" onclick="showBookingForm(2)">
+    <a href="javascript:void(0);" class="button_link_eadc5835a67d" target="_self" rel="noopener">
+        <p class="text_1e5daa29c5ee has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
+            Book Now
+        </p>
+        <figure class="imageview_382afbcb76cf wp-block-image">
+            <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4548;421:4525;392:590.svg" />
+        </figure>
+    </a>
 </div>
 
-<!-- Background Blur Effect -->
-<div id="modalBackdrop-m" class="backdrop" style="display: none;"></div>
 
-<div class="wp-block-yotako-block-anchor button_eadc5835a67d" onclick="showBookingForm(2)"><a href="javascript:void(0);" class="button_link_eadc5835a67d" target="_self" rel="noopener">
-                  <p class="text_1e5daa29c5ee has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">Book Now</p>
-     
-
-
-<figure class="imageview_382afbcb76cf wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4548;421:4525;392:590.svg" />
-</figure>
-
-    </a></div>        </div>
+          </div>
         </div>
 
 
@@ -704,8 +740,14 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         document.getElementById('modalBackdrop').style.display = 'block';
 
         case 2:
-        document.getElementById('bookingFormModal-m').style.display = 'flex';
-        document.getElementById('modalBackdrop-m').style.display = 'block';
+         const modal = document.getElementById('bookingFormModal-m');
+
+    // Show the modal
+    modal.style.display = 'flex';
+
+    // Scroll the modal into view
+    modal.scrollIntoView({ behavior: 'smooth', block: 'center' });
+document.getElementById('modalBackdrop-m').style.display = 'block';
 
         case 3:
         document.getElementById('bookingFormModal-s').style.display = 'flex';
