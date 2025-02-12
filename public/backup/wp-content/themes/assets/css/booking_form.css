@@ -6,7 +6,7 @@ body {
 }
 .v653_3174 {
   width: 681px;
-  height: 682px;
+  height: 782px;
   background: rgba(255,255,255,1);
   padding: 37px 49px;
   margin: 23px;
@@ -31,7 +31,7 @@ body {
 }
 .v653_3176 {
   width: 583px;
-  height: 531px;
+  height: 731px;
   background: url("../images/v653_3176.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -623,4 +623,27 @@ body {
     left: 0px;
     /* overflow: hidden; */
 }
+}
+
+#loader {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff; /* Spinner color */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }

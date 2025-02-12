@@ -144,6 +144,16 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/styleguide.css">
 <link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/booking_form.css">
 
+<!-- Include Toastr CSS -->
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Toastr CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+<!-- Include Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 
 <link rel='stylesheet' id='style-css' href='../../backup/wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-m9TFsY/style9704.css?ver=6.7.1' media='all' />
 <link rel='stylesheet' id='Roboto-css' href='../../backup/storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1' media='all' />
@@ -724,6 +734,33 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
     }
+
+    document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this),
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            toastr.success(data.message);
+            // Optionally, reset the form
+            this.reset();
+        } else {
+            toastr.error(data.message);
+        }
+    })
+    .catch(error => {
+        toastr.error('An error occurred. Please try again.');
+    });
+});
+
 </script>
 
 </body>
