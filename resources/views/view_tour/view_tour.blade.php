@@ -156,11 +156,15 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     animation: spin 1s linear infinite;
 }
 
+
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
 }
+
+
+
 
 </style>
 <style id='wp-block-library-inline-css'>

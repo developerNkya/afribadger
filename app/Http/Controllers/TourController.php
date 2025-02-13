@@ -21,7 +21,24 @@ class TourController extends Controller
 
 public function bookTour(Request $request)
 {
-    // Validate the incoming request
+    // Custom error messages
+    $messages = [
+        'name.required' => 'Please enter your name.',
+        'name.string' => 'Your name must be a valid text.',
+        'name.max' => 'Your name cannot exceed 255 characters.',
+        'email.required' => 'Please enter your email address.',
+        'email.email' => 'Please enter a valid email address.',
+        'email.max' => 'Your email address cannot exceed 255 characters.',
+        'phone.required' => 'Please enter your phone number.',
+        'phone.string' => 'Your phone number must be a valid text.',
+        'phone.max' => 'Your phone number cannot exceed 255 characters.',
+        'preference.required' => 'Please select a contact preference.',
+        'preference.in' => 'Please select a valid contact preference (email, WhatsApp, or calls).',
+        'tour_id.required' => 'Tour ID is required.',
+        'tour_id.exists' => 'The selected tour does not exist.',
+    ];
+
+    // Validate the incoming request with custom messages
     $validated = $request->validate([
         'name' => 'required|string|max:255',
         'email' => 'required|email|max:255',
@@ -29,11 +46,11 @@ public function bookTour(Request $request)
         'request' => 'nullable|string',
         'preference' => 'required|in:email,whatsapp,calls',
         'tour_id' => 'required|exists:tours,id',
-    ]);
+    ], $messages);
 
     try {
         // If validation passes, store the booking in the database
-        $booking =Booking::create([
+        $booking = Booking::create([
             'tour_id' => $validated['tour_id'],
             'name' => $validated['name'],
             'email' => $validated['email'],

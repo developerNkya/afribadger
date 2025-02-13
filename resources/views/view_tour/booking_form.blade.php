@@ -81,25 +81,30 @@
 
         // Submit the form via AJAX
         fetch(bookingForm.action, {
-            method: 'POST',
-            body: new FormData(bookingForm),
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest',
-                'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'success') {
-                toastr.success(data.message); // Show success toast
-                bookingForm.reset(); // Reset the form
-            } else {
-                toastr.error(data.message); // Show error toast
-            }
-        })
-        .catch(error => {
-            toastr.error('An error occurred. Please try again.'); // Show generic error toast
-        })
+    method: 'POST',
+    body: new FormData(bookingForm),
+    headers: {
+        'X-Requested-With': 'XMLHttpRequest',
+        'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
+    }
+})
+.then(response => response.json())
+.then(data => {
+    if (data.status === 'success') {
+        toastr.success(data.message); // Show success toast
+        bookingForm.reset(); // Reset the form
+    } else if (data.errors) {
+        // Display validation errors
+        for (const field in data.errors) {
+            toastr.error(data.errors[field][0]); // Show the first error for each field
+        }
+    } else {
+        toastr.error(data.message); // Show generic error toast
+    }
+})
+.catch(error => {
+    toastr.error('An error occurred. Please try again.'); // Show generic error toast
+})
         .finally(() => {
             // Hide the loader
             loader.style.display = 'none';

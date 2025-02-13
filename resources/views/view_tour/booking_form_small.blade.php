@@ -1,5 +1,5 @@
-<div class="v653_3174">
-    <form id="bookingForm" action="/book-tour" method="POST">
+ <div class="v653_3174">
+    <form id="bookingForm-s" action="/book-tour" method="POST">
         @csrf
         <button class="close-btn" onclick="closeModal(event)">×</button>
         <span class="v653_3175">Book your Tour</span>
@@ -45,7 +45,7 @@
             <!-- Book Now Button -->
             <div class="book-btn" style="position:relative;top: 530px;">
                 <div class="wp-block-yotako-block-anchor button_af56c63f62ed">
-                    <a id="bookNowLink" class="button_link_af56c63f62ed" target="_self" rel="noopener">
+                    <a id="bookNowLink-s" class="button_link_af56c63f62ed" target="_self" rel="noopener">
                         <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                             Book Now
                         </p>
@@ -53,7 +53,7 @@
                             <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
                         </figure>
                         <!-- Loader inside the button -->
-                        <div id="loader" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        <div id="loader-s" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                             <div class="spinner"></div>
                         </div>
                     </a>
@@ -66,9 +66,9 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-    const bookNowLink = document.getElementById('bookNowLink');
-    const bookingForm = document.getElementById('bookingForm');
-    const loader = document.getElementById('loader');
+    const bookNowLink = document.getElementById('bookNowLink-s');
+    const bookingForm = document.getElementById('bookingForm-s');
+    const loader = document.getElementById('loader-s');
 
     bookNowLink.addEventListener('click', function (e) {
         e.preventDefault();
@@ -82,25 +82,30 @@
 
         // Submit the form via AJAX
         fetch(bookingForm.action, {
-            method: 'POST',
-            body: new FormData(bookingForm),
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest',
-                'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'success') {
-                toastr.success(data.message); // Show success toast
-                bookingForm.reset(); // Reset the form
-            } else {
-                toastr.error(data.message); // Show error toast
-            }
-        })
-        .catch(error => {
-            toastr.error('An error occurred. Please try again.'); // Show generic error toast
-        })
+    method: 'POST',
+    body: new FormData(bookingForm),
+    headers: {
+        'X-Requested-With': 'XMLHttpRequest',
+        'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
+    }
+})
+.then(response => response.json())
+.then(data => {
+    if (data.status === 'success') {
+        toastr.success(data.message); // Show success toast
+        bookingForm.reset(); // Reset the form
+    } else if (data.errors) {
+        // Display validation errors
+        for (const field in data.errors) {
+            toastr.error(data.errors[field][0]); // Show the first error for each field
+        }
+    } else {
+        toastr.error(data.message); // Show generic error toast
+    }
+})
+.catch(error => {
+    toastr.error('An error occurred. Please try again.'); // Show generic error toast
+})
         .finally(() => {
             // Hide the loader
             loader.style.display = 'none';
@@ -111,4 +116,4 @@
         });
     });
 });
-</script>
+</script> -->
