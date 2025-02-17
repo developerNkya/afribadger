@@ -38,7 +38,7 @@
 				<div class="display-table">
 					<div class="display-table-cell">
 						<div class="main-content">
-							<h1 class="title"><b>Under Construction</b></h1>
+							<h1 class="title"><b>Under. Construction</b></h1>
 							<p>Our website is currently undergoing scheduled maintenance.
 								We Should be back shortly. Thank you for your patience.</p>
 
