@@ -9,7 +9,9 @@
                 <div class="v653_3179"></div>
                 <input type="text" id="name" name="name" class="v653_3180" placeholder="Name" required>
             </div>
-             <input type="text" id="tour_id" name="tour_id" class="v653_3180" value="{{$tour->id}}" style="visibility: hidden;">
+            <input type="text" id="tour_id" name="tour_id" class="v653_3180" 
+       value="{{ $tour->id ?? '' }}" 
+       style="visibility: hidden;">
 
             <div class="v653_3181">
                 <span class="v653_3182">Your E-Mail*</span>
