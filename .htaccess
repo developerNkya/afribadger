@@ -1,4 +1,14 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteRule ^(.*)$ public/$1 [L]
-</IfModule>
+<ifmodule mod_rewrite.c> 
+Rewriteengine on 
+rewriterule (.*) /public/$1 [l] 
+</ifmodule>
+
+ # php -- begin cpanel-generated handler, do not edit 
+
+ # set the “ea-php82” package as the default “php” programming language. 
+
+ <ifmodule mime_module> 
+
+ AddHandler application/x-httpd-ea-php82 .php .php8 .phtml </ifmodule> 
+
+ # php -- end cpanel-generated handler, do not edit
