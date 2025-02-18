@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Tour;
 use App\Models\Booking;
-
+use Illuminate\Support\Facades\Mail;
+use App\Mail\TestMail;
 
 class TourController extends Controller
 {
@@ -21,7 +22,6 @@ class TourController extends Controller
 
 public function bookTour(Request $request)
 {
-    // Custom error messages
     $messages = [
         'name.required' => 'Please enter your name.',
         'name.string' => 'Your name must be a valid text.',
@@ -38,7 +38,6 @@ public function bookTour(Request $request)
         'tour_id.exists' => 'The selected tour does not exist.',
     ];
 
-    // Validate the incoming request with custom messages
     $validated = $request->validate([
         'name' => 'required|string|max:255',
         'email' => 'required|email|max:255',
@@ -49,7 +48,9 @@ public function bookTour(Request $request)
     ], $messages);
 
     try {
-        // If validation passes, store the booking in the database
+        // Fetch the tour name
+        $tour = Tour::find($validated['tour_id']);
+        // Create booking
         $booking = Booking::create([
             'tour_id' => $validated['tour_id'],
             'name' => $validated['name'],
@@ -59,20 +60,25 @@ public function bookTour(Request $request)
             'preference' => $validated['preference'],
         ]);
 
-        // Return a success response with a success message for toast
+        // Add tour name to booking object
+        $booking->tour_name = $tour->title; // Add tour name dynamically
+
+        // Send email with booking data
+        Mail::to("info@camelleonsafaris.com")->send(new TestMail($booking));
+
         return response()->json([
             'status' => 'success',
             'message' => 'Booking successful!',
         ]);
 
     } catch (\Exception $e) {
-        // Return an error response if something went wrong
         return response()->json([
             'status' => 'error',
             'message' => 'Something went wrong, please try again later.',
         ]);
     }
 }
+
 
 
 
