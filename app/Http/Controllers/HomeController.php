@@ -15,6 +15,11 @@ class HomeController extends Controller
         return view('home.home', ['national_parks' => $national_parks]);
     }
     
+    public function home(){
+    $national_parks = Tour::where('tour_type_id', 1)->paginate(6);
+        return view('home.home', ['national_parks' => $national_parks]);
+    }
+
        public function maintenance(){
         return view('maintenance');
     }

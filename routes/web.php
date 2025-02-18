@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/mail', [TestMailController::class, 'mail']);
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/home', [HomeController::class, 'home']);
 Route::get('/contact-us', [ContactController::class, 'contactPage']);
 Route::get('view-tour/{slug}', [TourController::class, 'viewTour'])->name('view-tour');
 Route::post('book-tour', [TourController::class, 'bookTour'])->name('book-tour');
