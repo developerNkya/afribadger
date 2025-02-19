@@ -16597,7 +16597,7 @@
 @media (max-width: 400px) {
    .tour_info {
     transform-origin:top left;
-    transform: scale(0.96);
+    transform: scale(0.95);
     /* zoom: 1.27674; */
 }
 }
