@@ -16480,7 +16480,7 @@ body .yt_fill_size {
 @media (max-width: 400px) {
    .All_tours .vp_640 {
     transform-origin: top left;
-/*    transform: scale(0.9);*/
+    transform: scale(0.9);
     display: flex !important;
 }
 
