@@ -16586,6 +16586,8 @@
                  }
 
                  .View_Tour .vp_640 {
+                     overflow-x: hidden;
+                    width:100vh;
                      display: flex !important;
                  }
              }
