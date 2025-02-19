@@ -16474,6 +16474,22 @@ body .yt_fill_size {
     }
 }
 
+
+
+
+@media (max-width: 400px) {
+   .All_tours .vp_640 {
+    transform-origin: top center;
+/*    transform: scale(0.9);*/
+    display: flex !important;
+}
+
+    .All_tours .vp_640 {
+        display: flex !important;
+    }
+}
+
+
 @media (min-width: 641px) and (max-width: 1007px) {
     .All_tours .yotako-main {
         display: none !important;
