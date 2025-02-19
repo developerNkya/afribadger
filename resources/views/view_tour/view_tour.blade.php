@@ -241,7 +241,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 <main class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
     <div class="entry-content alignfull wp-block-post-content is-layout-constrained wp-block-post-content-is-layout-constrained">
-<div class="wp-block-group View_Tour is-layout-flow wp-block-group-is-layout-flow">
+<div class="tour_info wp-block-group View_Tour is-layout-flow wp-block-group-is-layout-flow" style="zoom: 0;">
               
 <div class="vp_1440 size_1440 viewport_4886eb1bf436 wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow" >
               

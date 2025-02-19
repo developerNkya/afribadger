@@ -16592,6 +16592,17 @@
                  }
              }
 
+
+/* for view tour */
+@media (max-width: 400px) {
+   .tour_info {
+    transform-origin: left top;
+    transform: scale(0.94);
+    /* zoom: 1.27674; */
+}
+}
+
+
              @media (min-width: 641px) and (max-width: 1007px) {
                  .View_Tour .yotako-main {
                      display: none !important;
