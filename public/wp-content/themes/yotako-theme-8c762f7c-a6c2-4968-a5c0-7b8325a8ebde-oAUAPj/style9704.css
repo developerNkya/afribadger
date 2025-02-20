@@ -3378,13 +3378,11 @@ body .yt_fill_size {
     font-family: "Roboto";
 }
 
-.itenary-list {
-    width: 90%; /* Adjust to your preference */
-    max-width: 1200px; /* Ensures it doesn't stretch too wide */
-    margin: 0 auto; /* Centers horizontally */
+.itenary-list { 
     position: relative;
+    max-width: 1200px; /* Adjust based on your layout */
+    margin: 0 auto; /* Centers the container horizontally */
 }
-
 
 .itenary-list > .wp-block-group { 
     margin-bottom: 20px; /* Adds spacing between items */
