@@ -106,6 +106,7 @@
 }
 
 .state-yes .p {
+  left: -60px;
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
@@ -423,6 +424,6 @@
 }
 
 .opened-itenary.show {
-  margin-bottom:  -300px;
-  display: block; /* Show when the 'show' class is added */
+    margin-bottom: 50px;
+    display: block;
 }

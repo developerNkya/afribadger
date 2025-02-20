@@ -1,4 +1,17 @@
 <div class="wp-block-group container_4e3d9e39666e is-layout-flow wp-block-group-is-layout-flow" >
+
+
+
+
+
+
+
+
+
+
+
+  <!-- centered start -->
+  <div class="tour-info-centered">
                           <h2 class="text_ff42df684304 has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Overview</h2>
        
         <h3 class="text_753ef0810df9 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">This extraordinary journey takes you deep into the heart of Ngorongoro Crater, a volcanic caldera over two million years old. Renowned for its unparalleled wildlife density, Ngorongoro is home to the majestic Big Five—lion, elephant, buffalo, rhino, and leopard—alongside zebras, wildebeests, gazelles, and hippos.Your adventure begins as you descend into the crater, surrounded by its steep, lush walls. <br/><br/>The floor of the crater is a dynamic mix of savannah, swamps, and lakes, creating a vibrant ecosystem teeming with life. Here, you will witness the raw beauty and incredible diversity of Tanzania’s wildlife in their natural habita. As you traverse the crater, you’ll move through tropical forests and semi-deserts, each step revealing new facets of this ancient land. <br/><br/>The rich volcanic soil supports a stunning array of flora and fauna, making every moment a unique and unforgettable experience. Surely, these memories of the Ngorongoro Crater, with its awe-inspiring landscapes and abundant wildlife, will stay with you forever. Join us for a safari that promises not just a glimpse, but a full immersion into the wild world of Tanzania</h3>
@@ -57,13 +70,6 @@
         <div class="state-yes" style="height:fit-content">
           <div class="collapsible-button">
             <div class="frame">
-              <div class="day-count">
-                <div class="div">
-                  <div class="rectangle"></div>
-                  <div class="day">DAY</div>
-                </div>
-                <div class="text-wrapper">1</div>
-              </div>
               <div class="div-wrapper">
                 <p class="p">Arrival at the Airport and transfer to Hotel</p>
               </div>
@@ -609,7 +615,7 @@
         </div>
        </div>
 
-
+</div>
        <div class="small-footer">
         <div class="wp-block-group container_77c41d0f77eb is-layout-flow wp-block-group-is-layout-flow" >
                   
