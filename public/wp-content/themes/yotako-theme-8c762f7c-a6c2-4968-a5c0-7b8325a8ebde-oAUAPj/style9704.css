@@ -3245,7 +3245,7 @@ body .yt_fill_size {
 }
 
 .imageview_fb9295849a28 {
-    width: 430px;
+    width: 100%;
     height: 576px;
     position: absolute !important;
     left: 0px;
@@ -3253,7 +3253,8 @@ body .yt_fill_size {
 }
 
 .imageview_9bf6ce52f39f {
-    width: 430px;
+    display: none;
+    width: 100%;
     height: 614px;
     z-index: 1;
     position: absolute !important;
@@ -3262,16 +3263,22 @@ body .yt_fill_size {
 }
 
 .container_538db218ab77 {
-    width: 430px;
-    height: 614px;
+    width: 100%;
+    height: 640px;
     z-index: 2;
     position: absolute !important;
     left: 0px;
     top: 98px;
-    background: #26461d;
-    mix-blend-mode: normal;
-    opacity: 0.44999998807907104;
+    background: 
+        linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+        url("https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/414:3199.webp");
+    background-size: cover; /* Ensures the image covers both width and height */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: normal;
 }
+
+
 
 .text_63194caf0b8d {
     width: 376px;
@@ -3296,7 +3303,7 @@ body .yt_fill_size {
 }
 
 .text_5237a8afbca4 {
-    width: 399px;
+    width: 90%;
     height: 87px;
     position: absolute !important;
     left: 12px;
@@ -3309,10 +3316,10 @@ body .yt_fill_size {
 }
 
 .text_3ab83d39ccf7 {
-    width: 406px;
+    width: 90%;
     height: 278px;
     position: absolute !important;
-    left: 13px;
+    left: 22px;
     top: 874px;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -3350,10 +3357,10 @@ body .yt_fill_size {
 
 .container_ac7b3dad5316 {
     padding: 10px 10px 10px 10px;
-    width: 160px;
+    width: 100%;
     height: 43px;
     position: absolute !important;
-    left: 136px;
+    /* left: 136px; */
     top: 1272px;
     justify-content: center;
     align-items: center;
@@ -3362,14 +3369,26 @@ body .yt_fill_size {
 }
 
 .text_adfec1fc0e4b {
-    width: 404px;
+    width: 100%;
     position: absolute !important;
-    left: 13px;
-    top: 1322px;
+    left: -13px;
+    top: 1342px;
     line-height: 37.5px;
     word-wrap: break-word;
     font-family: "Roboto";
 }
+
+.itenary-list { 
+    position: relative;
+    max-width: 1200px; /* Adjust based on your layout */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.itenary-list > .wp-block-group { 
+    margin-bottom: 20px; /* Adds spacing between items */
+}
+
+
 
 .text_7a81fd980c72 {
     width: fit-content;
@@ -3384,7 +3403,7 @@ body .yt_fill_size {
 
 .container_de73eda37d3c {
     z-index: 1;
-    width: 150px;
+    /* width: 100%; */
     height: 51px;
     position: relative !important;
     left: 140px;
@@ -3394,7 +3413,6 @@ body .yt_fill_size {
     flex-direction: row;
     border-radius: 42px 42px 42px 42px;
 }
-
 .imageview_20d5bcf66d22 {
     width: 100%;
     height: 462px;
@@ -3604,7 +3622,7 @@ body .yt_fill_size {
 
 .container_8386b6be2e26 {
     padding: 0 11px 0 11px;
-    width: 432px;
+    width: 100%;
     height: 1010px;
     /* position: absolute !important; */
     left: 0px;
@@ -3617,7 +3635,7 @@ body .yt_fill_size {
 }
 
 .container_007e9be61514 {
-    width: 432px;
+    width: 100%;
     height: 109px;
     /* position: absolute !important; */
     left: 0px;
@@ -3626,7 +3644,7 @@ body .yt_fill_size {
 }
 
 .imageview_e402777db3d3 {
-    width: 427px;
+    width: 100%;
     height: 81px;
     min-width: 430px;
     max-width: 834px;
@@ -3634,6 +3652,20 @@ body .yt_fill_size {
     left: 0px;
     top: 0px;
 }
+.tour-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Adjust spacing between pagination items if needed */
+}
+
+
 
 .container_64a9209d043c {
     width: 100%;
@@ -4697,7 +4729,7 @@ body .yt_fill_size {
 }
 
 .viewport_8a9748ce9efb {
-    width: 430px;
+    width: auto;
     /* height: 7244px;
     overflow-x: hidden;
     overflow-y: hidden; */
@@ -16477,17 +16509,6 @@ body .yt_fill_size {
 
 
 
-@media (max-width: 400px) {
-   .All_tours .vp_640 {
-    transform-origin: top left;
-    transform: scale(0.98);
-    display: flex !important;
-}
-
-    .All_tours .vp_640 {
-        display: flex !important;
-    }
-}
 
 
 
@@ -16590,3 +16611,8 @@ body .yt_fill_size {
         display: flex !important;
     }
 }
+
+
+
+/*HOME*/
+/*for devices under 400*/

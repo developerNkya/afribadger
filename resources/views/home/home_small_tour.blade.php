@@ -1,4 +1,6 @@
 <div class="wp-block-group container_b6d8498ddcd9 is-layout-flow wp-block-group-is-layout-flow">
+
+    <div class="itenary-list">
     @foreach ($national_parks as $index => $tour)
     {{-- item1 --}}
     <div class="wp-block-group container_781276cb7f2f is-layout-flow wp-block-group-is-layout-flow">
@@ -102,7 +104,7 @@ background-color: transparent;
         </figure>
     </div>
     @endforeach
-
+  </div>
     
 
     <div class="wp-block-group container_de73eda37d3c is-layout-flow wp-block-group-is-layout-flow">

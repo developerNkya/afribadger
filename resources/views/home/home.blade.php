@@ -1362,7 +1362,7 @@
         <main class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
             <div
                 class="entry-content alignfull wp-block-post-content is-layout-constrained wp-block-post-content-is-layout-constrained">
-                <div class="wp-block-group All_tours is-layout-flow wp-block-group-is-layout-flow">
+                <div class="wp-block-group All_tours is-layout-flow wp-block-group-is-layout-flow" style="zoom:0">
                     <div
                         class="vp_1440 size_1440 viewport_ab465fe8651d wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow">
                         <div class="wp-block-group container_44a28b75ef26 is-layout-flow wp-block-group-is-layout-flow">
@@ -1766,10 +1766,10 @@
 
                     <div
                         class="vp_640 size_430 viewport_8a9748ce9efb wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow">
-                        <figure class="imageview_fb9295849a28 wp-block-image">
+                      <!--   <figure class="imageview_fb9295849a28 wp-block-image">
                             <img decoding="async"
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/414:3198.webp" />
-                        </figure>
+                        </figure> -->
 
                         <figure class="imageview_9bf6ce52f39f wp-block-image">
                             <img decoding="async"
@@ -1778,6 +1778,7 @@
 
                         <div
                             class="wp-block-group container_538db218ab77 is-layout-flow wp-block-group-is-layout-flow">
+                            
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
