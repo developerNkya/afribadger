@@ -618,38 +618,12 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
       <p class="text_f48f81f8dd71 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from $1,999</p>
      
 
-<div class="wp-block-group container_57908918ebc9 is-layout-flow wp-block-group-is-layout-flow" >
-                  
-<div class="wp-block-group container_c904ab9768cd is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_43d7a8273297 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>Ngorongoro Crater!</h2>
-       
-
-<div class="wp-block-group container_a3b69df02228 is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_21477acfed8a has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">$1,999</h2>
-       
-      <p class="text_8d69ae8adb87 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:11.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">from</p>
-     
-
-<div class="wp-block-group container_9fe967f7ad28 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_ace7773da7d0 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:9.5px;font-weight:400;letter-spacing:-0.5px;color:#787676;background-color:transparent;">What’s included in the price?</p>
-     
-
-<div class="wp-block-group container_93ead4103676 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-        </div>
-        </div>
-
-<!-- Hidden Booking Form Modal -->
 
 
-<div class="wp-block-yotako-block-anchor button_bcc73cb4a27e" onclick="showBookingForm(3)"><a href="javascript:void(0);" class="button_link_bcc73cb4a27e" target="_self" rel="noopener">
-                  <p class="text_ec08ee4bbd06 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:11.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">Book Now</p>
-         </a></div>        </div>
-        </div>
+
+
+
+
 
 
 
