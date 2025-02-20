@@ -16604,14 +16604,19 @@
              }
 
              @media (max-width: 640px) {
+                .View_Tour .vp_640 {
+                     overflow-x: hidden;
+                     display: flex !important;
+                 }
                  .View_Tour .yotako-main {
                      display: none !important;
                  }
 
-                 .View_Tour .vp_640 {
-                     overflow-x: hidden;
-                     display: flex !important;
+                 .View_Tour .vp_1007 {
+                    display: none !important;
                  }
+
+                 
              }
 
 
