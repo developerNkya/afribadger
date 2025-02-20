@@ -3378,11 +3378,13 @@ body .yt_fill_size {
     font-family: "Roboto";
 }
 
-.itenary-list { 
+.itenary-list {
+    width: 90%; /* Adjust to your preference */
+    max-width: 1200px; /* Ensures it doesn't stretch too wide */
+    margin: 0 auto; /* Centers horizontally */
     position: relative;
-    max-width: 1200px; /* Adjust based on your layout */
-    margin: 0 auto; /* Centers the container horizontally */
 }
+
 
 .itenary-list > .wp-block-group { 
     margin-bottom: 20px; /* Adds spacing between items */
@@ -4719,18 +4721,16 @@ body .yt_fill_size {
     box-shadow: 0px 6px 19.5px #00000038;
 }
 
-
 .container_b6d8498ddcd9 {
     z-index: 1;
     position: relative !important;
     top: 1518px;
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 35px 17px;
     flex-direction: row;
 }
-
 
 .viewport_8a9748ce9efb {
     width: 100%;
