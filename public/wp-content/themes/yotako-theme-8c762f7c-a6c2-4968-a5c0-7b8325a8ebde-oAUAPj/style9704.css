@@ -3379,7 +3379,7 @@ body .yt_fill_size {
 }
 
 .itenary-list { 
-    left:-20px;
+    left:-10px;
     position: relative;
     max-width: 1200px; /* Adjust based on your layout */
     margin: 0 auto; /* Centers the container horizontally */
