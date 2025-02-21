@@ -587,11 +587,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
            </div>
 
 
-<div class="vp_640 size_430 viewport_809ff6c8347a wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow" >
+<div class="vp_640 size_430 viewport_8a9748ce9efb_updated  wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow" >
               
 
-
-
+<!-- viewport_8a9748ce9efb_update
+viewport_809ff6c8347a -->
 
 
         <h2 class="text_30894e35a938 has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:63.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">Safari Tours in Tanzania</h2>
@@ -600,9 +600,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
        
 
 
-<figure class="imageview_131c31eea5d3 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/421:4506.webp" />
-</figure>
 
 
 
