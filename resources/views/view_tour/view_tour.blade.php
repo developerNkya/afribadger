@@ -668,7 +668,7 @@ viewport_809ff6c8347a -->
 <!-- overview -->
 @include('view_tour.small_view_tour')
 
-<div id="bookingFormModal-s" class="modal" style="display: none;left: -50px;top:100px" onclick="closeModal(event)">
+<div id="bookingFormModal-s" class="modal wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="display: none;left: -50px;top:100px" onclick="closeModal(event)">
     <!-- Modal Content: Booking Form -->
     <div class="modal-content-s">
        

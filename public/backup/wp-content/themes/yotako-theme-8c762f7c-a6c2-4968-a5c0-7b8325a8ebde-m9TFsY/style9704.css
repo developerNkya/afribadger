@@ -9314,16 +9314,16 @@
 }
 
 
-             .text_43d7a8273297 {
-                 width: 330px;
-                 height: 66px;
-                 z-index: 4;
-                 overflow-x: hidden;
-                 overflow-y: hidden;
-                 line-height: 30.24px;
-                 word-wrap: break-word;
-                 font-family: 'Roboto';
-             }
+            .text_43d7a8273297 {
+                width: 330px;
+                height: fit-content;
+                z-index: 4;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                line-height: 30.24px;
+                word-wrap: break-word;
+                font-family: 'Roboto';
+            }
 
              .text_21477acfed8a {
                  width: max-content;

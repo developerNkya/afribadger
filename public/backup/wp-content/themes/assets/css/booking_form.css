@@ -527,7 +527,7 @@ body {
 } 
 
 .v653_3174 {
-    width: 360px;
+    width: 400px;
     height: 850px;
     background: rgba(255,255,255,1);
     /* padding: 37px 49px; */
@@ -536,7 +536,7 @@ body {
     position: relative;
     top: 0px;
     /* left: -140px; */
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 20px;
 }
 
