@@ -59,13 +59,6 @@
         <div class="state-yes" style="height:fit-content">
           <div class="collapsible-button">
             <div class="frame">
-              <div class="day-count">
-                <div class="div">
-                  <div class="rectangle"></div>
-                  <div class="day">DAY</div>
-                </div>
-                <div class="text-wrapper">1</div>
-              </div>
               <div class="div-wrapper">
                 <p class="p">Arrival at the Airport and transfer to Hotel</p>
               </div>
@@ -557,3 +550,4 @@
 
 </div>      
 </div>
+
