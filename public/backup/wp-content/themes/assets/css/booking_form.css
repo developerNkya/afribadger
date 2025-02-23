@@ -531,11 +531,11 @@ body {
     height: 850px;
     background: rgba(255,255,255,1);
     /* padding: 37px 49px; */
-    margin: 23px;
+    margin: 0px;
     opacity: 1;
     position: relative;
     top: 0px;
-    /* left: -140px; */
+     left: 10px; 
     overflow: hidden;
     border-radius: 20px;
 }
