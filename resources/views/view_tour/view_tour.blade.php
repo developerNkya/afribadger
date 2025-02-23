@@ -242,6 +242,26 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <main class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
     <div class="entry-content alignfull wp-block-post-content is-layout-constrained wp-block-post-content-is-layout-constrained">
 <div class="tour_info wp-block-group View_Tour is-layout-flow wp-block-group-is-layout-flow" style="zoom: 0;">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               
 <div class="vp_1440 size_1440 viewport_4886eb1bf436 wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow" >
               
@@ -592,11 +612,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 <!-- viewport_8a9748ce9efb_update
 viewport_809ff6c8347a -->
-
-
-        <h2 class="text_30894e35a938 has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:63.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">Safari Tours in Tanzania</h2>
-       
-        <h2 class="text_498fa7e1c6ad has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">Discover the Magical World of <br/>Wildlife in Tanzania</h2>
        
 
 
