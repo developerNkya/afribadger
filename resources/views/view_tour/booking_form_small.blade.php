@@ -11,16 +11,19 @@
             </div>
             <input type="text" id="tour_id" name="tour_id" class="v653_3180" value="{{$tour->id}}" style="visibility: hidden;">
 
-            <div class="v653_3181">
-                <span class="v653_3182">Your E-Mail*</span>
-                <div class="v653_3183"></div>
+
+            <div class="v653_3177 email-small-form">
+                <span class="v653_3178">Your Email*</span>
+                <div class="v653_3179"></div>
                 <input type="email" id="email" name="email" class="v653_3180" placeholder="Email" required>
             </div>
-            <div class="v653_3185">
-                <span class="v653_3186">Your phone*</span>
-                <div class="v653_3187"></div>
-                <input type="text" id="phone" name="phone" class="v653_3188" placeholder="Phone (International version)" required>
+
+            <div class="v653_3177" style="margin-top:6%">
+                <span class="v653_3178">Your phone*</span>
+                <div class="v653_3179"></div>
+                <input type="phone" id="phone" name="phone" class="v653_3180" placeholder="Phone (International version)" required>
             </div>
+
             <div class="v653_3189">
                 <span class="v653_3190">Your request*</span>
                 <div class="v653_3191"></div>
@@ -42,9 +45,8 @@
             </div>
             <div class="name"></div>
 
-            <!-- Book Now Button -->
-            <div class="book-btn" style="position:relative;top: 530px;">
-                <div class="wp-block-yotako-block-anchor button_af56c63f62ed">
+            <div class=" book-btn v653_3193" style="margin-top:120px;left:-20px">
+            <div class="wp-block-yotako-block-anchor button_af56c63f62ed">
                     <a id="bookNowLink-s" class="button_link_af56c63f62ed" target="_self" rel="noopener">
                         <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                             Book Now
@@ -53,7 +55,12 @@
                             <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
                         </figure>
                         <!-- Loader inside the button -->
-                        <div id="loader-s" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                        <div id="loader-s" style="
+     display: none;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 60%;
+    transform: translate(-50%, -50%);">
                             <div class="spinner"></div>
                         </div>
                     </a>
