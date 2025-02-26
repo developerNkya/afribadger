@@ -277,7 +277,7 @@ body .yt_fill_size {
 }
 
 .container_2d078b63e8c6 {
-    width: 1440px;
+    width: 100%;
     height: 109px;
     z-index: 1;
     position: absolute !important;
@@ -771,6 +771,7 @@ body .yt_fill_size {
 }
 
 .container_ac5676396f39 {
+    transform:scale(0.8);
     position: absolute !important;
     width: 1120px;
     height: 702px;
@@ -6615,12 +6616,15 @@ body .yt_fill_size {
 }
 
 .container_348e1e739115 {
-    position: absolute !important;
+    zoom: 0.9;
+    -moz-transform: scale(0.5);
+    transform: scale(0.9);
+    position: relative;
     width: 1233px;
     height: 762px;
     z-index: 1;
-    left: 121px;
-    top: 3481px;
+    /* left: 121px; */
+    /* top: 3481px; */
 }
 
 .imageview_a30fae88b9b5 {
@@ -10796,6 +10800,14 @@ body .yt_fill_size {
     top: 130px;
 }
 
+.imageview_deb16fe5a1ac_commitment {
+    width: 1443px;
+    height: 462px;
+    position: absolute !important;
+    left: -1px;
+    top: 4430px;
+}
+
 .container_f069ba8e5373 {
     width: 1440px;
     height: 462px;
@@ -10840,7 +10852,7 @@ body .yt_fill_size {
     width: max-content;
     position: absolute !important;
     left: 549px;
-    top: 5014px;
+    top: 4214px;
     line-height: 56.93px;
     font-family: "Bobaland";
 }
@@ -10860,8 +10872,14 @@ body .yt_fill_size {
     height: 396px;
     position: absolute !important;
     left: 152px;
-    top: 3452px;
-    background: #f4e7c9;
+    top: 2552px;
+    background: 
+    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("/images/support.jpg");
+background-size: cover; /* Ensures the image covers both width and height */
+background-repeat: no-repeat;
+background-position: top;
+background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
 
@@ -10870,8 +10888,14 @@ body .yt_fill_size {
     height: 403px;
     position: absolute !important;
     left: 152px;
-    top: 4426px;
-    background: #f4e7c9;
+    top: 3526px;
+    background: 
+    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("/images/logistics.jpg");
+background-size: cover; /* Ensures the image covers both width and height */
+background-repeat: no-repeat;
+background-position: top;
+background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
 
@@ -10879,7 +10903,7 @@ body .yt_fill_size {
     width: max-content;
     position: absolute !important;
     left: 158px;
-    top: 2964px;
+    top: 2064px;
     line-height: 37.5px;
     font-family: "Roboto";
 }
@@ -10888,7 +10912,7 @@ body .yt_fill_size {
     width: max-content;
     position: absolute !important;
     left: 158px;
-    top: 3943px;
+    top: 3043px;
     line-height: 37.5px;
     font-family: "Roboto";
 }
@@ -10906,7 +10930,7 @@ body .yt_fill_size {
     width: max-content;
     position: absolute !important;
     left: 754px;
-    top: 3445px;
+    top: 2552px;
     line-height: 37.5px;
     font-family: "Roboto";
 }
@@ -10915,7 +10939,7 @@ body .yt_fill_size {
     width: max-content;
     position: absolute !important;
     left: 754px;
-    top: 4426px;
+    top: 3526px;
     line-height: 37.5px;
     font-family: "Roboto";
 }
@@ -11128,7 +11152,7 @@ body .yt_fill_size {
     height: 336px;
     position: absolute !important;
     left: 158px;
-    top: 3014px;
+    top: 2124px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 33.4px;
@@ -11141,7 +11165,7 @@ body .yt_fill_size {
     height: 336px;
     position: absolute !important;
     left: 158px;
-    top: 3993px;
+    top: 3093px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 33.4px;
@@ -11167,7 +11191,7 @@ body .yt_fill_size {
     height: 336px;
     position: absolute !important;
     left: 754px;
-    top: 3495px;
+    top: 2595px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 33.4px;
@@ -11180,7 +11204,7 @@ body .yt_fill_size {
     height: 336px;
     position: absolute !important;
     left: 754px;
-    top: 4476px;
+    top: 3576px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 33.4px;
@@ -11193,7 +11217,7 @@ body .yt_fill_size {
     height: 66px;
     position: absolute !important;
     left: 146px;
-    top: 5094px;
+    top: 4294px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 33.4px;
@@ -11232,7 +11256,7 @@ body .yt_fill_size {
     height: 7px;
     position: absolute !important;
     left: 146.99px;
-    top: 5834px;
+    top: 5034px;
 }
 
 .container_f71ba21ea935 {
@@ -11258,7 +11282,7 @@ body .yt_fill_size {
     border-left: #7a7a7a8c solid 3px;
     position: absolute !important;
     left: 147px;
-    top: 4932px;
+    top: 4092px;
 }
 
 .imageview_c1a0c59d06f9 {
@@ -11349,8 +11373,14 @@ body .yt_fill_size {
     height: 403px;
     position: absolute !important;
     left: 754px;
-    top: 2964px;
-    background: #f4e7c9;
+    top: 2064px;
+    background: 
+    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("/images/planner.jpg");
+background-size: cover; /* Ensures the image covers both width and height */
+background-repeat: no-repeat;
+background-position: center;
+background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
 
@@ -11359,8 +11389,14 @@ body .yt_fill_size {
     height: 403px;
     position: absolute !important;
     left: 754px;
-    top: 3943px;
-    background: #f4e7c9;
+    top: 3043px;
+    background:
+    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("/images/sustanability.jpg");
+background-size:cover; /* Ensures the image covers both width and height */
+background-repeat: no-repeat;
+background-position: top;
+background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
 
@@ -11525,9 +11561,9 @@ body .yt_fill_size {
 
 .viewport_46e7d6bdea22 {
     width: 1440px;
-    height: 6406px;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    height: fit-content;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
     background: #ffffff;
 }
 
@@ -16619,5 +16655,7 @@ body .yt_fill_size {
 
 
 
-/*HOME*/
-/*for devices under 400*/
+/* for about us */
+.our-team-large{
+   position: absolute;
+}
