@@ -7,16 +7,16 @@
             <div class="v653_3177">
                 <span class="v653_3178">Your name*</span>
                 <div class="v653_3179"></div>
-                <input type="text" id="name" name="name" class="v653_3180" placeholder="Name" required>
+                <input type="text" id="name" name="name" class="v653_3180_large" placeholder="Name" required>
             </div>
-            <input type="text" id="tour_id" name="tour_id" class="v653_3180" 
+            <input type="text" id="tour_id" name="tour_id" class="v653_3180_large" 
        value="{{ $tour->id ?? '' }}" 
        style="visibility: hidden;">
 
             <div class="v653_3181">
                 <span class="v653_3182">Your E-Mail*</span>
                 <div class="v653_3183"></div>
-                <input type="email" id="email" name="email" class="v653_3180" placeholder="Email" required>
+                <input type="email" id="email" name="email" class="v653_3180_large" placeholder="Email" required>
             </div>
             <div class="v653_3185">
                 <span class="v653_3186">Your phone*</span>
@@ -46,28 +46,35 @@
 
 <!-- what i want -->
 <!-- Book Now Button -->
+
 <div class="book-btn" style="position:relative;top: 430px;">
     <div class="wp-block-yotako-block-anchor button_af56c63f62ed">
-        <a id="bookNowLink" class="button_link_af56c63f62ed" target="_self" rel="noopener">
+        <button id="bookNowBtn" class="button_link_af56c63f62ed" style="background: none; border: none; cursor: pointer;">
             <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                 Book Now
             </p>
             <figure class="imageview_6f8f09ff716d wp-block-image">
                 <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
             </figure>
-            <!-- Loader inside the button -->
+
             <div id="loader" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                 <div class="spinner"></div>
             </div>
-        </a>
+        </button>
     </div>
 </div>
+
         </div>
     </form>
 </div>
+
+
+
+
 <script>
-   document.addEventListener('DOMContentLoaded', function () {
-    const bookNowLink = document.getElementById('bookNowLink');
+    
+    document.addEventListener('DOMContentLoaded', function () {
+    const bookNowLink = document.getElementById('bookNowBtn');
     const bookingForm = document.getElementById('bookingForm');
     const loader = document.getElementById('loader');
 
@@ -83,30 +90,30 @@
 
         // Submit the form via AJAX
         fetch(bookingForm.action, {
-    method: 'POST',
-    body: new FormData(bookingForm),
-    headers: {
-        'X-Requested-With': 'XMLHttpRequest',
-        'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
-    }
-})
-.then(response => response.json())
-.then(data => {
-    if (data.status === 'success') {
-        toastr.success(data.message); // Show success toast
-        bookingForm.reset(); // Reset the form
-    } else if (data.errors) {
-        // Display validation errors
-        for (const field in data.errors) {
-            toastr.error(data.errors[field][0]); // Show the first error for each field
-        }
-    } else {
-        toastr.error(data.message); // Show generic error toast
-    }
-})
-.catch(error => {
-    toastr.error('An error occurred. Please try again.'); // Show generic error toast
-})
+            method: 'POST',
+            body: new FormData(bookingForm),
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+                'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                toastr.success(data.message); // Show success toast
+                bookingForm.reset(); // Reset the form
+            } else if (data.errors) {
+                // Display validation errors
+                for (const field in data.errors) {
+                    toastr.error(data.errors[field][0]); // Show the first error for each field
+                }
+            } else {
+                toastr.error(data.message); // Show generic error toast
+            }
+        })
+        .catch(error => {
+            toastr.error('An error occurred. Please try again.'); // Show generic error toast
+        })
         .finally(() => {
             // Hide the loader
             loader.style.display = 'none';
@@ -118,3 +125,26 @@
     });
 });
 </script>
+
+
+@if(session('status'))
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "timeOut": "5000",
+            };
+
+            const status = "{{ session('status') }}";
+            const message = "{{ session('message') }}";
+
+            if (status === 'success') {
+                toastr.success(message);
+            } else if (status === 'error') {
+                toastr.error(message);
+            }
+        });
+    </script>
+@endif

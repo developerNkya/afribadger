@@ -41,7 +41,12 @@ public function bookTour(Request $request)
     $validated = $request->validate([
         'name' => 'required|string|max:255',
         'email' => 'required|email|max:255',
-        'phone' => 'required|string|max:255',
+        'phone' => [
+            'required',
+            'string',
+            'max:255',
+            'regex:/^\+\d{1,4}\d{6,}$/', // Ensures phone starts with a country code
+        ],
         'request' => 'nullable|string',
         'preference' => 'required|in:email,whatsapp,calls',
         'tour_id' => 'required|exists:tours,id',
@@ -66,19 +71,22 @@ public function bookTour(Request $request)
         // Send email with booking data
         Mail::to("info@camelleonsafaris.com")->send(new TestMail($booking));
 
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Booking successful!',
-        ]);
+        // Store success message in session
+        session()->flash('status', 'success');
+        session()->flash('message', 'Booking successful!');
 
     } catch (\Exception $e) {
-        return response()->json([
-            'status' => 'error',
-            'message' => 'Something went wrong, please try again later.',
-        ]);
-    }
-}
+        // Log the error to the console
+        \Log::error('Booking error: ' . $e->getMessage());
 
+        // Store error message in session
+        session()->flash('status', 'error');
+        session()->flash('message', 'Something went wrong, please try again later.');
+    }
+
+    // Redirect back to the form page
+    return redirect()->back();
+}
 
 
 

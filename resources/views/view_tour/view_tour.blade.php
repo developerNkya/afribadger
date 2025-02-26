@@ -482,9 +482,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 
-<figure class="imageview_be33a3213e9f wp-block-image" >
+<!-- <figure class="imageview_be33a3213e9f wp-block-image" >
 <img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/419:4131.webp" />
-</figure>
+</figure> -->
 
 
 
@@ -501,11 +501,12 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
        
 
 <div class="wp-block-group container_843f5ad47317 is-layout-flow wp-block-group-is-layout-flow" >
+    <div class="overview-medium">
                           <h2 class="text_7f457e5f40b9 has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Overview</h2>
        
         <h3 class="text_1c5ecdefa818 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">This extraordinary journey takes you deep into the heart of Ngorongoro Crater, a volcanic caldera over two million years old. Renowned for its unparalleled wildlife density, Ngorongoro is home to the majestic Big Five—lion, elephant, buffalo, rhino, and leopard—alongside zebras, wildebeests, gazelles, and hippos.Your adventure begins as you descend into the crater, surrounded by its steep, lush walls. The floor of the crater is a dynamic mix of savannah, swamps, and lakes, creating a vibrant ecosystem teeming with life. Here, you will witness the raw beauty and incredible diversity of Tanzania’s wildlife in their natural habita. As you traverse the crater, you’ll move through tropical forests and semi-deserts, each step revealing new facets of this ancient land. The rich volcanic soil supports a stunning array of flora and fauna, making every moment a unique and unforgettable experience. Surely, these memories of the Ngorongoro Crater, with its awe-inspiring landscapes and abundant wildlife, will stay with you forever. Join us for a safari that promises not just a glimpse, but a full immersion into the wild world of Tanzania</h3>
                </div>
-
+</div>
 
 <div class="wp-block-group container_c3c9c4e567b2 is-layout-flow wp-block-group-is-layout-flow" >
    
@@ -822,31 +823,34 @@ document.getElementById('modalBackdrop-s').style.display = 'block';
 
     }
 
-    document.querySelector('form').addEventListener('submit', function (e) {
-    e.preventDefault();
+//     document.querySelector('form').addEventListener('submit', function (e) {
+//     e.preventDefault();
 
-    fetch(this.action, {
-        method: 'POST',
-        body: new FormData(this),
-        headers: {
-            'X-Requested-With': 'XMLHttpRequest',
-            'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'success') {
-            toastr.success(data.message);
-            // Optionally, reset the form
-            this.reset();
-        } else {
-            toastr.error(data.message);
-        }
-    })
-    .catch(error => {
-        toastr.error('An error occurred. Please try again.');
-    });
-});
+//     fetch(this.action, {
+//         method: 'POST',
+//         body: new FormData(this),
+//         headers: {
+//             'X-Requested-With': 'XMLHttpRequest',
+//             'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
+//         }
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         if (data.status === 'success') {
+//             toastr.success(data.message);
+//             // Optionally, reset the form
+//             this.reset();
+//         } else {
+//             toastr.error(data.message);
+//         }
+//     })
+//     .catch(error => {
+//         toastr.error('An error occurred. Please try again.');
+//     });
+// });
+
+
+
 
 </script>
 

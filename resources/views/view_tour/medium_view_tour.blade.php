@@ -1,3 +1,5 @@
+
+
 <div class="wp-block-group container_da6f6efcc8ce is-layout-flow wp-block-group-is-layout-flow" >
                   
 
@@ -48,13 +50,6 @@
   <div class="state-yes">
     <div class="collapsible-button">
       <div class="frame">
-        <div class="day-count">
-          <div class="div">
-            <div class="rectangle"></div>
-            <div class="day">DAY</div>
-          </div>
-          <div class="text-wrapper">1</div>
-        </div>
         <div class="div-wrapper">
           <p class="p">Arrival at the Airport and transfer to Hotel</p>
         </div>
@@ -684,7 +679,7 @@ faqView.forEach((imageView, index) => {
 
 
 <!-- medium-view-tour-footer -->
-<div class="medium-footer" style="position: relative;left: -40px;">
+<div class="medium-footer" style="position: relative;">
   <div class="wp-block-group container_59b6c4c28146 is-layout-flow wp-block-group-is-layout-flow" >
    
       
