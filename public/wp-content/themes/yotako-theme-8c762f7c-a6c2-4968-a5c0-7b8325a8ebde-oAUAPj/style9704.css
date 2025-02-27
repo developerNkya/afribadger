@@ -12507,7 +12507,7 @@ background-blend-mode: normal;
     height: 1010px;
     position: absolute !important;
     left: 0px;
-    top: 8307px;
+    top: 6507px;
     align-items: center;
     justify-content: center;
     gap: 11px normal;
@@ -12520,7 +12520,7 @@ background-blend-mode: normal;
     height: 109px;
     position: absolute !important;
     left: -1px;
-    top: 9317px;
+    top: 7517px;
     background: #f4e7c9;
 }
 
@@ -12596,7 +12596,7 @@ background-blend-mode: normal;
 }
 
 .text_d8410b9d8895 {
-    width: 407px;
+    width: 90%;
     height: 165px;
     position: absolute !important;
     left: 12px;
@@ -12609,11 +12609,11 @@ background-blend-mode: normal;
 }
 
 .text_e89c5d5ba39d {
-    width: 407px;
-    height: 111px;
+    width: 90%;
+    height: fit-content;
     position: absolute !important;
     left: 12px;
-    top: 1290px;
+    top: 995px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 33.4px;
@@ -12622,7 +12622,7 @@ background-blend-mode: normal;
 }
 
 .imageview_f5cfb3fb34b5 {
-    width: 406px;
+    width: 100%;
     height: 540px;
     position: absolute !important;
     left: 0px;
@@ -12718,9 +12718,14 @@ background-blend-mode: normal;
 }
 
 .container_248fcd3d9dfc {
-    width: 399px;
+    width: 100%;
     height: 407px;
-    background: #f4e7c9;
+    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("/images/planner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 28%; /* Center horizontally, 10% from the top */
+    background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
 
@@ -12764,9 +12769,14 @@ background-blend-mode: normal;
 }
 
 .container_203aa3762f69 {
-    width: 399px;
+    width: 100%;
     height: 407px;
-    background: #f4e7c9;
+    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("/images/support.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 28%; /* Center horizontally, 10% from the top */
+    background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
 
@@ -12812,7 +12822,12 @@ background-blend-mode: normal;
 .container_3ef4209617cb {
     width: 399px;
     height: 407px;
-    background: #f4e7c9;
+    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("/images/sustain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 28%; /* Center horizontally, 10% from the top */
+    background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
 
@@ -12856,9 +12871,14 @@ background-blend-mode: normal;
 }
 
 .container_7eb855caa69a {
-    width: 399px;
+    width: 100%;
     height: 407px;
-    background: #f4e7c9;
+    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("/images/logistics.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 28%; /* Center horizontally, 10% from the top */
+    background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
 
@@ -12967,21 +12987,12 @@ background-blend-mode: normal;
     flex-direction: row;
 }
 
-.text_f11743f5dc4d {
-    width: max-content;
-    position: absolute !important;
-    left: 101px;
-    top: 7426px;
-    line-height: 37.95px;
-    font-family: "Bobaland";
-}
-
 .text_ea5ef3344f57 {
     width: 405px;
     height: 66px;
     position: absolute !important;
     left: 12px;
-    top: 7506px;
+    top: 5858px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 33.4px;
@@ -12989,12 +13000,13 @@ background-blend-mode: normal;
     font-family: "Roboto";
 }
 
+
 .container_f892833b355d {
     width: 406px;
     height: 403px;
     position: absolute !important;
     left: 12px;
-    top: 7748px;
+    top: 6008px;
     background: #f4e7c9;
     border-radius: 24px 24px 24px 24px;
 }
@@ -13004,7 +13016,7 @@ background-blend-mode: normal;
     height: 3px;
     position: absolute !important;
     left: 16px;
-    top: 8227.5px;
+    top: 6477.5px;
 }
 
 .imageview_340496240098 {
@@ -13012,11 +13024,11 @@ background-blend-mode: normal;
     height: 3px;
     position: absolute !important;
     left: 16px;
-    top: 7347.5px;
+    top: 5699.5px;
 }
 
 .imageview_f1cf3b43a523 {
-    width: 429px;
+    width: 100%;
     height: 81px;
     min-width: 430px;
     max-width: 834px;
@@ -13026,8 +13038,9 @@ background-blend-mode: normal;
 }
 
 .viewport_c6378a59ee4a {
-    width: 430px;
-    height: 9426px;
+    position: absolute;
+    width: 100%;
+    height: 7590px;
     overflow-x: hidden;
     overflow-y: hidden;
     background: #ffffff;
@@ -16684,4 +16697,13 @@ background-blend-mode: normal;
 /* for about us */
 .our-team-large{
    position: absolute;
+}
+
+.text_f11743f5dc4d {
+    width: max-content;
+    position: absolute !important;
+    left: 101px;
+    top: 5776px;
+    line-height: 37.95px;
+    font-family: "Bobaland";
 }
