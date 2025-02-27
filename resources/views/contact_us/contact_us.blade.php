@@ -3115,10 +3115,14 @@
                     letter-spacing: -0.5px;
                     color: #26461d;
                     background-color: transparent;
-                  ">Sustainable
-                                Tourism:</span>We prioritise eco-friendly practices to preserve
+                  ">Sustainable Tourism:</span>We prioritise eco-friendly practices to preserve
                             Tanzania&#8217;s natural beauty.
                         </h3>
+
+                        <div
+                            class=" before-contact wp-block-group container_73dafc4a5c12_before_form is-layout-flow wp-block-group-is-layout-flow">
+                            <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
+                        </div>
 
                         <form id="contact-form" action="/posted-request" method="POST">
                             @csrf
@@ -3136,7 +3140,7 @@
                       color: #26461d;
                       background-color: transparent;
                     ">
-                                    Book your Tour
+                                    Contact Us
                                 </h2>
 
                                 <div

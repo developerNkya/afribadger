@@ -16277,11 +16277,11 @@ background-blend-mode: normal;
 }
 
 .text_c74f87b0bbff {
-    width: 397px;
+    width: 90%;
     height: 128px;
     position: absolute !important;
-    left: 15px;
-    top: 3031px;
+    /* left: 15px; */
+    top: 3097px;
     overflow-x: hidden;
     overflow-y: hidden;
     line-height: 33.4px;
@@ -16390,6 +16390,8 @@ background-blend-mode: normal;
 }
 
 .text_f52545f890d8 {
+    position: relative;
+    top: 25px;
     width: 100%;
     line-height: 37.5px;
     word-wrap: break-word;
@@ -16555,12 +16557,20 @@ background-blend-mode: normal;
     transform-origin: unset;
     transform: rotate(0.000005008956130975318deg);
     border-top: #7a7a7a8c solid 3px;
-    border-right: #7a7a7a8c solid 3px;
-    border-bottom: #7a7a7a8c solid 3px;
-    border-left: #7a7a7a8c solid 3px;
     position: absolute !important;
-    left: 15px;
+    /* left: 15px; */
     top: 4613px;
+}
+
+.container_73dafc4a5c12_before_form {
+    width: 100%;
+    height: 1px;
+    transform-origin: unset;
+    transform: rotate(0.000005008956130975318deg);
+    border-top: #7a7a7a8c solid 3px;
+    position: absolute !important;
+    /* left: 15px; */
+    top: 1693px;
 }
 
 .imageview_80d88300849b {
@@ -16574,7 +16584,8 @@ background-blend-mode: normal;
 }
 
 .viewport_1d5c1607379d {
-    width: 430px;
+    position: absolute;
+    width: 100%;
     height: 5786px;
     overflow-x: hidden;
     overflow-y: hidden;
