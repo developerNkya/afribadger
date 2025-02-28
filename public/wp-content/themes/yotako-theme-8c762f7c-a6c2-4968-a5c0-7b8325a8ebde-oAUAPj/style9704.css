@@ -11799,7 +11799,7 @@ background-blend-mode: normal;
     height: 109px;
     position: absolute !important;
     left: -1px;
-    top: 8403px;
+    top: 6330px;
     background: #f4e7c9;
 }
 
@@ -11813,17 +11813,17 @@ background-blend-mode: normal;
 
 .container_4bf8b2e16b87 {
     width: 100%;
-    height: 462px;
+    height: 604px;
     z-index: 1;
     position: absolute !important;
     left: 0px;
-    top: 142px;
+    /* top: 142px; */
     background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
     url("https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/425:5653.webp");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-blend-mode: normal;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: normal;
 }
 
 .text_8d3b476655fc {
@@ -12302,7 +12302,7 @@ background-blend-mode: normal;
     max-width: 834px;
     position: absolute !important;
     left: 0px;
-    top: 39px;
+    /* top: 39px; */
 }
 
 .viewport_f3408977400e {

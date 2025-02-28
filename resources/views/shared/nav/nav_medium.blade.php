@@ -1,12 +1,4 @@
-<figure class="imageview_159656c786c9 wp-block-image">
-                            <!-- <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:1993.svg" /> -->
-
-                           
-
-
-
-                                <nav class="navbar">
+<nav class="navbar">
         <div class="logo">
             <img src="/images/logo_cameleon.png" alt="Cameleon Safaris Logo">
         </div>
@@ -27,4 +19,3 @@
             menu.classList.toggle("show");
         }
     </script>
-</figure>

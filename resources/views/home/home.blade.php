@@ -1737,11 +1737,13 @@
 <!-- footer starter -->
 
 
-
+<figure class="imageview_159656c786c9 wp-block-image">
+@include('shared.nav.nav_medium')
+</figure>
 
                      
 
-                        @include('shared.nav.nav_medium')
+                       
 
 
                         {{-- new section:: --}}
