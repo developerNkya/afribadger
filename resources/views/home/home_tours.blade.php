@@ -3,7 +3,7 @@
     <div class="tour-grid" style="display: flex; flex-wrap: wrap; gap: 10px; flex-grow: 1;">
     @foreach ($national_parks as $index => $tour)
     <a href="{{ route('view-tour', ['slug' => $tour->slug]) }}" class="tour-item-link" style="box-sizing: border-box; text-decoration: none;">
-        <div class="container_5014426d40fe" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+        <div class="container_5014426d40fe" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; background-color: white;">
             {{-- Tour Image --}}
             <figure class="imageview_d367edd9719b wp-block-image">
                 <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/98:12.webp" alt="{{ $tour->title }}" />

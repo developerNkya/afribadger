@@ -286,6 +286,15 @@ body .yt_fill_size {
     background: #f4e7c9;
 }
 
+.container_2d078b63e8c6 {
+    width: 4000px;
+    height: 109px;
+    z-index: 1;
+    position: absolute !important;
+    left: -200px;
+    top: 1110px;
+    background: #f4e7c9;
+}
 .text_ba05be332dc5 {
     width: 308px;
     z-index: 1;
@@ -741,6 +750,7 @@ body .yt_fill_size {
 }
 
 .text_f0972393c91b {
+    font-weight: bolder;
     width: max-content;
     z-index: 2;
     position: absolute !important;
@@ -771,7 +781,7 @@ body .yt_fill_size {
 }
 
 .container_ac5676396f39 {
-    transform:scale(0.8);
+    /* transform:scale(0.8); */
     position: absolute !important;
     width: 1120px;
     height: 702px;
