@@ -15,6 +15,8 @@
         [sizes^="auto," i]) {
             contain-intrinsic-size: 3000px 1500px;
         }
+
+
     </style>
     <title>developernkya@gmail.com</title>
     <link rel="dns-prefetch" href="http://unpkg.com/" />
@@ -1739,10 +1741,7 @@
 
                      
 
-                        <figure class="imageview_159656c786c9 wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:1993.svg" />
-                        </figure>
+                        @include('shared.nav.nav_medium')
 
 
                         {{-- new section:: --}}
