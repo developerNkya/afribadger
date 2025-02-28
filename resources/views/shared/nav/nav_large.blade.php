@@ -111,7 +111,7 @@ background-color: transparent;
         </div>
 
         <div class="wp-block-yotako-block-anchor button_c63111f39e42">
-            <a href="index.html" class="button_link_c63111f39e42" target="_self"
+            <a href="/tours" class="button_link_c63111f39e42" target="_self"
                 rel="noopener">
                 <p class="text_54b6702432cf has-text-color has-background has-text-align-left"
                     style="

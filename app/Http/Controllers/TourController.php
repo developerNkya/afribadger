@@ -11,6 +11,12 @@ use App\Mail\TestMail;
 class TourController extends Controller
 {
 
+    public function toursPage(){
+        $national_parks = Tour::where('tour_type_id', 1)->paginate(6);
+            return view('home.home', ['national_parks' => $national_parks]);
+    }
+
+        
 
    public function viewTour($slug)
 {
