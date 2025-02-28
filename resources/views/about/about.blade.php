@@ -11,6 +11,7 @@
     <meta name='robots' content='max-image-preview:large' />
     <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
     <title>About_Us &#8211; developernkya@gmail.com</title>
+    <link rel="stylesheet" href="../../shared/navbar.css">
     <link rel='dns-prefetch' href='http://unpkg.com/' />
     <link rel='dns-prefetch' href='http://storage.googleapis.com/' />
     <link rel="alternate" type="application/rss+xml" title="developernkya@gmail.com &raquo; Feed"

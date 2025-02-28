@@ -9010,7 +9010,7 @@
                  max-width: 834px;
                  position: absolute !important;
                  left: 0px;
-                 top: 0px;
+                 top: 30px;
              }
 
              
@@ -9033,7 +9033,7 @@
                     height: fit-content;
                     overflow-x: hidden;
                     overflow-y: hidden;
-                    background: blue;
+                    background: white;
                    
                 }
 

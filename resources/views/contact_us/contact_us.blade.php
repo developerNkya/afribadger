@@ -1335,6 +1335,7 @@
             z-index: 100000;
         }
     </style>
+    <link rel="stylesheet" href="../../shared/navbar.css">
     <link rel="stylesheet" id="style-css"
         href="../wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/style9704.css?ver=6.7.1"
         media="all" />

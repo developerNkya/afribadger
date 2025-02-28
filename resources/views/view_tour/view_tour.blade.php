@@ -208,7 +208,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/style.css">
 <link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/styleguide.css">
 <link rel="stylesheet" href="../../backup/wp-content/themes/assets/css/booking_form.css">
-
+<link rel="stylesheet" href="../../shared/navbar.css">
 <!-- Include Toastr CSS -->
 <!-- Include jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -519,7 +519,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 <figure class="imageview_1345a6459238 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:2069.svg" />
+@include('shared.nav.nav_medium')
 </figure>
 
 
