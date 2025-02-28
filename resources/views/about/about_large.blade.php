@@ -128,10 +128,7 @@
                             extraordinary safari experience, filled with awe-inspiring moments and lifelong memories.
                             Join us and discover the wonders of Tanzania with a team that truly cares.</h3>
 
-                            <figure class="imageview_deb16fe5a1ac_commitment wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/200:735.webp" />
-                        </figure>
+                    
 
 
                         <div class="view-tour-large-footer" style="position: relative;top:4500px;">
@@ -245,12 +242,7 @@
                             <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
 
                         </div>
-
-
-                        {{-- nav-start --}}
-                        <div class="about-nav-bar" style="top:30px;position:absolute;">
-                            @include('shared.nav_bar')
-                        </div>
-                       
+                        
+                        @include('shared.nav.nav_large')
 
                     </div>

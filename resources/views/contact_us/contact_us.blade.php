@@ -1366,10 +1366,6 @@
                 <div class="wp-block-group Contact_Us is-layout-flow wp-block-group-is-layout-flow">
                     <div
                         class="vp_1440 size_1440 viewport_30989ebade93 wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow">
-                        <figure class="imageview_c6e043c5111a wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/207:942.webp" />
-                        </figure>
 
                         <div
                             class="wp-block-group container_a7708edcbc5f is-layout-flow wp-block-group-is-layout-flow">
@@ -2610,13 +2606,7 @@
 
 
 
-
-
-                        {{-- nav-start --}}
-                        <div style="top:30px;position:absolute;">
-                            @include('shared.nav_bar')
-                        </div>
-
+                        @include('shared.nav.nav_large')
                     </div>
 
                     @include('contact_us.contact_medium')

@@ -1518,7 +1518,7 @@
 
 
                         {{-- nav start --}}
-                        @include('shared.nav_bar')
+                        @include('shared.nav.nav_large')
 
 
                         <h2 class="text_22bf21903cae has-text-color has-background has-text-align-center wp-block-heading"

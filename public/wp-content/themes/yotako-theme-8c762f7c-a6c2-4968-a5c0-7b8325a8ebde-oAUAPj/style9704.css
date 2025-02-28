@@ -10810,14 +10810,17 @@ body .yt_fill_size {
 
 .container_f069ba8e5373 {
     width: 1440px;
-    height: 462px;
+    height: 592px;
     z-index: 1;
     position: absolute !important;
     left: -1px;
-    top: 130px;
-    background: #26461d;
-    mix-blend-mode: normal;
-    opacity: 0.44999998807907104;
+    background: 
+    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/200:735.webp");
+background-size: cover; /* Ensures the image covers both width and height */
+background-repeat: no-repeat;
+background-position: top;
+background-blend-mode: normal;
 }
 
 .text_5f7521613ea7 {
@@ -11265,9 +11268,9 @@ background-blend-mode: normal;
     transform-origin: unset;
     transform: rotate(-0.20281607276600547deg);
     border-top: #7a7a7a8c solid 3px;
-    border-right: #7a7a7a8c solid 3px;
-    border-bottom: #7a7a7a8c solid 3px;
-    border-left: #7a7a7a8c solid 3px;
+    /* border-right: #7a7a7a8c solid 3px; */
+    /* border-bottom: #7a7a7a8c solid 3px; */
+    /* border-left: #7a7a7a8c solid 3px; */
     position: absolute !important;
     left: 147px;
     top: 1750px;
@@ -11277,9 +11280,9 @@ background-blend-mode: normal;
     width: 1155px;
     height: 1px;
     border-top: #7a7a7a8c solid 3px;
-    border-right: #7a7a7a8c solid 3px;
+    /* border-right: #7a7a7a8c solid 3px;
     border-bottom: #7a7a7a8c solid 3px;
-    border-left: #7a7a7a8c solid 3px;
+    border-left: #7a7a7a8c solid 3px; */
     position: absolute !important;
     left: 147px;
     top: 4092px;
@@ -13056,14 +13059,18 @@ background-blend-mode: normal;
 
 .container_a7708edcbc5f {
     width: 1440px;
-    height: 462px;
+    height: 592px;
     z-index: 1;
     position: absolute !important;
     left: -1px;
-    top: 130px;
-    background: #26461d;
-    mix-blend-mode: normal;
-    opacity: 0.44999998807907104;
+    /* top: 130px; */
+    background: 
+    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/200:735.webp");
+background-size: cover; /* Ensures the image covers both width and height */
+background-repeat: no-repeat;
+background-position: top;
+background-blend-mode: normal;
 }
 
 .text_9e25c2126c51 {
@@ -13387,9 +13394,9 @@ background-blend-mode: normal;
     transform-origin: unset;
     transform: rotate(-0.20281607276600547deg);
     border-top: #7a7a7a8c solid 3px;
-    border-right: #7a7a7a8c solid 3px;
+    /* border-right: #7a7a7a8c solid 3px;
     border-bottom: #7a7a7a8c solid 3px;
-    border-left: #7a7a7a8c solid 3px;
+    border-left: #7a7a7a8c solid 3px; */
     position: absolute !important;
     left: 147px;
     top: 3202px;
@@ -13401,9 +13408,9 @@ background-blend-mode: normal;
     transform-origin: unset;
     transform: rotate(-0.20281607276600547deg);
     border-top: #7a7a7a8c solid 3px;
-    border-right: #7a7a7a8c solid 3px;
+    /* border-right: #7a7a7a8c solid 3px;
     border-bottom: #7a7a7a8c solid 3px;
-    border-left: #7a7a7a8c solid 3px;
+    border-left: #7a7a7a8c solid 3px; */
     position: absolute !important;
     left: 173px;
     top: 906px;
@@ -13415,9 +13422,9 @@ background-blend-mode: normal;
     transform-origin: unset;
     transform: rotate(-2.722772476543783e-9deg);
     border-top: #7a7a7a8c solid 3px;
-    border-right: #7a7a7a8c solid 3px;
+    /* border-right: #7a7a7a8c solid 3px;
     border-bottom: #7a7a7a8c solid 3px;
-    border-left: #7a7a7a8c solid 3px;
+    border-left: #7a7a7a8c solid 3px; */
     position: absolute !important;
     left: 165px;
     top: 1878px;
@@ -13429,9 +13436,9 @@ background-blend-mode: normal;
     transform-origin: unset;
     transform: rotate(-2.722772476543783e-9deg);
     border-top: #7a7a7a8c solid 3px;
-    border-right: #7a7a7a8c solid 3px;
+    /* border-right: #7a7a7a8c solid 3px;
     border-bottom: #7a7a7a8c solid 3px;
-    border-left: #7a7a7a8c solid 3px;
+    border-left: #7a7a7a8c solid 3px; */
     position: absolute !important;
     left: 192px;
     top: 2539px;
