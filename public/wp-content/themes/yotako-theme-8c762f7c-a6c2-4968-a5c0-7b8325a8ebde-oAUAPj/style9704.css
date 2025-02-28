@@ -14548,14 +14548,17 @@ background-blend-mode: normal;
 
 .container_2f0d020cfc13 {
     width: 832px;
-    height: 462px;
+    height: 604px;
     z-index: 1;
     position: absolute !important;
     left: 0px;
-    top: 142px;
-    background: #26461d;
-    mix-blend-mode: normal;
-    opacity: 0.44999998807907104;
+    background: 
+    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/425:5820.webp");
+background-size: cover; /* Ensures the image covers both width and height */
+background-repeat: no-repeat;
+background-position: top;
+background-blend-mode: normal;
 }
 
 .text_874134fccb96 {
@@ -15439,7 +15442,7 @@ background-blend-mode: normal;
     /* max-width: 834px; */
     position: absolute !important;
     left: 0px;
-    top: 39px;
+    /* top: 39px; */
 }
 
 .viewport_7f6df675bd9a {

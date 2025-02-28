@@ -300,10 +300,7 @@
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
-                        <figure class="imageview_72aed147a6ae wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/425:5820.webp" />
-                        </figure>
+
 
                         <div
                             class="wp-block-group container_2f0d020cfc13 is-layout-flow wp-block-group-is-layout-flow">
@@ -1250,7 +1247,6 @@
                         </h2>
 
                         <figure class="imageview_d5c2ad13a4fa wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:2221.svg" />
+                            @include('shared.nav.nav_medium')
                         </figure>
                     </div>
