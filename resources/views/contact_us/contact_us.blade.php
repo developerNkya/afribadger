@@ -3853,8 +3853,7 @@
                         </div>
 
                         <figure class="imageview_80d88300849b wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:2222.svg" />
+                        @include('shared.nav.nav_small') 
                         </figure>
                     </div>
                 </div>

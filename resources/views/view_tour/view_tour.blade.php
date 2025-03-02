@@ -628,7 +628,7 @@ viewport_809ff6c8347a -->
 
 
 <figure class="imageview_ed56b6443078 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:2107.svg" />
+@include('shared.nav.nav_small')
 </figure>
 
 

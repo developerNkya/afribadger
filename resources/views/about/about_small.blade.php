@@ -386,8 +386,7 @@
 
 
                         <figure class="imageview_f1cf3b43a523 wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:2183.svg" />
+                        @include('shared.nav.nav_small')
                         </figure>
 
                     </div>

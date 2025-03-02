@@ -1917,8 +1917,7 @@
 
 
                         <figure class="imageview_e402777db3d3 wp-block-image">
-                            <img decoding="async"
-                                src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/457:2031.svg" />
+                        @include('shared.nav.nav_small')
                         </figure>
 
 
