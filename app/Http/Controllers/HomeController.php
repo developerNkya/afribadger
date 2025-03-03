@@ -21,6 +21,13 @@ class HomeController extends Controller
     }
 
     
+    
+    
+
+    public function landing(){
+        return view('landing.landing_large');
+    }
+
 
        public function maintenance(){
         return view('maintenance');
