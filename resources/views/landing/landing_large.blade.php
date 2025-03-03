@@ -180,7 +180,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
           <figure class="imageview_a3c5ac5707bb wp-block-image">
             <img decoding="async"
-              src="https://cdn.yotako.io/ec630cf1-9614-45ff-a262-a7af437a210d/I337:421;337:406.svg" />
+              src="../../landing/large/assets/I337.svg" />
           </figure>
 
           
@@ -207,7 +207,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
           <figure class="imageview_9c8fb8ebab0c wp-block-image">
             <img decoding="async"
-              src="https://cdn.yotako.io/ec630cf1-9614-45ff-a262-a7af437a210d/I337:427;337:406.svg" />
+              src="../../landing/large/assets/I337.svg" />
           </figure>
 
           
@@ -234,7 +234,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
           <figure class="imageview_aea1264fcb93 wp-block-image">
             <img decoding="async"
-              src="https://cdn.yotako.io/ec630cf1-9614-45ff-a262-a7af437a210d/I337:433;337:406.svg" />
+              src="../../landing/large/assets/I337.svg" />
           </figure>
 
           
@@ -261,7 +261,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
           <figure class="imageview_dddce095a981 wp-block-image">
             <img decoding="async"
-              src="https://cdn.yotako.io/ec630cf1-9614-45ff-a262-a7af437a210d/I337:439;337:406.svg" />
+              src="../../landing/large/assets/I337.svg" />
           </figure>
 
           
@@ -952,7 +952,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
           <figure class="imageview_3c0b801dfd1c wp-block-image">
             <img decoding="async"
-              src="https://cdn.yotako.io/ec630cf1-9614-45ff-a262-a7af437a210d/I258:489;255:470.webp"
+              src="../../landing/large/assets/I258.webp"
               class="yt_cover_size yt_full_size" />
           </figure>
 
@@ -999,7 +999,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
           <figure class="imageview_615936ac401d wp-block-image">
             <img decoding="async"
-              src="https://cdn.yotako.io/ec630cf1-9614-45ff-a262-a7af437a210d/I258:505;255:470.webp"
+              src="../../landing/large/assets/I258_climb.webp"
               class="yt_cover_size yt_full_size" />
           </figure>
 
