@@ -9,7 +9,7 @@ class="wp-block-group container_a8f119c87dec is-layout-flow wp-block-group-is-la
 
     <div
         class="wp-block-group container_7102e5e4dcdf is-layout-flow wp-block-group-is-layout-flow">
-        <a href="/" class="" target="_self" rel="noopener">
+        <a href="/welcome" class="" target="_self" rel="noopener">
         <div
             class="wp-block-group container_50f8551c55f1 is-layout-flow wp-block-group-is-layout-flow">
             <p class="text_d5001500408f has-text-color has-background has-text-align-left"
