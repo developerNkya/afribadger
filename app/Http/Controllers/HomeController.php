@@ -25,7 +25,7 @@ class HomeController extends Controller
     
 
     public function landing(){
-        return view('landing.landing_medium');
+        return view('landing.landing_small');
     }
 
 
