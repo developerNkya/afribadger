@@ -1335,9 +1335,10 @@
     <link rel="stylesheet" id="style-css"
         href="{{ asset('wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/style9704.css?ver=6.7.1') }}"
         media="all" />
-    <link rel="stylesheet" id="Roboto-css"
+    <!-- <link rel="stylesheet" id="Roboto-css"
         href="{{ asset('storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1') }}"
-        media="all" />
+        media="all" /> -->
+        <link rel="stylesheet" id="Roboto-css" href="../../storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1" media="all">
 
     <link rel="stylesheet" id="Bobaland-css"
         href="{{ asset('storage.googleapis.com/yotako-fonts/CdnFonts/css/Bobaland9704.css?ver=6.7.1') }}"
