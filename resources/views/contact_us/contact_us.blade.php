@@ -1339,9 +1339,9 @@
     <link rel="stylesheet" id="style-css"
         href="../wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/style9704.css?ver=6.7.1"
         media="all" />
-    <link rel="stylesheet" id="Roboto-css"
-        href="../../storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1" media="all" />
-    <link rel="stylesheet" id="Bobaland-css"
+        <link rel="stylesheet" id="Roboto-css" href="../../storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1" media="all">
+
+        <link rel="stylesheet" id="Bobaland-css"
         href="../../storage.googleapis.com/yotako-fonts/CdnFonts/css/Bobaland9704.css?ver=6.7.1" media="all" />
     <script src="../wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/script9704.js?ver=6.7.1"
         id="custom-script-js"></script>
