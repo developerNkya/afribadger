@@ -2952,10 +2952,10 @@
                             A 4-day safari from $1,999
                         </p>
 
-                        <figure class="imageview_00bf55b1ae4d wp-block-image">
+                        <!-- <figure class="imageview_00bf55b1ae4d wp-block-image">
                             <img decoding="async"
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/425:5906.webp" />
-                        </figure>
+                        </figure> -->
 
                         <div
                             class="wp-block-group container_422af8fc7e68 is-layout-flow wp-block-group-is-layout-flow">

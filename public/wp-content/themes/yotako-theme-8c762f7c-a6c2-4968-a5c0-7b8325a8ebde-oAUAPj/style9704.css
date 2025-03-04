@@ -12578,16 +12578,20 @@ background-blend-mode: normal;
     top: 140px;
 }
 
+
 .container_095f6138ad17 {
     width: 429px;
-    height: 462px;
+    height: 592px;
     z-index: 3;
     position: absolute !important;
     left: 0px;
-    top: 140px;
-    background: #26461d;
-    mix-blend-mode: normal;
-    opacity: 0.44999998807907104;
+    /* top: 130px; */
+    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/425:5709.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-blend-mode: normal;
 }
 
 .text_9a23363cee0d {
@@ -13048,7 +13052,7 @@ background-blend-mode: normal;
     max-width: 834px;
     position: absolute !important;
     left: 1px;
-    top: 48px;
+    /* top: 48px; */
 }
 
 .viewport_c6378a59ee4a {
@@ -15718,14 +15722,17 @@ background-blend-mode: normal;
 
 .container_422af8fc7e68 {
     width: 429px;
-    height: 462px;
+    height: 602px;
     z-index: 3;
     position: absolute !important;
     left: 0px;
-    top: 140px;
-    background: #26461d;
-    mix-blend-mode: normal;
-    opacity: 0.44999998807907104;
+    background: 
+    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
+    url("https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/425:5906.webp");
+background-size: cover; /* Ensures the image covers both width and height */
+background-repeat: no-repeat;
+background-position: top;
+background-blend-mode: normal;
 }
 
 .text_74c69e635d57 {
@@ -16601,7 +16608,7 @@ background-blend-mode: normal;
     max-width: 834px;
     position: absolute !important;
     left: 0px;
-    top: 35px;
+    /* top: 35px; */
 }
 
 .viewport_1d5c1607379d {
