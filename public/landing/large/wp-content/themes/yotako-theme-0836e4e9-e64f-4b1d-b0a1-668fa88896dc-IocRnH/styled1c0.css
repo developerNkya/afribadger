@@ -1,3 +1,4 @@
+@media (min-width: 1008px) {
  /*
 Theme Name: Yotako
 Author: Yotako team
@@ -6839,3 +6840,4 @@ background-position: center;
    overflow-y: hidden;
    background: #ffffff;
  }
+}
