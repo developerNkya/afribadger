@@ -1729,7 +1729,7 @@ body .yt_fill_size {
     width: 1440px;
     height: 91px;
     z-index: 1;
-    position: absolute !important;
+    position: fixed !important;
     left: 0px;
     top: 0px;
     align-items: center;
