@@ -8,7 +8,7 @@
     </nav>
     <div class="menu" id="menu">
         <span class="close-btn" onclick="toggleMenu()">&times;</span>
-        <a href="/">Home</a>
+        <a href="/welcome">Home</a>
         <a href="/tours">Tours</a>
         <a href="/about-us">About Us</a>
         <a href="/contact-us">Contact Us</a>
