@@ -44,7 +44,7 @@
                 <div class="wp-block-group container_461f7766e98a is-layout-flow wp-block-group-is-layout-flow">
                     <p class="text_f968f3908dd2 has-text-color has-background has-text-align-left"
                        style="text-transform: none; font-style: normal; font-size: 15.5px; font-weight: 500; letter-spacing: -0.5px; color: #0000008a; background-color: transparent;">
-                        $3900
+                       ${{ $tour->initial_cost }}
                     </p>
 
                     <h2 class="text_cc5302f39554 has-text-color has-background has-text-align-left wp-block-heading"

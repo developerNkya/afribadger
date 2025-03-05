@@ -53,7 +53,7 @@ background-color: transparent;
   color: #0000008a;
   background-color: transparent;
 ">
-                            $3900
+                            ${{ $tour->initial_cost }}
                         </p>
 
                         <h2 class="text_36cab543b6eb has-text-color has-background has-text-align-left wp-block-heading"
