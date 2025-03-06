@@ -286,9 +286,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         
     </div>
 
-        <h2 class="text_aa78ea0ed202 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:63.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">Ngorongoro Creater</h2>
+        <h2 class="text_aa78ea0ed202 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:53.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
        
-        <h2 class="text_1e4bb1b17f42 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from $1,999</h2>
+        <h2 class="text_1e4bb1b17f42 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A {{$tour->days}}-day safari from ${{$tour->amount}}</h2>
        
 
 
@@ -330,11 +330,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <div class="wp-block-group container_96e46e00b996 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_3f882a2cad40 is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_db4c382ac991 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>Ngorongoro Crater!</h2>
+                          <h2 class="text_db4c382ac991 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>{{$tour->sub_header}}!</h2>
        
 
 <div class="wp-block-group container_b0ac0d29aa6c is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_5b5be66e4ec4 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">$1,999</h2>
+                          <h2 class="text_5b5be66e4ec4 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">${{$tour->amount}}</h2>
        
       <p class="text_1f7d72561f2a has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:11.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">from</p>
      
@@ -416,9 +416,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         
     </div>
 
-        <h2 class="text_8d67f32000c8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">Ngorongoro Creater</h2>
+        <h2 class="text_8d67f32000c8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
        
-        <h2 class="text_19dccca09ee8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from $1,999</h2>
+        <h2 class="text_19dccca09ee8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from ${{$tour->amount}}</h2>
        
 
 <div class="wp-block-group container_843f5ad47317 is-layout-flow wp-block-group-is-layout-flow" >
@@ -461,11 +461,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <div class="wp-block-group container_412218382bda is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_bec4c942ead1 is-layout-flow wp-block-group-is-layout-flow" >
-                          <h3 class="text_0ade7b71ee1b has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>Ngorongoro Crater!</h3>
+                          <h3 class="text_0ade7b71ee1b has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>{{$tour->sub_header}}!</h3>
        
 
 <div class="wp-block-group container_30061fa7b5df is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_6fefebff98bd has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">$1,999</h2>
+                          <h2 class="text_6fefebff98bd has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">${{$tour->amount}}</h2>
        
       <p class="text_58c2b93ce16d has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:11.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">from</p>
      
@@ -546,19 +546,19 @@ viewport_809ff6c8347a -->
         
     </div>
 
-        <h2 class="text_2a7d2c2b801c has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">Ngorongoro Creater</h2>
+        <h2 class="text_2a7d2c2b801c has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
        
-      <p class="text_f48f81f8dd71 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from $1,999</p>
+      <p class="text_f48f81f8dd71 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A {{$tour->days}}-day safari from ${{$tour->amount}}</p>
      
 
 <div class="wp-block-group container_57908918ebc9 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_c904ab9768cd is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_43d7a8273297 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>Ngorongoro Crater!</h2>
+                          <h2 class="text_43d7a8273297 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>{{$tour->sub_header}}!</h2>
        
 
 <div class="wp-block-group container_a3b69df02228 is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_21477acfed8a has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">$1,999</h2>
+                          <h2 class="text_21477acfed8a has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">${{$tour->amount}}</h2>
        
       <p class="text_8d69ae8adb87 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:11.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">from</p>
      
