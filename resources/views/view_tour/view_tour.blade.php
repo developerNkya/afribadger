@@ -298,12 +298,27 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
      
+<div class="container_c38156265193">
 
-<div class="wp-block-group container_c38156265193 is-layout-flow wp-block-group-is-layout-flow" >
+
+
+<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="width:1120px">
                           <h2 class="text_ab46880009ff has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Overview</h2>
        
-        <h3 class="text_ab30ebd1513c has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">This extraordinary journey takes you deep into the heart of Ngorongoro Crater, a volcanic caldera over two million years old. Renowned for its unparalleled wildlife density, Ngorongoro is home to the majestic Big Five—lion, elephant, buffalo, rhino, and leopard—alongside zebras, wildebeests, gazelles, and hippos.Your adventure begins as you descend into the crater, surrounded by its steep, lush walls. The floor of the crater is a dynamic mix of savannah, swamps, and lakes, creating a vibrant ecosystem teeming with life. Here, you will witness the raw beauty and incredible diversity of Tanzania’s wildlife in their natural habita. As you traverse the crater, you’ll move through tropical forests and semi-deserts, each step revealing new facets of this ancient land. The rich volcanic soil supports a stunning array of flora and fauna, making every moment a unique and unforgettable experience. Surely, these memories of the Ngorongoro Crater, with its awe-inspiring landscapes and abundant wildlife, will stay with you forever. Join us for a safari that promises not just a glimpse, but a full immersion into the wild world of Tanzania</h3>
-               </div>
+        <h3 class="text_ab30ebd1513c has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+{{$tour->tour_info}}
+    </h3>
+</div>
+
+<!-- splitter -->
+<div class="wp-block-group container_175d85a6190b is-layout-flow wp-block-group-is-layout-flow" >
+   
+      
+   <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
+   
+</div>
+<!--  -->
+ </div>
 
         <h2 class="text_ce43d4354680 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Itinerary</h2>
        
@@ -312,12 +327,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
        
 
-<div class="wp-block-group container_175d85a6190b is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
+
 
 
 
@@ -420,21 +430,28 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
        
         <h2 class="text_19dccca09ee8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from ${{$tour->amount}}</h2>
        
-
+<div class="medium_helper wp-block-group is-layout-flow wp-block-group-is-layout-flow">
 <div class="wp-block-group container_843f5ad47317 is-layout-flow wp-block-group-is-layout-flow" >
     <div class="overview-medium">
                           <h2 class="text_7f457e5f40b9 has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Overview</h2>
        
-        <h3 class="text_1c5ecdefa818 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">This extraordinary journey takes you deep into the heart of Ngorongoro Crater, a volcanic caldera over two million years old. Renowned for its unparalleled wildlife density, Ngorongoro is home to the majestic Big Five—lion, elephant, buffalo, rhino, and leopard—alongside zebras, wildebeests, gazelles, and hippos.Your adventure begins as you descend into the crater, surrounded by its steep, lush walls. The floor of the crater is a dynamic mix of savannah, swamps, and lakes, creating a vibrant ecosystem teeming with life. Here, you will witness the raw beauty and incredible diversity of Tanzania’s wildlife in their natural habita. As you traverse the crater, you’ll move through tropical forests and semi-deserts, each step revealing new facets of this ancient land. The rich volcanic soil supports a stunning array of flora and fauna, making every moment a unique and unforgettable experience. Surely, these memories of the Ngorongoro Crater, with its awe-inspiring landscapes and abundant wildlife, will stay with you forever. Join us for a safari that promises not just a glimpse, but a full immersion into the wild world of Tanzania</h3>
+        <h3 class="text_1c5ecdefa818 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+         {{$tour->tour_info}}
+    </h3>
                </div>
 </div>
 
+<!-- splitter -->
 <div class="wp-block-group container_c3c9c4e567b2 is-layout-flow wp-block-group-is-layout-flow" >
    
       
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
+   <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
+   
+</div>
+</div>
+
+
+
 
         <h2 class="text_72f5797f8313 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Itinerary</h2>
        
