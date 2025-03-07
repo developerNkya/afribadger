@@ -319,13 +319,14 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 </div>
 <!--ending container  -->
 <h2 class="text_ce43d4354680 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Itinerary</h2>
-@include('view_tour.large_view_tour');
 
+<!-- content section: -->
+@include('view_tour.large_view_tour')
  </div>
 
-       
+  
  @include('shared.nav.nav_large');
-<!-- @include('view_tour.large_view_tour') -->
+
 
        
 

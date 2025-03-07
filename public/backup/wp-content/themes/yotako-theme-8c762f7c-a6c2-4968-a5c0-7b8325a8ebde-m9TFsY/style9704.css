@@ -5497,15 +5497,15 @@
                 border-radius: 8px 8px 8px 8px;
             }
 
-           .container_c9f1b11a1b51 {
+            .container_c9f1b11a1b51 {
                 padding-left: 160px;
                 background: white;
                 width: 1439px;
                 /* height: 560px; */
                 z-index: 2;
-                position: absolute !important;
+                position: relative !important;
                 /* left: 160px; */
-                top: 1462px;
+                top: 120px;
                 align-items: flex-start;
                 justify-content: flex-start;
                 gap: 36px normal;
@@ -5807,7 +5807,7 @@
                 /* border-left: #7a7a7a8c solid 3px; */
                 position: relative !important;
                 /* left: 147px; */
-                top: 23px;
+                top: 57px;
             }
 
              .text_b171f5b6250a {
