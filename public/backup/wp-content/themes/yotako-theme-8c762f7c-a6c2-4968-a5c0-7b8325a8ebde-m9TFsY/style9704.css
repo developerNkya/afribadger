@@ -5023,9 +5023,9 @@
              .text_ce43d4354680 {
                  width: max-content;
                  z-index: 1;
-                 position: absolute !important;
-                 left: 629px;
-                 top: 1383px;
+                 position: relative!important;
+                 /* left: 629px; */
+                 top: 100px;
                  line-height: 56.25px;
                  font-family: 'Roboto';
              }

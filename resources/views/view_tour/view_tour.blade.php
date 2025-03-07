@@ -317,12 +317,14 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
    <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
    
 </div>
-<!--  -->
+<!--ending container  -->
+<h2 class="text_ce43d4354680 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Itinerary</h2>
+@include('view_tour.large_view_tour');
+
  </div>
 
-        <h2 class="text_ce43d4354680 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Itinerary</h2>
        
-
+ @include('shared.nav.nav_large');
 <!-- @include('view_tour.large_view_tour') -->
 
        
@@ -335,8 +337,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 <!-- safari costs -->
-@include('view_tour.large_view_tour');
-@include('shared.nav.nav_large')
+
 <div class="wp-block-group container_96e46e00b996 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_3f882a2cad40 is-layout-flow wp-block-group-is-layout-flow" >
