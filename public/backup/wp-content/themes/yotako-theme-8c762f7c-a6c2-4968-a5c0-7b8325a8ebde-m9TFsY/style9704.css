@@ -5485,6 +5485,18 @@
                 border-radius: 8px 8px 8px 8px;
             }
 
+            .container_ee0a20b79ef9_medium {
+                position: relative;
+                width: 770px;
+                height: fit-content;
+                z-index: 1;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 29px normal;
+                flex-direction: column;
+                border-radius: 8px 8px 8px 8px;
+            }
+
 
             .container_ee0a20b79ef9-faq {
                 width: 87%;
@@ -7330,14 +7342,14 @@
                 top: 66px;
             }
 
-             .text_72f5797f8313 {
-                 width: max-content;
-                 position: absolute !important;
-                 left: 327px;
-                 top: 1564px;
-                 line-height: 56.25px;
-                 font-family: 'Roboto';
-             }
+            .text_72f5797f8313 {
+                width: max-content;
+                position: relative;
+                left: 327px;
+                top: 140px;
+                line-height: 56.25px;
+                font-family: 'Roboto';
+            }
 
              .container_58bf0bef3df5 {
                  width: 79px;
@@ -7752,8 +7764,8 @@
             .container_da6f6efcc8ce {
                 width: 100%;
                 height: 560px;
-                position: absolute !important;
-                top: 1666px;
+                position: relative;
+                top: 200px;
                 align-items: center;
                 justify-content: flex-start;
                 gap: 36px normal;
@@ -9048,12 +9060,12 @@
                 }
 
                 .viewport_b618d13430bd {
+                    position: absolute;
                     width: 100%;
-                    height: fit-content;
+                    height: -webkit-fill-available;
                     overflow-x: hidden;
-                    overflow-y: hidden;
-                    background: white;
-                   
+                    /* overflow-y: hidden; */
+                    /* background: black; */
                 }
 
              .imageview_7f959592d3bb {

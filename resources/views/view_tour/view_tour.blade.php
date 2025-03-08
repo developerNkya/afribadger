@@ -420,68 +420,10 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 
-<!-- <figure class="imageview_be33a3213e9f wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/419:4131.webp" />
-</figure> -->
 
-
-
-<div class="wp-block-group container_0c5f759827de is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-        <h2 class="text_8d67f32000c8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
-       
-        <h2 class="text_19dccca09ee8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from ${{$tour->amount}}</h2>
-       
-<div class="medium_helper wp-block-group is-layout-flow wp-block-group-is-layout-flow">
-<div class="wp-block-group container_843f5ad47317 is-layout-flow wp-block-group-is-layout-flow" >
-    <div class="overview-medium">
-                          <h2 class="text_7f457e5f40b9 has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Overview</h2>
-       
-        <h3 class="text_1c5ecdefa818 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-         {{$tour->tour_info}}
-    </h3>
-               </div>
-</div>
-
-<!-- splitter -->
-<div class="wp-block-group container_c3c9c4e567b2 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-   <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-   
-</div>
-</div>
-
-
-
-
-        <h2 class="text_72f5797f8313 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Itinerary</h2>
-       
-
-
-<!-- medium view tour -->
-@include('view_tour.medium_view_tour');
-<!-- Hidden Booking Form Modal -->
-<!-- Modal -->
-<!-- Modal -->
-<div id="bookingFormModal-m" class="modal-m" style="display: none;" onclick="closeModal(event)">
-    <!-- Modal Content: Booking Form -->
-    <div class="modal-content-m">
-        <div id="bookingFormContainer">
-            @include('view_tour.booking_form')
-        </div>
-    </div>
-</div>
-
-<!-- Background Blur Effect -->
-<div id="modalBackdrop-m" class="backdrop" style="display: none;"></div>
-
-
+<figure class="imageview_1345a6459238 wp-block-image" >
+@include('shared.nav.nav_medium')
+</figure>
 <div class="wp-block-group container_412218382bda is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_bec4c942ead1 is-layout-flow wp-block-group-is-layout-flow" >
@@ -527,27 +469,59 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
           </div>
         </div>
 
+<div class="wp-block-group container_0c5f759827de is-layout-flow wp-block-group-is-layout-flow" >
+   
+      
+        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
+        
+    </div>
 
+        <h2 class="text_8d67f32000c8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
+       
+        <h2 class="text_19dccca09ee8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from ${{$tour->amount}}</h2>
+       
+<div class="medium_helper wp-block-group is-layout-flow wp-block-group-is-layout-flow">
+<div class="wp-block-group container_843f5ad47317 is-layout-flow wp-block-group-is-layout-flow" >
+    <div class="overview-medium">
+                          <h2 class="text_7f457e5f40b9 has-text-color has-background has-text-align-center wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Overview</h2>
+       
+        <h3 class="text_1c5ecdefa818 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+         {{$tour->tour_info}}
+    </h3>
+               </div>
+</div>
 
+<!-- splitter -->
+<div class="wp-block-group container_c3c9c4e567b2 is-layout-flow wp-block-group-is-layout-flow" >    
+   <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>  
+</div>
 
-
+<h2 class="text_72f5797f8313 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Itinerary</h2>
+@include('view_tour.medium_view_tour');
+</div>
 
 
 
 
        
-       
 
 
+<!-- medium view tour -->
 
+<!-- Hidden Booking Form Modal -->
+<!-- Modal -->
+<!-- Modal -->
+<div id="bookingFormModal-m" class="modal-m" style="display: none;" onclick="closeModal(event)">
+    <!-- Modal Content: Booking Form -->
+    <div class="modal-content-m">
+        <div id="bookingFormContainer">
+            @include('view_tour.booking_form')
+        </div>
+    </div>
+</div>
 
-
-<figure class="imageview_1345a6459238 wp-block-image" >
-@include('shared.nav.nav_medium')
-</figure>
-
-
-
+<!-- Background Blur Effect -->
+<div id="modalBackdrop-m" class="backdrop" style="display: none;"></div>
 
            </div>
 
