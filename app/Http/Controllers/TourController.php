@@ -18,13 +18,11 @@ class TourController extends Controller
 
         
 
-   public function viewTour($slug)
-{
-    $tour = Tour::where('slug', $slug)->firstOrFail();
-
-    // return $tour;
-    return view('view_tour.view_tour', compact('tour'));
-}
+    public function viewTour($slug)
+    {
+        $tour = Tour::where('slug', $slug)->firstOrFail();
+        return view('view_tour.view_tour', compact('tour'));
+    }
 
 public function bookTour(Request $request)
 {

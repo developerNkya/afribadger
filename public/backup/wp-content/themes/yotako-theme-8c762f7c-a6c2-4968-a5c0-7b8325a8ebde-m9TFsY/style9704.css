@@ -5474,7 +5474,8 @@
              }
 
              .container_ee0a20b79ef9 {
-                width: 87.4%;
+                position: relative;
+                width: 1126px;
                 height: fit-content;
                 z-index: 1;
                 align-items: flex-start;

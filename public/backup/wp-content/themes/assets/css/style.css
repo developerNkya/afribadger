@@ -1,8 +1,10 @@
 .state-yes {
+  margin-bottom: 200px;
+  /* background: green; */
   display: flex;
   flex-direction: column;
-/*  width: 1120px;*/
-  height: 791px;
+  /* width: 1120px; */
+  height: 400px;
   align-items: center;
   gap: 29px;
   padding: 0px 0px 35px;
@@ -106,7 +108,7 @@
 }
 
 .state-yes .p {
-  left: -60px;
+  /* left: -60px; */
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;

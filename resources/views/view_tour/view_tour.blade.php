@@ -272,7 +272,73 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     </div>
 
 
+    @include('shared.nav.nav_large');
+    
+<!-- safari costs -->
 
+<div class="wp-block-group container_96e46e00b996 is-layout-flow wp-block-group-is-layout-flow" >
+                  
+                  <div class="wp-block-group container_3f882a2cad40 is-layout-flow wp-block-group-is-layout-flow" >
+                                            <h2 class="text_db4c382ac991 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>{{$tour->sub_header}}!</h2>
+                         
+                  
+                  <div class="wp-block-group container_b0ac0d29aa6c is-layout-flow wp-block-group-is-layout-flow" >
+                                            <h2 class="text_5b5be66e4ec4 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">${{$tour->amount}}</h2>
+                         
+                        <p class="text_1f7d72561f2a has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:11.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">from</p>
+                       
+                  
+                  <div class="wp-block-group container_2e7152dab4c7 is-layout-flow wp-block-group-is-layout-flow" >
+                                          <p class="text_2df4fa83b2ac has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:9.5px;font-weight:400;letter-spacing:-0.5px;color:#787676;background-color:transparent;">What’s included in the price?</p>
+                       
+                  
+                  <div class="wp-block-group container_069073b938bb is-layout-flow wp-block-group-is-layout-flow" >
+                     
+                        
+                          <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
+                          
+                      </div>
+                          </div>
+                          </div>
+                  
+                  
+                  <!-- booking form large screen -->
+                  <!-- Hidden Booking Form Modal -->
+                  <div id="bookingFormModal" class="modal-l" style="display: none;" onclick="closeModal(event)">
+                      <!-- Modal Content: Booking Form -->
+                      <div class="modal-content">
+                         
+                          <div id="bookingFormContainer">
+                  
+                              @include('view_tour.booking_form')
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Background Blur Effect -->
+                  <div id="modalBackdrop" class="backdrop" style="display: none;"></div>
+                  
+                  <!-- Button to Show Modal -->
+                  <div class="wp-block-yotako-block-anchor button_af56c63f62ed" onclick="showBookingForm(1)">
+                      <a href="javascript:void(0);" class="button_link_af56c63f62ed" target="_self" rel="noopener">
+                          <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
+                              Book Now
+                          </p>
+                          <figure class="imageview_6f8f09ff716d wp-block-image">
+                              <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
+                          </figure>
+                      </a>
+                  </div>
+                  
+                  <!-- JavaScript to handle the modal functionality -->
+                  
+                  
+                  
+                      <!-- JavaScript to handle the click event -->
+                  
+                  
+                         </div>
+                          </div>
 <figure class="imageview_a5efb65a240c wp-block-image" >
 <img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/99:134.webp" />
 </figure>
@@ -325,7 +391,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
  </div>
 
   
- @include('shared.nav.nav_large');
+
 
 
        
@@ -337,71 +403,10 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 
-<!-- safari costs -->
-
-<div class="wp-block-group container_96e46e00b996 is-layout-flow wp-block-group-is-layout-flow" >
-                  
-<div class="wp-block-group container_3f882a2cad40 is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_db4c382ac991 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Discover the Wonders of <br/>{{$tour->sub_header}}!</h2>
-       
-
-<div class="wp-block-group container_b0ac0d29aa6c is-layout-flow wp-block-group-is-layout-flow" >
-                          <h2 class="text_5b5be66e4ec4 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:500;letter-spacing:-0.5px;color:#000000;background-color:transparent;">${{$tour->amount}}</h2>
-       
-      <p class="text_1f7d72561f2a has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:11.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">from</p>
-     
-
-<div class="wp-block-group container_2e7152dab4c7 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_2df4fa83b2ac has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:9.5px;font-weight:400;letter-spacing:-0.5px;color:#787676;background-color:transparent;">What’s included in the price?</p>
-     
-
-<div class="wp-block-group container_069073b938bb is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-        </div>
-        </div>
-
-
-<!-- booking form large screen -->
-<!-- Hidden Booking Form Modal -->
-<div id="bookingFormModal" class="modal-l" style="display: none;" onclick="closeModal(event)">
-    <!-- Modal Content: Booking Form -->
-    <div class="modal-content">
-       
-        <div id="bookingFormContainer">
-
-            @include('view_tour.booking_form')
-        </div>
-    </div>
-</div>
-
-<!-- Background Blur Effect -->
-<div id="modalBackdrop" class="backdrop" style="display: none;"></div>
-
-<!-- Button to Show Modal -->
-<div class="wp-block-yotako-block-anchor button_af56c63f62ed" onclick="showBookingForm(1)">
-    <a href="javascript:void(0);" class="button_link_af56c63f62ed" target="_self" rel="noopener">
-        <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
-            Book Now
-        </p>
-        <figure class="imageview_6f8f09ff716d wp-block-image">
-            <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
-        </figure>
-    </a>
-</div>
-
-<!-- JavaScript to handle the modal functionality -->
 
 
 
-	<!-- JavaScript to handle the click event -->
 
-
-       </div>
-        </div>
            </div>
 
 

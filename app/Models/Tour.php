@@ -15,6 +15,7 @@ class Tour extends Model
         'people',
         'amount',
         'tour_type_id',
+        'day_events'
     ];
 
     // public function tourType()
