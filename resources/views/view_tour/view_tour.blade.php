@@ -523,20 +523,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <!-- Background Blur Effect -->
 <div id="modalBackdrop-m" class="backdrop" style="display: none;"></div>
 
-           </div>
-
+</div>
+    </div>
 
 <div class="vp_640 size_430 viewport_8a9748ce9efb_updated  wp-block-group yotako-main is-layout-flow wp-block-group-is-layout-flow" >
               
-
-<!-- viewport_8a9748ce9efb_update
-viewport_809ff6c8347a -->
-       
-
-
-
-
-
 <div class="wp-block-group container_cc73ba873ac3 is-layout-flow wp-block-group-is-layout-flow" >
    
       

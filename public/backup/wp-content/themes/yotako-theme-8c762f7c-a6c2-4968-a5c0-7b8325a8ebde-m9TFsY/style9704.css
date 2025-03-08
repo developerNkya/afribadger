@@ -4714,11 +4714,11 @@
 
 
              .viewport_8a9748ce9efb_updated {
-                height: 5151px;
+                height: -webkit-fill-available;
                 position: absolute;
                 width: 100%;
                 overflow-x: hidden;
-                overflow-y: hidden;
+                /* overflow-y: hidden; */
                 background: #ffffff;
             }
 
@@ -9576,11 +9576,13 @@
              }
 
              .text_5a947dcac893 {
-                 width: 100%;
-                 line-height: 23.44px;
-                 word-wrap: break-word;
-                 font-family: 'Roboto';
-             }
+                position: relative;
+                top: 6px;
+                width: 100%;
+                line-height: 23.44px;
+                word-wrap: break-word;
+                font-family: 'Roboto';
+            }
 
              .container_7e3530d3246e {
                  padding: 0 16px 7px 14px;
@@ -16787,7 +16789,7 @@
 .small-tour-details {
     margin-left: -100px;
     width: 600px;
-    top: -90px;
+    /* top: -90px; */
     /* bottom: 130px; */
     position: relative;
     /* left: -165px; */
