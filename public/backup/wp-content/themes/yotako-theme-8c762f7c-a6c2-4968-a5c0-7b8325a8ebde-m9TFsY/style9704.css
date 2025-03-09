@@ -9665,6 +9665,7 @@
         }
 
         .button_918fe2cd01a0-faq {
+            margin-bottom:100px;
             padding: 0 32px 0 32px;
             width: 95%;
             height: 79px;
@@ -16828,6 +16829,7 @@
 }
 
 .small-tour-details-faq {
+    margin-bottom:-75px;
     margin-left: -100px;
     width: 600px;
     /* top: 40px; */

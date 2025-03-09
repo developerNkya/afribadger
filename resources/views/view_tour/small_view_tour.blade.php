@@ -178,12 +178,13 @@ document.addEventListener("DOMContentLoaded", function () {
         FAQ's
     </h2>
 
+    @foreach(json_decode($tour->faq, true) as $faq)
     <div class="wp-block-yotako-block-anchor button_918fe2cd01a0-faq">
 
       <div class="wp-block-group container_5f66b41bcc64 is-layout-flow wp-block-group-is-layout-flow">
         <p class="text_c273670e1c70 has-text-color has-background has-text-align-left" 
            style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-           Arrival at the Airport and transfer to Hotel
+           {{ $faq['question'] }} 
         </p>
       </div>
 
@@ -195,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- when opened:: -->
     <div class="small-tour-details-faq">
       <div class="opened-itenary" style="background-color: white; padding-top: 20px;">
-        <div class="state-yes" style="height:fit-content;margin-bottom:150px">
+        <div class="state-yes" style="height:fit-content;margin-bottom:80px;margin-top:-50px">
           <div class="collapsible-button">
             <div class="frame">
               <div class="div-wrapper">
@@ -207,12 +208,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
           <div class="rectangle-2"></div>
           <div class="frame-2">
-            <img class="group" src="../../assets/images/group-22.png" />
             <div class="frame-3">
-              <div class="text-wrapper-2">Arrival</div>
               <p class="the-group-arrives-at">
-                The group arrives at Kilimanjaro Airport (JRO). Participants are met by a representative of Altezza Travel and transferred to a hotel in Arusha.<br />
-                Note: The hotel cost only includes breakfast. Check-in starts at 2:00 PM.
+              {{ $faq['answer'] }} 
               </p>
             </div>
           </div>
@@ -221,6 +219,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
     </div>
+    @endforeach
   </div>
 
 </div>
