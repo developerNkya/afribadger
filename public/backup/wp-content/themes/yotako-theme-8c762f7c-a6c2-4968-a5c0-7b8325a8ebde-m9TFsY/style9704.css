@@ -5539,6 +5539,7 @@
             }
 
             .container_c9f1b11a1b51 {
+                transform:scale(0.9);
                 padding-left: 160px;
                 background: white;
                 width: 1439px;
@@ -5546,7 +5547,7 @@
                 z-index: 2;
                 position: relative !important;
                 /* left: 160px; */
-                top: 120px;
+                top:49px;
                 align-items: flex-start;
                 justify-content: flex-start;
                 gap: 36px normal;
