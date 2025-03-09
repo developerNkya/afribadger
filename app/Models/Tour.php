@@ -15,9 +15,13 @@ class Tour extends Model
         'people',
         'amount',
         'tour_type_id',
-        'day_events'
+        'day_events',
+        'includes'
     ];
-
+    
+    protected $casts = [
+        'includes' => 'array',
+    ];
     // public function tourType()
     // {
     //     return $this->belongsTo(TourType::class, 'tour_type_id');
