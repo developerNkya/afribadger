@@ -136,63 +136,15 @@ document.addEventListener("DOMContentLoaded", function () {
        
 
 <div class="wp-block-group container_da3fadf1eb23 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_9a2c731ab1ec has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Full board accommodation as specified on safari.<br/>4WD Land Cruiser vehicle with pop-up roof.<br/>Well-trained driver-guide.<br/>Full board meals whilst on safari.<br/>All the national park fees as per itinerary.<br/>All meals whilst on safari.<br/>Mineral water.</p>
+                        <p class="text_9a2c731ab1ec has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+                        @foreach($tour->includes['includes'] as $exclude)
+        <span style="color: #26461d; font-size: 20px; font-weight: bold;">•</span> 
+        {{ $exclude }}<br/>
+    @endforeach              
+                      </p>
      
 
-<div class="wp-block-group container_de2323cc471f is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
 
-
-<div class="wp-block-group container_b50c36e49edb is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_b5ed007522fe is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_735c85501449 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_b2f51c13ffe7 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_d2d0e18afb16 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_d6c8eea5cf22 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
         </div>
         </div>
 
@@ -203,62 +155,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div class="wp-block-group container_abca94120be3 is-layout-flow wp-block-group-is-layout-flow" >
                   
-<div class="wp-block-group container_70e2e28de0dc is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
 
-
-<div class="wp-block-group container_2c9f64320d65 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_3ae3aec5c038 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_1188c0a3d03f is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_f5b32fa7f580 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_32aff9fc6389 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-
-<div class="wp-block-group container_c60d99a63de5 is-layout-flow wp-block-group-is-layout-flow" >
-   
-      
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
-        
-    </div>
-
-      <p class="text_889812c376b6 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Airfares airport taxes and fees.<br/>Laundry.<br/>Entry visas and vaccinations.<br/>Personal items.<br/>Tips and gratuities.<br/>Travel Insurance.<br/>Optional tour.<br/>Guide tips and any items of personal nature.</p>
+      <p class="text_889812c376b6 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+      @foreach($tour->includes['excludes'] as $exclude)
+        <span style="color: #26461d; font-size: 20px; font-weight: bold;">•</span> 
+        {{ $exclude }}<br/>
+    @endforeach
+    </p>
              </div>
         </div>
         </div>
