@@ -10,13 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name='robots' content='max-image-preview:large' />
     <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
-    <title>About_Us &#8211; developernkya@gmail.com</title>
+    <title>About_Us &#8211; camelleonsafaris</title>
     <link rel="stylesheet" href="../../shared/navbar.css">
     <link rel='dns-prefetch' href='http://unpkg.com/' />
     <link rel='dns-prefetch' href='http://storage.googleapis.com/' />
-    <link rel="alternate" type="application/rss+xml" title="developernkya@gmail.com &raquo; Feed"
+    <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Feed"
         href="../feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="developernkya@gmail.com &raquo; Comments Feed"
+    <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Comments Feed"
         href="../comments/feed/index.html" />
     <script>
         window._wpemojiSettings = {

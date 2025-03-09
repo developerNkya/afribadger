@@ -16,7 +16,8 @@ class Tour extends Model
         'amount',
         'tour_type_id',
         'day_events',
-        'includes'
+        'includes',
+        'faq'
     ];
     
     protected $casts = [

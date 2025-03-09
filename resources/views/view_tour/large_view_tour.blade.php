@@ -175,54 +175,64 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- faq section -->
     <h2 class=" faq-title text_ce43d4354680-faq has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">FAQ</h2>
 <div class="faq-section">
-  <div class="hider" style="background:white">
-  <div class="wp-block-group container_ee0a20b79ef9-faq is-layout-flow wp-block-group-is-layout-flow">
+
+
+
+  <!-- <div class="hider" style="background:white"> -->
+@foreach(json_decode($tour->faq, true) as $faq)
+<div class="wp-block-group container_ee0a20b79ef9 is-layout-flow wp-block-group-is-layout-flow">
   <!-- Inside structure -->
-  <div class="wp-block-group container_e9c12360b1d4 is-layout-flow wp-block-group-is-layout-flow" style="width:1117px">
+  <div class="wp-block-group container_e9c12360b1d4-faq-large is-layout-flow wp-block-group-is-layout-flow">
     <div class="wp-block-group container_7c1bd3296b50 is-layout-flow wp-block-group-is-layout-flow">
       <div class="wp-block-group container_d46c55d4151b is-layout-flow wp-block-group-is-layout-flow">
-        <h2 class="text_f6365cc971e1 has-text-color has-background has-text-align-left wp-block-heading" style="position:relative;text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Arrival at the Airport and transfer to Hotel</h2>
+        <h2 class="text_f6365cc971e1 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:27.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;"> {{ $faq['question'] }}
+        </h2>
       </div>
     </div>
     
     <!-- Clickable Image -->
-    <figure class="imageview_d207cb065864-faq wp-block-image">
-      <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/196:500.svg" />
+    <figure class="imageview_d207cb065864 wp-block-image">
+      <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I285:861;280:381.svg" />
     </figure>
   </div>
-
-
   <!-- Itinerary (Initially Hidden) -->
- <!-- Itinerary (Initially Hidden) -->
-<!-- Itinerary (Initially Hidden) -->
-<div class="opened-itenary-faq" style="margin-top: 50px; background-color: white; padding-top: 20px;">
+<div class="opened-itenary" style="margin-top: 50px; background-color: white; padding-top: 20px;margin-bottom:-217px !important;top:-47px !important;position:relative !important">
   <div class="state-yes" style="width:1120px">
     <div class="collapsible-button">
       <div class="frame">
         <div class="div-wrapper">
-          <p class="p">Answer</p>
+          <p class="p"> {{ $faq['question'] }}</p>
         </div>
       </div>
-      <img class="button-expandable-faq" src="../../assets/images/button-expandable.png" />
+      <img class="button-expandable" src="../../assets/images/button-expandable.png" />
     </div>
     <div class="rectangle-2"></div>
     <div class="frame-2">
       <div class="frame-3">
         <p class="the-group-arrives-at">
-          The group arrives at Kilimanjaro Airport (JRO). Participants are met by a representative of Altezza Travel and transferred to a hotel in Arusha.<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;Note: The hotel cost only includes breakfast. Check-in starts at 2:00 PM.
+        {{ $faq['answer'] }}    
         </p>
       </div>
     </div>
   </div>
+
+
+</div>
+
+</div>
+@endforeach
 </div>
 
 
 
-</div>
-</div>
 
 
-</div>
+
+
+
+
+
+
 
 
 <div class="other-tours " >

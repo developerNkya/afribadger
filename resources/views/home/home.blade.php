@@ -19,12 +19,12 @@
 
 
     </style>
-    <title>developernkya@gmail.com</title>
+    <title>camelleonsafaris</title>
     <link rel="dns-prefetch" href="http://unpkg.com/" />
     <link rel="dns-prefetch" href="http://storage.googleapis.com/" />
-    <link rel="alternate" type="application/rss+xml" title="developernkya@gmail.com &raquo; Feed"
+    <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Feed"
         href="feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="developernkya@gmail.com &raquo; Comments Feed"
+    <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Comments Feed"
         href="comments/feed/index.html" />
     <script>
         window._wpemojiSettings = {
