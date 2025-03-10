@@ -230,7 +230,10 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="wp-block-group container_c23fea7781b4 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_1d7391e9003a is-layout-flow wp-block-group-is-layout-flow" >
-                  
+     
+
+
+@foreach ($other_tours as $index => $tour)
 <div class="wp-block-group container_88e3c8c3bf20 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_1ff0184f0d23 is-layout-flow wp-block-group-is-layout-flow" >
@@ -246,9 +249,9 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="wp-block-group container_e78325e6a6b9 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_46c39bace58d is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_be51c3fbb1c1 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#1a1a1a99;background-color:transparent;">10 Days</p>
+                        <p class="text_be51c3fbb1c1 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#1a1a1a99;background-color:transparent;">{{$tour->days}} Days</p>
      
-        <h3 class="text_04cd74397d85 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">Comfort&nbsp;&nbsp;Safari&nbsp;and&nbsp;Beach&nbsp;Vacation</h3>
+        <h3 class="text_04cd74397d85 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">{{$tour->title}}</h3>
                </div>
 
 
@@ -263,9 +266,9 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="wp-block-group container_2f620520d6f9 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_695d85012668 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_e3333f4026e8 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">$3900</p>
+                        <p class="text_e3333f4026e8 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">{{$tour->initial_cost}}</p>
      
-        <h2 class="text_106b30775946 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">$3300</h2>
+        <h2 class="text_106b30775946 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">{{$tour->amount}}</h2>
        
 
 <div class="wp-block-group container_796af06c9f8c is-layout-flow wp-block-group-is-layout-flow" >
@@ -277,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
 
-<div class="wp-block-yotako-block-anchor button_f26f5d2dec40"><a href="index-2.html" class="button_link_f26f5d2dec40" target="_self" rel="noopener">
+<div class="wp-block-yotako-block-anchor button_f26f5d2dec40"><a href="{{ route('view-tour', ['slug' => $tour->slug]) }}"  class="button_link_f26f5d2dec40" target="_self" rel="noopener">
                   <p class="text_0abdfd47a017 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">View More</p>
      
 
@@ -297,7 +300,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </figure>
 
         </div>
-
+@endforeach
         </div>
         </div>
        </div>
