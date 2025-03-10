@@ -6154,6 +6154,8 @@
              }
 
              .container_ba6a6650d145 {
+                position:relative;
+                top:15px;
                  width: 100%;
                  height: fit-content;
                  z-index: 1;
@@ -6184,7 +6186,7 @@
              }
 
              .text_0606563d23ca {
-                 width: 104px;
+                 width: fit-content;
                  z-index: 1;
                  position: absolute !important;
                  left: 0px;

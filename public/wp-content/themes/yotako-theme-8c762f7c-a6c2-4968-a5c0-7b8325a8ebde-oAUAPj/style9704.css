@@ -6109,7 +6109,7 @@ body .yt_fill_size {
 }
 
 .text_0606563d23ca {
-    width: 104px;
+    width: fit-content;
     z-index: 1;
     position: absolute !important;
     left: 0px;
