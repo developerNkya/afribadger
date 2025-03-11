@@ -478,476 +478,158 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
       
     </div>
     
-    
-    <div class="wp-block-group container_e95d50d843ce is-layout-flow wp-block-group-is-layout-flow">
-      
-      <div class="wp-block-group container_74025fbb1a00 is-layout-flow wp-block-group-is-layout-flow">
+    <!-- test -->
+   
 
-        
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-        </div>
-        
-      </div>
-      
-      
-      <div class="wp-block-group container_810c4d042db3 is-layout-flow wp-block-group-is-layout-flow">
-        
-        <div class="wp-block-group container_8ecc7561f36e is-layout-flow wp-block-group-is-layout-flow">
-          
-          <p class="text_83c073b664e8 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#1a1a1a99;background-color:transparent;">
-            10 Days</p>
-          
-          
-          <h3 class="text_ec917b284617 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-            Comfort Safari and Beach Vacation</h3>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_49fa7a990aa8 is-layout-flow wp-block-group-is-layout-flow">
-
-          
-          <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-          </div>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_ca9ebded79b5 is-layout-flow wp-block-group-is-layout-flow">
-          
-          <div class="wp-block-group container_fcc1415d9beb is-layout-flow wp-block-group-is-layout-flow">
-            
-            <p class="text_ea005c6cc655 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">
-              $3900</p>
-            
-            
-            <h2 class="text_90598265ab6a has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-              $3300</h2>
-            
-            
-            <div class="wp-block-group container_a20f9d20147a is-layout-flow wp-block-group-is-layout-flow">
-
-              
-              <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
-              
-            </div>
-            
-          </div>
-          
-          
-          <div class="wp-block-yotako-block-anchor button_2da25b4544fa"><a href="index.html" class="button_link_2da25b4544fa" target="_self" rel="noopener">
-              
-              <p class="text_b4541afc4427 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-                View More</p>
-              
-              
-
-              <figure class="imageview_9add00c2f6c9 wp-block-image">
-                <img decoding="async" src="../../landing/medium/assets/I410_1478;405_837;221_315.svg">
-              </figure>
-
-              
-            </a></div>
-        </div>
-        
-      </div>
-      
-    </div>
-    
-    
-    <div class="wp-block-group container_b515765c4e3b is-layout-flow wp-block-group-is-layout-flow">
-      
-      <div class="wp-block-group container_a6a820cd7b48 is-layout-flow wp-block-group-is-layout-flow">
-
-        
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-        </div>
-        
-      </div>
-      
-      
-      <div class="wp-block-group container_2c6fc00b4689 is-layout-flow wp-block-group-is-layout-flow">
-        
-        <div class="wp-block-group container_d16de5bca367 is-layout-flow wp-block-group-is-layout-flow">
-          
-          <p class="text_51443cce27e4 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#1a1a1a99;background-color:transparent;">
-            10 Days</p>
-          
-          
-          <h3 class="text_844232dbafa8 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-            Comfort Safari and Beach Vacation</h3>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_f21ef2457618 is-layout-flow wp-block-group-is-layout-flow">
-
-          
-          <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-          </div>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_08febe4d351d is-layout-flow wp-block-group-is-layout-flow">
-          
-          <div class="wp-block-group container_70a28e846ebb is-layout-flow wp-block-group-is-layout-flow">
-            
-            <p class="text_3b1f3f1dc61b has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">
-              $3900</p>
-            
-            
-            <h2 class="text_eb09c608e983 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-              $3300</h2>
-            
-            
-            <div class="wp-block-group container_28ace7425b18 is-layout-flow wp-block-group-is-layout-flow">
-
-              
-              <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
-              
-            </div>
-            
-          </div>
-          
-          
-          <div class="wp-block-yotako-block-anchor button_e85dd75266ce"><a href="index.html" class="button_link_e85dd75266ce" target="_self" rel="noopener">
-              
-              <p class="text_a5189ff0d197 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-                View More</p>
-              
-              
-
-              <figure class="imageview_64e326b6af8d wp-block-image">
-                <img decoding="async" src="../../landing/medium/assets/I411_1493;405_837;221_315.svg">
-              </figure>
-
-              
-            </a></div>
-        </div>
-        
-      </div>
-      
-    </div>
-    
-    
-    <div class="wp-block-group container_d4812b197b22 is-layout-flow wp-block-group-is-layout-flow">
-      
-      <div class="wp-block-group container_c9ef57352c8d is-layout-flow wp-block-group-is-layout-flow">
-
-        
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-        </div>
-        
-      </div>
-      
-      
-      <div class="wp-block-group container_3e614db1a223 is-layout-flow wp-block-group-is-layout-flow">
-        
-        <div class="wp-block-group container_12b4cc94da5f is-layout-flow wp-block-group-is-layout-flow">
-          
-          <p class="text_db29d5297e01 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#1a1a1a99;background-color:transparent;">
-            10 Days</p>
-          
-          
-          <h3 class="text_c7cce7a701fc has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-            Comfort Safari and Beach Vacation</h3>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_a9aa2ee81fb2 is-layout-flow wp-block-group-is-layout-flow">
-
-          
-          <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-          </div>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_7464a852000e is-layout-flow wp-block-group-is-layout-flow">
-          
-          <div class="wp-block-group container_5c94cbbdbde3 is-layout-flow wp-block-group-is-layout-flow">
-            
-            <p class="text_c556a41767b1 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">
-              $3900</p>
-            
-            
-            <h2 class="text_ada3b4592fd9 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-              $3300</h2>
-            
-            
-            <div class="wp-block-group container_a85dc34e0dc7 is-layout-flow wp-block-group-is-layout-flow">
-
-              
-              <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
-              
-            </div>
-            
-          </div>
-          
-          
-          <div class="wp-block-yotako-block-anchor button_10a884be21f9"><a href="index.html" class="button_link_10a884be21f9" target="_self" rel="noopener">
-              
-              <p class="text_5a5a9d770ef9 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-                View More</p>
-              
-              
-
-              <figure class="imageview_1ab7b2270cc0 wp-block-image">
-                <img decoding="async" src="../../landing/medium/assets/I411_1509;405_837;221_315.svg">
-              </figure>
-
-              
-            </a></div>
-        </div>
-        
-      </div>
-      
-    </div>
-    
-    
-    <div class="wp-block-group container_5067e50f651f is-layout-flow wp-block-group-is-layout-flow">
-      
-      <div class="wp-block-group container_4406eec4ab64 is-layout-flow wp-block-group-is-layout-flow">
-
-        
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-        </div>
-        
-      </div>
-      
-      
-      <div class="wp-block-group container_187e565c471c is-layout-flow wp-block-group-is-layout-flow">
-        
-        <div class="wp-block-group container_f4446f96a0b5 is-layout-flow wp-block-group-is-layout-flow">
-          
-          <p class="text_0277b2cc2c00 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#1a1a1a99;background-color:transparent;">
-            10 Days</p>
-          
-          
-          <h3 class="text_330ad68e0351 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-            Comfort Safari and Beach Vacation</h3>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_0fa43d1afa73 is-layout-flow wp-block-group-is-layout-flow">
-
-          
-          <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-          </div>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_689029cdde40 is-layout-flow wp-block-group-is-layout-flow">
-          
-          <div class="wp-block-group container_8de4253a3480 is-layout-flow wp-block-group-is-layout-flow">
-            
-            <p class="text_de129e61f99c has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">
-              $3900</p>
-            
-            
-            <h2 class="text_3e98f2c8827a has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-              $3300</h2>
-            
-            
-            <div class="wp-block-group container_8e21bd1a29bc is-layout-flow wp-block-group-is-layout-flow">
-
-              
-              <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
-              
-            </div>
-            
-          </div>
-          
-          
-          <div class="wp-block-yotako-block-anchor button_ef3e662637e0"><a href="index.html" class="button_link_ef3e662637e0" target="_self" rel="noopener">
-              
-              <p class="text_f6992aac7b4e has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-                View More</p>
-              
-              
-
-              <figure class="imageview_8188575ce629 wp-block-image">
-                <img decoding="async" src="../../landing/medium/assets/I411_1539;405_837;221_315.svg">
-              </figure>
-
-              
-            </a></div>
-        </div>
-        
-      </div>
-      
-    </div>
-    
-    
-    <div class="wp-block-group container_c63b1a9a7a28 is-layout-flow wp-block-group-is-layout-flow">
-      
-      <div class="wp-block-group container_73c8271291d3 is-layout-flow wp-block-group-is-layout-flow">
-
-        
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-        </div>
-        
-      </div>
-      
-      
-      <div class="wp-block-group container_7cc6703c07bd is-layout-flow wp-block-group-is-layout-flow">
-        
-        <div class="wp-block-group container_b15beb6f282b is-layout-flow wp-block-group-is-layout-flow">
-          
-          <p class="text_2ddce6c24ec1 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#1a1a1a99;background-color:transparent;">
-            10 Days</p>
-          
-          
-          <h3 class="text_7591c9062951 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-            Comfort Safari and Beach Vacation</h3>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_264e918752c8 is-layout-flow wp-block-group-is-layout-flow">
-
-          
-          <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-          </div>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_e90eed394411 is-layout-flow wp-block-group-is-layout-flow">
-          
-          <div class="wp-block-group container_71e90ee45066 is-layout-flow wp-block-group-is-layout-flow">
-            
-            <p class="text_f34257aaffb1 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">
-              $3900</p>
-            
-            
-            <h2 class="text_1a664028ad43 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-              $3300</h2>
-            
-            
-            <div class="wp-block-group container_86cd43cced7d is-layout-flow wp-block-group-is-layout-flow">
-
-              
-              <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
-              
-            </div>
-            
-          </div>
-          
-          
-          <div class="wp-block-yotako-block-anchor button_202a210850b0"><a href="index.html" class="button_link_202a210850b0" target="_self" rel="noopener">
-              
-              <p class="text_861900e04d9e has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-                View More</p>
-              
-              
-
-              <figure class="imageview_f5b634298bbb wp-block-image">
-                <img decoding="async" src="../../landing/medium/assets/I411_1508;405_837;221_315.svg">
-              </figure>
-
-              
-            </a></div>
-        </div>
-        
-      </div>
-      
-    </div>
-    
-    
-    <div class="wp-block-group container_b5c92954830c is-layout-flow wp-block-group-is-layout-flow">
-      
-      <div class="wp-block-group container_5086bfb122c3 is-layout-flow wp-block-group-is-layout-flow">
-
-        
-        <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-        </div>
-        
-      </div>
-      
-      
-      <div class="wp-block-group container_0a814f09ed0c is-layout-flow wp-block-group-is-layout-flow">
-        
-        <div class="wp-block-group container_3d3bcb034fe2 is-layout-flow wp-block-group-is-layout-flow">
-          
-          <p class="text_a1f0c11ef147 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#1a1a1a99;background-color:transparent;">
-            10 Days</p>
-          
-          
-          <h3 class="text_79ef5467a310 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-            Comfort Safari and Beach Vacation</h3>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_0a0063c5294b is-layout-flow wp-block-group-is-layout-flow">
-
-          
-          <div class="wp-block-spacer" style="height:0px" aria-hidden="true">
-          </div>
-          
-        </div>
-        
-        
-        <div class="wp-block-group container_e7d5f05c35fc is-layout-flow wp-block-group-is-layout-flow">
-          
-          <div class="wp-block-group container_c036b1f57887 is-layout-flow wp-block-group-is-layout-flow">
-            
-            <p class="text_47e26ea88a9f has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">
-              $3900</p>
-            
-            
-            <h2 class="text_caff6410e401 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-              $3300</h2>
-            
-            
-            <div class="wp-block-group container_3dce699062ea is-layout-flow wp-block-group-is-layout-flow">
-
-              
-              <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
-              
-            </div>
-            
-          </div>
-          
-          
-          <div class="wp-block-yotako-block-anchor button_2e9a62a8449a"><a href="index.html" class="button_link_2e9a62a8449a" target="_self" rel="noopener">
-              
-              <p class="text_08a5c9dca6a9 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-                View More</p>
-              
-              
-
-              <figure class="imageview_4007a28342f3 wp-block-image">
-                <img decoding="async" src="../../landing/medium/assets/I411_1540;405_837;221_315.svg">
-              </figure>
-
-              
-            </a></div>
-        </div>
-        
-      </div>
-      
-    </div>
-    
+    <!-- test end -->
     
     <div class="wp-block-group container_a57159d16f85 is-layout-flow wp-block-group-is-layout-flow">
       
       <h3 class="text_11a625e2a733 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:19.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
         Our Popular Packages </h3>
       
+
+       
+    
     </div>
+    <div class="tours_landing_medium ">
+
+    <div class="container_651e584e5062_landing">
+    @foreach ($national_parks as $index => $tour)
+<div class="wp-block-group container_78f648086c0a is-layout-flow wp-block-group-is-layout-flow">
     
-    
-    <h2 class="text_09ad9a9899a5 has-text-color has-background has-text-align-center wp-block-heading" style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:900;letter-spacing:-0.5px;color:#000000;background-color:transparent;">
-      East African Safaris Best <br>Holiday Packages</h2>
-    
-    
-    <div class="wp-block-group container_b960cf21d2a6 is-layout-flow wp-block-group-is-layout-flow">
+    <div class="wp-block-group container_79f5e12f2529 is-layout-flow wp-block-group-is-layout-flow">
+        <div class="wp-block-group container_f2683dbcc308 is-layout-flow wp-block-group-is-layout-flow">
+            <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
+        </div>
+
+        <div class="wp-block-group container_5c6fab2b8014 is-layout-flow wp-block-group-is-layout-flow">
+            <div class="wp-block-group container_36336854db70 is-layout-flow wp-block-group-is-layout-flow">
+                <p class="text_a8febd9c1c0f has-text-color has-background has-text-align-left"
+                   style="text-transform: none; font-style: normal; font-size: 15.5px; font-weight: 500; letter-spacing: -0.5px; color: #1a1a1a99; background-color: transparent;">
+                    {{ $tour->days }} Days
+                </p>
+
+                <h3 class="text_0c4ee6b1abd6 has-text-color has-background has-text-align-left wp-block-heading"
+                    style="text-transform: none; font-style: normal; font-size: 23.5px; font-weight: 600; letter-spacing: -0.5px; color: #26461d; background-color: transparent;">
+                    {{ $tour->title }}
+                </h3>
+            </div>
+
+            <div class="wp-block-group container_46ac84707136 is-layout-flow wp-block-group-is-layout-flow">
+                <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
+            </div>
+
+            <div class="wp-block-group container_b6c9bd465828 is-layout-flow wp-block-group-is-layout-flow">
+                <div class="wp-block-group container_461f7766e98a is-layout-flow wp-block-group-is-layout-flow">
+                    <p class="text_f968f3908dd2 has-text-color has-background has-text-align-left"
+                       style="text-transform: none; font-style: normal; font-size: 15.5px; font-weight: 500; letter-spacing: -0.5px; color: #0000008a; background-color: transparent;">
+                       ${{ $tour->initial_cost }}
+                    </p>
+
+                    <h2 class="text_cc5302f39554 has-text-color has-background has-text-align-left wp-block-heading"
+                        style="text-transform: none; font-style: normal; font-size: 35.5px; font-weight: 600; letter-spacing: -0.5px; color: #26461d; background-color: transparent;">
+                        ${{ $tour->amount }}
+                    </h2>
+
+                    <div class="wp-block-group container_ac8eb1555726 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
+                    </div>
+                </div>
+                
+                <!-- View More button inside an anchor tag -->
+                
+                    <div class="wp-block-yotako-block-anchor button_e67aaf6cd090">
+                        <a href="{{ route('view-tour', ['slug' => $tour->slug]) }}" class="button_link_e67aaf6cd090" target="_self" rel="noopener">
+                            <p class="text_c78a14357f84 has-text-color has-background has-text-align-left" style="
+    text-transform: none;
+    font-style: normal;
+    font-size: 15.5px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #26461d;
+    background-color: transparent;
+  ">
+                                View More
+                            </p>
+
+                            <figure class="imageview_b95dce7428f7 wp-block-image">
+                                <img decoding="async"
+                                    src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I507:2269;405:837;221:315.svg" />
+                            </figure>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Image outside the anchor tag so it doesn't trigger the link -->
+    <figure class="imageview_6962fab1119c wp-block-image">
+        <img decoding="async"
+             src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/507:2169.webp"/>
+    </figure>
+
+</div>
+@endforeach
+    </div>
+
+
+
+<!-- pagination -->
+<div class="tour-links" style="top:100px;position:relative;">
+        <ul class="pagination justify-content-center">
+            {{-- Previous Page Link --}}
+            @if ($national_parks->onFirstPage())
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            @else
+            <li class="page-item">
+                <a class="page-link" href="{{ $national_parks->previousPageUrl() }}">Previous</a>
+            </li>
+            @endif
+
+            {{-- Pagination Elements --}}
+            @foreach ($national_parks->links()->elements as $element)
+            {{-- "Three Dots" Separator --}}
+            @if (is_string($element))
+            <li class="page-item disabled">
+                <a class="page-link" href="#">{{ $element }}</a>
+            </li>
+            @endif
+
+            {{-- Array Of Links --}}
+            @if (is_array($element))
+            @foreach ($element as $page => $url)
+            @if ($page == $national_parks->currentPage())
+            <li class="page-item active">
+                <a class="page-link" href="#">{{ $page }}</a>
+            </li>
+            @else
+            <li class="page-item">
+                <a class="page-link" href="{{ $url }}">{{ $page }}</a>
+            </li>
+            @endif
+            @endforeach
+            @endif
+            @endforeach
+
+            {{-- Next Page Link --}}
+            @if ($national_parks->hasMorePages())
+            <li class="page-item">
+                <a class="page-link" href="{{ $national_parks->nextPageUrl() }}">Next</a>
+            </li>
+            @else
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Next</a>
+            </li>
+            @endif
+        </ul>
+</div>
+
+<div class="wp-block-group container_b960cf21d2a6 is-layout-flow wp-block-group-is-layout-flow">
       
 
       <figure class="imageview_0b85915b9662 wp-block-image">
@@ -975,22 +657,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
       </div>
       
     </div>
-    
-    
-    <div class="wp-block-yotako-block-anchor button_4a884e322c56"><a href="index.html" class="button_link_4a884e322c56" target="_self" rel="noopener">
-        
-        <p class="text_2fc4e330e575 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
-          Button Text</p>
-        
-        
-
-        <figure class="imageview_722581229093 wp-block-image">
-          <img decoding="async" src="../../landing/medium/assets/I411_1584;250_302.svg">
-        </figure>
-
-        
-      </a></div>
-    
     <div class="wp-block-group container_08b83e9788b5 is-layout-flow wp-block-group-is-layout-flow">
       
       <div class="wp-block-group container_41f2eff21f91 is-layout-flow wp-block-group-is-layout-flow">
@@ -1061,71 +727,11 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
       <h3 class="text_df9ce3f609c0 has-text-color has-background has-text-align-left wp-block-heading" style="text-transform:none;font-style:normal;font-size:23.5px;font-weight:600;letter-spacing:-0.5px;color:#000000;background-color:transparent;">
         Amaizing experience!</h3>
       
-    </div>
-    
-    
-    <div class="wp-block-group container_1a1463764acf is-layout-flow wp-block-group-is-layout-flow">
-      
-
-
-<div class="wp-block-group wrapper_input_text_d701ef7d4c42 is-layout-flow wp-block-group-is-layout-flow">
-       
-    <div class="yk_input_wrapper">
-    <input type="text" placeholder="Destination" form="form_1a1463764acf" required="required" name="Destination" class="wp-block-yotako-block-input-text input_text_d701ef7d4c42">
-     </div>
-
-
-                    </div>
-
-      
-
-
-<div class="wp-block-group wrapper_input_text_050bf29d1b98 is-layout-flow wp-block-group-is-layout-flow">
-       
-    <div class="yk_input_wrapper">
-    <input type="text" placeholder="Duration" form="form_1a1463764acf" required="required" name="Duration" class="wp-block-yotako-block-input-text input_text_050bf29d1b98">
-     </div>
-
-
-                    </div>
-
-      
-      <div class="wp-block-yotako-block-button button_79db9557b79e">
-        <button type="submit" form="form_1a1463764acf" class="button_link_79db9557b79e">
-          
-          <p class="text_e574790161d0 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-            Duration</p>
-          
-        </button>
-      </div>
-      
-      
-      <div class="wp-block-yotako-block-button button_629ead8b9f5d">
-        <button type="submit" form="form_1a1463764acf" class="button_link_629ead8b9f5d">
-          
-          <p class="text_f5adffa183cf has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
-            Search Trip</p>
-          
-          
-
-          <figure class="imageview_93635d6416f6 wp-block-image">
-            <img decoding="async" src="../../landing/medium/assets/I414_2825;398_772;392_590.svg">
-          </figure>
-
-          
-        </button>
-      </div>
-      
-    </div>
-    
-    
-
+    </div>   
     <figure class="imageview_915f49373e67 wp-block-image">
       <img decoding="async" src="../../landing/medium/assets/416_3520.webp">
     </figure>
-
-    
-    
+        
     <div class="wp-block-group container_65ab97956c05 is-layout-flow wp-block-group-is-layout-flow">
       
       <div class="wp-block-group container_ca2bc3bb271d is-layout-flow wp-block-group-is-layout-flow">
@@ -1250,14 +856,89 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
       </div>
       
     </div>
-    
-    
     <div class="wp-block-group container_06af4bccdc06 is-layout-flow wp-block-group-is-layout-flow">
 
       
-      <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
+<div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
+
+</div>
+    <!-- relative -->
+     </div>
+    
+    <h2 class="text_09ad9a9899a5 has-text-color has-background has-text-align-center wp-block-heading" style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:900;letter-spacing:-0.5px;color:#000000;background-color:transparent;">
+      East African Safaris Best <br>Holiday Packages</h2>
+    
+    
+
+    
+    
+    
+
+    
+    
+    <div class="wp-block-group container_1a1463764acf is-layout-flow wp-block-group-is-layout-flow">
+      
+
+
+<div class="wp-block-group wrapper_input_text_d701ef7d4c42 is-layout-flow wp-block-group-is-layout-flow">
+       
+    <div class="yk_input_wrapper">
+    <input type="text" placeholder="Destination" form="form_1a1463764acf" required="required" name="Destination" class="wp-block-yotako-block-input-text input_text_d701ef7d4c42">
+     </div>
+
+
+                    </div>
+
+      
+
+
+<div class="wp-block-group wrapper_input_text_050bf29d1b98 is-layout-flow wp-block-group-is-layout-flow">
+       
+    <div class="yk_input_wrapper">
+    <input type="text" placeholder="Duration" form="form_1a1463764acf" required="required" name="Duration" class="wp-block-yotako-block-input-text input_text_050bf29d1b98">
+     </div>
+
+
+                    </div>
+
+      
+      <div class="wp-block-yotako-block-button button_79db9557b79e">
+        <button type="submit" form="form_1a1463764acf" class="button_link_79db9557b79e">
+          
+          <p class="text_e574790161d0 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
+            Duration</p>
+          
+        </button>
+      </div>
+      
+      
+      <div class="wp-block-yotako-block-button button_629ead8b9f5d">
+        <button type="submit" form="form_1a1463764acf" class="button_link_629ead8b9f5d">
+          
+          <p class="text_f5adffa183cf has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
+            Search Trip</p>
+          
+          
+
+          <figure class="imageview_93635d6416f6 wp-block-image">
+            <img decoding="async" src="../../landing/medium/assets/I414_2825;398_772;392_590.svg">
+          </figure>
+
+          
+        </button>
+      </div>
       
     </div>
+    
+    
+
+
+
+    
+
+    
+    
+
     
     
     <form class="wp-block-yotako-block-form" id="form_1a1463764acf" onsubmit="return form_1a1463764acf(event)"></form>

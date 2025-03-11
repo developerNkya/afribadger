@@ -7,7 +7,8 @@
 <meta name="robots" content="max-image-preview:large">
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<title>camelleonsafaris</title>
- 
+	
+
 <link rel="dns-prefetch" href="http://unpkg.com/">
 <link rel="dns-prefetch" href="http://storage.googleapis.com/">
 <link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Feed" href="feed/index.html">
@@ -115,9 +116,16 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed0783.json?url=https%3A%2F%2Fc78dda14-9f46-4bcc-9005-898e9199c1f8.yotako.com%2F">
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embeddee6?url=https%3A%2F%2Fc78dda14-9f46-4bcc-9005-898e9199c1f8.yotako.com%2F&amp;format=xml">
 <link rel="stylesheet" href="../../shared/navbar.css">
-<link rel="stylesheet" id="style-css" href="../wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/style9704.css?ver=6.7.1" media="all">
 
 <!-- for medium -->
+<!-- <link rel="stylesheet" href="{{ asset('css/home.css') }}" media="all" /> -->
+<link rel="stylesheet" id="style-css"
+        href="{{ asset('wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/style9704.css?ver=6.7.1') }}"
+        media="all" />
+		<script
+        src="{{ asset('wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/script9704.js?ver=6.7.1') }}"
+        id="custom-script-js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 
 </head>
 
