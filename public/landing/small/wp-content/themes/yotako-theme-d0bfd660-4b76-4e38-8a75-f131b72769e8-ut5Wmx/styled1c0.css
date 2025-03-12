@@ -1118,16 +1118,21 @@ Yotako WordPress Theme, (C) 2024 Yotako.io
  }
 
  .container_55e3cb9b7a42 {
-   width: 406px;
-   height: 116px;
-   position: absolute !important;
-   left: 0px;
-   top: 0px;
-   align-items: center;
-   justify-content: flex-start;
-   gap: 17px normal;
-   flex-direction: column;
- }
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 406px;
+  height: 116px;
+  position: absolute !important;
+  left: 0px;
+  top: 0px;
+  align-items: center;
+  justify-content: center;
+  gap: 17px normal;
+  flex-direction: row;
+}
+
+
+
 
  .container_64881aef12f6 {
    width: 100%;
