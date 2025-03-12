@@ -3181,7 +3181,7 @@
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
-                        <form id="contact-form" action="/posted-request" method="POST">
+                        <form id="contact-form-small" action="/posted-request" method="POST">
                             @csrf
                         <div
                             class="wp-block-group container_1b898b21f4b3 is-layout-flow wp-block-group-is-layout-flow">
@@ -3462,6 +3462,56 @@
                                 </div>
                             </div>
                         </form>
+                        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-form-small");
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      let isSubmitting = false;
+      if (isSubmitting) return;
+      isSubmitting = true;
+
+      // Disable button to prevent multiple submissions
+      submitButton.style.pointerEvents = "none";
+      submitButton.style.opacity = "0.7";
+
+      const formData = new FormData(contactForm);
+
+      fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "X-Requested-With": "XMLHttpRequest",
+          "X-CSRF-TOKEN": document.querySelector('input[name="_token"]').value,
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.status === "success") {
+            toastr.success(data.message);
+            contactForm.reset();
+          } else if (data.errors) {
+            Object.values(data.errors).forEach((errorMsg) => toastr.error(errorMsg[0]));
+          } else {
+            toastr.error(data.message);
+          }
+        })
+        .catch((error) => {
+          console.error("Form submission error:", error);
+          toastr.error("An error occurred. Please try again.");
+        })
+        .finally(() => {
+          // Re-enable button
+          submitButton.style.pointerEvents = "auto";
+          submitButton.style.opacity = "1";
+          isSubmitting = false;
+        });
+    });
+  });
+</script>                    
 
                             <div
                                 class="wp-block-group container_6dbae51b4700 is-layout-flow wp-block-group-is-layout-flow">
