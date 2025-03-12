@@ -39,7 +39,7 @@ class ContactController extends Controller
                 'max:20',
                 'regex:/^\+\d{1,4}\d{6,}$/',
             ],
-            'request' => 'nullable|string|max:500',
+            'request' => 'required|string|max:500',
             'preference' => 'required|in:email,whatsapp,calls',
         ], $messages);
     
