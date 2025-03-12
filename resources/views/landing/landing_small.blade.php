@@ -658,7 +658,7 @@ background-color: transparent;
   </div>
        
 
-  <div class="tour-links" style="margin-top: 20px; margin-bottom: 20px;">
+  <div class="tour-links" style="margin-top: 20px; margin-bottom: 20px;position:relative;top:40px">
             <ul class="pagination justify-content-center">
                 {{-- Previous Page Link --}}
                 @if ($national_parks->onFirstPage())
@@ -708,16 +708,9 @@ background-color: transparent;
                 @endif
             </ul>
         </div>
-      </div>
 
-       <!-- itenary end -->
-      </div>
-    
-    
-
-   
-    
-    <div class="wp-block-group container_6b88e79ddaf7 is-layout-flow wp-block-group-is-layout-flow">
+                      <!-- icon start: -->
+      <div class="wp-block-group container_6b88e79ddaf7 is-layout-flow wp-block-group-is-layout-flow">
       
 
       <figure class="imageview_2c609cf9cec6 wp-block-image">
@@ -745,8 +738,8 @@ background-color: transparent;
       </div>
       
     </div>
-    
-    
+    <!-- icon ends -->
+         
     <div class="wp-block-group container_ed9ea82ecbe2 is-layout-flow wp-block-group-is-layout-flow">
       
       <div class="wp-block-group container_25a3ef5c95a4 is-layout-flow wp-block-group-is-layout-flow">
@@ -783,15 +776,12 @@ background-color: transparent;
         Amazing experience!</h3>
       
     </div>
-    
-    
-
+    <!-- experience -->
     <figure class="imageview_de143952f649 wp-block-image">
       <img decoding="async" src="../../landing/small/assets/419_3663.webp">
     </figure>
 
-    
-    
+    <!-- card image -->
     <div class="wp-block-group container_23151d8e3423 is-layout-flow wp-block-group-is-layout-flow">
       
       <div class="wp-block-group container_5e650b5c7f5c is-layout-flow wp-block-group-is-layout-flow">
@@ -916,20 +906,43 @@ background-color: transparent;
       </div>
       
     </div>
-    
-    
+    <!-- footer -->
     <div class="wp-block-group container_e94965076d52 is-layout-flow wp-block-group-is-layout-flow">
 
       
-      <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
-      
-    </div>
+<div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
+
+</div>
+<!-- footer bar -->
+      </div>
+
+       <!-- itenary end -->
+
+      </div>
+    
+    
+
+   
+
+    
+
+    
+    
+
+
+    
+    
+
+    
+    
+
     
     
     <form class="wp-block-yotako-block-form" id="form_604dfe8f6e30" onsubmit="return form_604dfe8f6e30(event)"></form>
     
   </div>
   
+
 </div>
 </div>
 </main>
