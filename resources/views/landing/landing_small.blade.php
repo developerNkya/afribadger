@@ -7,8 +7,8 @@
 	<title>camelleonsafaris</title>
 <link rel="dns-prefetch" href="http://unpkg.com/">
 <link rel="dns-prefetch" href="http://storage.googleapis.com/">
-<link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Feed" href="feed/index.html">
-<link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Comments Feed" href="comments/feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Feed" href="#">
+<link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Comments Feed" href="#">
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/c78dda14-9f46-4bcc-9005-898e9199c1f8.yotako.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
 /*! This file is auto-generated */
@@ -105,10 +105,10 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 <script src="../../landing/small/wp-content/themes/yotako-theme-d0bfd660-4b76-4e38-8a75-f131b72769e8-ut5Wmx/scriptd1c0.js?ver=6.7.2" id="custom-script-js"></script>
 <script src="../unpkg.com/js-alert%402.0.0/dist/jsalert.min.js?ver=6.7.2" id="js-alert-js"></script>
-<link rel="https://api.w.org/" href="wp-json/index.html"><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/32.json"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd">
+<link rel="https://api.w.org/" href="#"><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/32.json"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd">
 <meta name="generator" content="WordPress 6.7.2">
-<link rel="canonical" href="index.html">
-<link rel="shortlink" href="index.html">
+<link rel="canonical" href="#">
+<link rel="shortlink" href="#">
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed0783.json?url=https%3A%2F%2Fc78dda14-9f46-4bcc-9005-898e9199c1f8.yotako.com%2F">
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embeddee6?url=https%3A%2F%2Fc78dda14-9f46-4bcc-9005-898e9199c1f8.yotako.com%2F&amp;format=xml">
 <link rel="stylesheet" href="../../shared/navbar.css">
@@ -189,7 +189,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
               Zanzibar's world-famous beaches.<br></p>
             
             
-            <div class="wp-block-yotako-block-anchor button_ed6dcfc7e041"><a href="index.html" class="button_link_ed6dcfc7e041" target="_self" rel="noopener">
+            <div class="wp-block-yotako-block-anchor button_ed6dcfc7e041"><a href="#" class="button_link_ed6dcfc7e041" target="_self" rel="noopener">
                 
                 <p class="text_9c64b37cdc12 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                   Learn more</p>
@@ -228,7 +228,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
             </p>
             
             
-            <div class="wp-block-yotako-block-anchor button_57cae95544a8"><a href="index.html" class="button_link_57cae95544a8" target="_self" rel="noopener">
+            <div class="wp-block-yotako-block-anchor button_57cae95544a8"><a href="#" class="button_link_57cae95544a8" target="_self" rel="noopener">
                 
                 <p class="text_89949c831112 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                   Learn more</p>
@@ -267,7 +267,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
               explore the lush Ngorongoro Crater.</p>
             
             
-            <div class="wp-block-yotako-block-anchor button_6ddb4878d2b9"><a href="index.html" class="button_link_6ddb4878d2b9" target="_self" rel="noopener">
+            <div class="wp-block-yotako-block-anchor button_6ddb4878d2b9"><a href="#" class="button_link_6ddb4878d2b9" target="_self" rel="noopener">
                 
                 <p class="text_79b8d86702fa has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                   Learn more</p>
@@ -508,7 +508,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         </div>
         
         
-        <div class="wp-block-yotako-block-anchor button_2297bb4de0f6"><a href="index.html" class="button_link_2297bb4de0f6" target="_self" rel="noopener">
+        <div class="wp-block-yotako-block-anchor button_2297bb4de0f6"><a href="#" class="button_link_2297bb4de0f6" target="_self" rel="noopener">
             
             <p class="text_cd4016817f32 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
               learn more</p>

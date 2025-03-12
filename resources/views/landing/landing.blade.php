@@ -11,8 +11,8 @@
 
 <link rel="dns-prefetch" href="http://unpkg.com/">
 <link rel="dns-prefetch" href="http://storage.googleapis.com/">
-<link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Feed" href="feed/index.html">
-<link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Comments Feed" href="comments/feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Feed" href="#">
+<link rel="alternate" type="application/rss+xml" title="camelleonsafaris » Comments Feed" href="#">
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/c78dda14-9f46-4bcc-9005-898e9199c1f8.yotako.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.2"}};
 /*! This file is auto-generated */
@@ -109,10 +109,10 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <link rel="stylesheet" id="Roboto-css" href="../../storage.googleapis.com/yotako-fonts/CdnFonts/css/Roboto9704.css?ver=6.7.1" media="all">
 <script src="../../landing/large/wp-content/themes/yotako-theme-0836e4e9-e64f-4b1d-b0a1-668fa88896dc-IocRnH/scriptd1c0.js?ver=6.7.2" id="custom-script-js"></script>
 <script src="../unpkg.com/js-alert%402.0.0/dist/jsalert.min.js?ver=6.7.2" id="js-alert-js"></script>
-<link rel="https://api.w.org/" href="wp-json/index.html"><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/22.json"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd">
+<link rel="https://api.w.org/" href="#"><link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/22.json"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd">
 <meta name="generator" content="WordPress 6.7.2">
-<link rel="canonical" href="index.html">
-<link rel="shortlink" href="index.html">
+<link rel="canonical" href="#">
+<link rel="shortlink" href="#">
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed0783.json?url=https%3A%2F%2Fc78dda14-9f46-4bcc-9005-898e9199c1f8.yotako.com%2F">
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embeddee6?url=https%3A%2F%2Fc78dda14-9f46-4bcc-9005-898e9199c1f8.yotako.com%2F&amp;format=xml">
 <link rel="stylesheet" href="../../shared/navbar.css">

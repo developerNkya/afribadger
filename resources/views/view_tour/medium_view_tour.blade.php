@@ -12,7 +12,7 @@
       <div class="wp-block-group container_323096f0adde is-layout-flow wp-block-group-is-layout-flow">
         <!-- Link container -->
         <div class="wp-block-yotako-block-anchor button_79068482ba7e">
-          <a href="../index.html" class="button_link_79068482ba7e" target="_self" rel="noopener">
+          <a href="#" class="button_link_79068482ba7e" target="_self" rel="noopener">
             <div class="wp-block-group container_724d47ba64cd is-layout-flow wp-block-group-is-layout-flow">
               <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
             </div>

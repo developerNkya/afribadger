@@ -543,7 +543,7 @@
               Zanzibar's world-famous beaches.<br></p>
             
             
-            <div class="wp-block-yotako-block-anchor button_4e064fdb164d"><a href="index.html" class="button_link_4e064fdb164d" target="_self" rel="noopener">
+            <div class="wp-block-yotako-block-anchor button_4e064fdb164d"><a href="#" class="button_link_4e064fdb164d" target="_self" rel="noopener">
                 
                 <p class="text_aa62641a7da3 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                   Learn more</p>
@@ -582,7 +582,7 @@
             </p>
             
             
-            <div class="wp-block-yotako-block-anchor button_5abec1e3c161"><a href="index.html" class="button_link_5abec1e3c161" target="_self" rel="noopener">
+            <div class="wp-block-yotako-block-anchor button_5abec1e3c161"><a href="#" class="button_link_5abec1e3c161" target="_self" rel="noopener">
                 
                 <p class="text_0c7b7c91c1d8 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                   Learn more</p>
@@ -621,7 +621,7 @@
               explore the lush Ngorongoro Crater.</p>
             
             
-            <div class="wp-block-yotako-block-anchor button_09612fe15d99"><a href="index.html" class="button_link_09612fe15d99" target="_self" rel="noopener">
+            <div class="wp-block-yotako-block-anchor button_09612fe15d99"><a href="#" class="button_link_09612fe15d99" target="_self" rel="noopener">
                 
                 <p class="text_f49a8caf28bf has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
                   Learn more</p>
@@ -698,7 +698,7 @@
         </div>
         
         
-        <div class="wp-block-yotako-block-anchor button_cfe749cbc5da"><a href="index.html" class="button_link_cfe749cbc5da" target="_self" rel="noopener">
+        <div class="wp-block-yotako-block-anchor button_cfe749cbc5da"><a href="#" class="button_link_cfe749cbc5da" target="_self" rel="noopener">
             
             <p class="text_978159485b74 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
               learn more</p>

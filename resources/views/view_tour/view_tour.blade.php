@@ -11,8 +11,8 @@
 	<title>View_Tour &#8211; camelleonsafaris</title>
 <link rel='dns-prefetch' href='http://unpkg.com/' />
 <link rel='dns-prefetch' href='http://storage.googleapis.com/' />
-<link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Feed" href="../feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Feed" href="#" />
+<link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Comments Feed" href="#" />
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/bda1aad9-cb58-401a-8a47-526b318e3266.yotako.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
 /*! This file is auto-generated */
@@ -225,9 +225,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <link rel='stylesheet' id='Bobaland-css' href='../../backup/storage.googleapis.com/yotako-fonts/CdnFonts/css/Bobaland9704.css?ver=6.7.1' media='all' />
 <script src="../../backup/wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-m9TFsY/script9704.js?ver=6.7.1" id="custom-script-js"></script>
 <script src="../../backup/unpkg.com/js-alert%402.0.0/dist/jsalert.min.js?ver=6.7.1" id="js-alert-js"></script>
-<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/19.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="https://api.w.org/" href="#" /><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/19.json" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
 <meta name="generator" content="WordPress 6.7.1" />
-<link rel="canonical" href="index-2.html" />
+<link rel="canonical" href="#" />
 <link rel='shortlink' href='../index5831.html?p=19' />
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed093d.json?url=https%3A%2F%2Fbda1aad9-cb58-401a-8a47-526b318e3266.yotako.com%2Fview_tour%2F" />
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed3aeb?url=https%3A%2F%2Fbda1aad9-cb58-401a-8a47-526b318e3266.yotako.com%2Fview_tour%2F&amp;format=xml" />

@@ -23,9 +23,9 @@
     <link rel="dns-prefetch" href="http://unpkg.com/" />
     <link rel="dns-prefetch" href="http://storage.googleapis.com/" />
     <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Feed"
-        href="feed/index.html" />
+        href="#" />
     <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Comments Feed"
-        href="comments/feed/index.html" />
+        href="#" />
     <script>
         window._wpemojiSettings = {
             baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
@@ -1347,12 +1347,12 @@
         src="{{ asset('wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/script9704.js?ver=6.7.1') }}"
         id="custom-script-js"></script>
     <script src="{{ asset('unpkg.com/js-alert%402.0.0/dist/jsalert.min.js?ver=6.7.1') }}" id="js-alert-js"></script>
-    <link rel="https://api.w.org/" href="wp-json/index.html" />
+    <link rel="https://api.w.org/" href="#" />
     <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/9.json" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
     <meta name="generator" content="WordPress 6.7.1" />
-    <link rel="canonical" href="index.html" />
-    <link rel="shortlink" href="index.html" />
+    <link rel="canonical" href="#" />
+    <link rel="shortlink" href="#" />
     <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
         href="wp-json/oembed/1.0/embedf995.json?url=https%3A%2F%2Fbda1aad9-cb58-401a-8a47-526b318e3266.yotako.com%2F" />
     <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
@@ -1555,7 +1555,7 @@
 
 
                         <div class="wp-block-yotako-block-anchor button_92e7c2e8a7ab">
-                            <a href="index.html" class="button_link_92e7c2e8a7ab" target="_self" rel="noopener">
+                            <a href="#" class="button_link_92e7c2e8a7ab" target="_self" rel="noopener">
                                 <p class="text_63d5778232d1 has-text-color has-background has-text-align-left"
                                     style="
                       text-transform: none;
