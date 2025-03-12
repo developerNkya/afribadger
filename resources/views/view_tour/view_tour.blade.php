@@ -714,54 +714,32 @@ document.getElementById('modalBackdrop-s').style.display = 'block';
     }
 
     function closeModal(event) {
-        // Close the modal when clicking on the backdrop or close button
-        if (event.target === document.getElementById('bookingFormModal') || event.target.classList.contains('close-btn')) {
-            document.getElementById('bookingFormModal').style.display = 'none';
-            document.getElementById('modalBackdrop').style.display = 'none';
-        }
-
-         if (event.target === document.getElementById('bookingFormModal-m') || event.target.classList.contains('close-btn')) {
-            document.getElementById('bookingFormModal-m').style.display = 'none';
-            document.getElementById('modalBackdrop-m').style.display = 'none';
-        }
-
-         if (event.target === document.getElementById('bookingFormModal-s') || event.target.classList.contains('close-btn')) {
-            document.getElementById('bookingFormModal-s').style.display = 'none';
-            document.getElementById('modalBackdrop-s').style.display = 'none';
-        }
-
-
+    // Close the modal when clicking on the backdrop or close button
+    if (event.target === document.getElementById('bookingFormModal') || event.target.classList.contains('close-btn')) {
+        document.getElementById('bookingFormModal').style.display = 'none';
+        document.getElementById('modalBackdrop').style.display = 'none';
     }
 
-//     document.querySelector('form').addEventListener('submit', function (e) {
-//     e.preventDefault();
+    if (event.target === document.getElementById('bookingFormModal-m') || event.target.classList.contains('close-btn')) {
+        document.getElementById('bookingFormModal-m').style.display = 'none';
+        document.getElementById('modalBackdrop-m').style.display = 'none';
+    }
 
-//     fetch(this.action, {
-//         method: 'POST',
-//         body: new FormData(this),
-//         headers: {
-//             'X-Requested-With': 'XMLHttpRequest',
-//             'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
-//         }
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         if (data.status === 'success') {
-//             toastr.success(data.message);
-//             // Optionally, reset the form
-//             this.reset();
-//         } else {
-//             toastr.error(data.message);
-//         }
-//     })
-//     .catch(error => {
-//         toastr.error('An error occurred. Please try again.');
-//     });
-// });
+    if (event.target === document.getElementById('bookingFormModal-s') || event.target.classList.contains('close-btn')) {
+        // Navigate to the current path without reloading
+        // e.preventDefault();
+       
+    }
 
 
+}
 
+function handleFormSubmit(event) {
+    event.preventDefault();
+    console.log('Form submission intercepted');
+    window.location.href = window.location.pathname;
 
+}
 </script>
 
 </body>

@@ -1,7 +1,7 @@
 <div class="v653_3174">
     <form id="bookingForm"  action="/book-tour" method="POST">
         @csrf
-        <button class="close-btn" onclick="closeModal(event)">×</button>
+        <button class="close-btn" onclick="handleFormSubmit(event)">×</button>
         <span class="v653_3175">Book your Tour</span>
         <div class="v653_3176">
             <div class="v653_3177">
@@ -127,7 +127,12 @@
     });
 }
 
+function handleFormSubmit(event) {
+    event.preventDefault();
+    console.log('Form submission intercepted');
+    window.location.href = window.location.pathname;
 
+}
 </script>
 
 
