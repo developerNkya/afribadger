@@ -1732,7 +1732,7 @@ body .yt_fill_size {
     padding: 20px 0 20px 0;
     width: 1440px;
     height: 91px;
-    z-index: 1;
+    z-index: 9999;
     position: fixed !important;
     left: 0px;
     top: 0px;
@@ -1882,6 +1882,8 @@ body .yt_fill_size {
     overflow-x: hidden;
     overflow-y: hidden;
     background: #ffffff;
+    transform-origin: top left;
+    transform: scale(calc(100vw / 1920));
 }
 
 .text_e2e6afc137cf {
@@ -11607,6 +11609,8 @@ background-blend-mode: normal;
     overflow-x: hidden;
     overflow-y: hidden;
     background: #ffffff;
+    transform-origin: top left;
+    transform: scale(calc(100vw / 1920));
 }
 
 .imageview_fe55a027760e {
@@ -14347,6 +14351,8 @@ background-blend-mode: normal;
     overflow-x: hidden;
     overflow-y: hidden;
     background: #ffffff;
+    transform-origin: top left;
+    transform: scale(calc(100vw / 1920));
 }
 
 .imageview_718b5ba31381 {

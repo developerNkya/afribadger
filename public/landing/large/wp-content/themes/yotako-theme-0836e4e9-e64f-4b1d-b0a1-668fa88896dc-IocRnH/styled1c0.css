@@ -2290,6 +2290,8 @@ background-position: center;
   overflow-x: hidden;
   overflow-y: hidden;
   background: #ffffff;
+  transform-origin: top left;
+  transform: scale(calc(100vw / 1920));
 }
 
  .imageview_477c7a74515e {

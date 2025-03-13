@@ -7022,11 +7022,14 @@
              }
 
              .viewport_4886eb1bf436 {
-                 width: 1440px;
+                position: absolute;
+                 width: 100%;
 /*                 height: 4960px;*/
-                 overflow-x: hidden;
-                 overflow-y: hidden;
+                 /* overflow-x: hidden; */
+                 /* overflow-y: hidden; */
                  background: #ffffff;
+                 transform-origin: top left;
+              transform: scale(calc(100vw / 1920));
              }
 
              .text_356aad94e703 {
