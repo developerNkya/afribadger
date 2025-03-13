@@ -12007,9 +12007,9 @@ background-blend-mode: normal;
 .container_2c3736f9e973 {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/planner.png");
-    background-size: cover;
+    background-color: #26461d; /* Green background */
+    background-image:url("/images/planner.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center 28%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12058,9 +12058,9 @@ background-blend-mode: normal;
 .container_702069ae9800 {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/support.png");
-    background-size: cover;
+    background-color: #26461d; /* Green background */
+    background-image: url("/images/support.png"); /* Image on top */
+    background-size: contain; /* Keeps the image within the container */
     background-repeat: no-repeat;
     background-position: center 4%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12109,9 +12109,9 @@ background-blend-mode: normal;
 .container_b50910fec4cf {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/sustain.png");
-    background-size: cover;
+    background-color: #26461d; /* Green background */
+    background-image: url("/images/sustain.png"); /* Image on top */
+    background-size: contain; /* Keeps the image within the container */
     background-repeat: no-repeat;
     background-position: center 4%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12160,9 +12160,9 @@ background-blend-mode: normal;
 .container_24920fc8ff52 {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/logistics.png");
-    background-size: cover;
+    background-color: #26461d; /* Green background */
+    background-image: url("/images/logistics.png"); /* Image on top */
+    background-size: contain; /* Keeps the image within the container */
     background-repeat: no-repeat;
     background-position: center 4%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
