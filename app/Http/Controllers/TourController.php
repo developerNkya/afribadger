@@ -125,7 +125,59 @@ class TourController extends Controller
     }
     
     
+    public function getDestinations(Request $request)
+    {
+        $query = $request->input('query', '');
+    
+        // If the query is empty, return an empty array
+        if (empty($query)) {
+            return response()->json([]);
+        }
+    
+        // Convert query to lowercase for case-insensitive matching
+        $lowercaseQuery = strtolower($query);
+    
+        // Fetch destinations that partially match the query (case-insensitive)
+        $destinations = Tour::whereRaw('JSON_SEARCH(LOWER(destinations), "one", ?) IS NOT NULL', ["%$lowercaseQuery%"])
+            ->pluck('destinations')
+            ->flatMap(function ($json) {
+                return json_decode($json, true);
+            })
+            ->filter(function ($destination) use ($lowercaseQuery) {
+                return stripos($destination, $lowercaseQuery) !== false;
+            })
+            ->unique()
+            ->values();
+    
+        return response()->json($destinations);
+    }
 
 
+    public function searchTrips(Request $request)
+    {
+        $request->validate([
+            'destination' => 'required|string',
+            'duration' => 'nullable|string',
+            'budget' => 'nullable|numeric',
+        ]);
+    
+        $destination = $request->input('destination');
+        $duration = $request->input('duration');
+        $budget = $request->input('budget');
+    
+        // Perform search logic (e.g., query the database)
+        $trips = Tour::whereRaw("JSON_CONTAINS(destinations, ?)", [json_encode($destination)])
+        ->when($duration, function ($query, $duration) {
+            return $query->where('days', '<=', $duration);
+        })
+        ->when($budget, function ($query, $budget) {
+            return $query->where('amount', '<=', $budget);
+        })
+        ->paginate(6);
+    
+        return response()->json($trips);
+
+
+    }
 
 }

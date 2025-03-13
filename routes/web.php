@@ -24,3 +24,6 @@ Route::post('/posted-request', [ContactController::class, 'postedRequest']);
 
 
 Route::get('/maintenance', [HomeController::class, 'maintenance'])->name('fix');
+Route::get('/get-destinations', [TourController::class, 'getDestinations']);
+
+Route::post('/search-trips', [TourController::class, 'searchTrips']);
