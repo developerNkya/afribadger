@@ -86,7 +86,7 @@
                         >
                     </div>
                 </div>
-
+                
                 <!-- Search Trip Button -->
                 <div class="wp-block-yotako-block-button button_1ea8e91fec81">
                     <button type="submit" class="button_link_1ea8e91fec81" id="searchTripButton">

@@ -494,7 +494,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     </div>
     <div class="tours_landing_medium ">
 
-    <div class="container_651e584e5062_landing">
+
+
+    <div id="tour-results-m" class="container_651e584e5062_landing">
     @foreach ($national_parks as $index => $tour)
 <div class="wp-block-group container_78f648086c0a is-layout-flow wp-block-group-is-layout-flow">
     
@@ -875,27 +877,31 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
     
 
     
-    
-    <div class="wp-block-group container_1a1463764acf is-layout-flow wp-block-group-is-layout-flow">
+      <form  action="/search-trips" method="POST">
+   @csrf
+      <div class="wp-block-group container_1a1463764acf is-layout-flow wp-block-group-is-layout-flow">
       
 
 
 <div class="wp-block-group wrapper_input_text_d701ef7d4c42 is-layout-flow wp-block-group-is-layout-flow">
        
     <div class="yk_input_wrapper">
-    <input type="text" placeholder="Destination" form="form_1a1463764acf" required="required" name="Destination" class="wp-block-yotako-block-input-text input_text_d701ef7d4c42">
-     </div>
+    <input autocomplete="off" type="text" id="destinationInput-m" placeholder="Destination"  required="required"  name="destination"  class="wp-block-yotako-block-input-text input_text_d701ef7d4c42">
+    <div id="destinationDropdown-m" class="destination-dropdown" style="display: none;">
+                        <ul id="destinationList-m" class="destination-list"></ul>
+    </div>
+  </div>
 
 
                     </div>
-
+                   
       
 
 
 <div class="wp-block-group wrapper_input_text_050bf29d1b98 is-layout-flow wp-block-group-is-layout-flow">
        
     <div class="yk_input_wrapper">
-    <input type="text" placeholder="Duration" form="form_1a1463764acf" required="required" name="Duration" class="wp-block-yotako-block-input-text input_text_050bf29d1b98">
+    <input type="text"  placeholder="Duration"  required="required"  name="duration"  class="wp-block-yotako-block-input-text input_text_050bf29d1b98">
      </div>
 
 
@@ -903,17 +909,14 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
       
       <div class="wp-block-yotako-block-button button_79db9557b79e">
-        <button type="submit" form="form_1a1463764acf" class="button_link_79db9557b79e">
-          
-          <p class="text_e574790161d0 has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">
-            Duration</p>
-          
-        </button>
+      <div class="yk_input_wrapper">
+    <input type="text"  placeholder="Budget"  required="required"  name="budget"  class="wp-block-yotako-block-input-text input_text_050bf29d1b98">
+     </div>
       </div>
       
-      
+
       <div class="wp-block-yotako-block-button button_629ead8b9f5d">
-        <button type="submit" form="form_1a1463764acf" class="button_link_629ead8b9f5d">
+        <button id="searchTripButton-m" type="submit" class="button_link_629ead8b9f5d">
           
           <p class="text_f5adffa183cf has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
             Search Trip</p>
@@ -929,20 +932,255 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
       </div>
       
     </div>
-    
-    
+    </form>
+    <!-- end form -->
+     <!-- script for search -->
+<script>
+   var tours = @json($national_parks);
+    document.addEventListener("DOMContentLoaded", function () {
+        const destinationInput = document.getElementById("destinationInput-m");
+        const destinationDropdown = document.getElementById("destinationDropdown-m");
+        const destinationList = document.getElementById("destinationList-m");
+        const budgetInput = document.getElementById("budgetInput");
+        const searchTripButton = document.getElementById("searchTripButton-m");
+        const resultsContainer = document.getElementById("tour-results-m"); // The div to populate with results
+
+        // Function to fetch destinations from the server
+        const fetchDestinations = async (query) => {
+            try {
+                const response = await fetch(`/get-destinations?query=${encodeURIComponent(query)}`);
+                const data = await response.json();
+                console.log(data);
+                
+                return data;
+            } catch (error) {
+                console.error("Error fetching destinations:", error);
+                return [];
+            }
+        };
+
+        // Function to update the dropdown with suggestions
+        const updateDropdown = (destinations) => {
+            destinationList.innerHTML = ""; // Clear previous results
+            if (destinations.length > 0) {
+                destinations.forEach((destination) => {
+                    const li = document.createElement("li");
+                    li.textContent = destination;
+                    li.addEventListener("click", () => {
+                        destinationInput.value = destination;
+                        destinationDropdown.style.display = "none";
+                    });
+                    destinationList.appendChild(li);
+                });
+                destinationDropdown.style.display = "block";
+            } else {
+                destinationDropdown.style.display = "none";
+            }
+        };
+
+        // Event listener for input changes (Destination)
+        destinationInput.addEventListener("input", async (e) => {
+            const query = e.target.value.trim();
+            if (query.length > 2) { // Fetch suggestions only if the query has at least 3 characters
+                const destinations = await fetchDestinations(query);
+                updateDropdown(destinations);
+            } else {
+                destinationDropdown.style.display = "none";
+            }
+        });
+
+        // Event listener for budget input (format with commas)
+        budgetInput.addEventListener("input", (e) => {
+            let value = e.target.value.replace(/,/g, ""); // Remove existing commas
+            if (!isNaN(value)) {
+                value = Number(value).toLocaleString(); // Format with commas
+                e.target.value = value;
+            }
+        });
+
+        // Function to search trips
+        const searchTrips = async (destination, duration, budget) => {
+            try {
+              
+                const csrfToken = document.querySelector('input[name="_token"]').value; // Fetch CSRF token
+
+                const response = await fetch("/search-trips", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-Requested-With": "XMLHttpRequest",
+                        "X-CSRF-TOKEN": csrfToken,
+                    },
+                    body: JSON.stringify({ destination, duration, budget }),
+                });
+
+                const data = await response.json();
+                console.log(response);
+                
+                if (response.ok) {
+                    toastr.success("Search successful!");
+                    populateResults(data);
+                } else {
+                    toastr.error(data.message || "An error occurred during the search.");
+                }
+            } catch (error) {
+                console.error("Error during search:", error);
+                toastr.error("An error occurred. Please try again.");
+            }
+        };
+
+        // Function to populate the results in the "tour-results" div
+       // Function to populate the results in the "tour-results" div
+// Function to populate the results in the "tour-results" div
+// Function to populate the results in the "tour-results" div
+const populateResults = (response) => {
+    const trips = response.data; // Extract trips from the response data
+
+    resultsContainer.innerHTML = ""; // Clear any existing results
+    if (trips && trips.length > 0) {
+        trips.forEach((tour) => {
+            const tourItem = document.createElement("div");
+            tourItem.classList.add("wp-block-group", "container_78f648086c0a", "is-layout-flow", "wp-block-group-is-layout-flow");
+
+            tourItem.innerHTML = `
+                <div class="wp-block-group container_79f5e12f2529 is-layout-flow wp-block-group-is-layout-flow">
+                    <div class="wp-block-group container_f2683dbcc308 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
+                    </div>
+
+                    <div class="wp-block-group container_5c6fab2b8014 is-layout-flow wp-block-group-is-layout-flow">
+                        <div class="wp-block-group container_36336854db70 is-layout-flow wp-block-group-is-layout-flow">
+                            <!-- Tour Days -->
+                            <p class="text_a8febd9c1c0f" style="font-size: 15.5px; font-weight: 500; color: #1a1a1a99;">
+                                ${tour.days} Days
+                            </p>
+
+                            <!-- Tour Title -->
+                            <h3 class="text_0c4ee6b1abd6" style="font-size: 23.5px; font-weight: 600; color: #26461d;">
+                                ${tour.title}
+                            </h3>
+                        </div>
+
+                        <div class="wp-block-group container_46ac84707136 is-layout-flow wp-block-group-is-layout-flow">
+                            <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
+                        </div>
+
+                        <div class="wp-block-group container_b6c9bd465828 is-layout-flow wp-block-group-is-layout-flow">
+                            <div class="wp-block-group container_461f7766e98a is-layout-flow wp-block-group-is-layout-flow">
+                                <!-- Tour Price -->
+                                <p class="text_f968f3908dd2" style="font-size: 15.5px; font-weight: 500; color: #0000008a;">
+                                    $${tour.initial_cost}
+                                </p>
+
+                                <h2 class="text_cc5302f39554" style="font-size: 35.5px; font-weight: 600; color: #26461d;">
+                                    $${tour.amount}
+                                </h2>
+
+                                <div class="wp-block-group container_ac8eb1555726">
+                                    <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
+                                </div>
+                            </div>
+
+                            <!-- View More button inside an anchor tag -->
+                            <div class="wp-block-yotako-block-anchor button_e67aaf6cd090">
+                                <a href="/view-tour/${tour.slug}" class="button_link_e67aaf6cd090" target="_self" rel="noopener">
+                                    <p class="text_c78a14357f84" style="font-size: 15.5px; font-weight: 600; color: #26461d;">
+                                        View More
+                                    </p>
+                                    <figure class="imageview_b95dce7428f7 wp-block-image">
+                                        <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I507:2269;405:837;221:315.svg" />
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image outside the anchor tag so it doesn't trigger the link -->
+                <figure class="imageview_6962fab1119c wp-block-image">
+                    <img decoding="async" src="${tour.image || 'default-image.jpg'}" alt="${tour.title}" />
+                </figure>
+            `;
+            resultsContainer.appendChild(tourItem);
+        });
+    } else {
+        resultsContainer.innerHTML = "<p>No trips found.</p>";
+    }
+
+    // Scroll to the results container
+    resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 
 
-    
 
-    
-    
 
-    
-    
-    <form class="wp-block-yotako-block-form" id="form_1a1463764acf" onsubmit="return form_1a1463764acf(event)"></form>
-    
+        // Event listener for Search Trip button
+        searchTripButton.addEventListener("click", (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            const destination = destinationInput.value.trim();
+            const duration = document.querySelector('input[name="duration"]').value.trim();
+            const budget = budgetInput.value.replace(/,/g, ""); // Remove commas for backend processing
+
+            // Call the searchTrips function with the gathered data
+            searchTrips(destination, duration, budget);
+        });
+
+        // Hide dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!destinationInput.contains(e.target)) {
+                destinationDropdown.style.display = "none";
+            }
+        });
+    });
+</script>
+
+
+
+// <!-- CSS for Dropdown Styling -->
+<style>
+    .destination-dropdown {
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        max-height: 150px;
+        overflow-y: auto;
+        z-index: 1000;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .destination-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .destination-list li {
+        padding: 8px 12px;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+    }
+
+    .destination-list li:hover {
+        background-color: #f5f5f5;
+    }
+
+
+    #searchTripButton-m:focus,
+    #searchTripButton-m:active {
+        outline: none;
+        border: none;
+    }
+
+    /* Optional: Add custom focus-visible style */
+    #searchTripButton-m:focus-visible {
+        outline: 2px solid #f00;  /* Red border on focus (for accessibility) */
+    }
+
+</style>
+
   </div>
   
 </div>
@@ -993,7 +1231,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 	}() );
 	
 </script>
-
 
 
 
