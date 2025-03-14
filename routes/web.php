@@ -8,6 +8,7 @@ use App\Http\Controllers\TestMailController;
 use Illuminate\Support\Facades\Route;
 
 
+
 Route::get('welcome', [HomeController::class, 'landing']);
 
 Route::get('/mail', [TestMailController::class, 'mail']);

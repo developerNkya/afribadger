@@ -5827,7 +5827,7 @@ body .yt_fill_size {
 .text_7a911d4c3df3 {
     width: max-content;
     z-index: 1;
-    position: absolute !important;
+    /* position: absolute !important; */
     left: 12px;
     top: 0px;
     line-height: 30.48px;
