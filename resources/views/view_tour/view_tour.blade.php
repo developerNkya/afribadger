@@ -541,7 +541,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         
     </div>
         <div class="text_2a7d2c2b801c">
-        <h2 class=" has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:29.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
+        <h2 class=" has-text-color has-background has-text-align-left wp-block-heading"  style="width:99%;text-transform:none;font-style:normal;font-size:29.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
         <p class="has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A {{$tour->days}}-day safari from ${{$tour->amount}}</p>
 
         </div>
