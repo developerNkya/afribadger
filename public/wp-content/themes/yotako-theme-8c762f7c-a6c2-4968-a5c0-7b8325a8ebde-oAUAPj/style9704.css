@@ -3447,10 +3447,10 @@ body .yt_fill_size {
 
 .container_de73eda37d3c {
     z-index: 1;
-    /* width: 100%; */
+    width: 100%;
     height: 51px;
     position: relative !important;
-    left: 140px;
+    /* left: 140px; */
     justify-content: center;
     align-items: center;
     gap: normal 8px;
@@ -4777,7 +4777,7 @@ body .yt_fill_size {
 
 .viewport_8a9748ce9efb {
     width: 100%;
-/*    overflow-x: hidden;*/
+   overflow-x: hidden;
 
     /* height: 7244px;
     overflow-x: hidden;
