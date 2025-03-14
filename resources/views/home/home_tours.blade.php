@@ -14,15 +14,20 @@
                 <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
             </div>
 
+            <div class="text_7b9fe75ec2d5" style="font-weight:normal !important">
             {{-- Tour Title --}}
-            <p class="text_7b9fe75ec2d5 has-text-color has-background has-text-align-left">
+            <p class=" has-text-color has-background has-text-align-left">
                 <strong>{{ $tour->title }}</strong>
             </p>
-
             {{-- Tour Description --}}
-            <p class="text_4a7faa3c87ab has-text-color has-background has-text-align-left">
+            <p class="has-text-color has-background has-text-align-left">
                 {{ $tour->description }}
             </p>
+
+            </div>
+           
+
+
 
             {{-- Tour Days --}}
             <p class="text_70f0facd0c87 has-text-color has-background has-text-align-left">

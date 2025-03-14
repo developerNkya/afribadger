@@ -501,7 +501,12 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <div class="wp-block-group container_78f648086c0a is-layout-flow wp-block-group-is-layout-flow">
     
     <div class="wp-block-group container_79f5e12f2529 is-layout-flow wp-block-group-is-layout-flow">
-        <div class="wp-block-group container_f2683dbcc308 is-layout-flow wp-block-group-is-layout-flow">
+        
+    <figure class="imageview_b95dce7428f7 wp-block-image">
+                                <img decoding="async"
+                                    src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I507:2269;405:837;221:315.svg" />
+                            </figure>
+    <div class="wp-block-group container_f2683dbcc308 is-layout-flow wp-block-group-is-layout-flow">
             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
         </div>
 
@@ -555,10 +560,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
                                 View More
                             </p>
 
-                            <figure class="imageview_b95dce7428f7 wp-block-image">
-                                <img decoding="async"
-                                    src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I507:2269;405:837;221:315.svg" />
-                            </figure>
+                            
                         </a>
                     </div>
 

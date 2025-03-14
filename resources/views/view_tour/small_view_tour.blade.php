@@ -237,7 +237,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="wp-block-group container_88e3c8c3bf20 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_1ff0184f0d23 is-layout-flow wp-block-group-is-layout-flow" >
-                  
+<figure class="imageview_20916a3028a7 wp-block-image" >
+<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/507:2675.webp" />
+</figure>
+               
 <div class="wp-block-group container_319a47eeb50b is-layout-flow wp-block-group-is-layout-flow" >
    
       
@@ -266,9 +269,9 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="wp-block-group container_2f620520d6f9 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_695d85012668 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_e3333f4026e8 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">{{$tour->initial_cost}}</p>
+                        <p class="text_e3333f4026e8 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">${{$tour->initial_cost}}</p>
      
-        <h2 class="text_106b30775946 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">{{$tour->amount}}</h2>
+        <h2 class="text_106b30775946 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">${{$tour->amount}}</h2>
        
 
 <div class="wp-block-group container_796af06c9f8c is-layout-flow wp-block-group-is-layout-flow" >
@@ -295,9 +298,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<figure class="imageview_20916a3028a7 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/507:2675.webp" />
-</figure>
 
         </div>
 @endforeach

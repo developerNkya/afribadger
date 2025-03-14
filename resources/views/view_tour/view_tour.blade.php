@@ -352,9 +352,12 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         
     </div>
 
-        <h2 class="text_aa78ea0ed202 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:53.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
+        <div class="text_aa78ea0ed202">
+        <h2 class="has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:42.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
+        <h2 class=" has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A {{$tour->days}}-day safari from ${{$tour->amount}}</h2>
+
+        </div>
        
-        <h2 class="text_1e4bb1b17f42 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A {{$tour->days}}-day safari from ${{$tour->amount}}</h2>
        
 
 
@@ -476,9 +479,12 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         
     </div>
 
-        <h2 class="text_8d67f32000c8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
+    <div class="text_8d67f32000c8">
+    <h2 class="has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
+    <h2 class=" has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from ${{$tour->amount}}</h2>
+
+    </div>
        
-        <h2 class="text_19dccca09ee8 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A 4-day safari from ${{$tour->amount}}</h2>
        
 <div class="medium_helper wp-block-group is-layout-flow wp-block-group-is-layout-flow">
 <div class="wp-block-group container_843f5ad47317 is-layout-flow wp-block-group-is-layout-flow" >
@@ -534,10 +540,12 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div> 
         
     </div>
+        <div class="text_2a7d2c2b801c">
+        <h2 class=" has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:29.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
+        <p class="has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A {{$tour->days}}-day safari from ${{$tour->amount}}</p>
 
-        <h2 class="text_2a7d2c2b801c has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">{{$tour->title}}</h2>
+        </div>
        
-      <p class="text_f48f81f8dd71 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">A {{$tour->days}}-day safari from ${{$tour->amount}}</p>
      
 
 <div class="wp-block-group container_57908918ebc9 is-layout-flow wp-block-group-is-layout-flow" >

@@ -2584,7 +2584,7 @@
              .container_78f648086c0a {
                  position: relative !important;
                  width: 400px;
-                 height: 641px;
+                 height: fit-content;
              }
 
              .container_5c3a3f59f86a {
@@ -4759,7 +4759,7 @@
                 z-index: 3;
                 position: absolute !important;
                 left: 256px;
-                top: 292px;
+                top:297px;
                 line-height: 75px;
                 font-family: 'Roboto';
             }
@@ -8503,7 +8503,7 @@
              }
 
              .container_1a55af72bfed {
-                top:10px;
+                /* top:10px; */
                 position:relative;
                  padding: 0 16px 0 16px;
                  width: 100%;
@@ -8517,7 +8517,7 @@
              .container_47d50a4139b2 {
                  padding: 0 0 32px 0;
                  width: 398px;
-                 height: 641px;
+                 height: fit-content;
                  min-width: 256px;
                  max-width: 406px;
                  position: absolute !important;
@@ -8536,7 +8536,7 @@
                  width: 398px;
                  height: 420px;
                  z-index: 1;
-                 position: absolute !important;
+                 position: relative !important;
                  left: 0px;
                  top: 0px;
                  border-radius: 16px 16px 0 0;
@@ -8545,7 +8545,7 @@
              .container_d41e69cf737c {
                  position: relative !important;
                  width: 398px;
-                 height: 641px;
+                 height:fit-content;
              }
 
              .container_601e456e5fcb {
@@ -9303,7 +9303,7 @@
                 height: 1010px;
                 position: relative;
                 left: 0px;
-                top: 318px;
+                top: 420px;
                 align-items: center;
                 justify-content: center;
                 gap: 11px normal;
@@ -10546,7 +10546,7 @@
 
              .container_e78325e6a6b9 {
                 position: relative;
-                top:22px;
+                /* top:22px; */
                  padding: 0 16px 0 16px;
                  width: 100%;
                  height: fit-content;
@@ -10557,28 +10557,28 @@
              }
 
              .container_1ff0184f0d23 {
-                 padding: 0 0 32px 0;
-                 width: 100%;
-                 height: 641px;
-                 min-width: 256px;
-                 max-width: 406px;
-                 position: absolute !important;
-                 left: 0px;
-                 top: 0px;
-                 align-items: flex-start;
-                 justify-content: flex-start;
-                 gap: 16px normal;
-                 flex-direction: column;
-                 background: #ffffff;
-                 border-radius: 16px 16px 16px 16px;
-                 box-shadow: 0px 6px 19.5px #00000038;
-             }
+                padding: 0 0 32px 0;
+                width: 100%;
+                height: fit-content;
+                /* min-width: 256px; */
+                /* max-width: 406px; */
+                position: relative;
+                left: 0px;
+                top: 0px;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 16px normal;
+                flex-direction: column;
+                background: #ffffff;
+                border-radius: 16px 16px 16px 16px;
+                box-shadow: 0px 6px 19.5px #00000038;
+            }
 
              .imageview_20916a3028a7 {
                     width: 100%;
                     height: 420px;
                     z-index: 1;
-                    position: absolute !important;
+                    position: relative !important;
                     left: 0px;
                     top: 0px;
                     border-radius: 16px 16px 0 0;
@@ -10587,7 +10587,7 @@
              .container_88e3c8c3bf20 {
                  position: relative !important;
                  width: 100%;
-                 height: 641px;
+                 height: fit-content;
              }
 
              .container_a0a1c601f1b0 {
@@ -16698,6 +16698,12 @@
                 .View_Tour .vp_640 {
                     display: flex !important;
                 }
+
+                .state-yes .the-group-arrives-at,
+                .state-yes .p {
+                  left: -60px;
+                }
+
              }
 
 
