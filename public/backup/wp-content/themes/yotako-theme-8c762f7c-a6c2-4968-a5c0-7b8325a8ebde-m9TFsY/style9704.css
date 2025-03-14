@@ -8433,7 +8433,7 @@
              }
 
              .text_99a6bd2c4d69 {
-                 width: 104px;
+                 width: 200px;
                  position: absolute !important;
                  left: 0px;
                  top: 23px;
@@ -8520,7 +8520,7 @@
                  height: fit-content;
                  min-width: 256px;
                  max-width: 406px;
-                 position: absolute !important;
+                 /* position: absolute !important; */
                  left: 0px;
                  top: 0px;
                  align-items: flex-start;

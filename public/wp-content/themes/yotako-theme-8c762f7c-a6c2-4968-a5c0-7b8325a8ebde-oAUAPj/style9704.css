@@ -2579,10 +2579,10 @@ body .yt_fill_size {
 .container_79f5e12f2529 {
     padding: 0 0 32px 0;
     width: 400px;
-    height: 661px;
+    height: fit-content;
     min-width: 256px;
     max-width: 406px;
-    position: absolute !important;
+    /* position: absolute !important; */
     left: 0px;
     top: 0px;
     align-items: flex-start;
@@ -2598,7 +2598,7 @@ body .yt_fill_size {
     width: 400px;
     height: 420px;
     z-index: 1;
-    position: absolute !important;
+    position: relative !important;
     left: 0px;
     top: 0px;
     border-radius: 16px 16px 0 0;
@@ -2607,7 +2607,7 @@ body .yt_fill_size {
 .container_78f648086c0a {
     position: relative !important;
     width: 400px;
-    height: 641px;
+    height: fit-content;
 }
 
 .container_5c3a3f59f86a {
@@ -8371,7 +8371,7 @@ body .yt_fill_size {
 }
 
 .text_99a6bd2c4d69 {
-    width: 104px;
+    width:200px;
     position: absolute !important;
     left: 0px;
     top: 23px;
