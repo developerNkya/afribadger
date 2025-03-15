@@ -16,7 +16,7 @@ Route::get('/trekking', [TourController::class, 'trekking']);
 Route::get('welcome', [HomeController::class, 'landing']);
 
 Route::get('/mail', [TestMailController::class, 'mail']);
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/',  [HomeController::class, 'landing']);
 
 Route::get('/home', [HomeController::class, 'home']);
 Route::get('/contact-us', [ContactController::class, 'contactPage']);
