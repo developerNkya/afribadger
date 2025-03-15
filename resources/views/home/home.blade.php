@@ -1820,7 +1820,7 @@
                   color: #26461d;
                   background-color: transparent;
                 ">
-                            Discover&nbsp;the&nbsp;Difference&nbsp;with&nbsp;&nbsp;Camelleon&nbsp;Safaris
+                            Discover&nbsp;the&nbsp;Difference&nbsp;with&nbsp; <br> Camelleon Safaris
                         </h3>
 
                         <p class="text_3ab83d39ccf7 has-text-color has-background has-text-align-left"
