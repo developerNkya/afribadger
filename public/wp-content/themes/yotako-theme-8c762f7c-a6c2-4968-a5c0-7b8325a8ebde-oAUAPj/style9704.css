@@ -1877,13 +1877,11 @@ body .yt_fill_size {
 
 .viewport_ab465fe8651d {
     position: absolute !important;
-    height: 3450px;
+    height: fit-content;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* overflow-y: hidden; */
     background: #ffffff;
-    transform-origin: top left;
-    transform: scale(calc(100vw / 1920));
 }
 
 .text_e2e6afc137cf {
