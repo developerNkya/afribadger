@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
+Route::get('/trips', [TourController::class, 'tours']);
+Route::get('/trekking', [TourController::class, 'trekking']);
+
+
 Route::get('welcome', [HomeController::class, 'landing']);
 
 Route::get('/mail', [TestMailController::class, 'mail']);

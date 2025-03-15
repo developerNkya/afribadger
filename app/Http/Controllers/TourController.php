@@ -12,9 +12,35 @@ use Illuminate\Support\Facades\DB;
 class TourController extends Controller
 {
 
+    public function tours()
+{
+    $tours = Tour::where('tour_type_id', 3)->paginate(6);
+    $tour_type = "Safari";
+
+    return view('home.home', [
+        'national_parks' => $tours, 
+        'tour_type' => $tour_type
+    ]);
+}
+
+public function trekking()
+{
+    $tours = Tour::where('tour_type_id', 2)->paginate(6);
+    $tour_type = "Trekking";
+
+    return view('home.home', [
+        'national_parks' => $tours, 
+        'tour_type' => $tour_type
+    ]);
+}
+
     public function toursPage(){
         $national_parks = Tour::where('tour_type_id', 1)->paginate(6);
-            return view('home.home', ['national_parks' => $national_parks]);
+        $tour_type = "Safari";
+        return view('home.home', [
+            'national_parks' => $national_parks, 
+            'tour_type' => $tour_type
+        ]);
     }
 
         

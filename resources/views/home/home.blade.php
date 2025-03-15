@@ -1398,20 +1398,7 @@
                   color: #f4e7c9;
                   background-color: transparent;
                 ">
-                            Safari Tours in Tanzania
-                        </h2>
-
-                        <h2 class="text_6344d8c1205d has-text-color has-background has-text-align-left wp-block-heading"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 63.5px;
-                  font-weight: 600;
-                  letter-spacing: -0.5px;
-                  color: #f4e7c9;
-                  background-color: transparent;
-                ">
-                            Safari Tours in Tanzania
+                            {{$tour_type}} Tours in Tanzania
                         </h2>
 
 
@@ -1554,7 +1541,7 @@
 
 
 
-                        <div class="wp-block-yotako-block-anchor button_92e7c2e8a7ab">
+                        <!-- <div class="wp-block-yotako-block-anchor button_92e7c2e8a7ab">
                             <a href="#" class="button_link_92e7c2e8a7ab" target="_self" rel="noopener">
                                 <p class="text_63d5778232d1 has-text-color has-background has-text-align-left"
                                     style="
@@ -1569,8 +1556,8 @@
                                     National Parks
                                 </p>
                             </a>
-                        </div>
-                        <p class="text_20610c18bd72 has-text-color has-background has-text-align-left"
+                        </div> -->
+                        <!-- <p class="text_20610c18bd72 has-text-color has-background has-text-align-left"
                             style="
                   text-transform: none;
                   font-style: normal;
@@ -1581,9 +1568,9 @@
                   background-color: transparent;
                 ">
                             Beaches And Resorts
-                        </p>
+                        </p> -->
 
-                        <p class="text_6ea2966bc63a has-text-color has-background has-text-align-left"
+                        <!-- <p class="text_6ea2966bc63a has-text-color has-background has-text-align-left"
                             style="
                   text-transform: none;
                   font-style: normal;
@@ -1594,7 +1581,7 @@
                   background-color: transparent;
                 ">
                             Mountain Treaking
-                        </p>
+                        </p> -->
                     </div>
 
                     <div
