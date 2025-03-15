@@ -134,16 +134,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
     
     
-    <div class="wp-block-group container_80fae33aa628 is-layout-flow wp-block-group-is-layout-flow">
-      
-      <div class="wp-block-group container_8cbb6d88d1c5 is-layout-flow wp-block-group-is-layout-flow">
-        
-        <h2 class="text_a36e1fb66416 has-text-color has-background has-text-align-center wp-block-heading" style="text-transform:none;font-style:normal;font-size:47.5px;font-weight:800;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">
-          Experience Colours of Africa</h2>
-        
-      </div>
-      
-    </div>
+
     
     
 

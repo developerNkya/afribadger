@@ -1630,7 +1630,8 @@
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
-                        <h2 class="text_2425ae510f56 has-text-color has-background has-text-align-center wp-block-heading"
+                        <div class="text_2425ae510f56">
+                        <h2 class="has-text-color has-background has-text-align-center wp-block-heading"
                             style="
                   text-transform: none;
                   font-style: normal;
@@ -1640,10 +1641,11 @@
                   color: #f4e7c9;
                   background-color: transparent;
                 ">
-                            Safari Tours in Tanzania
+                            {{$tour_type}} Tours in Tanzania
                         </h2>
 
-                        <h2 class="text_745c1f55a2e9 has-text-color has-background has-text-align-center wp-block-heading"
+                        
+                        <h2 class="has-text-color has-background has-text-align-center wp-block-heading"
                             style="
                   text-transform: none;
                   font-style: normal;
@@ -1652,9 +1654,15 @@
                   letter-spacing: -0.5px;
                   color: #f4e7c9;
                   background-color: transparent;
+                  position:relative;
+                  top:15px;
                 ">
                             Discover the Magical World of <br />Wildlife in Tanzania
                         </h2>
+
+                        </div>
+
+
 
                         <h2 class="text_4ea8e8d6cb25 has-text-color has-background has-text-align-center wp-block-heading"
                             style="
@@ -1771,21 +1779,22 @@
                             
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
-
-                        <h2 class="text_63194caf0b8d has-text-color has-background has-text-align-center wp-block-heading"
+                <div class="text_63194caf0b8d">
+                <h2 class=" has-text-color has-background has-text-align-center wp-block-heading"
                             style="
+                  margin-bottom:10px;
                   text-transform: none;
                   font-style: normal;
-                  font-size: 31.5px;
+                  font-size: 38.5px;
                   font-weight: 600;
                   letter-spacing: -0.5px;
                   color: #f4e7c9;
                   background-color: transparent;
                 ">
-                            Safari Tours in Tanzania
+                             {{$tour_type}} Tours in Tanzania
                         </h2>
 
-                        <p class="text_191bdeae5c9b has-text-color has-background has-text-align-center"
+                        <p class="has-text-color has-background has-text-align-center"
                             style="
                   text-transform: none;
                   font-style: normal;
@@ -1797,6 +1806,9 @@
                 ">
                             Discover the Magical World of <br />Wildlife in Tanzania
                         </p>
+                </div>
+
+
 
                         <h3 class="text_5237a8afbca4 has-text-color has-background has-text-align-center wp-block-heading"
                             style="

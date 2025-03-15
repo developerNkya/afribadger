@@ -24,7 +24,7 @@ Route::get('view-tour/{slug}', [TourController::class, 'viewTour'])->name('view-
 Route::post('book-tour', [TourController::class, 'bookTour'])->name('book-tour');
 
 Route::get('/about-us', [AboutController::class, 'aboutPage']);
-Route::get('/tours', [TourController::class, 'toursPage']);
+Route::get('/national-parks', [TourController::class, 'toursPage']);
 Route::post('/posted-request', [ContactController::class, 'postedRequest']);
 
 

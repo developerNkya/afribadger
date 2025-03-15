@@ -1880,7 +1880,7 @@ body .yt_fill_size {
     height: 3450px;
     width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     background: #ffffff;
     transform-origin: top left;
     transform: scale(calc(100vw / 1920));
@@ -3283,7 +3283,7 @@ body .yt_fill_size {
     width: 100%;
     height: 3510px;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     background: #ffffff;
 }
 
@@ -3324,10 +3324,10 @@ body .yt_fill_size {
 
 
 .text_63194caf0b8d {
-    width: 376px;
+    width: 100%;
     z-index: 3;
     position: absolute !important;
-    left: 20px;
+    /* left: 20px; */
     top: 394px;
     line-height: 37.5px;
     word-wrap: break-word;
