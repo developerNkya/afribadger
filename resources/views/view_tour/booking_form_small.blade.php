@@ -1,7 +1,7 @@
  <div class="v653_3174">
     <form id="bookingForm-s" action="/book-tour" method="POST">
         @csrf
-        <button class="close-btn" onclick="closeModal(event)">×</button>
+        <button class="close-btn" onclick="handleFormSubmit(event)">×</button>
         <span class="v653_3175">Book your Tour</span>
         <div class="v653_3176">
             <div class="v653_3177">
@@ -123,4 +123,9 @@
         });
     });
 });
+
+
+
+
+
 </script> -->

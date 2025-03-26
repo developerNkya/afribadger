@@ -9,7 +9,9 @@
     <div class="menu" id="menu">
         <span class="close-btn" onclick="toggleMenu()">&times;</span>
         <a href="/welcome">Home</a>
-        <a href="/tours">Tours</a>
+        <a href="/national-parks">National Parks</a>
+        <a href="/trips">Tours</a>
+        <a href="/trekking">Trekking</a>
         <a href="/about-us">About Us</a>
         <a href="/contact-us">Contact Us</a>
     </div>

@@ -1,7 +1,7 @@
 <div class="v653_3174">
     <form id="bookingForm"  action="/book-tour" method="POST">
         @csrf
-        <button class="close-btn" onclick="closeModal(event)">×</button>
+        <button class="close-btn" onclick="handleFormSubmit(event)">×</button>
         <span class="v653_3175">Book your Tour</span>
         <div class="v653_3176">
             <div class="v653_3177">
@@ -49,18 +49,19 @@
 
 <div class="book-btn" style="position:relative;top: 430px;">
     <div class="wp-block-yotako-block-anchor button_af56c63f62ed">
-        <button id="bookNowBtn" class="button_link_af56c63f62ed" style="background: none; border: none; cursor: pointer;">
-            <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
-                Book Now
-            </p>
-            <figure class="imageview_6f8f09ff716d wp-block-image">
-                <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
-            </figure>
+                  <button id="bookNowBtn" class="button_link_af56c63f62ed" style="background: none; border: none; cursor: pointer;" onclick="submitBookingForm(event)">
+    <p class="text_75221008a7fc has-text-color has-background has-text-align-left" style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:600;letter-spacing:-0.5px;color:#ffffff;background-color:transparent;">
+        Book Now
+    </p>
+    <figure class="imageview_6f8f09ff716d wp-block-image">
+        <img decoding="async" src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I422:4536;421:4525;392:590.svg" />
+    </figure>
 
-            <div id="loader" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                <div class="spinner"></div>
-            </div>
-        </button>
+    <div id="loader" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <div class="spinner"></div>
+    </div>
+</button>
+
     </div>
 </div>
 
@@ -72,58 +73,66 @@
 
 
 <script>
-    
-    document.addEventListener('DOMContentLoaded', function () {
-    const bookNowLink = document.getElementById('bookNowBtn');
+  function submitBookingForm(e) {
+    e.preventDefault();
+
+    const bookNowBtn = document.getElementById('bookNowBtn');
     const bookingForm = document.getElementById('bookingForm');
     const loader = document.getElementById('loader');
 
-    bookNowLink.addEventListener('click', function (e) {
-        e.preventDefault();
+    let isSubmitting = false;
 
-        // Disable the button
-        bookNowLink.style.pointerEvents = 'none';
-        bookNowLink.style.opacity = '0.7';
+    if (isSubmitting) return; // Prevent multiple submissions
+    isSubmitting = true;
 
-        // Show the loader
-        loader.style.display = 'block';
+    // Disable the button and show loader
+    bookNowBtn.style.pointerEvents = 'none';
+    bookNowBtn.style.opacity = '0.7';
+    loader.style.display = 'block';
 
-        // Submit the form via AJAX
-        fetch(bookingForm.action, {
-            method: 'POST',
-            body: new FormData(bookingForm),
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest',
-                'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
-            }
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'success') {
-                toastr.success(data.message); // Show success toast
-                bookingForm.reset(); // Reset the form
-            } else if (data.errors) {
-                // Display validation errors
-                for (const field in data.errors) {
-                    toastr.error(data.errors[field][0]); // Show the first error for each field
-                }
-            } else {
-                toastr.error(data.message); // Show generic error toast
-            }
-        })
-        .catch(error => {
-            toastr.error('An error occurred. Please try again.'); // Show generic error toast
-        })
-        .finally(() => {
-            // Hide the loader
-            loader.style.display = 'none';
+    console.log('Form submission started');
 
-            // Re-enable the button
-            bookNowLink.style.pointerEvents = 'auto';
-            bookNowLink.style.opacity = '1';
-        });
+    // Send AJAX request
+    fetch(bookingForm.action, {
+        method: 'POST',
+        body: new FormData(bookingForm),
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest',
+            'X-CSRF-TOKEN': document.querySelector('input[name="_token"]').value
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Form submission response:', data);
+
+        if (data.status === 'success') {
+            toastr.success(data.message);
+            bookingForm.reset();
+        } else if (data.errors) {
+            Object.values(data.errors).forEach(errorMsg => toastr.error(errorMsg[0]));
+        } else {
+            toastr.error(data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Form submission error:', error);
+        toastr.error('An error occurred. Please try again.');
+    })
+    .finally(() => {
+        // Hide loader and re-enable button
+        loader.style.display = 'none';
+        bookNowBtn.style.pointerEvents = 'auto';
+        bookNowBtn.style.opacity = '1';
+        isSubmitting = false;
     });
-});
+}
+
+function handleFormSubmit(event) {
+    event.preventDefault();
+    console.log('Form submission intercepted');
+    window.location.href = window.location.pathname;
+
+}
 </script>
 
 

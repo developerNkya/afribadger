@@ -18,9 +18,9 @@
     <link rel="dns-prefetch" href="http://unpkg.com/" />
     <link rel="dns-prefetch" href="http://storage.googleapis.com/" />
     <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Feed"
-        href="../feed/index.html" />
+        href="#" />
     <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Comments Feed"
-        href="../comments/feed/index.html" />
+        href="#" />
     <script>
         window._wpemojiSettings = {
             baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
@@ -1346,18 +1346,30 @@
     <script src="../wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/script9704.js?ver=6.7.1"
         id="custom-script-js"></script>
     <script src="../../unpkg.com/js-alert%402.0.0/dist/jsalert.min.js?ver=6.7.1" id="js-alert-js"></script>
-    <link rel="https://api.w.org/" href="../wp-json/index.html" />
+    <link rel="https://api.w.org/" href="#" />
     <link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/15.json" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
     <meta name="generator" content="WordPress 6.7.1" />
-    <link rel="canonical" href="index-2.html" />
+    <link rel="canonical" href="#" />
     <link rel="shortlink" href="../indexa1ca.html?p=15" />
     <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
         href="../wp-json/oembed/1.0/embedee0a.json?url=https%3A%2F%2Fbda1aad9-cb58-401a-8a47-526b318e3266.yotako.com%2Fcontact_us%2F" />
     <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
         href="../wp-json/oembed/1.0/embed39b0?url=https%3A%2F%2Fbda1aad9-cb58-401a-8a47-526b318e3266.yotako.com%2Fcontact_us%2F&amp;format=xml" />
         <link rel="stylesheet" href="{{ asset('css/shared.css') }}" media="all" />
-</head>
+
+<!-- Include Toastr CSS -->
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Toastr CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+<!-- Include Toastr JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+    </head>
 
 <body class="page-template-default page page-id-15 wp-embed-responsive">
     <div class="wp-site-blocks">
@@ -2108,6 +2120,8 @@
 
 
                             
+
+
                             {{-- contact-form recent--}}
                             <form id="contact-form" action="/posted-request" method="POST">
                                 @csrf
@@ -2123,7 +2137,7 @@
                       color: #26461d;
                       background-color: transparent;
                     ">
-                                    Book your Tour
+                                    Contact Us
                                 </h2>
 
                                 <div
@@ -2402,6 +2416,58 @@
 
 
 
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-form");
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      let isSubmitting = false;
+      if (isSubmitting) return;
+      isSubmitting = true;
+
+      // Disable button to prevent multiple submissions
+      submitButton.style.pointerEvents = "none";
+      submitButton.style.opacity = "0.7";
+
+      const formData = new FormData(contactForm);
+
+      fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "X-Requested-With": "XMLHttpRequest",
+          "X-CSRF-TOKEN": document.querySelector('input[name="_token"]').value,
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.status === "success") {
+            toastr.success(data.message);
+            contactForm.reset();
+          } else if (data.errors) {
+            Object.values(data.errors).forEach((errorMsg) => toastr.error(errorMsg[0]));
+          } else {
+            toastr.error(data.message);
+          }
+        })
+        .catch((error) => {
+          console.error("Form submission error:", error);
+          toastr.error("An error occurred. Please try again.");
+        })
+        .finally(() => {
+          // Re-enable button
+          submitButton.style.pointerEvents = "auto";
+          submitButton.style.opacity = "1";
+          isSubmitting = false;
+        });
+    });
+  });
+</script>
 
 
                             {{-- contact form  --}}
@@ -2913,45 +2979,6 @@
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
-                        <h2 class="text_bc0909deb203 has-text-color has-background has-text-align-center wp-block-heading"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 63.5px;
-                  font-weight: 600;
-                  letter-spacing: -0.5px;
-                  color: #f4e7c9;
-                  background-color: transparent;
-                ">
-                            Safari Tours in Tanzania
-                        </h2>
-
-                        <h2 class="text_0a2a0ac2833f has-text-color has-background has-text-align-left wp-block-heading"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 31.5px;
-                  font-weight: 600;
-                  letter-spacing: -0.5px;
-                  color: #f4e7c9;
-                  background-color: transparent;
-                ">
-                            Ngorongoro Creater
-                        </h2>
-
-                        <p class="text_d36418679b92 has-text-color has-background has-text-align-left"
-                            style="
-                  text-transform: none;
-                  font-style: normal;
-                  font-size: 15.5px;
-                  font-weight: 400;
-                  letter-spacing: -0.5px;
-                  color: #f4e7c9;
-                  background-color: transparent;
-                ">
-                            A 4-day safari from $1,999
-                        </p>
-
                         <!-- <figure class="imageview_00bf55b1ae4d wp-block-image">
                             <img decoding="async"
                                 src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/425:5906.webp" />
@@ -3115,7 +3142,7 @@
                             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
                         </div>
 
-                        <form id="contact-form" action="/posted-request" method="POST">
+                        <form id="contact-form-small" action="/posted-request" method="POST">
                             @csrf
                         <div
                             class="wp-block-group container_1b898b21f4b3 is-layout-flow wp-block-group-is-layout-flow">
@@ -3396,6 +3423,56 @@
                                 </div>
                             </div>
                         </form>
+                        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-form-small");
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      let isSubmitting = false;
+      if (isSubmitting) return;
+      isSubmitting = true;
+
+      // Disable button to prevent multiple submissions
+      submitButton.style.pointerEvents = "none";
+      submitButton.style.opacity = "0.7";
+
+      const formData = new FormData(contactForm);
+
+      fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "X-Requested-With": "XMLHttpRequest",
+          "X-CSRF-TOKEN": document.querySelector('input[name="_token"]').value,
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.status === "success") {
+            toastr.success(data.message);
+            contactForm.reset();
+          } else if (data.errors) {
+            Object.values(data.errors).forEach((errorMsg) => toastr.error(errorMsg[0]));
+          } else {
+            toastr.error(data.message);
+          }
+        })
+        .catch((error) => {
+          console.error("Form submission error:", error);
+          toastr.error("An error occurred. Please try again.");
+        })
+        .finally(() => {
+          // Re-enable button
+          submitButton.style.pointerEvents = "auto";
+          submitButton.style.opacity = "1";
+          isSubmitting = false;
+        });
+    });
+  });
+</script>                    
 
                             <div
                                 class="wp-block-group container_6dbae51b4700 is-layout-flow wp-block-group-is-layout-flow">

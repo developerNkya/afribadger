@@ -12,7 +12,7 @@
       <div class="wp-block-group container_323096f0adde is-layout-flow wp-block-group-is-layout-flow">
         <!-- Link container -->
         <div class="wp-block-yotako-block-anchor button_79068482ba7e">
-          <a href="../index.html" class="button_link_79068482ba7e" target="_self" rel="noopener">
+          <a href="#" class="button_link_79068482ba7e" target="_self" rel="noopener">
             <div class="wp-block-group container_724d47ba64cd is-layout-flow wp-block-group-is-layout-flow">
               <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
             </div>
@@ -222,7 +222,9 @@
 <div class="wp-block-group container_d41e69cf737c is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_47d50a4139b2 is-layout-flow wp-block-group-is-layout-flow" >
-                  
+<figure class="imageview_2932edbde5e4 wp-block-image" >
+<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/507:2572.webp" />
+</figure>              
 <div class="wp-block-group container_5595676d0099 is-layout-flow wp-block-group-is-layout-flow" >
    
       
@@ -251,9 +253,9 @@
 <div class="wp-block-group container_e9a07f467fb1 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_d09cab998cf0 is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_9ea4c851789e has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">{{$tour->initial_cost}}</p>
+                        <p class="text_9ea4c851789e has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">${{$tour->initial_cost}}</p>
      
-        <h2 class="text_99a6bd2c4d69 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">{{$tour->amount}}</h2>
+        <h2 class="text_99a6bd2c4d69 has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">${{$tour->amount}}</h2>
        
 
 <div class="wp-block-group container_4715a3d8465f is-layout-flow wp-block-group-is-layout-flow" >
@@ -280,9 +282,7 @@
 
 
 
-<figure class="imageview_2932edbde5e4 wp-block-image" >
-<img decoding="async"  src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/507:2572.webp" />
-</figure>
+
 
         </div>
 @endforeach

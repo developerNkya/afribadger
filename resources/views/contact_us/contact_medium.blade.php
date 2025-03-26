@@ -468,6 +468,10 @@
 
                         <div
                             class="wp-block-group container_e1d721f008f1 is-layout-flow wp-block-group-is-layout-flow">
+                            
+                            {{-- contact form - new --}}
+                            <form id="contact-form-medium" action="/posted-request" method="POST">
+                            @csrf
                             <div
                                 class="wp-block-group container_b05c683667ef is-layout-flow wp-block-group-is-layout-flow">
                                 <h2 class="text_5fb3986ed77f has-text-color has-background has-text-align-left wp-block-heading"
@@ -487,7 +491,7 @@
                                
                                
                                
-                                {{-- contact form - new --}}
+                               
                                 <div
                                     class="wp-block-group container_a6b280ece611 is-layout-flow wp-block-group-is-layout-flow">
                                     <div
@@ -531,18 +535,7 @@
                                             </div>
                                         </div>
 
-                                        <p class="text_5d4a23611c33 has-text-color has-background has-text-align-left"
-                                            style="
-                          text-transform: none;
-                          font-style: normal;
-                          font-size: 13.5px;
-                          font-weight: 400;
-                          letter-spacing: -0.5px;
-                          color: #808080;
-                          background-color: transparent;
-                        ">
-                                            Name
-                                        </p>
+                                        <input class="form-text-field-small "  type="name" id="name" name="name" placeholder="Name">
                                     </div>
 
                                     <div
@@ -586,18 +579,8 @@
                                             </div>
                                         </div>
 
-                                        <p class="text_83cd7e168629 has-text-color has-background has-text-align-left"
-                                            style="
-                          text-transform: none;
-                          font-style: normal;
-                          font-size: 13.5px;
-                          font-weight: 400;
-                          letter-spacing: -0.5px;
-                          color: #808080;
-                          background-color: transparent;
-                        ">
-                                            E-mail
-                                        </p>
+                                        <input class="form-text-field-small"  type="email" id="email" name="email" placeholder="Email">
+
                                     </div>
 
                                     <div
@@ -641,18 +624,8 @@
                                             </div>
                                         </div>
 
-                                        <p class="text_7e8aa52cb6a1 has-text-color has-background has-text-align-left"
-                                            style="
-                          text-transform: none;
-                          font-style: normal;
-                          font-size: 13.5px;
-                          font-weight: 400;
-                          letter-spacing: -0.5px;
-                          color: #808080;
-                          background-color: transparent;
-                        ">
-                                            Phone (International version)
-                                        </p>
+                                        <input class="form-text-field-small"  type="phone" id="phone" name="phone" placeholder="Phone (International version)">
+
                                     </div>
 
                                     <div
@@ -696,18 +669,8 @@
                                             </div>
                                         </div>
 
-                                        <p class="text_f40c3730659a has-text-color has-background has-text-align-left"
-                                            style="
-                          text-transform: none;
-                          font-style: normal;
-                          font-size: 13.5px;
-                          font-weight: 400;
-                          letter-spacing: -0.5px;
-                          color: #808080;
-                          background-color: transparent;
-                        ">
-                                            Please&nbsp;let&nbsp;us&nbsp;know&nbsp;&nbsp;if&nbsp;&nbsp;you&nbsp;have&nbsp;any&nbsp;question
-                                        </p>
+                                        <textarea name="request" class="form-text-area-small" id="output" type="output" placeholder="Please&nbsp;let&nbsp;us&nbsp;know&nbsp;&nbsp;if&nbsp;&nbsp;you&nbsp;have&nbsp;any&nbsp;question"></textarea> 
+
                                     </div>
 
                                     <div
@@ -718,18 +681,19 @@
                                             </div>
                                         </div>
 
-                                        <p class="text_68839119cf17 has-text-color has-background has-text-align-left"
-                                            style="
-                          text-transform: none;
+                                        <label class="form-radio-btn-small text_00087f94e65d has-text-color has-background has-text-align-left"
+                                        style="
+                                                                  text-transform: none;
                           font-style: normal;
                           font-size: 13.5px;
                           font-weight: 400;
                           letter-spacing: -0.5px;
                           color: #808080;
                           background-color: transparent;
-                        ">
-                                            I prefer email
-                                        </p>
+                                        ">
+                                        <input type="radio" name="preference" value="email" style="margin-right: 8px;" />
+                                        I prefer email
+                                      </label>
 
                                         <div
                                             class="wp-block-group container_3a10fc36c99b is-layout-flow wp-block-group-is-layout-flow">
@@ -737,18 +701,19 @@
                                             </div>
                                         </div>
 
-                                        <p class="text_5ac00a467588 has-text-color has-background has-text-align-left"
-                                            style="
-                          text-transform: none;
+                                        <label class="form-radio-btn-small text_00087f94e65d has-text-color has-background has-text-align-left"
+                                        style="
+                                                                  text-transform: none;
                           font-style: normal;
                           font-size: 13.5px;
                           font-weight: 400;
                           letter-spacing: -0.5px;
                           color: #808080;
                           background-color: transparent;
-                        ">
-                                            I prefer WhatsApp
-                                        </p>
+                                        ">
+                                        <input type="radio" name="preference" value="whatsapp" style="margin-right: 8px;" />
+                                        I prefer WhatsApp
+                                      </label>
 
                                         <div
                                             class="wp-block-group container_382ff29049f6 is-layout-flow wp-block-group-is-layout-flow">
@@ -756,25 +721,26 @@
                                             </div>
                                         </div>
 
-                                        <p class="text_5d840845024c has-text-color has-background has-text-align-left"
-                                            style="
-                          text-transform: none;
+                                        <label class="form-radio-btn-small text_00087f94e65d has-text-color has-background has-text-align-left"
+                                        style="
+                                                                  text-transform: none;
                           font-style: normal;
                           font-size: 13.5px;
                           font-weight: 400;
                           letter-spacing: -0.5px;
                           color: #808080;
                           background-color: transparent;
-                        ">
-                                            I prefer calls
-                                        </p>
+                                        ">
+                                        <input type="radio" name="preference" value="calls" style="margin-right: 8px;" />
+                                        I prefer calls
+                                      </label>
                                     </div>
 
                                     
                                 </div>
 
                                 <div class="wp-block-yotako-block-button button_9a44d1637d75">
-                                    <button type="submit" form="form_e1d721f008f1" class="button_link_9a44d1637d75">
+                                    <button type="submit"  class="button_link_9a44d1637d75">
                                         <p class="text_b19364abf3fa has-text-color has-background has-text-align-left"
                                             style="
                           text-transform: none;
@@ -791,6 +757,64 @@
                                 </div>
                             </div>
 
+                </form>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-form-medium");
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      let isSubmitting = false;
+      if (isSubmitting) return;
+      isSubmitting = true;
+
+      // Disable button to prevent multiple submissions
+      submitButton.style.pointerEvents = "none";
+      submitButton.style.opacity = "0.7";
+
+      const formData = new FormData(contactForm);
+
+      fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          "X-Requested-With": "XMLHttpRequest",
+          "X-CSRF-TOKEN": document.querySelector('input[name="_token"]').value,
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.status === "success") {
+            toastr.success(data.message);
+            contactForm.reset();
+          } else if (data.errors) {
+            Object.values(data.errors).forEach((errorMsg) => toastr.error(errorMsg[0]));
+          } else {
+            toastr.error(data.message);
+          }
+        })
+        .catch((error) => {
+          console.error("Form submission error:", error);
+          toastr.error("An error occurred. Please try again.");
+        })
+        .finally(() => {
+          // Re-enable button
+          submitButton.style.pointerEvents = "auto";
+          submitButton.style.opacity = "1";
+          isSubmitting = false;
+        });
+    });
+  });
+</script>
+                            <!-- form ends -->
+
+
+
+
+
+                            
                             <div
                                 class="wp-block-group container_b805a16a3613 is-layout-flow wp-block-group-is-layout-flow">
                                 <div

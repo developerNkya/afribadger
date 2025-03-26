@@ -19,7 +19,11 @@
 <div class="wp-block-group container_78f648086c0a is-layout-flow wp-block-group-is-layout-flow">
     
     <div class="wp-block-group container_79f5e12f2529 is-layout-flow wp-block-group-is-layout-flow">
-        <div class="wp-block-group container_f2683dbcc308 is-layout-flow wp-block-group-is-layout-flow">
+    <figure class="imageview_6962fab1119c wp-block-image">
+        <img decoding="async"
+             src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/507:2169.webp"/>
+    </figure>    
+    <div class="wp-block-group container_f2683dbcc308 is-layout-flow wp-block-group-is-layout-flow">
             <div class="wp-block-spacer" style="height: 0px" aria-hidden="true"></div>
         </div>
 
@@ -86,10 +90,7 @@
     </div>
 
     <!-- Image outside the anchor tag so it doesn't trigger the link -->
-    <figure class="imageview_6962fab1119c wp-block-image">
-        <img decoding="async"
-             src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/507:2169.webp"/>
-    </figure>
+
 
 </div>
 @endforeach

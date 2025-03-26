@@ -27,47 +27,49 @@ background-color: transparent;
         </a>
         </div>
 
-        <div
-            class="wp-block-group container_6402411a7f33 is-layout-flow wp-block-group-is-layout-flow">
-            <p class="text_bead69543599 has-text-color has-background has-text-align-left"
-                style="
-text-transform: none;
-font-style: normal;
-font-size: 15.5px;
-font-weight: 500;
-letter-spacing: -0.5px;
-color: #26461d;
-background-color: transparent;
-">
-                Tours
-            </p>
+        <div class="wp-block-group container_6402411a7f33 is-layout-flow wp-block-group-is-layout-flow">
+    <a href="/national-parks" class="text_bead69543599 has-text-color has-background has-text-align-left"
+        style="
+        text-transform: none;
+        font-style: normal;
+        font-size: 15.5px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        color: #26461d;
+        background-color: transparent;">
+        National Parks
+    </a>
+</div>
 
-            <figure class="imageview_61bc2f878625 wp-block-image">
-                <img decoding="async"
-                    src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I219:246;218:19;242:460.svg" />
-            </figure>
-        </div>
+<div class="wp-block-group container_6402411a7f33 is-layout-flow wp-block-group-is-layout-flow" style="left:28px;">
+    <a href="/trips" class="text_bead69543599 has-text-color has-background has-text-align-left"
+        style="
+        text-transform: none;
+        font-style: normal;
+        font-size: 15.5px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        color: #26461d;
+        background-color: transparent;">
+        Tours
+    </a>
+</div>
 
-        <div
-            class="wp-block-group container_135cac80d3d4 is-layout-flow wp-block-group-is-layout-flow">
-            <p class="text_086c942c373d has-text-color has-background has-text-align-left"
-                style="
-text-transform: none;
-font-style: normal;
-font-size: 15.5px;
-font-weight: 500;
-letter-spacing: -0.5px;
-color: #26461d;
-background-color: transparent;
-">
-                Mount Trekking
-            </p>
 
-            <figure class="imageview_04347264ab57 wp-block-image">
-                <img decoding="async"
-                    src="https://cdn.yotako.io/95521a4f-a0a8-413a-a79e-c14ca627a987/I219:246;218:21;242:460.svg" />
-            </figure>
-        </div>
+<div class="wp-block-group container_135cac80d3d4 is-layout-flow wp-block-group-is-layout-flow">
+    <a href="/trekking" class="text_086c942c373d has-text-color has-background has-text-align-left"
+        style="
+        text-transform: none;
+        font-style: normal;
+        font-size: 15.5px;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        color: #26461d;
+        background-color: transparent;">
+        Mount Trekking
+    </a>
+</div>
+
 
         <div class="wp-block-yotako-block-anchor">
             <a href="/about-us" class="" target="_self" rel="noopener">
@@ -111,7 +113,7 @@ background-color: transparent;
         </div>
 
         <div class="wp-block-yotako-block-anchor button_c63111f39e42">
-            <a href="/tours" class="button_link_c63111f39e42" target="_self"
+            <a href="/national-parks" class="button_link_c63111f39e42" target="_self"
                 rel="noopener">
                 <p class="text_54b6702432cf has-text-color has-background has-text-align-left"
                     style="

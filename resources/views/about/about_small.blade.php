@@ -140,17 +140,7 @@
 
                         </div>
 
-                        <h2 class="text_7a6b8535aaf2 has-text-color has-background has-text-align-center wp-block-heading"
-                            style="text-transform:none;font-style:normal;font-size:63.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">
-                            Safari Tours in Tanzania</h2>
 
-                        <h2 class="text_09b7be0e5d6c has-text-color has-background has-text-align-left wp-block-heading"
-                            style="text-transform:none;font-style:normal;font-size:31.5px;font-weight:600;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">
-                            Ngorongoro Creater</h2>
-
-                        <p class="text_ea094de811e5 has-text-color has-background has-text-align-left"
-                            style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:400;letter-spacing:-0.5px;color:#f4e7c9;background-color:transparent;">
-                            A 4-day safari from $1,999</p>
 
 
 

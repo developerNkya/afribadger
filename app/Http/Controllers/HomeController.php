@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    
+
     public function index()
     {
         return view('maintenance');
@@ -25,7 +27,8 @@ class HomeController extends Controller
     
 
     public function landing(){
-        return view('landing.landing');
+        $national_parks = Tour::where('tour_type_id', 1)->paginate(6);
+        return view('landing.landing',['national_parks' => $national_parks]);
     }
 
 

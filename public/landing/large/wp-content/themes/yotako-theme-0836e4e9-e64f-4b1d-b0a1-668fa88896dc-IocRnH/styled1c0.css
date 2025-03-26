@@ -1357,6 +1357,7 @@ background-position: center;
  }
 
  .wrapper_input_text_6b905cce4841 {
+  background: #f4e7c9;
    position: absolute !important;
    left: 291px;
    top: 0px;
@@ -1383,6 +1384,7 @@ background-position: center;
  }
 
  .wrapper_input_text_3f53a8e3570b {
+  background:#f4e7c9;
    position: absolute !important;
    left: 582px;
    top: 0px;
@@ -2288,6 +2290,8 @@ background-position: center;
   overflow-x: hidden;
   overflow-y: hidden;
   background: #ffffff;
+  transform-origin: top left;
+  transform: scale(calc(100vw / 1920));
 }
 
  .imageview_477c7a74515e {
@@ -6841,3 +6845,45 @@ background-position: center;
    background: #ffffff;
  }
 }
+
+.yk_input_wrapper {
+  position: relative; /* To position the dropdown below the input */
+}
+
+#destination {
+  width: 100%; /* Make sure the input takes up full width */
+}
+
+#destinationDropdown {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%; /* Position dropdown below the input */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#destinationDropdown li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#destinationDropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+
+    #searchTripButton:focus,
+    #searchTripButton:active {
+        outline: none;
+        border: none;
+    }
+
+    /* Optional: Add custom focus-visible style */
+    #searchTripButton:focus-visible {
+        outline: 2px solid #f00;  /* Red border on focus (for accessibility) */
+    }
+

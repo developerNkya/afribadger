@@ -15,9 +15,9 @@
     <link rel='dns-prefetch' href='http://unpkg.com/' />
     <link rel='dns-prefetch' href='http://storage.googleapis.com/' />
     <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Feed"
-        href="../feed/index.html" />
+        href="#" />
     <link rel="alternate" type="application/rss+xml" title="camelleonsafaris &raquo; Comments Feed"
-        href="../comments/feed/index.html" />
+        href="#" />
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
@@ -1242,11 +1242,11 @@
     <script src="../wp-content/themes/yotako-theme-8c762f7c-a6c2-4968-a5c0-7b8325a8ebde-oAUAPj/script9704.js?ver=6.7.1"
         id="custom-script-js"></script>
     <script src="../../unpkg.com/js-alert%402.0.0/dist/jsalert.min.js?ver=6.7.1" id="js-alert-js"></script>
-    <link rel="https://api.w.org/" href="../wp-json/index.html" />
+    <link rel="https://api.w.org/" href="#" />
     <link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/13.json" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
     <meta name="generator" content="WordPress 6.7.1" />
-    <link rel="canonical" href="index-2.html" />
+    <link rel="canonical" href="#" />
     <link rel='shortlink' href='../index2dc4.html?p=13' />
     <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
         href="../wp-json/oembed/1.0/embed639e.json?url=https%3A%2F%2Fbda1aad9-cb58-401a-8a47-526b318e3266.yotako.com%2Fabout_us%2F" />

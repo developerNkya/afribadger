@@ -15,7 +15,7 @@
       <div class="wp-block-group container_323096f0adde is-layout-flow wp-block-group-is-layout-flow">
         <!-- Link container -->
         <div class="wp-block-yotako-block-anchor button_79068482ba7e">
-          <a href="../index.html" class="button_link_79068482ba7e" target="_self" rel="noopener">
+          <a href="#" class="button_link_79068482ba7e" target="_self" rel="noopener">
             <div class="wp-block-group container_724d47ba64cd is-layout-flow wp-block-group-is-layout-flow">
               <div class="wp-block-spacer" style="height:0px" aria-hidden="true"></div>
             </div>
@@ -280,9 +280,9 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="wp-block-group container_432a00c15e25 is-layout-flow wp-block-group-is-layout-flow" >
                   
 <div class="wp-block-group container_e99a39cc988d is-layout-flow wp-block-group-is-layout-flow" >
-                        <p class="text_a1352dd4f3d5 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">{{$tour->initial_cost}}</p>
+                        <p class="text_a1352dd4f3d5 has-text-color has-background has-text-align-left"  style="text-transform:none;font-style:normal;font-size:15.5px;font-weight:500;letter-spacing:-0.5px;color:#0000008a;background-color:transparent;">${{$tour->initial_cost}}</p>
      
-        <h2 class="text_0606563d23ca has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">{{$tour->amount}}S</h2>
+        <h2 class="text_0606563d23ca has-text-color has-background has-text-align-left wp-block-heading"  style="text-transform:none;font-style:normal;font-size:35.5px;font-weight:600;letter-spacing:-0.5px;color:#26461d;background-color:transparent;">${{$tour->amount}}</h2>
        
 
 <div class="wp-block-group container_9b6d7814d089 is-layout-flow wp-block-group-is-layout-flow" >

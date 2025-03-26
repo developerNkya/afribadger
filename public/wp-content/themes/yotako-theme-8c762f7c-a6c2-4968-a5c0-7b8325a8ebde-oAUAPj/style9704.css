@@ -492,7 +492,7 @@ body .yt_fill_size {
     width: 352px;
     height: 702px;
     z-index: 1;
-    position: absolute !important;
+    position: relative !important;
     left: 0px;
     top: 0px;
     background: #ffffff;
@@ -772,14 +772,27 @@ body .yt_fill_size {
 }
 
 .container_ac5676396f39 {
-    /* transform:scale(0.8); */
-    position: absolute !important;
-    width: 1120px;
-    height: 702px;
+    display: none;
+    /* transform: scale(0.8); */
+    position: relative !important;
+    width: 100%;
+    /* height: 702px; */
     z-index: 1;
     left: 160px;
     top: 1432px;
 }
+
+.container_ac5676396f39_landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Optional: Centers content vertically within the container */
+    position: relative !important;
+    width: 90%;
+    left: 160px;
+    top: 3320px;
+}
+
 
 .container_8054fc93eb01 {
     width: 352px;
@@ -1719,7 +1732,7 @@ body .yt_fill_size {
     padding: 20px 0 20px 0;
     width: 1440px;
     height: 91px;
-    z-index: 1;
+    z-index: 9999;
     position: fixed !important;
     left: 0px;
     top: 0px;
@@ -1864,10 +1877,10 @@ body .yt_fill_size {
 
 .viewport_ab465fe8651d {
     position: absolute !important;
-    height: 3450px;
+    height: fit-content;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
     background: #ffffff;
 }
 
@@ -2564,10 +2577,10 @@ body .yt_fill_size {
 .container_79f5e12f2529 {
     padding: 0 0 32px 0;
     width: 400px;
-    height: 661px;
+    height: fit-content;
     min-width: 256px;
     max-width: 406px;
-    position: absolute !important;
+    /* position: absolute !important; */
     left: 0px;
     top: 0px;
     align-items: flex-start;
@@ -2583,7 +2596,7 @@ body .yt_fill_size {
     width: 400px;
     height: 420px;
     z-index: 1;
-    position: absolute !important;
+    position: relative !important;
     left: 0px;
     top: 0px;
     border-radius: 16px 16px 0 0;
@@ -2592,7 +2605,7 @@ body .yt_fill_size {
 .container_78f648086c0a {
     position: relative !important;
     width: 400px;
-    height: 641px;
+    height: fit-content;
 }
 
 .container_5c3a3f59f86a {
@@ -3227,6 +3240,29 @@ body .yt_fill_size {
     box-shadow: 0px 6px 19.5px #00000038;
 }
 
+.container_651e584e5062_landing {
+    transform: scale(0.98);
+    column-gap: 2%;
+    row-gap: 2%;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 35px 17px;
+    flex-direction: row;
+}
+
+.tours_landing_medium {
+    width: 100%;
+    height: 1359px;
+    position: absolute !important;
+    /* left: -26px; */
+    top: 4487px;
+}
+
 .container_651e584e5062 {
     width: 815px;
     height: 1359px;
@@ -3245,7 +3281,7 @@ body .yt_fill_size {
     width: 100%;
     height: 3510px;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     background: #ffffff;
 }
 
@@ -3286,10 +3322,10 @@ body .yt_fill_size {
 
 
 .text_63194caf0b8d {
-    width: 376px;
+    width: 100%;
     z-index: 3;
     position: absolute !important;
-    left: 20px;
+    /* left: 20px; */
     top: 394px;
     line-height: 37.5px;
     word-wrap: break-word;
@@ -3409,10 +3445,10 @@ body .yt_fill_size {
 
 .container_de73eda37d3c {
     z-index: 1;
-    /* width: 100%; */
+    width: 100%;
     height: 51px;
     position: relative !important;
-    left: 140px;
+    /* left: 140px; */
     justify-content: center;
     align-items: center;
     gap: normal 8px;
@@ -4726,8 +4762,9 @@ body .yt_fill_size {
 }
 
 .container_b6d8498ddcd9 {
+    width:100%;
     z-index: 1;
-    position: relative !important;
+    position: absolute !important;
     top: 1518px;
     justify-content: flex-start;
     align-items: flex-start;
@@ -4738,7 +4775,7 @@ body .yt_fill_size {
 
 .viewport_8a9748ce9efb {
     width: 100%;
-/*    overflow-x: hidden;*/
+   overflow-x: hidden;
 
     /* height: 7244px;
     overflow-x: hidden;
@@ -4777,11 +4814,12 @@ body .yt_fill_size {
 }
 
 .text_aa78ea0ed202 {
+    transform:scale(0.9);
     width: max-content;
     z-index: 3;
     position: absolute !important;
     left: 438px;
-    top: 392px;
+    top:337px;
     line-height: 75px;
     font-family: "Roboto";
 }
@@ -5789,7 +5827,7 @@ body .yt_fill_size {
 .text_7a911d4c3df3 {
     width: max-content;
     z-index: 1;
-    position: absolute !important;
+    /* position: absolute !important; */
     left: 12px;
     top: 0px;
     line-height: 30.48px;
@@ -7219,7 +7257,7 @@ body .yt_fill_size {
     z-index: 3;
     position: absolute !important;
     left: 202px;
-    top: 392px;
+    top:437px;
     line-height: 56.25px;
     font-family: "Roboto";
 }
@@ -8332,7 +8370,7 @@ body .yt_fill_size {
 }
 
 .text_99a6bd2c4d69 {
-    width: 104px;
+    width:200px;
     position: absolute !important;
     left: 0px;
     top: 23px;
@@ -10882,10 +10920,9 @@ background-blend-mode: normal;
     position: absolute !important;
     left: 152px;
     top: 2552px;
-    background: 
-    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/support.jpg");
-background-size: cover; /* Ensures the image covers both width and height */
+    background-color: #26461d; /* Green background */
+    background-image:url("/images/support.png");
+background-size: contain; /* Ensures the image covers both width and height */
 background-repeat: no-repeat;
 background-position: top;
 background-blend-mode: normal;
@@ -10897,11 +10934,10 @@ background-blend-mode: normal;
     height: 403px;
     position: absolute !important;
     left: 152px;
-    top: 3526px;
-    background: 
-    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/logistics.jpg");
-background-size: cover; /* Ensures the image covers both width and height */
+    top: 3526px; 
+    background-color: #26461d; /* Green background */
+    background-image: url("/images/logistics.png");
+background-size: contain; /* Ensures the image covers both width and height */
 background-repeat: no-repeat;
 background-position: top;
 background-blend-mode: normal;
@@ -11383,15 +11419,14 @@ background-blend-mode: normal;
     position: absolute !important;
     left: 754px;
     top: 2064px;
-    background: 
-    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/planner.jpg");
-background-size: cover; /* Ensures the image covers both width and height */
-background-repeat: no-repeat;
-background-position: center;
-background-blend-mode: normal;
-    border-radius: 24px 24px 24px 24px;
+    background-color: #26461d;
+    background-image: url("/images/planner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
 }
+
 
 .container_e327b71cd36e {
     width: 543px;
@@ -11399,10 +11434,9 @@ background-blend-mode: normal;
     position: absolute !important;
     left: 754px;
     top: 3043px;
-    background:
-    linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/sustain.jpg");
-background-size:cover; /* Ensures the image covers both width and height */
+    background-color: #26461d; /* Green background */
+    background-image:url("/images/sustain.png");
+background-size:contain; /* Ensures the image covers both width and height */
 background-repeat: no-repeat;
 background-position: top;
 background-blend-mode: normal;
@@ -11575,6 +11609,8 @@ background-blend-mode: normal;
     overflow-x: hidden;
     overflow-y: hidden;
     background: #ffffff;
+    transform-origin: top left;
+    transform: scale(calc(100vw / 1920));
 }
 
 .imageview_fe55a027760e {
@@ -11975,9 +12011,9 @@ background-blend-mode: normal;
 .container_2c3736f9e973 {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/planner.jpg");
-    background-size: cover;
+    background-color: #26461d; /* Green background */
+    background-image:url("/images/planner.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center 28%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12026,9 +12062,9 @@ background-blend-mode: normal;
 .container_702069ae9800 {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/support.jpg");
-    background-size: cover;
+    background-color: #26461d; /* Green background */
+    background-image: url("/images/support.png"); /* Image on top */
+    background-size: contain; /* Keeps the image within the container */
     background-repeat: no-repeat;
     background-position: center 4%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12077,9 +12113,9 @@ background-blend-mode: normal;
 .container_b50910fec4cf {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/sustain.jpg");
-    background-size: cover;
+    background-color: #26461d; /* Green background */
+    background-image: url("/images/sustain.png"); /* Image on top */
+    background-size: contain; /* Keeps the image within the container */
     background-repeat: no-repeat;
     background-position: center 4%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12128,9 +12164,9 @@ background-blend-mode: normal;
 .container_24920fc8ff52 {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/logistics.jpg");
-    background-size: cover;
+    background-color: #26461d; /* Green background */
+    background-image: url("/images/logistics.png"); /* Image on top */
+    background-size: contain; /* Keeps the image within the container */
     background-repeat: no-repeat;
     background-position: center 4%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12734,9 +12770,9 @@ background-blend-mode: normal;
 .container_248fcd3d9dfc {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/planner.jpg");
-    background-size: cover;
+    background-color: #26461d;
+    background-image: url("/images/planner.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center 28%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12785,9 +12821,9 @@ background-blend-mode: normal;
 .container_203aa3762f69 {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/support.jpg");
-    background-size: cover;
+    background-color: #26461d;
+    background-image: url("/images/support.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center 28%; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
@@ -12836,11 +12872,11 @@ background-blend-mode: normal;
 .container_3ef4209617cb {
     width: 399px;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/sustain.jpg");
-    background-size: cover;
+    background-color: #26461d;
+    background-image: url("/images/sustain.png");
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center 28%; /* Center horizontally, 10% from the top */
+    background-position: bottom; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
@@ -12887,11 +12923,11 @@ background-blend-mode: normal;
 .container_7eb855caa69a {
     width: 100%;
     height: 407px;
-    background: linear-gradient(rgba(38, 70, 29, 0.45), rgba(38, 70, 29, 0.45)), 
-    url("/images/logistics.jpg");
-    background-size: cover;
+    background-color: #26461d;
+    background-image: url("/images/logistics.png");
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center 28%; /* Center horizontally, 10% from the top */
+    background-position: bottom; /* Center horizontally, 10% from the top */
     background-blend-mode: normal;
     border-radius: 24px 24px 24px 24px;
 }
@@ -14315,6 +14351,8 @@ background-blend-mode: normal;
     overflow-x: hidden;
     overflow-y: hidden;
     background: #ffffff;
+    transform-origin: top left;
+    transform: scale(calc(100vw / 1920));
 }
 
 .imageview_718b5ba31381 {

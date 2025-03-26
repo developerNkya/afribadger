@@ -176,6 +176,7 @@
 }
 
 .state-yes .the-group-arrives-at {
+  /* left:-60px; */
   position: relative;
   align-self: stretch;
   font-family: var(--paragraph-font-family);
